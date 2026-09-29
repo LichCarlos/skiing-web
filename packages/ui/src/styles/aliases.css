@@ -1,0 +1,32 @@
+/* 基础主题 token 是唯一色值来源；以下是供页面阅读的语义别名。 */
+@layer theme {
+  :root {
+    --surface: var(--background);
+    --surface-muted: var(--muted);
+    --text-main: var(--foreground);
+    --text-subtle: var(--muted-foreground);
+    --action: var(--primary);
+    --action-foreground: var(--primary-foreground);
+    --border-default: var(--border);
+  }
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-text-main: var(--text-main);
+  --color-text-subtle: var(--text-subtle);
+  --color-action: var(--action);
+  --color-action-foreground: var(--action-foreground);
+  --color-border-default: var(--border-default);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}

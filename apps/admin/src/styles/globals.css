@@ -1,0 +1,5 @@
+@import "@common/ui/styles";
+@import "./aliases.css";
+/* 公共包通常位于自动扫描范围外，必须显式注册来源。 */
+@source "../../../../packages/ui/src";
+@source "../";

@@ -1,0 +1,5 @@
+/* 顺序是公共契约：浏览器重置 < Ant Design < 基础组件 < 工具类。 */
+@layer theme, base, antd, components, utilities;
+@import "tailwindcss";
+@import "./reset.css" layer(base);
+@import "./aliases.css";

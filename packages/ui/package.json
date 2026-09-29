@@ -1,0 +1,42 @@
+{
+  "name": "@common/ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./components/button": "./src/components/button.tsx",
+    "./components/style-foundation": "./src/components/style-foundation.tsx",
+    "./components/shared-notice": "./src/components/shared-notice.tsx",
+    "./lib/utils": "./src/lib/utils.ts",
+    "./styles": "./src/styles/globals.css"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@common/typescript-config": "workspace:*",
+    "@common/eslint-config": "workspace:*",
+    "typescript": "5.9.3",
+    "eslint": "10.11.0",
+    "@types/react": "19.3.0",
+    "@types/node": "22.20.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwindcss": "4.3.3"
+  },
+  "dependencies": {
+    "@base-ui/react": "1.8.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.7.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ]
+}

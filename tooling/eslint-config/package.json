@@ -1,0 +1,16 @@
+{
+  "name": "@common/eslint-config",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./base.mjs"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "8.71.0"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}

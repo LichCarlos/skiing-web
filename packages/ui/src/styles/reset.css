@@ -1,0 +1,26 @@
+/* Tailwind Preflight 已统一 margin/padding、box-sizing、标题、列表、表格及表单字体。 */
+/* 此处只补项目基础行为，不重复引入 normalize 或 antd/reset.css。 */
+html {
+  min-height: 100%;
+  color-scheme: light;
+}
+body {
+  min-height: 100dvh;
+  background: var(--surface);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+}
+*,
+::before,
+::after {
+  border-color: var(--border-default);
+}
+/* 保留键盘可见焦点，不全局设置 outline:none 或 all:unset。 */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+/* 原生复选框/单选框保留可操作外观，只统一主题色。 */
+:where(input[type="checkbox"], input[type="radio"]) {
+  accent-color: var(--action);
+}

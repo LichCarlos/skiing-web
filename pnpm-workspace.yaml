@@ -1,0 +1,22 @@
+packages:
+  - apps/*
+  - packages/*
+  - tooling/*
+
+# 原生构建脚本默认关闭；按团队审核结果启用。
+allowBuilds:
+  sharp: false
+  unrs-resolver: false
+
+# 不自动补齐缺失 peer；不接受不兼容 peer 作为可安装状态。
+strictPeerDependencies: true
+autoInstallPeers: false
+saveExact: true
+minimumReleaseAgeExclude:
+  - "@typescript-eslint/parser@8.71.0"
+  - "@typescript-eslint/project-service@8.71.0"
+  - "@typescript-eslint/scope-manager@8.71.0"
+  - "@typescript-eslint/tsconfig-utils@8.71.0"
+  - "@typescript-eslint/types@8.71.0"
+  - "@typescript-eslint/typescript-estree@8.71.0"
+  - "@typescript-eslint/visitor-keys@8.71.0"

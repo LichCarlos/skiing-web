@@ -1,0 +1,9 @@
+{
+  "name": "@common/typescript-config",
+  "private": true,
+  "version": "0.1.0",
+  "exports": {
+    "./base.json": "./base.json",
+    "./next.json": "./next.json"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "frontend-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "scripts": {
+    "dev": "node scripts/run.mjs dev",
+    "dev:web": "node scripts/run.mjs dev --filter=@common/web",
+    "dev:admin": "node scripts/run.mjs dev --filter=@common/admin",
+    "build": "node scripts/run.mjs build",
+    "build:web": "node scripts/run.mjs build --filter=@common/web...",
+    "build:admin": "node scripts/run.mjs build --filter=@common/admin...",
+    "start:web": "node scripts/run.mjs start --filter=@common/web",
+    "start:admin": "node scripts/run.mjs start --filter=@common/admin",
+    "lint": "node scripts/run.mjs lint",
+    "typecheck": "node scripts/run.mjs typecheck",
+    "check:boundaries": "node scripts/check-boundaries.mjs",
+    "check": "pnpm check:boundaries && pnpm lint && pnpm typecheck && pnpm format:check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:boundaries": "node --test scripts/check-boundaries.test.mjs"
+  },
+  "devDependencies": {
+    "prettier": "3.9.9",
+    "turbo": "2.11.2",
+    "typescript": "5.9.3"
+  }
+}

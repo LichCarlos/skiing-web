@@ -1,0 +1,26 @@
+{
+  "name": "@common/config",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./public": "./src/public.ts",
+    "./server": "./src/server.ts",
+    "./routes": "./src/routes.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@common/typescript-config": "workspace:*",
+    "@common/eslint-config": "workspace:*",
+    "typescript": "5.9.3",
+    "eslint": "10.11.0",
+    "@types/react": "19.3.0",
+    "@types/node": "22.20.3"
+  },
+  "dependencies": {
+    "server-only": "0.0.1"
+  }
+}

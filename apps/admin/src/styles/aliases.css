@@ -1,0 +1,7 @@
+/* 只属于当前应用的语义命名。不同端可以独立改变其映射。 */
+:root {
+  --app-page-bg: var(--surface);
+  --app-title-color: var(--text-main);
+  --app-content-width: 64rem;
+  --app-section-gap: 1.25rem;
+}
