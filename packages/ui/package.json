@@ -16,21 +16,25 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@common/typescript-config": "workspace:*",
     "@common/eslint-config": "workspace:*",
-    "typescript": "5.9.3",
-    "eslint": "10.11.0",
-    "@types/react": "19.3.0",
+    "@common/typescript-config": "workspace:*",
     "@types/node": "22.20.3",
+    "@types/react": "19.3.0",
+    "eslint": "10.11.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "tailwindcss": "4.3.3"
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "@base-ui/react": "1.8.0",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "tailwind-merge": "3.7.0"
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1",
+    "remark-parse": "11.0.0",
+    "tailwind-merge": "3.7.0",
+    "unified": "11.0.5"
   },
   "peerDependencies": {
     "react": "^19.0.0",

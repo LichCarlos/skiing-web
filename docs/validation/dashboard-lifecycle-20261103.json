@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-03",
+  "passed": true,
+  "scope": "Dashboard runtime projection, before/after identity checks, late-result cancellation and four production-reader HTTP workflows; no new business contract",
+  "migrations": 24,
+  "liveHttp": {
+    "tests": 31,
+    "newDashboardTests": 4,
+    "report": {
+      "path": "D:/linji-dashboard-lifecycle/20261103/final/linji-admin-http-tHAmtk/report.json",
+      "sha256": "c1e30147e2db1fb1211b66e1e222a08925a6359f4dfd0d06ad345d3285545695"
+    },
+    "clientResult": {
+      "path": "D:/linji-dashboard-lifecycle/20261103/final/linji-admin-http-tHAmtk/client-result.json",
+      "sha256": "fbd1ee526cad96046a82f9c56d2892f3809ba75bb623ffd9d61445f943c74204"
+    },
+    "fixtureVerification": {
+      "path": "D:/linji-dashboard-lifecycle/20261103/final/linji-admin-http-tHAmtk/fixture-verify.log",
+      "sha256": "58a9626af015b2b731eb21bd4e8bbdb7acc131a7cbc1977e6cc91daad8d856c9"
+    },
+    "cleanup": {
+      "path": "D:/linji-dashboard-lifecycle/20261103/cleanup.json",
+      "sha256": "e0d56510729abe0515496989d90fcff0406ad37c012f342464420ab12d7498d6"
+    },
+    "ports": [50386, 53970],
+    "dashboard": {
+      "globalAmount": "802.35",
+      "merchantAmount": "123.45",
+      "globalUserCount": 3,
+      "merchantUserCount": 1,
+      "nullBusinessPanels": true,
+      "grantRevocationDuringRead": true,
+      "conflictingScopeRejected": true
+    },
+    "retained": {
+      "knowledgeVersion": 7,
+      "knowledgeEvents": 7,
+      "knowledgeAudits": 7,
+      "ragEvents": 4,
+      "ragAudits": 6,
+      "retryAudits": 1,
+      "eventAttempts": 5,
+      "eventBudgetAfter": 13,
+      "outboxTotal": 13
+    },
+    "directFixtureRevenueRecords": 2
+  },
+  "diagnostics": [
+    "Initial preflight failed on a test-helper mock typed as callable-or-constructable; narrowed the helper to a callable request without changing product types. Final types/lint/full checks passed.",
+    "Initial HTTP run: 29 passed and 2 failed because the new test role omitted the existing account:profile:read prerequisite of /auth/me. Corrected only the fixture grants, kept production authorization, and repeated all 31 in a fresh database; both runtimes stopped."
+  ],
+  "limitations": [
+    "Overall goal incomplete; D-49/D-50/D-09 unanswered",
+    "No actual React click/visibility/BFCache, browser Cookie/CORS or device validation",
+    "Authorization fields absent from CurrentUserVO are not subscribed; an already-started database snapshot does not retroactively reflect revocation; cross-request concurrency windows remain",
+    "Kafka dispatch/consumer disabled; pending does not prove delivery/index completion",
+    "No actual embedding/chat provider, container, signed native package or remote CI validation",
+    "No Docker start/restart, denied parent cleanup or denied frontend startup retried; no commit/push/deploy/publish"
+  ],
+  "repository": "web",
+  "openapi": {
+    "version": "1.51.1",
+    "operations": 143,
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 2333,
+    "summaryTests": 72,
+    "existingMerchantOverviewTests": 25,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2,
+    "liveAdminHttpTests": 31,
+    "businessChanged": true
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dashboard/dashboard-summary.tsx",
+      "sha256": "3710be63667b25c06342555e8c7134261cdc5cd44a47b70492776bb10dfa5519"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dashboard/summary-boundaries.test.ts",
+      "sha256": "49eb04218cad0d610b619e8474ca4b04d3bf03645a2b97b2e64f8e3d448a1faf"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dashboard/summary-model.test.tsx",
+      "sha256": "eb05557600c60427ae48976ad6012a331c0b3d8308972c25caba2c703489731d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dashboard/summary-model.ts",
+      "sha256": "71e51405167c4230d9813c342793fae3a87791a5968cc643c9292c878c3fa3a0"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dashboard/summary-panels.tsx",
+      "sha256": "0081741eadc300d3bfd460188b71b9235079d145354bbce44a69b920994ca16e"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dashboard/summary-queries.ts",
+      "sha256": "a5536f4eae0f585763a7a5253166343ffb866feca55c96b8b1d81ad4b483d012"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dashboard/summary-response.ts",
+      "sha256": "5d857bfe6d7a8782f03c2a491107c5aeb863c4ec41b8ae88eb284fc08220bebc"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "8b116811a0d2cd30f80318ab7bc6df23a831991803e5d8ccab1bde2b152a5559"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/dashboard-tests.log",
+      "sha256": "3e6a652d7fdcb9cba29d5a75d52c2c7c66b1aef54503bc9fac84b94f9481786e"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-preflight-types.log",
+      "sha256": "36642b139aed2018b9ee60abbea998c51c4394f305d457cd0164b24681f80b97"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-install.log",
+      "sha256": "6ad21440388a9c6486ea142b079112fa21e3af0f78e4707171f9542e56b54dd2"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-check.log",
+      "sha256": "147ed204fe25da6c5a000de7bc81ef571d5289bbf728f57e3ae8379d80975aab"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-final-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-final-lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-build.log",
+      "sha256": "a9edc131f877f052553496c5078114d1ee86f2c892699e8b593ba5291b3c3e17"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-admin-http.log",
+      "sha256": "cc3ac2a276e4419892df6e024d16f34b171ab29aac964ea08b7a5d148efece6e"
+    },
+    {
+      "path": "D:/linji-dashboard-lifecycle/20261103/web-admin-http-final.log",
+      "sha256": "7111bf32d1f2de61a649b19e823c18f75839b4f2a0bffd7eff36ec75a0033ef4"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "l24iHuI4yshHFJ7WjYSiK",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "2cd47e4f9cce1157d8dbf7505c4301bdae29922d2a6e9b85f4d5097f2636d947"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "mTFbKhcRy1R-jj5dF1swJ",
+      "files": 1953,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "e494d3b2628442ee6fcce959cfff9a8a6bdbfb93dc6ee6b538cb6d2436f05a81"
+      }
+    }
+  ]
+}

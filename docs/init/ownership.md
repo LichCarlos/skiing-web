@@ -10,10 +10,12 @@
 
 ## 应用按实际需求实现
 
-`apps/<端>/src/features` 放功能代码，`src/app` 放页面；本端组件、hooks 和 Zustand Store 留在对应应用。`src/platform/config` 已接入本端 API 基址；`request`、`auth`、`permissions`、`errors` 目前为空，需要结合实际接口与会话协议实现。模板不预设响应结构、凭证存储方式、角色规则或业务状态。
+`apps/<端>/src/features` 放功能代码，`src/app` 放页面；本端组件、hooks 和客户端 Store 留在对应应用。当前业务已在各端 `src/platform/api` 和 `src/platform/auth` 实现请求、会话与授权适配，`@common/api-contracts` 维护本仓生成的契约类型和无业务HTTP客户端；管理端会话、权限状态与业务提交门禁不放入公共包。以仓库 README、package.json 和 docs/engineering 的当前记录为准，不再将这些目录描述为空模板。
 
-应用还需根据自身需求决定数据契约、缓存、表单、国际化、测试、部署和监控方式。`pnpm check` 只包含边界、ESLint 解析、TypeScript 和格式检查，不能代替业务测试。
+应用继续各自维护缓存、表单和业务状态。当前 `pnpm check` 已包含契约快照/生成类型核对、包边界、lint、类型检查、多模块业务测试与格式检查；生产构建另行运行。业务测试覆盖范围以工程说明和测试源码为准，绿灯不替代真实浏览器、后端服务与供应商的端到端验收。
 
 ## 文档位置
+
+应用build还生成各自standalone发布包，TypeScript打包与校验工具由本仓维护；20项文件系统测试与专用类型检查纳入check。产物完整性/内部依赖核对不等于实际HTTP或浏览器验收，详见[独立发布说明](../engineering/standalone-release.md)。
 
 基础架构说明集中在 `docs/init/`，技能说明放在 `skills/`。新增应用专属文档时可使用 `docs/<应用名>/`，并在根 README 文档索引登记。新增公共包或环境字段时，同步更新对应说明和示例。

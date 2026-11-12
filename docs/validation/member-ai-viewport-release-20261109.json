@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "activatedAt": "2026-11-09T03:21:22.799004+00:00",
+  "buildId": "3sLFeCPr60u7G6ZFAikIZ",
+  "release": "/opt/linji/releases/20261109-member-ai-viewport-final",
+  "sourceSha256": "8dbb2deae36e33377f77b1c9a55c1f640646b4ea20a6d24bca4ed0b721bb2c41",
+  "archiveSha256": "7a7dab5efcad1da54836b76f18f57a7dd90db7bea52f235df5fc7f8e3f98f99e",
+  "runtimeFiles": 2205,
+  "runtimeLinks": 21,
+  "local": {
+    "websiteTests": 483,
+    "browserScenarios": 18,
+    "viewportSizes": [
+      "1440x900",
+      "1366x768",
+      "390x844",
+      "768x600",
+      "844x390",
+      "320x568"
+    ],
+    "lint": true,
+    "typecheck": true,
+    "boundaries": true,
+    "openapi": "1.54.0",
+    "linuxProductionBuild": true
+  },
+  "live": {
+    "passed": true,
+    "checks": 16,
+    "realAiTurns": 2,
+    "pageErrors": [],
+    "testConversationDeleted": true,
+    "report": "member-ai-viewport-live-20261109/report.json"
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-09T03:21:22.799004+00:00",
+    "release": "/opt/linji/releases/20261109-member-ai-viewport-final",
+    "buildId": "3sLFeCPr60u7G6ZFAikIZ",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1527046",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "rollbackCommand": "python3 /opt/linji/releases/20261109-member-ai-viewport-final/rollback-website.py",
+  "previousStableRollbackCommand": "python3 /opt/linji/releases/20261109-member-ai-viewport/rollback-website.py",
+  "scope": [
+    "website opening 活/乐 bitmap lettering",
+    "single viewport AI panel",
+    "entry automatic scrolling",
+    "internal history and message scroll",
+    "collapsible reference sources"
+  ],
+  "notChanged": ["admin", "API", "App", "database schema", "nginx"]
+}

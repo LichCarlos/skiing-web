@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "passed": true,
+  "evidenceFiles": [
+    {
+      "path": "E:/desktop/lishiqi/web/docs/validation/dictionary-recovery-http-20261103.json",
+      "sha256": "a8b7c1b3b8b9828c8adda924e1c7ac5e128abc41c9a3f0cc756e4623f121ca5f"
+    },
+    {
+      "path": "E:/desktop/lishiqi/backend/docs/validation/dictionary-recovery-http-20261103.json",
+      "sha256": "c0432008332ed2e4a2fa4ac0ed4f33b7ceb3c7305806fe94378aba34baf85927"
+    },
+    {
+      "path": "E:/desktop/lishiqi/app/docs/validation/dictionary-recovery-companion-20261103.json",
+      "sha256": "d8b6dbdaa64d525f31a67e0362d173a3f6fb6ccfd48969ec731320eac06d3bb4"
+    }
+  ],
+  "logReferences": 44,
+  "uniqueLogs": 35,
+  "sourceReferences": 22,
+  "uniqueSources": 11
+}

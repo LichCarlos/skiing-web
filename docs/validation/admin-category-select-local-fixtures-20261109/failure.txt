@@ -1,0 +1,168 @@
+跳至主要内容
+凛迹雪客管理端
+工作台
+/
+系统设置
+/
+数据字典
+S
+System Administrator
+退出
+工作台
+内容运营
+全局雪场
+知识文章
+项目知识
+社区审核
+媒体资源
+商家经营
+商家经营概览
+我的雪场
+收益数据
+收益维护
+账号与权限
+账号管理
+角色管理
+权限目录
+系统设置
+数据字典
+字段管理
+系统配置
+操作日志
+AI 与任务
+RAG 来源运维
+AI 会话审计
+消息任务
+数据字典
+维护统一选项及层级，供选择类字段或业务功能引用；配置字典不会自动新增业务字段。
+新建选项字典
+新增分类
+刷新字典
+全部状态
+类型键	名称	分组	项目数	公开检索	状态	操作
+
+类型键
+	
+名称
+	
+分组
+	
+项目数
+	
+公开检索
+	
+状态
+	
+操作
+
+knowledge.article_category	文章分类	knowledge	0	禁止	启用	
+字典项
+编辑
+停用
+
+resort.fit_tag	雪场适合标签	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options2	测试选项2	resort	0	禁止	停用	
+字典项
+编辑
+
+test.options3	测试选项3	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options4	测试选项4	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options5	测试选项5	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options6	测试选项6	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options7	测试选项7	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options8	测试选项8	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options9	测试选项9	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options10	测试选项10	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options11	测试选项11	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options12	测试选项12	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options13	测试选项13	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options14	测试选项14	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options15	测试选项15	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options16	测试选项16	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options17	测试选项17	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options18	测试选项18	resort	0	禁止	启用	
+字典项
+编辑
+停用
+
+test.options19	测试选项19	resort	0	禁止	启用	
+字典项
+编辑
+停用
+1
+2
+新增分类
+所属字段
+选择需要新增分类的字段
+选择需要添加分类的字段。仅展示固定分类字段和已启用的单选、多选扩展字段；字典键与分组自动匹配。
+取 消
+下一步
+article.category
+ski_resort.fitTags
+文章 · 文章分类
+滑雪场 · 适合标签
+滑雪场 · 测试字段20

@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "mode": "local",
+  "fixtures": false,
+  "checks": [
+    {
+      "name": "relationship-canvas",
+      "width": 1440,
+      "canvas": {
+        "x": 265,
+        "y": 397.171875,
+        "width": 872,
+        "height": 560
+      }
+    },
+    {
+      "name": "relationship-canvas",
+      "width": 768,
+      "canvas": {
+        "x": 17,
+        "y": 469.5625,
+        "width": 734,
+        "height": 420
+      }
+    },
+    {
+      "name": "mobile-tree-selects-node"
+    },
+    {
+      "name": "relationship-canvas",
+      "width": 390,
+      "canvas": {
+        "x": 27,
+        "y": 689.921875,
+        "width": 336,
+        "height": 133.5
+      }
+    },
+    {
+      "name": "relationship-canvas",
+      "width": 320,
+      "canvas": {
+        "x": 27,
+        "y": 689.921875,
+        "width": 266,
+        "height": 166
+      }
+    },
+    {
+      "name": "zoom-and-fit-controls"
+    },
+    {
+      "name": "live-fixed-binding-tree-table-switch"
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "simulatedWrites": [],
+  "buildId": "IsBikSr8YW90Lj6AX45Nj"
+}

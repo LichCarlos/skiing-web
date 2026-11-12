@@ -1,0 +1,18 @@
+title = "Linji source security; narrowly scoped public fixture exceptions"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Public OpenAPI and systemd file SHA-256 checksums in validation records"
+condition = "AND"
+paths = ['''docs/validation/[^\r\n]+\.json$''']
+regexTarget = "match"
+regexes = ['''(?i)(?:openapiSha256|threeRepositoryOpenapiSha256|linji-api\.service)"\s*:\s*"[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "Fixed revenue import idempotency UUID in four unit-test fixtures"
+condition = "AND"
+paths = ['''apps/admin/src/features/revenue/admin-revenue-(?:result-boundaries|import-workflow|read-boundaries|workflow)\.test\.ts$''']
+regexTarget = "match"
+regexes = ['''key = "b0bb38a0-d895-4243-afc1-eb356c7dbde1"''']

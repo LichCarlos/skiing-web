@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "at": "2026-11-07T14:06:16.240Z",
+  "buildId": "TCRE2KuZ0pTURUGOX9mQm",
+  "checks": [
+    {
+      "name": "AI page static resources",
+      "count": 23,
+      "passed": true
+    },
+    {
+      "name": "new build and official pages serve HTTPS 200",
+      "passed": true
+    },
+    {
+      "name": "API healthy; anonymous private conversations rejected",
+      "passed": true
+    },
+    {
+      "name": "article and personal-center canvas use reference color",
+      "passed": true
+    },
+    {
+      "name": "real login returns to personal center with AI entry",
+      "passed": true
+    },
+    {
+      "name": "real conversation creation through website",
+      "passed": true
+    },
+    {
+      "name": "real model streams first answer with saved completion",
+      "passed": true
+    },
+    {
+      "name": "real continuous follow-up and history restoration",
+      "passed": true
+    },
+    {
+      "name": "delete only the acceptance conversation through website",
+      "passed": true
+    },
+    {
+      "name": "real logout clears private UI",
+      "passed": true
+    },
+    {
+      "name": "homepage and directory colors remain",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "realAiTurns": [
+    {
+      "question": "第一次滑雪前，应该检查哪些基本装备？请简要回答。",
+      "messageId": "6",
+      "characters": 382,
+      "citations": [
+        {
+          "sourceType": "article",
+          "sourceId": "2",
+          "title": "第一次滑雪，把目标从“上山顶”改成“安全结束第一课”"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "3",
+          "title": "头盔不是无敌护盾：出发前的装备核对清单"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "7",
+          "title": "带朋友或孩子去滑雪：先约定边界，再安排打卡"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "4",
+          "title": "第一次坐缆车：从排队到下站，先听工作人员的"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "6",
+          "title": "雪道意外后先求助：同伴应知道的信息与边界"
+        }
+      ],
+      "deltaEvents": 229,
+      "completed": true
+    },
+    {
+      "question": "根据刚才的建议，头盔应该怎样检查是否合适？请简要回答。",
+      "messageId": "8",
+      "characters": 349,
+      "citations": [
+        {
+          "sourceType": "article",
+          "sourceId": "3",
+          "title": "头盔不是无敌护盾：出发前的装备核对清单"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "2",
+          "title": "第一次滑雪，把目标从“上山顶”改成“安全结束第一课”"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "7",
+          "title": "带朋友或孩子去滑雪：先约定边界，再安排打卡"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "4",
+          "title": "第一次坐缆车：从排队到下站，先听工作人员的"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "5",
+          "title": "选雪道看能力，不只看颜色：路线判断的五个问题"
+        }
+      ],
+      "deltaEvents": 203,
+      "completed": true
+    }
+  ],
+  "createdConversationId": "d71ed7ee-7c05-416a-81db-09f8f190dfb7",
+  "testConversationDeleted": true
+}

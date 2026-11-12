@@ -1,0 +1,157 @@
+@layer components {
+  .root {
+    border: 2px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    color: #17264c;
+  }
+  .header,
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 16px 20px;
+  }
+  .header {
+    background: #e8efff;
+    border-bottom: 1px solid #000;
+  }
+  .header span,
+  .footer,
+  .hint {
+    font-size: 12px;
+  }
+  .tabs,
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #cbd9ef;
+  }
+  .toolbar {
+    background: #f6f9ff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .toolbar button {
+    padding: 6px 10px;
+    border: 1px solid #7b91b5;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font: inherit;
+  }
+  .toolbar button[aria-pressed="true"] {
+    color: white;
+    background: #2455f5;
+    border-color: #000;
+  }
+  .toolbar button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .toolbar button:focus-visible {
+    outline: 3px solid #2455f5;
+    outline-offset: 2px;
+  }
+  .paper {
+    padding: 28px clamp(16px, 4vw, 64px);
+    min-height: 380px;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+  }
+  .paper :global(.tiptap) {
+    min-height: 350px;
+    outline: none;
+  }
+  .paper :global(.tiptap:focus-visible) {
+    outline: 2px solid #2455f5;
+    outline-offset: 12px;
+  }
+  .paper :global(.tiptap p) {
+    margin: 0.7em 0;
+  }
+  .paper :global(.tiptap h1) {
+    font-size: 1.8em;
+  }
+  .paper :global(.tiptap h2) {
+    font-size: 1.5em;
+  }
+  .paper :global(.tiptap h3) {
+    font-size: 1.2em;
+  }
+  .paper :global(.tiptap h1),
+  .paper :global(.tiptap h2),
+  .paper :global(.tiptap h3) {
+    font-weight: 750;
+    line-height: 1.4;
+    margin: 1.4em 0 0.6em;
+  }
+  .paper :global(.tiptap ul) {
+    list-style: disc;
+    padding-left: 1.6em;
+  }
+  .paper :global(.tiptap ol) {
+    list-style: decimal;
+    padding-left: 1.6em;
+  }
+  .paper :global(.tiptap blockquote) {
+    padding-left: 1em;
+    border-left: 4px solid #2455f5;
+  }
+  .paper :global(.tiptap img) {
+    max-width: 100%;
+    border-radius: 14px;
+  }
+  .paper :global(.tiptap figure) {
+    padding: 8px;
+    border: 1px dashed #7b91b5;
+    margin: 1em 0;
+  }
+  .paper :global(.tiptap .ProseMirror-selectednode) {
+    outline: 3px solid #2455f5;
+  }
+  .paper :global(.tiptap a) {
+    color: #2455f5;
+    text-decoration: underline;
+  }
+  .paper :global(.tiptap table) {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .paper :global(.tiptap td),
+  .paper :global(.tiptap th) {
+    border: 1px solid #000;
+    padding: 8px;
+  }
+  .paper :global(.tiptap th) {
+    background: #e8efff;
+  }
+  .paper :global(.tiptap pre) {
+    overflow: auto;
+    padding: 16px;
+    background: #edf1f8;
+    border-radius: 12px;
+  }
+  .legacy {
+    padding: 12px 20px;
+    background: #fff6d7;
+  }
+  .footer {
+    border-top: 1px solid #cbd9ef;
+    color: #495e80;
+  }
+  .error {
+    margin: 12px 20px;
+    color: #ac322d;
+  }
+  .hint {
+    padding: 0 20px 16px;
+    color: #495e80;
+  }
+}

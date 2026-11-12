@@ -1,0 +1,173 @@
+.gallery {
+  min-width: 0;
+  margin-block: 20px 28px;
+  color: #000;
+}
+.toolbar,
+.controls,
+.viewerTop,
+.viewerControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.toolbar {
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.toolbar p {
+  margin: 0;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.controls {
+  margin-inline-start: auto;
+  font-variant-numeric: tabular-nums;
+}
+.controls span {
+  min-width: 4ch;
+  font-size: 13px;
+}
+.gallery button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background: var(--site-surface);
+  color: #000;
+  font: inherit;
+  cursor: pointer;
+}
+.gallery button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.gallery button:hover:not(:disabled) {
+  background: var(--site-yellow);
+}
+.gallery :is(a, button):focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+.track {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 4px;
+  padding: 4px 4px 12px;
+}
+.slide {
+  flex: 0 0 min(88%, 640px);
+  min-width: 0;
+  margin: 0;
+  scroll-snap-align: start;
+}
+.slide:only-child {
+  flex-basis: 100%;
+}
+.image {
+  position: relative;
+  display: block;
+  aspect-ratio: 1.5;
+  overflow: hidden;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background: var(--site-image-base);
+}
+.image img {
+  object-fit: cover;
+}
+.slide figcaption {
+  margin-top: 10px;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.reload {
+  margin-block: 12px;
+}
+.viewer {
+  position: fixed;
+  inset: 12px;
+  width: min(1180px, calc(100% - 24px));
+  max-width: none;
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 16px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 2px solid #000;
+  border-radius: 24px;
+  background: var(--site-surface);
+  color: #000;
+}
+.viewer::backdrop {
+  background: rgb(0 0 0 / 78%);
+}
+.viewerTop {
+  font-weight: 700;
+}
+.viewerTop span {
+  overflow-wrap: anywhere;
+}
+.viewerTop button {
+  flex-shrink: 0;
+  background: var(--site-yellow);
+}
+.fullImage {
+  position: relative;
+  height: min(66dvh, 720px);
+  min-height: 180px;
+  margin-block: 16px;
+  background: #e5efff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.fullImage img {
+  object-fit: contain;
+}
+.viewerControls span {
+  font-size: 13px;
+  color: #444;
+}
+@media (max-width: 480px) {
+  .viewer {
+    padding: 12px;
+    border-radius: 18px;
+  }
+  .viewerControls span {
+    display: none;
+  }
+  .slide {
+    flex-basis: 90%;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .viewer[open] {
+    animation: openImage 180ms ease-out;
+  }
+  @keyframes openImage {
+    from {
+      opacity: 0.7;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+@media (scripting: none) {
+  .controls {
+    display: none;
+  }
+}

@@ -1,0 +1,928 @@
+{
+  "passed": true,
+  "scope": "Website login/register UI only",
+  "deployedAt": "2026-11-06T20:04:46+08:00",
+  "url": "https://lichcarlos.top/snow/login",
+  "buildId": "DAjT0OocqHj2ydsxIq8HC",
+  "sourceSHA256": "c6fcf17b78bdfee87396760ef24ba7fef9ecbde136e9e29af7946c17e0d323a3",
+  "archiveSHA256": "19bd4170d88e3324cf858e21b857484f79bcd5c1b6af34b2bf3941aa2a055162",
+  "checks": {
+    "eslint": "passed",
+    "standaloneFiles": 2169,
+    "websiteTestFiles": 28,
+    "linuxBuild": "passed",
+    "websiteTests": 430,
+    "workspaceBoundaries": 9,
+    "standaloneLinks": 21,
+    "typecheck": "passed in production build"
+  },
+  "browser": {
+    "passed": true,
+    "at": "2026-11-06T12:08:57.922Z",
+    "matrix": [
+      {
+        "requested": {
+          "w": 1366,
+          "h": 768
+        },
+        "login": {
+          "card": {
+            "h": 624,
+            "w": 1080,
+            "x": 143.1999969482422,
+            "y": 80
+          },
+          "columns": "430.712px 646.088px",
+          "content": {
+            "client": 517,
+            "scroll": 517
+          },
+          "documentHeight": 768,
+          "documentWidth": 1366,
+          "mode": "login",
+          "panel": {
+            "h": 620.7999877929688,
+            "w": 646.0875244140625,
+            "x": 575.5125122070312,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "pressed": "true",
+            "w": 48,
+            "x": 874.5499877929688,
+            "y": 101.5999984741211
+          },
+          "viewport": {
+            "h": 768,
+            "w": 1366
+          }
+        },
+        "register": {
+          "card": {
+            "h": 624,
+            "w": 1080,
+            "x": 143.1999969482422,
+            "y": 80
+          },
+          "columns": "430.712px 646.088px",
+          "content": {
+            "client": 517,
+            "scroll": 517
+          },
+          "documentHeight": 768,
+          "documentWidth": 1366,
+          "mode": "register",
+          "panel": {
+            "h": 620.7999877929688,
+            "w": 646.0875244140625,
+            "x": 575.5125122070312,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "pressed": "false",
+            "w": 48,
+            "x": 874.5499877929688,
+            "y": 101.5999984741211
+          },
+          "viewport": {
+            "h": 768,
+            "w": 1366
+          }
+        }
+      },
+      {
+        "requested": {
+          "w": 1280,
+          "h": 720
+        },
+        "login": {
+          "card": {
+            "h": 576,
+            "w": 1080,
+            "x": 100,
+            "y": 80
+          },
+          "columns": "430.712px 646.088px",
+          "content": {
+            "client": 481,
+            "scroll": 481
+          },
+          "documentHeight": 720,
+          "documentWidth": 1280,
+          "mode": "login",
+          "panel": {
+            "h": 572.7999877929688,
+            "w": 646.0875244140625,
+            "x": 532.3125,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "pressed": "true",
+            "w": 48,
+            "x": 831.3500366210938,
+            "y": 97.5999984741211
+          },
+          "viewport": {
+            "h": 720,
+            "w": 1280
+          }
+        },
+        "register": {
+          "card": {
+            "h": 576,
+            "w": 1080,
+            "x": 100,
+            "y": 80
+          },
+          "columns": "430.712px 646.088px",
+          "content": {
+            "client": 481,
+            "scroll": 481
+          },
+          "documentHeight": 720,
+          "documentWidth": 1280,
+          "mode": "register",
+          "panel": {
+            "h": 572.7999877929688,
+            "w": 646.0875244140625,
+            "x": 532.3125,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "pressed": "false",
+            "w": 48,
+            "x": 831.3500366210938,
+            "y": 97.5999984741211
+          },
+          "viewport": {
+            "h": 720,
+            "w": 1280
+          }
+        }
+      },
+      {
+        "requested": {
+          "w": 1024,
+          "h": 768
+        },
+        "login": {
+          "card": {
+            "h": 624,
+            "w": 921.6000366210938,
+            "x": 51.20000076293945,
+            "y": 80
+          },
+          "columns": "367.35px 551.05px",
+          "content": {
+            "client": 517,
+            "scroll": 517
+          },
+          "documentHeight": 768,
+          "documentWidth": 1024,
+          "mode": "login",
+          "panel": {
+            "h": 620.7999877929688,
+            "w": 551.0499877929688,
+            "x": 420.1499938964844,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "pressed": "true",
+            "w": 48,
+            "x": 671.6749877929688,
+            "y": 101.5999984741211
+          },
+          "viewport": {
+            "h": 768,
+            "w": 1024
+          }
+        },
+        "register": {
+          "card": {
+            "h": 624,
+            "w": 921.6000366210938,
+            "x": 51.20000076293945,
+            "y": 80
+          },
+          "columns": "367.35px 551.05px",
+          "content": {
+            "client": 517,
+            "scroll": 517
+          },
+          "documentHeight": 768,
+          "documentWidth": 1024,
+          "mode": "register",
+          "panel": {
+            "h": 620.7999877929688,
+            "w": 551.0499877929688,
+            "x": 420.1499938964844,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "pressed": "false",
+            "w": 48,
+            "x": 671.6749877929688,
+            "y": 101.5999984741211
+          },
+          "viewport": {
+            "h": 768,
+            "w": 1024
+          }
+        }
+      },
+      {
+        "requested": {
+          "w": 850,
+          "h": 650
+        },
+        "login": {
+          "card": {
+            "h": 506.3999938964844,
+            "w": 765.375,
+            "x": 42.51250076293945,
+            "y": 80
+          },
+          "columns": "304.862px 457.312px",
+          "content": {
+            "client": 411,
+            "scroll": 411
+          },
+          "documentHeight": 650,
+          "documentWidth": 850,
+          "mode": "login",
+          "panel": {
+            "h": 503.2000122070313,
+            "w": 457.3125,
+            "x": 348.9750061035156,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "pressed": "true",
+            "w": 48,
+            "x": 553.625,
+            "y": 97.5999984741211
+          },
+          "viewport": {
+            "h": 650,
+            "w": 850
+          }
+        },
+        "register": {
+          "card": {
+            "h": 506.3999938964844,
+            "w": 765.375,
+            "x": 42.51250076293945,
+            "y": 80
+          },
+          "columns": "304.862px 457.312px",
+          "content": {
+            "client": 411,
+            "scroll": 411
+          },
+          "documentHeight": 650,
+          "documentWidth": 850,
+          "mode": "register",
+          "panel": {
+            "h": 503.2000122070313,
+            "w": 457.3125,
+            "x": 348.9750061035156,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "pressed": "false",
+            "w": 48,
+            "x": 553.625,
+            "y": 97.5999984741211
+          },
+          "viewport": {
+            "h": 650,
+            "w": 850
+          }
+        }
+      },
+      {
+        "requested": {
+          "w": 1440,
+          "h": 900
+        },
+        "login": {
+          "card": {
+            "h": 680,
+            "w": 1080,
+            "x": 180,
+            "y": 118
+          },
+          "columns": "430.712px 646.088px",
+          "content": {
+            "client": 573,
+            "scroll": 573
+          },
+          "documentHeight": 900,
+          "documentWidth": 1440,
+          "mode": "login",
+          "panel": {
+            "h": 676.7999877929688,
+            "w": 646.0875244140625,
+            "x": 612.3125,
+            "y": 119.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "pressed": "true",
+            "w": 48,
+            "x": 911.3500366210938,
+            "y": 139.60000610351562
+          },
+          "viewport": {
+            "h": 900,
+            "w": 1440
+          }
+        },
+        "register": {
+          "card": {
+            "h": 680,
+            "w": 1080,
+            "x": 180,
+            "y": 118
+          },
+          "columns": "430.712px 646.088px",
+          "content": {
+            "client": 573,
+            "scroll": 573
+          },
+          "documentHeight": 900,
+          "documentWidth": 1440,
+          "mode": "register",
+          "panel": {
+            "h": 676.7999877929688,
+            "w": 646.0875244140625,
+            "x": 612.3125,
+            "y": 119.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "pressed": "false",
+            "w": 48,
+            "x": 911.3500366210938,
+            "y": 139.60000610351562
+          },
+          "viewport": {
+            "h": 900,
+            "w": 1440
+          }
+        }
+      },
+      {
+        "requested": {
+          "w": 390,
+          "h": 844
+        },
+        "login": {
+          "card": {
+            "h": 680,
+            "w": 350.3999938964844,
+            "x": 20,
+            "y": 90
+          },
+          "columns": "347.2px",
+          "content": {
+            "client": 573,
+            "scroll": 573
+          },
+          "documentHeight": 844,
+          "documentWidth": 390,
+          "mode": "login",
+          "panel": {
+            "h": 676.7999877929688,
+            "w": 347.20001220703125,
+            "x": 21.600000381469727,
+            "y": 91.5999984741211
+          },
+          "photoDisplay": "none",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "pressed": "true",
+            "w": 48,
+            "x": 171.1999969482422,
+            "y": 111.5999984741211
+          },
+          "viewport": {
+            "h": 844,
+            "w": 390
+          }
+        },
+        "register": {
+          "card": {
+            "h": 680,
+            "w": 350.3999938964844,
+            "x": 20,
+            "y": 90
+          },
+          "columns": "347.2px",
+          "content": {
+            "client": 573,
+            "scroll": 573
+          },
+          "documentHeight": 844,
+          "documentWidth": 390,
+          "mode": "register",
+          "panel": {
+            "h": 676.7999877929688,
+            "w": 347.20001220703125,
+            "x": 21.600000381469727,
+            "y": 91.5999984741211
+          },
+          "photoDisplay": "none",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "pressed": "false",
+            "w": 48,
+            "x": 171.1999969482422,
+            "y": 111.5999984741211
+          },
+          "viewport": {
+            "h": 844,
+            "w": 390
+          }
+        }
+      }
+    ],
+    "sessionLoading": {
+      "pending": {
+        "card": {
+          "h": 624,
+          "w": 1080,
+          "x": 143.1999969482422,
+          "y": 80
+        },
+        "columns": "430.712px 646.088px",
+        "content": {
+          "client": 517,
+          "scroll": 517
+        },
+        "documentHeight": 768,
+        "documentWidth": 1366,
+        "mode": "login",
+        "panel": {
+          "h": 620.7999877929688,
+          "w": 646.0875244140625,
+          "x": 575.5125122070312,
+          "y": 81.5999984741211
+        },
+        "photoDisplay": "block",
+        "submitDisabled": true,
+        "toggle": {
+          "bg": "rgb(36, 85, 245)",
+          "h": 48,
+          "pressed": "true",
+          "w": 48,
+          "x": 874.5499877929688,
+          "y": 101.5999984741211
+        },
+        "viewport": {
+          "h": 768,
+          "w": 1366
+        }
+      },
+      "ready": {
+        "card": {
+          "h": 624,
+          "w": 1080,
+          "x": 143.1999969482422,
+          "y": 80
+        },
+        "columns": "430.712px 646.088px",
+        "content": {
+          "client": 517,
+          "scroll": 517
+        },
+        "documentHeight": 768,
+        "documentWidth": 1366,
+        "mode": "login",
+        "panel": {
+          "h": 620.7999877929688,
+          "w": 646.0875244140625,
+          "x": 575.5125122070312,
+          "y": 81.5999984741211
+        },
+        "photoDisplay": "block",
+        "submitDisabled": false,
+        "toggle": {
+          "bg": "rgb(36, 85, 245)",
+          "h": 48,
+          "pressed": "true",
+          "w": 48,
+          "x": 874.5499877929688,
+          "y": 101.5999984741211
+        },
+        "viewport": {
+          "h": 768,
+          "w": 1366
+        }
+      }
+    },
+    "console": []
+  },
+  "localFixture": {
+    "scope": "Local Next dev + in-memory fixture API only; no production writes",
+    "passed": true,
+    "initialLogin": {
+      "card": {
+        "h": 624,
+        "w": 1080,
+        "x": 143.1999969482422,
+        "y": 80
+      },
+      "columns": "430.712px 646.088px",
+      "content": {
+        "client": 517,
+        "scroll": 517
+      },
+      "documentHeight": 768,
+      "documentWidth": 1366,
+      "mode": "login",
+      "panel": {
+        "h": 620.7999877929688,
+        "w": 646.0875244140625,
+        "x": 575.5125122070312,
+        "y": 81.5999984741211
+      },
+      "photoDisplay": "block",
+      "submitDisabled": false,
+      "toggle": {
+        "bg": "rgb(36, 85, 245)",
+        "h": 48,
+        "pressed": "true",
+        "w": 48,
+        "x": 874.5499877929688,
+        "y": 101.5999984741211
+      },
+      "viewport": {
+        "h": 768,
+        "w": 1366
+      }
+    },
+    "initialRegistration": {
+      "card": {
+        "h": 624,
+        "w": 1080,
+        "x": 143.1999969482422,
+        "y": 80
+      },
+      "columns": "430.712px 646.088px",
+      "content": {
+        "client": 517,
+        "scroll": 517
+      },
+      "documentHeight": 768,
+      "documentWidth": 1366,
+      "mode": "register",
+      "panel": {
+        "h": 620.7999877929688,
+        "w": 646.0875244140625,
+        "x": 575.5125122070312,
+        "y": 81.5999984741211
+      },
+      "photoDisplay": "block",
+      "submitDisabled": false,
+      "toggle": {
+        "bg": "rgb(255, 255, 255)",
+        "h": 48,
+        "pressed": "false",
+        "w": 48,
+        "x": 874.5499877929688,
+        "y": 101.5999984741211
+      },
+      "viewport": {
+        "h": 768,
+        "w": 1366
+      }
+    },
+    "finalRegistrationSizes": [
+      {
+        "card": {
+          "h": 624,
+          "w": 1080,
+          "x": 143.1999969482422,
+          "y": 80
+        },
+        "columns": "430.712px 646.088px",
+        "content": {
+          "client": 517,
+          "scroll": 517
+        },
+        "documentHeight": 768,
+        "documentWidth": 1366,
+        "mode": "register",
+        "panel": {
+          "h": 620.7999877929688,
+          "w": 646.0875244140625,
+          "x": 575.5125122070312,
+          "y": 81.5999984741211
+        },
+        "photoDisplay": "block",
+        "submitDisabled": false,
+        "toggle": {
+          "bg": "rgb(255, 255, 255)",
+          "h": 48,
+          "pressed": "false",
+          "w": 48,
+          "x": 874.5499877929688,
+          "y": 101.5999984741211
+        },
+        "viewport": {
+          "h": 768,
+          "w": 1366
+        }
+      },
+      {
+        "card": {
+          "h": 576,
+          "w": 1080,
+          "x": 100,
+          "y": 80
+        },
+        "columns": "430.712px 646.088px",
+        "content": {
+          "client": 481,
+          "scroll": 481
+        },
+        "documentHeight": 720,
+        "documentWidth": 1280,
+        "mode": "register",
+        "panel": {
+          "h": 572.7999877929688,
+          "w": 646.0875244140625,
+          "x": 532.3125,
+          "y": 81.5999984741211
+        },
+        "photoDisplay": "block",
+        "submitDisabled": false,
+        "toggle": {
+          "bg": "rgb(255, 255, 255)",
+          "h": 48,
+          "pressed": "false",
+          "w": 48,
+          "x": 831.3500366210938,
+          "y": 97.5999984741211
+        },
+        "viewport": {
+          "h": 720,
+          "w": 1280
+        }
+      },
+      {
+        "card": {
+          "h": 506.3999938964844,
+          "w": 765.375,
+          "x": 42.51250076293945,
+          "y": 80
+        },
+        "columns": "304.862px 457.312px",
+        "content": {
+          "client": 411,
+          "scroll": 411
+        },
+        "documentHeight": 650,
+        "documentWidth": 850,
+        "mode": "register",
+        "panel": {
+          "h": 503.2000122070313,
+          "w": 457.3125,
+          "x": 348.9750061035156,
+          "y": 81.5999984741211
+        },
+        "photoDisplay": "block",
+        "submitDisabled": false,
+        "toggle": {
+          "bg": "rgb(255, 255, 255)",
+          "h": 48,
+          "pressed": "false",
+          "w": 48,
+          "x": 553.625,
+          "y": 97.5999984741211
+        },
+        "viewport": {
+          "h": 650,
+          "w": 850
+        }
+      },
+      {
+        "card": {
+          "h": 680,
+          "w": 350.3999938964844,
+          "x": 20,
+          "y": 90
+        },
+        "columns": "347.2px",
+        "content": {
+          "client": 573,
+          "scroll": 573
+        },
+        "documentHeight": 844,
+        "documentWidth": 390,
+        "mode": "register",
+        "panel": {
+          "h": 676.7999877929688,
+          "w": 347.20001220703125,
+          "x": 21.600000381469727,
+          "y": 91.5999984741211
+        },
+        "photoDisplay": "none",
+        "submitDisabled": false,
+        "toggle": {
+          "bg": "rgb(255, 255, 255)",
+          "h": 48,
+          "pressed": "false",
+          "w": 48,
+          "x": 171.1999969482422,
+          "y": 111.5999984741211
+        },
+        "viewport": {
+          "h": 844,
+          "w": 390
+        }
+      }
+    ],
+    "registrationSuccess": {
+      "card": {
+        "h": 624,
+        "w": 1080,
+        "x": 143.1999969482422,
+        "y": 80
+      },
+      "columns": "430.712px 646.088px",
+      "content": {
+        "client": 517,
+        "scroll": 517
+      },
+      "documentHeight": 768,
+      "documentWidth": 1366,
+      "mode": "login",
+      "panel": {
+        "h": 620.7999877929688,
+        "w": 646.0875244140625,
+        "x": 575.5125122070312,
+        "y": 81.5999984741211
+      },
+      "photoDisplay": "block",
+      "submitDisabled": false,
+      "toggle": {
+        "bg": "rgb(36, 85, 245)",
+        "h": 48,
+        "pressed": "true",
+        "w": 48,
+        "x": 874.5499877929688,
+        "y": 101.5999984741211
+      },
+      "viewport": {
+        "h": 768,
+        "w": 1366
+      }
+    },
+    "registeredAccountRetained": true,
+    "noAutomaticLogin": true
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-06T12:08:03.177Z",
+    "checks": [
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 17
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-06T20:04:46.335695+08:00",
+    "release": "/opt/linji/releases/20261106-auth-card",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1470045",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "DAjT0OocqHj2ydsxIq8HC"
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "DAjT0OocqHj2ydsxIq8HC",
+    "filesVerified": 2169,
+    "linksVerified": 21,
+    "archiveSha256": "19bd4170d88e3324cf858e21b857484f79bcd5c1b6af34b2bf3941aa2a055162",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      }
+    ]
+  },
+  "limits": [
+    "Production layout checks are read-only; successful registration tested only with isolated in-memory fixture",
+    "Extremely short screens retain internal form scrolling for accessibility",
+    "No physical mobile/keyboard/OS zoom testing; no App/APK changes"
+  ],
+  "rollback": "python3 /opt/linji/releases/20261106-auth-card/rollback-website.py",
+  "rawEvidence": "D:/linji-local/20261106/auth-card-release"
+}

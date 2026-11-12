@@ -1,0 +1,184 @@
+.stage {
+  --opening-grid: 1;
+  --opening-first: 1;
+  --opening-second: 0;
+  --opening-reveal: 0;
+  --opening-inset: 50%;
+  --opening-cell: calc(100cqw / 60);
+  padding: 20px;
+  background: var(--site-yellow);
+}
+.canvas {
+  position: relative;
+  container-type: inline-size;
+}
+.poster {
+  position: relative;
+  height: var(--site-panel-height);
+  min-height: 480px;
+  background-color: var(--site-yellow);
+  background-image:
+    linear-gradient(to right, rgb(0 0 0 / 18%) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(0 0 0 / 18%) 1px, transparent 1px);
+  background-size: var(--opening-cell) var(--opening-cell);
+  opacity: var(--opening-grid);
+  color: var(--primary);
+}
+.title {
+  position: absolute;
+  inset: 24% 8% auto;
+  margin: 0;
+  font-size: clamp(36px, 6.5vw, 96px);
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: -0.035em;
+}
+.title span {
+  display: block;
+}
+.title span:last-child {
+  margin-top: 12%;
+  text-align: right;
+}
+.pixels {
+  display: none;
+}
+.snow {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  right: 8%;
+  top: 12%;
+}
+.prompt {
+  position: absolute;
+  left: 8%;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+}
+.showcase {
+  margin-top: 24px;
+}
+.tile {
+  fill: var(--site-yellow);
+  visibility: hidden;
+}
+.tile[data-covered] {
+  visibility: visible;
+}
+.glyph[data-phrase="0"] {
+  visibility: visible;
+}
+.glyph[data-phrase="1"] {
+  visibility: hidden;
+}
+.tile[data-tone="red"] {
+  fill: var(--site-red);
+}
+.tile[data-tone="blue"] {
+  fill: var(--primary);
+}
+.tile[data-tone="purple"] {
+  fill: var(--site-purple);
+}
+.tile[data-tone="green"] {
+  fill: var(--site-green);
+}
+@media (prefers-reduced-motion: no-preference) and (min-width: 1100px) and (min-height: 651px) {
+  .title {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .pixels {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: var(--opening-type-top, 50%);
+    width: 100%;
+    height: auto;
+  }
+  .stage:not([data-enhanced]) .pixels {
+    transform: translateY(-50%);
+  }
+  .stage[data-scene="mountainward"] .glyph[data-phrase="0"],
+  .stage[data-scene="grid"] .glyph,
+  .stage[data-scene="mountain"] .glyph {
+    visibility: hidden;
+  }
+  .stage[data-scene="mountainward"] .glyph[data-phrase="1"] {
+    visibility: visible;
+  }
+  .stage[data-enhanced] {
+    height: calc(450svh + 400px);
+  }
+  .stage[data-enhanced] .canvas {
+    position: sticky;
+    top: 20px;
+    height: var(--site-panel-height);
+  }
+  .stage[data-enhanced] .poster {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+    height: 100%;
+  }
+  .stage[data-enhanced] .title {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .stage[data-enhanced] .pixels {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: var(--opening-type-top);
+    width: 100%;
+    height: auto;
+  }
+  .stage[data-enhanced] .showcase {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    visibility: hidden;
+    opacity: var(--opening-reveal);
+    clip-path: inset(var(--opening-inset) round 28px);
+  }
+  .stage[data-scene="mountain"] .showcase {
+    visibility: visible;
+  }
+  .stage[data-enhanced] .showcase > section {
+    height: 100%;
+    min-height: 0;
+  }
+}
+@media (max-width: 1099px) {
+  .stage {
+    padding: 12px 16px;
+  }
+  .poster {
+    height: max(480px, calc(100svh - 208px));
+  }
+  .title {
+    inset-inline: 6%;
+    font-size: clamp(36px, 8vw, 80px);
+  }
+  .snow {
+    width: 72px;
+    height: 72px;
+  }
+}
+@media (max-height: 650px), (prefers-reduced-motion: reduce) {
+  .poster {
+    height: 480px;
+  }
+}

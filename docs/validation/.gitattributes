@@ -1,0 +1,2 @@
+# Historical browser innerText dumps preserve tabs and exact whitespace.
+**/failure.txt -whitespace

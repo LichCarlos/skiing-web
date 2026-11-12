@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-03",
+  "phase": "Expo export artifact handoff; before D-51 implementation",
+  "passed": true,
+  "openapi": {
+    "version": "1.50.2",
+    "operations": 143,
+    "sha256": "710ef0cad15dcfb363f77a9fd1463413ca0290946dda9d1c9a7fbea8e77088e0"
+  },
+  "repo": "web",
+  "results": {
+    "vitest": 2007,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "build": "two forced Next standalone builds passed",
+    "firstBuild": "failed due to command argument separator; corrected, log retained"
+  },
+  "logs": [
+    {
+      "path": "E:/desktop/lishiqi/web/export-artifact-build-first.log",
+      "sha256": "48da0d2996a2bf9d9c8f5395516ece32358e52cc5411f23e27388d3e1dae2958"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/export-artifact-build.log",
+      "sha256": "d0a36a2423a9ae559179cd1d7602090d7984a811b2c7d8810fbe736d53c2aa88"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/export-artifact-check.log",
+      "sha256": "64879d7a840ee9dc654615b39d807bb25e271c785acd69ac2782a77f96779ce1"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/export-artifact-install.log",
+      "sha256": "040445dc2f4b11488e4bd94d03d9b8d96b1a98b6f293536bb7f37839006e33f9"
+    }
+  ],
+  "limitations": [
+    "Local validation only; remote CI not run",
+    "Not signed native binary or browser/device acceptance",
+    "Backend/Web companion source state predates D-51; newer phase evidence supersedes it"
+  ]
+}

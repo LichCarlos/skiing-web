@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "mode": "before",
+  "samples": [
+    {
+      "name": "登录",
+      "state": "default",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(36, 85, 245)",
+      "outline": "none",
+      "disabled": false,
+      "tag": "BUTTON",
+      "contrast": 5.686544844598443
+    },
+    {
+      "name": "新建文章",
+      "state": "default",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(36, 85, 245)",
+      "outline": "none",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 1
+    },
+    {
+      "name": "新建文章",
+      "state": "hover",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(24, 61, 194)",
+      "outline": "none",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 1.4858821094770993
+    },
+    {
+      "name": "新建文章",
+      "state": "focus",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(24, 61, 194)",
+      "outline": "solid",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 1.4858821094770993
+    },
+    {
+      "name": "新建文章",
+      "state": "mobile",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(36, 85, 245)",
+      "outline": "solid",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 1
+    },
+    {
+      "name": "新建项目知识",
+      "state": "default",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(36, 85, 245)",
+      "outline": "none",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 1
+    },
+    {
+      "name": "新建项目知识",
+      "state": "hover",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(24, 61, 194)",
+      "outline": "none",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 1.4858821094770993
+    },
+    {
+      "name": "新建项目知识",
+      "state": "focus",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(24, 61, 194)",
+      "outline": "solid",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 1.4858821094770993
+    },
+    {
+      "name": "新建项目知识",
+      "state": "mobile",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(36, 85, 245)",
+      "outline": "solid",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 1
+    },
+    {
+      "name": "新建全局雪场",
+      "state": "default",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "none",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 5.686544844598443
+    },
+    {
+      "name": "新建全局雪场",
+      "state": "hover",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "none",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 5.686544844598443
+    },
+    {
+      "name": "新建全局雪场",
+      "state": "focus",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "solid",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 5.686544844598443
+    },
+    {
+      "name": "新建全局雪场",
+      "state": "mobile",
+      "color": "rgb(36, 85, 245)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "solid",
+      "disabled": false,
+      "tag": "A",
+      "contrast": 5.686544844598443
+    }
+  ],
+  "pageErrors": [],
+  "contentWrites": []
+}

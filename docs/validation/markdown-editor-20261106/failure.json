@@ -1,0 +1,23 @@
+{
+  "error": "AssertionError [ERR_ASSERTION]: save request captured",
+  "body": "跳至主要内容\n凛迹雪客管理端\n工作台\n/\n内容运营\n/\n知识文章\n测\n测试编辑\n退出\n工作台\n内容运营\n知识文章\n系统设置\n数据字典\n编辑文章\n状态：draft · 版本 1\n返回列表\n\n发布与撤回仅操作已保存内容。有修改时请先保存；刷新资料会替换当前输入，请先保留需要的修改。\n\n刷新资料\n重新读取身份\n标题\n6 / 200\n摘要\n10 / 1000\n文章分类\n入门\n文章封面\n尚未选择图片\n上传图片\n移除图片\n支持 JPEG、PNG、WebP，单张不超过 10 MiB。图片扫描通过后才能使用。\n正文\n写一篇值得收藏的滑雪笔记\nMarkdown · v1\n写 作\n阅读预览\n源 文\n导入 .md\n导出 .md\n安全滑雪\n\n先热身，再上雪道。\n\n合成雪场体验万龙雪场\n\n74 / 100000 字符\n保存后才可发布 · 正文图片随文章发布公开\n\n链接支持 https://…、article:文章ID、resort:雪场ID。只引用已公开内容；失效目标由详情页提示不可用。图片不包含在导出的文件中，导出文件仍依赖本站 Asset。\n\n当前没有可用的扩展字段。\n\n取 消\n保 存\n发布已保存内容\n请先修正表单中的错误",
+  "checks": [
+    {
+      "name": "Tiptap hydrated existing Markdown without raw syntax",
+      "passed": true
+    },
+    {
+      "name": "typed content, toolbar heading and undo/redo",
+      "passed": true
+    },
+    {
+      "name": "logical document and resort link insertion",
+      "passed": true
+    },
+    {
+      "name": "image upload inserts Asset ID and resolves controlled preview",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

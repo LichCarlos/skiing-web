@@ -1,0 +1,274 @@
+{
+  "passed": true,
+  "deployed": true,
+  "website": "https://lichcarlos.top/snow",
+  "sourceSha256": "0afa71fe065b30e73a5ed4db58ae70d0c30e7274e4452e6e74899cff9cccd0a8",
+  "changes": {
+    "columnsBefore": 80,
+    "columnsAfter": 60,
+    "cellSideIncreasePercent": 33.3333333333,
+    "cellAreaIncreasePercent": 77.7777777778,
+    "glyphGrid": 12,
+    "tones": {
+      "red": "#DC2F43",
+      "yellow": "#FFDA3D",
+      "blue": "#2455F5",
+      "green": "#00AD47",
+      "purple": "#A66BFF"
+    },
+    "groupsPerColor": 4,
+    "wholeCellOcclusion": true,
+    "breakpointInlineStateCleared": true
+  },
+  "tests": {
+    "website": 457,
+    "files": 30,
+    "boundaries": true,
+    "lint": true,
+    "typescript": true,
+    "linuxProductionBuild": true,
+    "standaloneManifest": true,
+    "glyphCoverage": {
+      "firstPixels": 236,
+      "secondPixels": 267,
+      "allCellsCovered": true
+    }
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "IwHjKQfRGSEISWVZ0PIJ5",
+    "filesVerified": 2169,
+    "linksVerified": 21,
+    "archiveSha256": "7f601ce4ec6572d069d37d7eef217641bea214bdf2b8096ffefcde80f574a8bc",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "route": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge?keyword=&categoryValue=",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge?keyword=%E6%B5%8B%E8%AF%95&categoryValue=",
+        "status": 200
+      },
+      {
+        "route": "/snow/dynamics",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-07T03:53:59.588080+00:00",
+    "release": "/opt/linji/releases/20261107-larger-grid-five-colors-final",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1486263",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "IwHjKQfRGSEISWVZ0PIJ5"
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-07T03:54:37.295Z",
+    "checks": [
+      {
+        "name": "active build, coarse geometry and five colors",
+        "buildId": "IwHjKQfRGSEISWVZ0PIJ5"
+      },
+      {
+        "name": "homepage assets",
+        "resources": 18,
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ]
+  },
+  "browser": {
+    "passed": true,
+    "at": "2026-11-07T03:56:53.462Z",
+    "website": "https://lichcarlos.top/snow",
+    "checks": [
+      {
+        "cell": "20.733333333333334px",
+        "colors": [
+          {
+            "fill": "rgb(220, 47, 67)",
+            "tone": "red"
+          },
+          {
+            "fill": "rgb(255, 218, 61)",
+            "tone": "yellow"
+          },
+          {
+            "fill": "rgb(36, 85, 245)",
+            "tone": "blue"
+          },
+          {
+            "fill": "rgb(0, 173, 71)",
+            "tone": "green"
+          },
+          {
+            "fill": "rgb(166, 107, 255)",
+            "tone": "purple"
+          },
+          {
+            "fill": "rgb(220, 47, 67)",
+            "tone": "red"
+          },
+          {
+            "fill": "rgb(255, 218, 61)",
+            "tone": "yellow"
+          },
+          {
+            "fill": "rgb(36, 85, 245)",
+            "tone": "blue"
+          },
+          {
+            "fill": "rgb(0, 173, 71)",
+            "tone": "green"
+          },
+          {
+            "fill": "rgb(166, 107, 255)",
+            "tone": "purple"
+          },
+          {
+            "fill": "rgb(220, 47, 67)",
+            "tone": "red"
+          },
+          {
+            "fill": "rgb(255, 218, 61)",
+            "tone": "yellow"
+          },
+          {
+            "fill": "rgb(36, 85, 245)",
+            "tone": "blue"
+          },
+          {
+            "fill": "rgb(0, 173, 71)",
+            "tone": "green"
+          },
+          {
+            "fill": "rgb(166, 107, 255)",
+            "tone": "purple"
+          },
+          {
+            "fill": "rgb(220, 47, 67)",
+            "tone": "red"
+          },
+          {
+            "fill": "rgb(255, 218, 61)",
+            "tone": "yellow"
+          },
+          {
+            "fill": "rgb(36, 85, 245)",
+            "tone": "blue"
+          },
+          {
+            "fill": "rgb(0, 173, 71)",
+            "tone": "green"
+          },
+          {
+            "fill": "rgb(166, 107, 255)",
+            "tone": "purple"
+          }
+        ],
+        "cover": 0,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          }
+        ],
+        "phase": "forward",
+        "scrollWidth": 1440,
+        "svgWidth": 1244,
+        "viewBox": "0 0 60 24",
+        "viewport": [1440, 900]
+      },
+      {
+        "cover": 20,
+        "phase": "fully-covered",
+        "scene": "forward",
+        "tones": ["red", "yellow", "blue", "green", "purple"]
+      },
+      {
+        "cover": 0,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          },
+          {
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "phase": "mountainward"
+      },
+      {
+        "cover": 0,
+        "glyphs": ["hidden", "hidden"],
+        "phase": "mountain",
+        "posterOpacity": "0",
+        "showcaseAriaHidden": null,
+        "showcaseInert": false
+      },
+      {
+        "enhanced": false,
+        "phase": "desktop-mountain-to-mobile",
+        "posterOpacity": "1",
+        "scrollWidth": 390,
+        "style": null,
+        "svgDisplay": "none",
+        "titleText": "生活向前，快乐向山。",
+        "viewport": [390, 844]
+      },
+      {
+        "enhanced": true,
+        "phase": "returned-to-desktop",
+        "posterOpacity": "1",
+        "scene": "forward",
+        "viewport": [1440, 900]
+      }
+    ]
+  },
+  "rollback": {
+    "command": "python3 /opt/linji/releases/20261107-larger-grid-five-colors-final/rollback-website.py",
+    "restores": "/opt/linji/releases/20261107-route-contrast-scrollbars-final/web-reviewed",
+    "executed": false
+  },
+  "screenshots": [
+    "larger-grid-five-colors-20261107/production-opening.png",
+    "larger-grid-five-colors-20261107/production-five-colors.png",
+    "larger-grid-five-colors-20261107/production-second-phrase.png",
+    "larger-grid-five-colors-20261107/production-mountain.png",
+    "larger-grid-five-colors-20261107/production-mobile.png"
+  ],
+  "limits": [
+    "No physical phone or operating-system reduced-motion setting test."
+  ],
+  "committed": false,
+  "pushed": false
+}

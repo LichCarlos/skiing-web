@@ -1,0 +1,49 @@
+.main {
+  composes: page from "../../../../styles/console.module.css";
+  display: grid;
+  gap: 1.25rem;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.header h1 {
+  margin: 0.25rem 0 0;
+  font-size: 1.5rem;
+}
+.filters {
+  composes: filters from "../../../../styles/console.module.css";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.identity {
+  display: grid;
+  gap: 0.25rem;
+}
+.identity span,
+.error code {
+  color: var(--text-subtle);
+  font-size: 0.8rem;
+}
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+}
+.error div {
+  display: grid;
+  gap: 0.3rem;
+}
+@media (max-width: 600px) {
+  .header {
+    align-items: flex-start;
+  }
+}

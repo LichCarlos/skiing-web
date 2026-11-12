@@ -1,0 +1,395 @@
+{
+  "passed": true,
+  "deployed": true,
+  "website": "https://lichcarlos.top/snow",
+  "sourceSha256": "a52382df12df9e3219033f4421427711ce1e50abeb4ac7cd61a72dfc2a0e0339",
+  "tests": {
+    "boundaries": true,
+    "lint": true,
+    "files": 29,
+    "typescript": true,
+    "standaloneManifest": true,
+    "linuxProductionBuild": true,
+    "website": 450
+  },
+  "changes": {
+    "recommendedResorts": 5,
+    "navigationPendingDomRemoved": true,
+    "columnsAfter": 80,
+    "mosaicColors": ["#DC2F43", "#2455F5", "#FFDA3D", "#A66BFF"],
+    "columnsBefore": 96,
+    "cellSizeIncreasePercent": 20,
+    "glyphResolution": "16x16 preserved",
+    "timelinePreserved": true
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "R0cNafOJKHjxLdw3_SvXW",
+    "filesVerified": 2167,
+    "linksVerified": 21,
+    "archiveSha256": "aa26d2c08df1e9d2176f134920334d47aa8922855f12918a22ae00a93c924b07",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-07T10:12:39.64999+08:00",
+    "release": "/opt/linji/releases/20261107-five-resorts-coarse-grid",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1483412",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "R0cNafOJKHjxLdw3_SvXW"
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-07T02:12:39.84Z",
+    "checks": [
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 17
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "browser": {
+    "passed": true,
+    "newBuild": "R0cNafOJKHjxLdw3_SvXW",
+    "checks": [
+      {
+        "name": "first",
+        "colors": [
+          "rgb(220, 47, 67)",
+          "rgb(36, 85, 245)",
+          "rgb(255, 218, 61)",
+          "rgb(166, 107, 255)"
+        ],
+        "covered": 0,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          }
+        ],
+        "grid": "15.3625px 15.3625px, 15.3625px 15.3625px",
+        "height": 900,
+        "loginTop": 780,
+        "overflow": false,
+        "pendingStatus": false,
+        "railStops": "0,420.0000305175781,839.9999694824219,1259.9999694824219,1334",
+        "railTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "resortLinks": [
+          "/snow/resorts/1",
+          "/snow/resorts/2",
+          "/snow/resorts/3",
+          "/snow/resorts/4",
+          "/snow/resorts/5"
+        ],
+        "scene": "forward",
+        "width": 1440,
+        "y": 0
+      },
+      {
+        "name": "full-mosaic",
+        "colors": [
+          "rgb(220, 47, 67)",
+          "rgb(36, 85, 245)",
+          "rgb(255, 218, 61)",
+          "rgb(166, 107, 255)"
+        ],
+        "covered": 20,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          }
+        ],
+        "grid": "15.3625px 15.3625px, 15.3625px 15.3625px",
+        "height": 900,
+        "loginTop": 780,
+        "overflow": false,
+        "pendingStatus": false,
+        "railStops": "0,420.0000305175781,839.9999694824219,1259.9999694824219,1334",
+        "railTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "resortLinks": [
+          "/snow/resorts/1",
+          "/snow/resorts/2",
+          "/snow/resorts/3",
+          "/snow/resorts/4",
+          "/snow/resorts/5"
+        ],
+        "scene": "forward",
+        "width": 1440,
+        "y": 1260
+      },
+      {
+        "name": "second",
+        "colors": [
+          "rgb(220, 47, 67)",
+          "rgb(36, 85, 245)",
+          "rgb(255, 218, 61)",
+          "rgb(166, 107, 255)"
+        ],
+        "covered": 0,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          },
+          {
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "grid": "15.3625px 15.3625px, 15.3625px 15.3625px",
+        "height": 900,
+        "loginTop": 780,
+        "overflow": false,
+        "pendingStatus": false,
+        "railStops": "0,420.0000305175781,839.9999694824219,1259.9999694824219,1334",
+        "railTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "resortLinks": [
+          "/snow/resorts/1",
+          "/snow/resorts/2",
+          "/snow/resorts/3",
+          "/snow/resorts/4",
+          "/snow/resorts/5"
+        ],
+        "scene": "mountainward",
+        "width": 1440,
+        "y": 1908
+      },
+      {
+        "name": "rail-entry",
+        "colors": [
+          "rgb(220, 47, 67)",
+          "rgb(36, 85, 245)",
+          "rgb(255, 218, 61)",
+          "rgb(166, 107, 255)"
+        ],
+        "covered": 0,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          },
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          }
+        ],
+        "grid": "15.3625px 15.3625px, 15.3625px 15.3625px",
+        "height": 900,
+        "loginTop": 780,
+        "overflow": false,
+        "pendingStatus": false,
+        "railStops": "0,420.0000305175781,839.9999694824219,1259.9999694824219,1334",
+        "railTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "resortLinks": [
+          "/snow/resorts/1",
+          "/snow/resorts/2",
+          "/snow/resorts/3",
+          "/snow/resorts/4",
+          "/snow/resorts/5"
+        ],
+        "scene": "mountain",
+        "width": 1440,
+        "y": 4644
+      },
+      {
+        "name": "rail-entry-dwell",
+        "colors": [
+          "rgb(220, 47, 67)",
+          "rgb(36, 85, 245)",
+          "rgb(255, 218, 61)",
+          "rgb(166, 107, 255)"
+        ],
+        "covered": 0,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          },
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          }
+        ],
+        "grid": "15.3625px 15.3625px, 15.3625px 15.3625px",
+        "height": 900,
+        "loginTop": 780,
+        "overflow": false,
+        "pendingStatus": false,
+        "railStops": "0,420.0000305175781,839.9999694824219,1259.9999694824219,1334",
+        "railTransform": "matrix(1, 0, 0, 1, 0, 0)",
+        "resortLinks": [
+          "/snow/resorts/1",
+          "/snow/resorts/2",
+          "/snow/resorts/3",
+          "/snow/resorts/4",
+          "/snow/resorts/5"
+        ],
+        "scene": "mountain",
+        "width": 1440,
+        "y": 4824
+      },
+      {
+        "name": "rail-last-resort",
+        "colors": [
+          "rgb(220, 47, 67)",
+          "rgb(36, 85, 245)",
+          "rgb(255, 218, 61)",
+          "rgb(166, 107, 255)"
+        ],
+        "covered": 0,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          },
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          }
+        ],
+        "grid": "15.3625px 15.3625px, 15.3625px 15.3625px",
+        "height": 900,
+        "loginTop": 780,
+        "overflow": false,
+        "pendingStatus": false,
+        "railStops": "0,420.0000305175781,839.9999694824219,1259.9999694824219,1334",
+        "railTransform": "matrix(1, 0, 0, 1, -1334, 0)",
+        "resortLinks": [
+          "/snow/resorts/1",
+          "/snow/resorts/2",
+          "/snow/resorts/3",
+          "/snow/resorts/4",
+          "/snow/resorts/5"
+        ],
+        "scene": "mountain",
+        "width": 1440,
+        "y": 7324
+      },
+      {
+        "name": "mobile-first",
+        "colors": [
+          "rgb(220, 47, 67)",
+          "rgb(36, 85, 245)",
+          "rgb(255, 218, 61)",
+          "rgb(166, 107, 255)"
+        ],
+        "covered": 0,
+        "glyphs": [
+          {
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "opacity": "1",
+            "visibility": "hidden"
+          }
+        ],
+        "grid": "4.28984px 4.28984px, 4.28984px 4.28984px",
+        "height": 844,
+        "loginTop": 128,
+        "overflow": false,
+        "pendingStatus": false,
+        "railStops": "0,324.5000114440918,649.0000114440918,973.500072479248,1298.000072479248,1622.500072479248,1687",
+        "railTransform": "none",
+        "resortLinks": [
+          "/snow/resorts/1",
+          "/snow/resorts/2",
+          "/snow/resorts/3",
+          "/snow/resorts/4",
+          "/snow/resorts/5"
+        ],
+        "scene": "static",
+        "width": 390,
+        "y": 0
+      }
+    ]
+  },
+  "cleanup": {
+    "candidateStopped": true,
+    "wslBuildStopped": true,
+    "local3108Preserved": true
+  },
+  "rollback": "python3 /opt/linji/releases/20261107-five-resorts-coarse-grid/rollback-website.py",
+  "previousWebsite": "/opt/linji/releases/20261107-pixel-refinement/web-reviewed",
+  "limits": [
+    "Mobile and low-height/reduced-motion layouts retain static reading",
+    "Physical device, reduced-motion system preference and JavaScript-disabled testing were not performed",
+    "Authentication continues in the background; actual error and retry UI remain"
+  ]
+}

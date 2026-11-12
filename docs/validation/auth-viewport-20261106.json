@@ -1,0 +1,286 @@
+{
+  "passed": true,
+  "date": "2026-11-06",
+  "scope": "Only apps/web/src/features/auth/auth-page.module.css changed in runtime source compared with previous release. No auth logic, API, database, permissions, backend/admin/App or Nginx changes.",
+  "implementation": {
+    "shortViewport": "compact whitespace; form-only auto scrolling, safe center, controls not shrunk; no global overflow hidden",
+    "layout": "auto/minmax(0,1fr)/auto rows",
+    "photo": "remove fixed 650px min-height",
+    "viewport": "100vh fallback then 100dvh"
+  },
+  "sourceSha256": "df5ab89d8ad4ab2a15679b98823d32d81a1025814215b6a49a17a8ebc5cc2fb3",
+  "build": {
+    "node": "22",
+    "buildId": "ouxw1WisBM6iEmccbJ7Z8",
+    "platform": "linux/x64",
+    "lint": "passed",
+    "typecheck": "Next production build passed",
+    "tests": 430,
+    "archiveSha256": "b34ebd6acfea5f80bc0ef44f25fec2d7aa51f856d31100644c0c2ecc1809849a",
+    "testFiles": 28,
+    "standalone": "2169 files / 21 links verified",
+    "boundaries": "9 workspaces passed",
+    "frozenInstall": true,
+    "next": "16.3.5"
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-06T18:13:52.827424+08:00",
+    "release": "/opt/linji/releases/20261106-auth-viewport",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1468233",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "ouxw1WisBM6iEmccbJ7Z8"
+  },
+  "browser": {
+    "passed": true,
+    "at": "2026-11-06T10:16:35.038Z",
+    "scope": "Real HTTPS read-only login/register layouts, no authentication or registration submitted.",
+    "baseline": {
+      "width": 1366,
+      "height": 768,
+      "documentHeight": 886,
+      "pageHeight": 885.2
+    },
+    "viewports": [
+      {
+        "mode": "login",
+        "buttonBottom": 540.0000190734863,
+        "disabled": false,
+        "docHeight": 768,
+        "docWidth": 1366,
+        "footerBottom": 768,
+        "formClient": 562,
+        "formScroll": 562,
+        "height": 768,
+        "legalBottom": 650,
+        "pageHeight": 768,
+        "photoDisplay": "block",
+        "width": 1366
+      },
+      {
+        "mode": "login",
+        "buttonBottom": 514.5875129699707,
+        "disabled": false,
+        "docHeight": 720,
+        "docWidth": 1280,
+        "footerBottom": 720,
+        "formClient": 560,
+        "formScroll": 560,
+        "height": 720,
+        "legalBottom": 624.5875244140625,
+        "pageHeight": 720,
+        "photoDisplay": "block",
+        "width": 1280
+      },
+      {
+        "mode": "login",
+        "buttonBottom": 606.3000373840332,
+        "disabled": false,
+        "docHeight": 900,
+        "docWidth": 1440,
+        "footerBottom": 900,
+        "formClient": 563,
+        "formScroll": 563,
+        "height": 900,
+        "legalBottom": 716.2999877929688,
+        "pageHeight": 900,
+        "photoDisplay": "block",
+        "width": 1440
+      },
+      {
+        "mode": "login",
+        "buttonBottom": 709.3000373840332,
+        "disabled": false,
+        "docHeight": 1080,
+        "docWidth": 1920,
+        "footerBottom": 1080,
+        "formClient": 665,
+        "formScroll": 665,
+        "height": 1080,
+        "legalBottom": 847.2999877929688,
+        "pageHeight": 1080,
+        "photoDisplay": "block",
+        "width": 1920
+      },
+      {
+        "mode": "login",
+        "buttonBottom": 587.1500129699707,
+        "disabled": false,
+        "docHeight": 844,
+        "docWidth": 390,
+        "footerBottom": 844,
+        "formClient": 581,
+        "formScroll": 581,
+        "height": 844,
+        "legalBottom": 697.1500244140625,
+        "pageHeight": 844,
+        "photoDisplay": "none",
+        "width": 390
+      },
+      {
+        "mode": "login",
+        "buttonBottom": 525.3499946594238,
+        "disabled": false,
+        "docHeight": 568,
+        "docWidth": 320,
+        "footerBottom": 568,
+        "formClient": 421,
+        "formScroll": 577,
+        "height": 568,
+        "legalBottom": 635.3500366210938,
+        "pageHeight": 568,
+        "photoDisplay": "none",
+        "width": 320
+      },
+      {
+        "mode": "register",
+        "docHeight": 768,
+        "docWidth": 1366,
+        "footerBottom": 768,
+        "formClient": 621,
+        "formScroll": 665,
+        "height": 768,
+        "pageHeight": 768,
+        "photoDisplay": "block",
+        "width": 1366
+      },
+      {
+        "mode": "register",
+        "docHeight": 720,
+        "docWidth": 1280,
+        "footerBottom": 720,
+        "formClient": 573,
+        "formScroll": 662,
+        "height": 720,
+        "pageHeight": 720,
+        "photoDisplay": "block",
+        "width": 1280
+      },
+      {
+        "mode": "register",
+        "docHeight": 844,
+        "docWidth": 390,
+        "footerBottom": 844,
+        "formClient": 695,
+        "formScroll": 695,
+        "height": 844,
+        "pageHeight": 844,
+        "photoDisplay": "none",
+        "width": 390
+      },
+      {
+        "mode": "register",
+        "docHeight": 568,
+        "docWidth": 320,
+        "footerBottom": 568,
+        "formClient": 421,
+        "formScroll": 735,
+        "height": 568,
+        "pageHeight": 568,
+        "photoDisplay": "none",
+        "width": 320
+      },
+      {
+        "mode": "register",
+        "docHeight": 390,
+        "docWidth": 844,
+        "footerBottom": 390.3999938964844,
+        "formClient": 243,
+        "formScroll": 658,
+        "height": 390,
+        "pageHeight": 390.3999938964844,
+        "photoDisplay": "none",
+        "width": 844
+      }
+    ],
+    "keyboard": {
+      "scope": "320x568 registration privacy link Tab navigation",
+      "formScrollTop": 313.6,
+      "documentScrollTop": 0,
+      "focusAfterTab": "暂停背景动效"
+    },
+    "console": [],
+    "limitations": [
+      "Virtual keyboard and real mobile device not tested; viewport resizing simulates constrained space only.",
+      "Initial matrix targeted an inactive tab, so requested sizes did not apply; discarded and reran on sole verification tab with exact viewport assertions.",
+      "Local production preview used real build URLs on localhost and encountered cross-origin auth recovery UI; not counted as real authentication validation."
+    ],
+    "screenshots": ["login-1366x768.png", "login-390x844.png"]
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-06T10:17:15.579Z",
+    "checks": [
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 17
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "rollback": {
+    "command": "python3 /opt/linji/releases/20261106-auth-viewport/rollback-website.py",
+    "previous": "/opt/linji/releases/20261106-public-auth/web",
+    "executed": false,
+    "backup": "/opt/linji/private/backups/20261106-auth-viewport/linji-web.service"
+  },
+  "events": [
+    "Impeccable context ran from umbrella folder, did not locate nested PRODUCT/DESIGN; manually read both real website documents. Narrow refinement preserved incumbent design.",
+    "Mechanical design detector found only existing #9d1531 advisory, not changed in this patch.",
+    "Temporary candidate stopped intentionally; launcher exit143 leads to systemd failed state; confirmed no PID and cleared only temporary candidate."
+  ],
+  "rawEvidence": "D:/linji-local/20261106/auth-viewport-release"
+}

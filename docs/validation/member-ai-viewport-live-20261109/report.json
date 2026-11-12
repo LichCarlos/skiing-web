@@ -1,0 +1,169 @@
+{
+  "passed": true,
+  "at": "2026-11-09T03:21:23.486Z",
+  "buildId": "3sLFeCPr60u7G6ZFAikIZ",
+  "checks": [
+    {
+      "name": "AI page static resources",
+      "count": 23,
+      "passed": true
+    },
+    {
+      "name": "new build and official pages serve HTTPS 200",
+      "passed": true
+    },
+    {
+      "name": "API healthy; anonymous private conversations rejected",
+      "passed": true
+    },
+    {
+      "name": "article and personal-center canvas use reference color",
+      "passed": true
+    },
+    {
+      "name": "real login returns to personal center with AI entry",
+      "passed": true
+    },
+    {
+      "name": "viewport alignment",
+      "width": 1440,
+      "height": 900,
+      "top": 15.6875,
+      "bottom": 883.6875,
+      "inputBottom": 757.109375,
+      "sendBottom": 807.5,
+      "passed": true
+    },
+    {
+      "name": "real conversation creation through website",
+      "passed": true
+    },
+    {
+      "name": "real model streams first answer with saved completion",
+      "passed": true
+    },
+    {
+      "name": "viewport alignment",
+      "width": 1440,
+      "height": 900,
+      "top": 15.6875,
+      "bottom": 883.6875,
+      "inputBottom": 757.109375,
+      "sendBottom": 807.5,
+      "passed": true
+    },
+    {
+      "name": "viewport alignment",
+      "width": 390,
+      "height": 844,
+      "top": 15.765625,
+      "bottom": 827.765625,
+      "inputBottom": 714.78125,
+      "sendBottom": 765.171875,
+      "passed": true
+    },
+    {
+      "name": "real continuous follow-up and history restoration",
+      "passed": true
+    },
+    {
+      "name": "viewport alignment",
+      "width": 390,
+      "height": 844,
+      "top": 15.765625,
+      "bottom": 827.765625,
+      "inputBottom": 714.78125,
+      "sendBottom": 765.171875,
+      "passed": true
+    },
+    {
+      "name": "mobile history opens and restores the same conversation",
+      "passed": true
+    },
+    {
+      "name": "delete only the acceptance conversation through website",
+      "passed": true
+    },
+    {
+      "name": "real logout clears private UI",
+      "passed": true
+    },
+    {
+      "name": "homepage and directory colors remain",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "realAiTurns": [
+    {
+      "question": "第一次滑雪前，应该检查哪些基本装备？请简要回答。",
+      "messageId": "16",
+      "characters": 389,
+      "citations": [
+        {
+          "sourceType": "article",
+          "sourceId": "2",
+          "title": "第一次滑雪，把目标从“上山顶”改成“安全结束第一课”"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "3",
+          "title": "头盔不是无敌护盾：出发前的装备核对清单"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "7",
+          "title": "带朋友或孩子去滑雪：先约定边界，再安排打卡"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "4",
+          "title": "第一次坐缆车：从排队到下站，先听工作人员的"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "6",
+          "title": "雪道意外后先求助：同伴应知道的信息与边界"
+        }
+      ],
+      "deltaEvents": 240,
+      "completed": true
+    },
+    {
+      "question": "根据刚才的建议，头盔应该怎样检查是否合适？请简要回答。",
+      "messageId": "18",
+      "characters": 247,
+      "citations": [
+        {
+          "sourceType": "article",
+          "sourceId": "3",
+          "title": "头盔不是无敌护盾：出发前的装备核对清单"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "2",
+          "title": "第一次滑雪，把目标从“上山顶”改成“安全结束第一课”"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "7",
+          "title": "带朋友或孩子去滑雪：先约定边界，再安排打卡"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "4",
+          "title": "第一次坐缆车：从排队到下站，先听工作人员的"
+        },
+        {
+          "sourceType": "article",
+          "sourceId": "5",
+          "title": "选雪道看能力，不只看颜色：路线判断的五个问题"
+        }
+      ],
+      "deltaEvents": 143,
+      "completed": true
+    }
+  ],
+  "createdConversationId": "71ca0be0-ca5e-44d9-ba2a-603c4767b614",
+  "testConversationDeleted": true
+}

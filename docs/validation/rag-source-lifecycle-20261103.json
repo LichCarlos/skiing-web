@@ -1,0 +1,227 @@
+{
+  "date": "2026-11-03",
+  "passed": true,
+  "scope": "D-46 / ADM-18 / API-AI-03 source read/command lifecycle plus user-approved D-52 stored JSON OpenAPI annotation correction",
+  "contractChange": {
+    "version": "1.51.1",
+    "operations": 143,
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8",
+    "changedPaths": [
+      "/info/version",
+      "/components/schemas/AiConversationAuditMessageVO/properties/citations/type",
+      "/components/schemas/AiConversationAuditMessageVO/properties/citations/nullable",
+      "/components/schemas/AiConversationAuditMessageVO/properties/citations/description",
+      "/components/schemas/AiConversationAuditMessageVO/properties/citations/anyOf"
+    ],
+    "onlyApprovedD52Changes": true
+  },
+  "migrations": 24,
+  "limitations": [
+    "Overall goal incomplete; D-49/D-50/D-09 remain unanswered",
+    "No live native-database/Admin-HTTP/Next/browser/device/provider/container/remote-CI validation in this stage",
+    "Previous 15 real Admin HTTP, 839 full native DB and 8 AI browser tests were not rerun and do not certify changed frontend source",
+    "No Docker start/restart, parent-dependency cleanup, commit, push, deployment or publication",
+    "Recovery metadata is browser-tab memory only; explicit read plus acknowledgement is not proof of historical command execution or server idempotency"
+  ],
+  "initialDiagnostics": [
+    "Three noUncheckedIndexedAccess TypeScript errors corrected before final validation",
+    "Eight stale HTTP spec version assertions caused 165 passed / 8 failed on the first 1.51.1 full suite; updated only expected patch version, final 173 passed"
+  ],
+  "nativeServicesStarted": false,
+  "openapi": {
+    "version": "1.51.1",
+    "operations": 143,
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "checkCheckpoint": 0,
+    "businessTestsAtFullCheckpoint": 2221,
+    "aiOperationsTestsAtFullCheckpoint": 167,
+    "finalAiOperationsTests": 168,
+    "newRagTests": 82,
+    "newGeneratedJsonCompatibilityTests": 1,
+    "afterCheckpoint": "One additional SSR recovery snapshot regression and render guard. Final AI suite, lint, types and both forced builds passed; do not combine runs as one full check.",
+    "finalLint": 0,
+    "finalTypes": 0,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "finalForcedNextBuilds": 2,
+    "generatedTypeOverrideRemoved": true
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/api.test.ts",
+      "sha256": "114ed158020a5af1fd938194c348938066caf3440694c0967b767900917cd56c"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/api.ts",
+      "sha256": "eb43ac2117bde2201cac204832999eb2c97aa53e18e3f06cecf7195863adf5e2"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-console.tsx",
+      "sha256": "3f1ad108e231102e6f31f0a92c3ae4ca9f5a31048c11c2327e12c9c4d40fab78"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-content-session.test.ts",
+      "sha256": "6731bb5d5910260ca8f9aedc05ef56371c5180cb63f30a2e1c0bd5b31c0ad191"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-content-session.ts",
+      "sha256": "fac22da7bb09df727c42fc4c29dace74b38540306cbad20baa05ddc9db2fe9c0"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-fixtures.test-helper.ts",
+      "sha256": "758e9166c34a990f2f161c6560161a923f8ac235ddb16ff8a387e80cd7506eb2"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-model.test.tsx",
+      "sha256": "459f1ceb69e7bf80a189b4d387c4ba709a7ff5652bccb477c4ff33701dd7c597"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-model.ts",
+      "sha256": "02b55cc5d1012c7b504f8d707a5fdc6b68e29d6b6389f0ab7d83c5c1ddc7f592"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-pages.test.tsx",
+      "sha256": "99e77eca0fc52435729eaa7b44aed59e1d34275d0abe8319d540f408ae642f2c"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-queries.test.ts",
+      "sha256": "247e777f71aacaa2517a8329f6e3816e6904190991e2df1f503f0c84c8158660"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/audit-queries.ts",
+      "sha256": "8a7ba360f03b1354d45e1ad82dc38f6773035ac4111b16070bc0f520f5e59320"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-console.tsx",
+      "sha256": "99db77e4beb93fc57f1d8e37f0fd5684d28c5528a63107491239648c98f0330e"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-fixtures.test-helper.ts",
+      "sha256": "33b7d862ad5aa7d293def111132c7affcb2818ec9d563bd578f56f0e2914f306"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-model.test.ts",
+      "sha256": "94f0f1e315780f3eb236e9688da6cbbf5e32a76d99581619738aaf4d6fa800a2"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-model.ts",
+      "sha256": "72bb0bbda624f79156cda3017701d578f0c419905af4e50923ea7989ecfd468f"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-pages.test.tsx",
+      "sha256": "bc1175ef047bf6cbdee2f02a38c5ac4c99468ce87ab3b38769aa8947ace24f39"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-queries.test.ts",
+      "sha256": "87c1c38dabc119616ee0c59e756daaccca6497218fac7d044eb4218a47abc294"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-queries.ts",
+      "sha256": "6177a9890086cfa1742c8a7ba448fedcb54926e579a798f8a19dcd7ccde3010d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-workflow.test.ts",
+      "sha256": "d2a49fd00faf27824adddce312d01abe2131dcda5822d5658ddd4dd3a82fdefd"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-workflow.ts",
+      "sha256": "fc3cb5de85f804955cd9cb110eb0d3f04979c4efd34b3bc85974ad174ad80d7d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/routes.ts",
+      "sha256": "78401fa5b01805a060da91fa3c3fed201ec33692a98161dd25f7057516a576b9"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/session.tsx",
+      "sha256": "9df16dc1a78cb8b5e8f5231971ba41cf3d9fa0c143f663021cb9e1041f35e876"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/packages/api-contracts/src/openapi.ts",
+      "sha256": "a16341204e889e85f89be5514988436792f2da230dbe931196b68709a6bab53e"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-install.log",
+      "sha256": "b9dee5c96dff914c0f385db11028ea2288b4f4aa1f05dcd00363a9d0caf06ede"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-first-types-failed.log",
+      "sha256": "3290c5d2ede074f8cb03187e64390da2494a81c2ffdecb6336f056e709839435"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-early-types.log",
+      "sha256": "9d4baf88c2f826187c44a3e18ac6e0b36553952a537801b64f0f9a693eb34e64"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/rag-first.log",
+      "sha256": "6e12ee01fe2b1d0d27e693e87442fea53a9174dd39c5299b2bf2efd35e5c39b2"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-contract-types.log",
+      "sha256": "7fc8e11f6ac0a8638302bcbeab723ffc34beaf6742927b1a30d6f3fc5a845a24"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-check-pre-d52.log",
+      "sha256": "c20569cae3006c7b33efb1abc1d105f8519873fc2e8e3e20a9644f6f212674bd"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-build-pre-d52.log",
+      "sha256": "22eeadf62b3c00b2d1d88d6899346d9dd1fa440e2a93152fe0783f08a7565fe4"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-check.log",
+      "sha256": "42d2298df7be193ff49b17d8f1afffa0152615103e803fd28a1f42fca4f04940"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/rag-final.log",
+      "sha256": "55df7e010dce65e50872e0a29e8232534d2f6b27630170b8b8dbc1ea920d7255"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-final-lint.log",
+      "sha256": "24661e6eaaa6951a01c4bab3213d5f5f637bad49467375c4fc6155b73ccda4dd"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-final-types.log",
+      "sha256": "939cf81a76d9dea1aa8c5026873cca365050a7c33fbf3953dce3fca9882a4a14"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-build-before-ssr.log",
+      "sha256": "eeeb066972483b249b1f4ba61b4a74cbaf7bb2c2807f623da7b7866785972616"
+    },
+    {
+      "path": "D:/linji-rag-lifecycle/20261103/web-build.log",
+      "sha256": "23e53802cc38ee18dbd5f4976359ef15a3d29c3460b3bd69e74985f491a9e462"
+    }
+  ],
+  "contractDiff": {
+    "path": "D:/linji-rag-lifecycle/20261103/contract-diff.json",
+    "sha256": "8f1e63a2c621e3bbe1ec291e60878bf0883a93ff2e24c029b7f1bf0cedea3e92"
+  },
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "nEemLsUXPSM8Ju7aewYlo",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "96f00cca12c89843ca0f626878f1e2c9d6b6eb7245ae54d93f79f1300670344f"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "9nqzJM2lPa0WKFuzZ2JU-",
+      "files": 1953,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "a66910d573cffb9deaba0f3124ee6cf366be759610e7a109c7659059d9c002bb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "checkedAt": "2026-11-06T02:17:38.559478+00:00",
+  "status": "implemented-and-locally-verified",
+  "qualityGoal": "Awwwards / Webby Awards / FWA reference quality; no award or independent assessment claimed",
+  "scope": [
+    "Next.js public website",
+    "Next.js management UI",
+    "design research and documentation"
+  ],
+  "outOfScope": [
+    "backend",
+    "API contracts",
+    "database",
+    "authorization logic",
+    "Expo source",
+    "APK",
+    "production deployment",
+    "Git push"
+  ],
+  "evidenceDirectory": "D:\\linji-local\\20261106\\ui-research",
+  "research": {
+    "teams": [
+      "Linear",
+      "Vercel / Geist",
+      "IBM Carbon",
+      "Pentagram (application judgment, not endorsement)"
+    ],
+    "skillsInstalled": [
+      {
+        "name": "frontend-design",
+        "repository": "https://github.com/anthropics/skills",
+        "commit": "ca45fc496a3436251f191354091d557da31c15b5"
+      },
+      {
+        "name": "web-design-guidelines",
+        "repository": "https://github.com/vercel-labs/agent-skills",
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
+      }
+    ],
+    "existingSkillUsed": "Impeccable",
+    "newRuntimeDependencies": false,
+    "awwwardsOfficialCriteria": {
+      "url": "https://www.awwwards.com/about-evaluation/",
+      "weights": {
+        "design": 40,
+        "usability": 30,
+        "creativity": 20,
+        "content": 10
+      }
+    },
+    "webbyCriteriaFetch": "403; current criteria not verified and weights not invented",
+    "fwaReference": "https://thefwa.com/about"
+  },
+  "appTests": {
+    "web": {
+      "passed": 368,
+      "evidence": "D:\\linji-local\\20261106\\ui-research\\award-pass\\web-tests-final-2.log"
+    },
+    "admin": {
+      "passed": 2687,
+      "evidence": "D:\\linji-local\\20261106\\ui-research\\admin-tests-final.log"
+    },
+    "total": 3055
+  },
+  "productionBuilds": {
+    "web": {
+      "app": "web",
+      "buildId": "IeATuXqfr1Ii7oZglpcg2",
+      "nextVersion": "16.3.5",
+      "files": 1379,
+      "links": 26,
+      "openapi": {
+        "version": "1.52.0",
+        "sha256": "4b15275231f7d421b80210b769c2d1cc0d1bc704ec73ce3c5d4839c827e9c84d"
+      },
+      "output": "E:\\desktop\\lishiqi\\web\\apps\\web\\.next\\release"
+    },
+    "admin": {
+      "app": "admin",
+      "buildId": "iehn-nOEay8wcVignAFuD",
+      "nextVersion": "16.3.5",
+      "files": 1964,
+      "links": 26,
+      "openapi": {
+        "version": "1.52.0",
+        "sha256": "4b15275231f7d421b80210b769c2d1cc0d1bc704ec73ce3c5d4839c827e9c84d"
+      },
+      "output": "E:\\desktop\\lishiqi\\web\\apps\\admin\\.next\\release"
+    }
+  },
+  "lint": {
+    "web": "passed",
+    "admin": "passed",
+    "evidence": [
+      "D:\\linji-local\\20261106\\ui-research\\award-pass\\web-lint-shipping.log",
+      "D:\\linji-local\\20261106\\ui-research\\admin-lint-final.log"
+    ]
+  },
+  "boundaries": {
+    "passed": true,
+    "workspaces": 9,
+    "evidence": "D:\\linji-local\\20261106\\ui-research\\award-pass\\boundaries-shipping.log"
+  },
+  "browser": {
+    "total": 57,
+    "publicChecks": 30,
+    "adminChecks": 15,
+    "qualityChecks": 12,
+    "widths": [320, 390, 768, 1440],
+    "evidence": [
+      "D:\\linji-local\\20261106\\ui-research\\award-pass\\visual-results.json",
+      "D:\\linji-local\\20261106\\ui-research\\admin-visual-results.json",
+      "D:\\linji-local\\20261106\\ui-research\\award-pass\\quality-checks.json"
+    ],
+    "scope": "Isolated Playwright frontend route override to local production builds; live HTTPS business APIs read-only. Login/logout for session verification. No business updates submitted.",
+    "noMockedBusinessData": true,
+    "syntheticStress": "DOM-only long title test, not persisted data",
+    "limitations": [
+      "CSS zoom is not every browser/OS zoom mode",
+      "targeted contrast is not full WCAG certification",
+      "lab image checks are not production Core Web Vitals",
+      "not every role or full end-to-end business flow"
+    ]
+  },
+  "designDetector": {
+    "runs": 1,
+    "initialWarnings": 1,
+    "finding": "decorative 3px inset top stripe",
+    "resolution": "removed from final management shell",
+    "repeatedCleanScanClaimed": false,
+    "evidence": "D:\\linji-local\\20261106\\ui-research\\design-detector.json"
+  },
+  "processFailuresRetained": [
+    "Initial unscoped Vitest commands mixed applications and aliases; corrected to app source paths.",
+    "Initial new homepage assertion incorrectly included external article/dynamic fallbacks; added correct Next static image metadata fixtures and removed misleading stock cover fallbacks.",
+    "Removing dynamic image fallback initially hid image count when cover was null; restored count text and re-ran all public tests.",
+    "Additional SSR browser assertion initially included an aria-hidden arrow in the accessible link name; corrected selector and repeated quality checks successfully."
+  ],
+  "sourceSha256": {
+    "apps/web/src/features/home/home-page-view.tsx": "79dc8c3563ce002b6e669cc9af55e49a666f887eb34f30b910fb4d397d531f30",
+    "apps/web/src/features/home/home.test.tsx": "3115d2734de0318db62062ed70f18ad6b5589cf1521250392ab45b4e6a9613ad",
+    "apps/web/src/components/site-navigation.tsx": "c1fa5a1783b4c81eb93b58bef5aae170580b68773adf8845f87f7b06a534c46c",
+    "apps/web/src/styles/aliases.css": "2e91d1edfb2d06f058c44e990cc70b193a708119c2d78ff19cfd9751bab55570",
+    "apps/web/src/app/public-site.module.css": "38d50a02f8381e84398d34779e07c48fdbfdc5558cdf2f8bfe8063ce49197846",
+    "apps/web/src/features/site-config/site-config.module.css": "a69b23286900279859a0a67a3d010464377f95815cb130c7d701a15511a344d4",
+    "apps/web/src/platform/auth/public-session.module.css": "a1f25454dde7b9422177d16e05d5c816455cd601ca708c34d61dc567977ccd02",
+    "apps/web/src/features/public-content/article-card.tsx": "073da55a167d69efaf2b45163c7b0da62cad4af37d7661607c8090640758f39d",
+    "apps/web/src/features/public-content/dynamic-card.tsx": "ce59b471eecd7e9d5fdcdceabb6e61459c698551498ca3793ad4e05a9f38d60a",
+    "apps/web/src/features/home/assets/alpine-landscape.webp": "18930a1b12a592bf742c4f5677cefeb980246c8cf4d05efc51bf4e8a9e553709",
+    "apps/web/src/features/home/assets/alpine-landscape-mobile.webp": "bbcc4f0656c3455ec9c7f33ac2a42152228a97a9d01b6611a7c8d2940ece11f8",
+    "apps/admin/src/features/auth/management-shell.module.css": "f7860ede7d9340a0f4712aa2e4aadb9e10427d7f808cb0901ad204ed2d39129c",
+    "apps/admin/src/features/dashboard/summary-panels.tsx": "86641141623c100ace548c660ba42d944dc5580b192d4407117c4b238f2474c0",
+    "apps/admin/src/features/dashboard/summary-model.test.tsx": "5f94ccf8b23a0944c81e45268bad09441e461aa8aa684630220f26e4e8f71c7f",
+    "apps/admin/src/app/admin/dashboard.module.css": "3a16f235ba835106314d7f6a60683b8228b04dc03cb3c6daeae2e9b01010c6bd"
+  },
+  "screenshots": {
+    "homepageHero": "D:\\linji-local\\20261106\\ui-research\\award-pass\\hero-desktop.png",
+    "homepageDesktop": "D:\\linji-local\\20261106\\ui-research\\award-pass\\web-home-1440.png",
+    "homepageMobile": "D:\\linji-local\\20261106\\ui-research\\award-pass\\web-home-390.png",
+    "homepage320": "D:\\linji-local\\20261106\\ui-research\\award-pass\\web-home-320.png",
+    "dashboard": "D:\\linji-local\\20261106\\ui-research\\dashboard-desktop.png",
+    "mobileNavigation": "D:\\linji-local\\20261106\\ui-research\\navigation-mobile.png"
+  },
+  "awardReadiness": {
+    "claimedAchieved": false,
+    "remaining": [
+      "Real published resort, article and community content",
+      "Brand-specific licensed photography or original visual assets",
+      "Independent design review and target-user evaluation",
+      "Production field performance and real-device tests"
+    ]
+  },
+  "deployed": false,
+  "apkUpdated": false,
+  "gitPushed": false,
+  "productionVersionRemains": "2026-11-05"
+}

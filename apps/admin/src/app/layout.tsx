@@ -5,8 +5,8 @@ import { Providers } from "@/components/providers";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "@/styles/globals.css";
 export const metadata: Metadata = {
-  title: "前端基础模板 · Admin",
-  description: "独立应用与共享基础库",
+  title: "凛迹雪客管理端",
+  description: "凛迹雪客平台管理与运营",
 };
 export default function RootLayout({
   children,

@@ -1,0 +1,745 @@
+{
+  "checkedAt": "2026-11-06T02:58:37.511Z",
+  "deployed": true,
+  "activatedAt": "2026-11-06T10:55:25+08:00",
+  "release": "/opt/linji/releases/20261106-ui",
+  "previousRelease": "/opt/linji/releases/20261105-dopamine",
+  "scope": "Deploy existing refined official website and admin UI only. No backend, database, authorization, Nginx or APK change; no Git push.",
+  "urls": {
+    "web": "https://lichcarlos.top/snow",
+    "admin": "https://lichcarlos.top/snow-admin/login",
+    "api": "https://lichcarlos.top/snow-api/api/v1"
+  },
+  "source": {
+    "files": 769,
+    "sha256": "e7ca82fd68e336a4a37b08e61333d0bfcff0a2fc9019b34f299a25e5b73f9c2e",
+    "archiveSha256": "e4d366a8cdb46e3a61119ee7e50f1ef03f509382980fdba010299649fadd0c0e",
+    "parityVerified": true,
+    "note": "Frozen source matched prior UI validation before deployment. Subsequent local edits only update release documentation."
+  },
+  "artifacts": {
+    "web": {
+      "app": "web",
+      "platform": "linux",
+      "arch": "x64",
+      "nodeMajor": 22,
+      "nextVersion": "16.3.5",
+      "buildId": "QX8Aa4fXPMP1tHZETUmJP",
+      "files": 2159,
+      "links": 21,
+      "openapi": {
+        "version": "1.52.0",
+        "sha256": "4b15275231f7d421b80210b769c2d1cc0d1bc704ec73ce3c5d4839c827e9c84d"
+      }
+    },
+    "admin": {
+      "app": "admin",
+      "platform": "linux",
+      "arch": "x64",
+      "nodeMajor": 22,
+      "nextVersion": "16.3.5",
+      "buildId": "-BX4eBJRR8CTupjPAaBhw",
+      "files": 2483,
+      "links": 21,
+      "openapi": {
+        "version": "1.52.0",
+        "sha256": "4b15275231f7d421b80210b769c2d1cc0d1bc704ec73ce3c5d4839c827e9c84d"
+      },
+      "archiveSha256": "9b11bb96428b20ad452772ece2c0fe0db88e9bf0b04c19ad6ee5bacd2871da3e"
+    }
+  },
+  "build": {
+    "web": {
+      "location": "production Linux x64",
+      "fullTypeScriptCheck": true,
+      "passed": true
+    },
+    "admin": {
+      "location": "isolated local WSL2 Ubuntu Linux x64, Node 22.16.0",
+      "fullTypeScriptCheck": true,
+      "passed": true
+    },
+    "incident": "Server admin build was stopped after swapping caused temporary live timeouts. Previous UI was retained until recovery. Admin was rebuilt locally in a dedicated Linux distro, then verified on server. No Docker start/restart or unrelated service stop. Dedicated WSL distro terminated after build.",
+    "dependencies": "Existing Linux dependencies reused only after manifest/lock parity; no dependency upgrade."
+  },
+  "activation": {
+    "candidateChecksPassed": true,
+    "candidatePorts": [13200, 13201],
+    "productionPorts": [13100, 13101],
+    "services": ["linji-web.service", "linji-admin.service"],
+    "workingDirectoryOnlyChange": true,
+    "automaticRollbackPrepared": true,
+    "manualRollback": "bash /opt/linji/releases/20261106-ui/rollback-server.sh",
+    "rollbackExecuted": false
+  },
+  "productionChecks": {
+    "transport": "Direct production HTTPS UI and API, without local routing proxies or mocked business responses",
+    "passed": 58,
+    "web": {
+      "checks": [
+        {
+          "name": "web-home-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "heading": "凛迹雪客",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-resorts-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "heading": "找到适合你的雪道",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-knowledge-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "heading": "从第一条雪道开始",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-community-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "heading": "雪上的每一刻，都值得分享",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-catalog-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "heading": "按公开字段查询",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-about-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "heading": "关于平台",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-not-found-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "heading": "未找到此页面",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-home-768",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "heading": "凛迹雪客",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-resorts-768",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "heading": "找到适合你的雪道",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-knowledge-768",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "heading": "从第一条雪道开始",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-community-768",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "heading": "雪上的每一刻，都值得分享",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-catalog-768",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "heading": "按公开字段查询",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-about-768",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "heading": "关于平台",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-not-found-768",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "heading": "未找到此页面",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-home-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "heading": "凛迹雪客",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-resorts-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "heading": "找到适合你的雪道",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-knowledge-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "heading": "从第一条雪道开始",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-community-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "heading": "雪上的每一刻，都值得分享",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-catalog-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "heading": "按公开字段查询",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-about-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "heading": "关于平台",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-not-found-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "heading": "未找到此页面",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-home-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "heading": "凛迹雪客",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-resorts-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "heading": "找到适合你的雪道",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-knowledge-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "heading": "从第一条雪道开始",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-community-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "heading": "雪上的每一刻，都值得分享",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-catalog-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "heading": "按公开字段查询",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-about-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "heading": "关于平台",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "web-not-found-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "heading": "未找到此页面",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "keyboard-skip-to-content",
+          "passed": true,
+          "top": 8,
+          "outline": "solid"
+        },
+        {
+          "name": "web-login-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "heading": "凛迹雪客",
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        }
+      ],
+      "errors": [],
+      "scope": "Real production HTTPS pages; no local proxy or business data mocks."
+    },
+    "admin": {
+      "completed": true,
+      "scope": "Real production HTTPS UI and API; no local proxy, no business writes or data mocks.",
+      "checks": [
+        {
+          "name": "login-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "dashboard-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "live-session-restored-after-reload",
+          "passed": true
+        },
+        {
+          "name": "dashboard-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "dashboard-small-mobile",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "users-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "account-dialog",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "roles-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "dictionaries-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "fields-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "resort-form-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "users-tablet",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "users-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "navigation-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "roles-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        },
+        {
+          "name": "login-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5",
+          "background": "rgb(238, 247, 255)"
+        }
+      ],
+      "pageErrors": [],
+      "failedRequests": [],
+      "checkedAt": "2026-11-06T02:56:51.488Z"
+    },
+    "quality": {
+      "completed": true,
+      "checks": [
+        {
+          "name": "single-finite-landscape-motion",
+          "duration": "1s",
+          "iterations": "1",
+          "passed": true
+        },
+        {
+          "name": "reduced-motion-removes-intro",
+          "passed": true
+        },
+        {
+          "src": "https://lichcarlos.top/snow/_next/static/media/alpine-landscape.5ca2079d.webp",
+          "width": 1800,
+          "loaded": true,
+          "name": "local-desktop-image-loaded",
+          "passed": true
+        },
+        {
+          "src": "https://lichcarlos.top/snow/_next/static/media/alpine-landscape-mobile.2fe1d2ac.webp",
+          "width": 800,
+          "loaded": true,
+          "name": "mobile-responsive-800px-image",
+          "passed": true
+        },
+        {
+          "name": "keyboard-explore-anchor-focus",
+          "passed": true
+        },
+        {
+          "page": 390,
+          "viewport": 390,
+          "name": "mobile-expanded-login-reflow",
+          "passed": true
+        },
+        {
+          "pairs": [
+            {
+              "name": "hero-title",
+              "foreground": "rgb(239, 255, 70)",
+              "background": "rgb(36, 85, 245)",
+              "ratio": 5.161916070680731,
+              "minimum": 3
+            },
+            {
+              "name": "hero-primary-action",
+              "foreground": "rgb(23, 38, 76)",
+              "background": "rgb(239, 255, 70)",
+              "ratio": 13.442933343115495,
+              "minimum": 4.5
+            },
+            {
+              "name": "utility-account-button",
+              "foreground": "rgb(255, 255, 255)",
+              "background": "rgb(36, 85, 245)",
+              "ratio": 5.686544844598443,
+              "minimum": 4.5
+            },
+            {
+              "name": "knowledge-title",
+              "foreground": "rgb(23, 38, 76)",
+              "background": "rgb(239, 255, 70)",
+              "ratio": 13.442933343115495,
+              "minimum": 3
+            },
+            {
+              "name": "knowledge-title-body",
+              "foreground": "rgb(23, 38, 76)",
+              "background": "rgb(239, 255, 70)",
+              "ratio": 13.442933343115495,
+              "minimum": 4.5
+            },
+            {
+              "name": "dynamics-title",
+              "foreground": "rgb(23, 38, 76)",
+              "background": "rgb(255, 154, 60)",
+              "ratio": 7.009327501330666,
+              "minimum": 3
+            },
+            {
+              "name": "dynamics-title-body",
+              "foreground": "rgb(23, 38, 76)",
+              "background": "rgb(255, 154, 60)",
+              "ratio": 7.009327501330666,
+              "minimum": 4.5
+            }
+          ],
+          "name": "targeted-text-contrast",
+          "passed": true
+        },
+        {
+          "name": "single-h1-and-labelled-navigation",
+          "passed": true
+        },
+        {
+          "note": "DOM-only visual stress fixture, not persisted business data.",
+          "hero": {
+            "x": 0,
+            "y": 191.78125,
+            "width": 390,
+            "height": 969.765625,
+            "top": 191.78125,
+            "right": 390,
+            "bottom": 1161.546875,
+            "left": 0
+          },
+          "title": {
+            "x": 24.375,
+            "y": 231.78125,
+            "width": 341.25,
+            "height": 430.5,
+            "top": 231.78125,
+            "right": 365.625,
+            "bottom": 662.28125,
+            "left": 24.375
+          },
+          "action": {
+            "x": 24.375,
+            "y": 745.078125,
+            "width": 129,
+            "height": 50,
+            "top": 745.078125,
+            "right": 153.375,
+            "bottom": 795.078125,
+            "left": 24.375
+          },
+          "viewport": 390,
+          "page": 390,
+          "name": "synthetic-long-platform-name-reflow",
+          "passed": true
+        },
+        {
+          "note": "DOM-only fixture, not persisted.",
+          "hero": {
+            "x": 0,
+            "y": 133.78125,
+            "width": 1440,
+            "height": 1413.359375,
+            "top": 133.78125,
+            "right": 1440,
+            "bottom": 1547.140625,
+            "left": 0
+          },
+          "action": {
+            "x": 90,
+            "y": 1377.140625,
+            "width": 129,
+            "height": 50,
+            "top": 1377.140625,
+            "right": 219,
+            "bottom": 1427.140625,
+            "left": 90
+          },
+          "viewport": 1440,
+          "page": 1440,
+          "name": "synthetic-long-platform-name-desktop-reflow",
+          "passed": true
+        },
+        {
+          "page": 1440,
+          "viewport": 1440,
+          "name": "css-200-percent-zoom-reflow",
+          "passed": true
+        },
+        {
+          "name": "ssr-discovery-content-without-client-javascript",
+          "passed": true
+        }
+      ],
+      "errors": [],
+      "scope": "Real production HTTPS quality gates; targeted contrast and lab checks, not external award judging, full WCAG certification or production Core Web Vitals.",
+      "checkedAt": "2026-11-06T02:56:17.902Z"
+    },
+    "visualInspection": {
+      "passed": true,
+      "images": [
+        "hero-desktop.png",
+        "web-home-390.png",
+        "dashboard-desktop.png",
+        "users-mobile.png"
+      ],
+      "note": "Actual production screenshots reviewed for desktop/mobile hierarchy, imagery, navigation and page overflow."
+    },
+    "businessWrites": false,
+    "auth": "Real admin login, refresh-session recovery and logout passed; private credentials not included."
+  },
+  "safety": {
+    "unaffectedRunningServices": [
+      "aegis.service",
+      "aliyun.service",
+      "atd.service",
+      "charge-api.service",
+      "chronyd.service",
+      "crond.service",
+      "dbus.service",
+      "frps.service",
+      "getty@tty1.service",
+      "gssproxy.service",
+      "linji-api.service",
+      "linji-clamav.service",
+      "linji-kafka.service",
+      "linji-minio.service",
+      "NetworkManager.service",
+      "nginx.service",
+      "polkit.service",
+      "postgresql.service",
+      "redis.service",
+      "rngd.service",
+      "rpcbind.service",
+      "rsyslog.service",
+      "serial-getty@ttyS0.service",
+      "sshd.service",
+      "systemd-journald.service",
+      "systemd-logind.service",
+      "systemd-udevd.service",
+      "tuned.service",
+      "user@0.service"
+    ],
+    "changedServices": [
+      {
+        "id": "linji-admin.service",
+        "beforePid": "1442620",
+        "afterPid": "1456280"
+      },
+      {
+        "id": "linji-ui-build-20261106.service",
+        "beforePid": "1454811",
+        "afterPid": null
+      },
+      {
+        "id": "linji-web.service",
+        "beforePid": "1442633",
+        "afterPid": "1456266"
+      }
+    ],
+    "nginxMainConfigUnchanged": true,
+    "apiUnitUnchanged": true,
+    "apiPidUnchanged": true,
+    "apiHealth": {
+      "code": 200,
+      "msg": "success",
+      "data": {
+        "status": "ok",
+        "timestamp": "2026-11-06T02:57:04.801Z"
+      },
+      "traceId": "28be137c-f4d3-41a2-a79a-b1396629d176"
+    },
+    "onlyTwoFrontendUnitsChanged": true,
+    "localBuilderTerminated": true
+  },
+  "evidenceDirectory": "D:/linji-local/20261106/ui-deploy",
+  "limitations": [
+    "APK remains the previously released 1.0.1 package; no new APK requested in this deployment.",
+    "This is scoped UI deployment verification, not a full business-write end-to-end test. No business records were created/changed.",
+    "Public business content is currently sparse/empty; no fictitious resort, article or community content was added.",
+    "Server memory remains limited; future production builds should run in an external Linux build environment.",
+    "Awwwards/Webby/FWA remain quality references, not an award or independent certification.",
+    "Historical unit-test/build totals are not counted as new production browser checks."
+  ]
+}

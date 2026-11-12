@@ -6,14 +6,17 @@
 
 根 scripts/run.mjs 在 Turbo 启动前加载 .env。开发、构建、生产启动均从根脚本执行，不通过 `cd apps/web && next dev` 绕开环境启动器。
 
-| 变量                             | 用途                   |
-| -------------------------------- | ---------------------- |
-| `NEXT_PUBLIC_WEB_API_BASE_URL`   | Web 可公开的后端基址   |
-| `NEXT_PUBLIC_ADMIN_API_BASE_URL` | Admin 可公开的后端基址 |
+| 变量                             | 用途                                                      |
+| -------------------------------- | --------------------------------------------------------- |
+| `NEXT_PUBLIC_WEB_API_BASE_URL`   | Web 可公开的后端基址                                      |
+| `NEXT_PUBLIC_ADMIN_API_BASE_URL` | Admin 可公开的后端基址                                    |
+| `NEXT_PUBLIC_WEB_SITE_ORIGIN`    | 可选官网公开 origin，用于详情 canonical 与 Open Graph URL |
 
 地址集中由 `@common/config/public` 读取，应用通过 `src/platform/config` 暴露自己的 getApiBaseUrl。按调用惰性校验：单独构建一个端不要求另一个端的地址，空白页面也无需后端运行。开始请求前调用函数，缺失或无效配置会明确报错，不静默退回真实服务。
 
 NEXT_PUBLIC 变量会进入浏览器构建产物，禁止填密码、私有 Token 或内部凭据。修改后需重启开发服务或重新构建发布。Turbo 已将 NEXT_PUBLIC_* 与根 .env 纳入缓存输入。
+
+`NEXT_PUBLIC_WEB_SITE_ORIGIN` 示例为 `https://snow.example`，只允许 HTTP(S) origin，不含凭据、路径、查询或片段；缺省时详情不生成 canonical/og:url，不从请求头推断域名。配置在构建时固化，独立部署时应在构建前设置实际官网域名。详见[公开详情分享说明](../engineering/public-detail-metadata.md)。
 
 ## 服务端配置
 

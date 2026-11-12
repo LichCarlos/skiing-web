@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "mode": "local",
+  "fixtures": true,
+  "checks": [
+    {
+      "name": "relationship-canvas",
+      "width": 1440,
+      "canvas": {
+        "x": 265,
+        "y": 397.171875,
+        "width": 872,
+        "height": 560
+      }
+    },
+    {
+      "name": "relationship-canvas",
+      "width": 768,
+      "canvas": {
+        "x": 17,
+        "y": 469.5625,
+        "width": 734,
+        "height": 420
+      }
+    },
+    {
+      "name": "mobile-tree-selects-node"
+    },
+    {
+      "name": "relationship-canvas",
+      "width": 390,
+      "canvas": {
+        "x": 27,
+        "y": 689.921875,
+        "width": 336,
+        "height": 267
+      }
+    },
+    {
+      "name": "relationship-canvas",
+      "width": 320,
+      "canvas": {
+        "x": 27,
+        "y": 689.921875,
+        "width": 266,
+        "height": 364.5
+      }
+    },
+    {
+      "name": "zoom-and-fit-controls"
+    },
+    {
+      "name": "all-fields-switch"
+    },
+    {
+      "name": "full-catalog-shared-dictionary-and-orphan"
+    },
+    {
+      "name": "composite-group-node-opens-correct-entity-editor"
+    },
+    {
+      "name": "node-edit-versioned-binding-and-edge-refresh"
+    },
+    {
+      "name": "tree-add-child-and-parent-cycle-exclusion"
+    },
+    {
+      "name": "tree-responsive",
+      "width": 1440
+    },
+    {
+      "name": "tree-responsive",
+      "width": 390
+    },
+    {
+      "name": "tree-responsive",
+      "width": 320
+    },
+    {
+      "name": "partial-load-hidden-and-retry"
+    },
+    {
+      "name": "restricted-read-permissions"
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "simulatedWrites": [
+    {
+      "method": "PATCH",
+      "path": "/admin/custom-fields/21",
+      "dictionary": "knowledge.article_category"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/dictionaries/shared.options/items",
+      "parentId": 101
+    }
+  ],
+  "buildId": "IsBikSr8YW90Lj6AX45Nj"
+}

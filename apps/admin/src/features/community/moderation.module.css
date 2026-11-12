@@ -1,0 +1,39 @@
+.page {
+  composes: page from "../../styles/console.module.css";
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.filters {
+  composes: filters from "../../styles/console.module.css";
+  margin-bottom: 16px;
+}
+.search {
+  width: min(280px, 75vw);
+}
+.table {
+  overflow-x: auto;
+}
+.content {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 16px 0;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.images img {
+  max-width: min(220px, 100%);
+  max-height: 220px;
+  object-fit: contain;
+}
+.section {
+  margin-top: 24px;
+}

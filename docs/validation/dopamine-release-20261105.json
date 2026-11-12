@@ -1,0 +1,474 @@
+{
+  "date": "2026-11-05",
+  "palette": {
+    "primary": "#2455F5",
+    "red": "#DC2F43",
+    "yellow": "#EFFF46",
+    "orange": "#FF9A3C",
+    "background": "#EEF7FF"
+  },
+  "openapi": {
+    "version": "1.52.0",
+    "sha256": "4b15275231f7d421b80210b769c2d1cc0d1bc704ec73ce3c5d4839c827e9c84d"
+  },
+  "contrast": [
+    {
+      "name": "blue button",
+      "foreground": "#ffffff",
+      "background": "#2455f5",
+      "ratio": 5.69,
+      "passed": true
+    },
+    {
+      "name": "blue hover",
+      "foreground": "#ffffff",
+      "background": "#183dc2",
+      "ratio": 8.45,
+      "passed": true
+    },
+    {
+      "name": "blue active",
+      "foreground": "#ffffff",
+      "background": "#122f98",
+      "ratio": 11.14,
+      "passed": true
+    },
+    {
+      "name": "yellow action",
+      "foreground": "#17264c",
+      "background": "#efff46",
+      "ratio": 13.44,
+      "passed": true
+    },
+    {
+      "name": "orange action",
+      "foreground": "#17264c",
+      "background": "#ff9a3c",
+      "ratio": 7.01,
+      "passed": true
+    },
+    {
+      "name": "red control",
+      "foreground": "#ffffff",
+      "background": "#dc2f43",
+      "ratio": 4.63,
+      "passed": true
+    },
+    {
+      "name": "body",
+      "foreground": "#17264c",
+      "background": "#ffffff",
+      "ratio": 14.81,
+      "passed": true
+    },
+    {
+      "name": "secondary",
+      "foreground": "#495e80",
+      "background": "#eef7ff",
+      "ratio": 6.06,
+      "passed": true
+    },
+    {
+      "name": "secondary on yellow",
+      "foreground": "#495e80",
+      "background": "#efff46",
+      "ratio": 5.96,
+      "passed": true
+    },
+    {
+      "name": "selected tab",
+      "foreground": "#efff46",
+      "background": "#2455f5",
+      "ratio": 5.16,
+      "passed": true
+    },
+    {
+      "name": "dark selected tab",
+      "foreground": "#17264c",
+      "background": "#ff9ca8",
+      "ratio": 7.46,
+      "passed": true
+    },
+    {
+      "name": "dark body",
+      "foreground": "#eef7fd",
+      "background": "#192f40",
+      "ratio": 12.72,
+      "passed": true
+    },
+    {
+      "name": "dark blue",
+      "foreground": "#102d43",
+      "background": "#92b5ff",
+      "ratio": 6.95,
+      "passed": true
+    },
+    {
+      "name": "dark orange",
+      "foreground": "#17264c",
+      "background": "#ffac60",
+      "ratio": 7.98,
+      "passed": true
+    },
+    {
+      "name": "red label",
+      "foreground": "#dc2f43",
+      "background": "#ffffff",
+      "ratio": 4.63,
+      "passed": true
+    }
+  ],
+  "evidenceDirectory": "D:/linji-local/20261105/dopamine-release/",
+  "limitations": [
+    "浏览器检查与构建不代替全部业务流程和物理真机安装验收。",
+    "本轮未修改后端、数据库、API契约，也未重新验收模型与存储全链路。"
+  ],
+  "scope": "官网与管理端主题生产部署",
+  "exportedSourceSha256": "32ddbdb46840e1f7a2a1c74400efa2f6b068e7d0e69159f1065c7e30c9f5d395",
+  "tests": {
+    "website": {
+      "files": 23,
+      "passed": 365
+    },
+    "admin": {
+      "files": 134,
+      "passed": 2687
+    }
+  },
+  "lint": {
+    "website": true,
+    "admin": true
+  },
+  "workspaceBoundaries": 9,
+  "localProductionBuilds": ["website", "admin"],
+  "linuxProductionBuilds": ["website", "admin"],
+  "localBrowsers": [
+    {
+      "evidence": "visual-results.json",
+      "checks": [
+        {
+          "name": "web-home-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-resorts-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-knowledge-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-community-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-catalog-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-about-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-not-found-1440",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-home-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-resorts-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-knowledge-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-community-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-catalog-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-about-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-not-found-390",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-home-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-resorts-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-knowledge-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-community-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-catalog-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-about-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-not-found-320",
+          "passed": true,
+          "viewport": 320,
+          "page": 320,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "web-login-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        }
+      ],
+      "errors": [],
+      "scope": "Local production builds, live read-only backend. Expo Web is not native device verification."
+    },
+    {
+      "evidence": "admin-visual-results.json",
+      "checks": [
+        {
+          "name": "login-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "dashboard-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "users-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "account-dialog",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "roles-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "dictionaries-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "fields-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "resort-form-desktop",
+          "passed": true,
+          "viewport": 1440,
+          "page": 1440,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "users-tablet",
+          "passed": true,
+          "viewport": 768,
+          "page": 768,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "users-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "navigation-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "roles-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        },
+        {
+          "name": "login-mobile",
+          "passed": true,
+          "viewport": 390,
+          "page": 390,
+          "primary": "#2455f5"
+        }
+      ],
+      "errors": [],
+      "scope": "Local edited admin UI rendered against live HTTPS backend through an isolated Playwright frontend route override. No server deployment, business writes, or mocked business data."
+    }
+  ],
+  "liveBrowser": {
+    "completed": true,
+    "checks": [
+      {
+        "name": "live website blue theme at 1440px",
+        "passed": true,
+        "primary": "#2455f5",
+        "width": 1440,
+        "viewport": 1440
+      },
+      {
+        "name": "live website mobile layout",
+        "passed": true,
+        "primary": "#2455f5",
+        "width": 390,
+        "viewport": 390
+      },
+      {
+        "name": "live admin login blue theme",
+        "passed": true,
+        "primary": "#2455f5",
+        "width": 1440,
+        "viewport": 1440
+      },
+      {
+        "name": "live administrator login and base-path navigation",
+        "passed": true
+      },
+      {
+        "name": "live authenticated dashboard theme",
+        "passed": true,
+        "primary": "#2455f5",
+        "width": 1440,
+        "viewport": 1440
+      },
+      {
+        "name": "live administrator reload restores session",
+        "passed": true
+      },
+      {
+        "name": "live public catalog base-path and theme",
+        "passed": true,
+        "primary": "#2455f5",
+        "width": 1440,
+        "viewport": 1440
+      }
+    ],
+    "failedRequests": [],
+    "scriptErrors": []
+  },
+  "server": {
+    "release": "/opt/linji/releases/20261105-dopamine/web",
+    "services": ["linji-web", "linji-admin"],
+    "website": "https://lichcarlos.top/snow",
+    "admin": "https://lichcarlos.top/snow-admin/login",
+    "rollbackServiceFiles": "/opt/linji/releases/20261105-dopamine/service-backup"
+  },
+  "linuxBuildMethod": {
+    "website": "standard next build + standalone pack",
+    "admin": "Successful Linux Turbopack compilation, then interrupted duplicate Linux tsc due to swapping; restored exact compiled BUILD_ID from static directory and used next build --experimental-build-mode generate + standalone pack",
+    "typecheck": "Passed on identical source in local production build; Linux admin tsc was interrupted, not a passing check",
+    "websiteBuildId": "mszYt4tZRJeziN1VJ565S",
+    "adminBuildId": "TQrU08t3kCfPoDIg2OsNj",
+    "standaloneFiles": {
+      "website": 1382,
+      "admin": 1969
+    }
+  }
+}

@@ -1,0 +1,855 @@
+{
+  "passed": true,
+  "deployed": true,
+  "website": "https://lichcarlos.top/snow",
+  "sourceSha256": "e9c17ef012d25b67ab1cc38de5c95a3049a77ec2991840588e1e2a0faa23ef1c",
+  "changes": {
+    "documentRecoveryPrefixFixed": true,
+    "resortCardText": "#000000",
+    "nativeFormsPrefixFixed": ["/knowledge", "/resorts", "/dynamics"],
+    "scrollbarsHidden": true,
+    "resortCardBackground": "#FFDA3D",
+    "nativeScrollingPreserved": true
+  },
+  "tests": {
+    "standaloneManifest": true,
+    "typescript": true,
+    "files": 30,
+    "lint": true,
+    "boundaries": true,
+    "linuxProductionBuild": true,
+    "website": 457
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "Ug5ae9V9NAew27LbPDsOG",
+    "filesVerified": 2169,
+    "linksVerified": 21,
+    "archiveSha256": "a359ba4bc63da6f7b39c0e5864d4d6cf843d5fe67025e3c3afc5400c97b0fd9d",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "route": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge?keyword=&categoryValue=",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge?keyword=%E6%B5%8B%E8%AF%95&categoryValue=",
+        "status": 200
+      },
+      {
+        "route": "/snow/dynamics",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-07T11:23:53.566202+08:00",
+    "release": "/opt/linji/releases/20261107-route-contrast-scrollbars-final",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1485419",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "Ug5ae9V9NAew27LbPDsOG"
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-07T03:23:54.31Z",
+    "checks": [
+      {
+        "name": "auth pending text DOM removed, updated register copy in deployed login",
+        "passed": true
+      },
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 18
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "routes": {
+    "passed": true,
+    "at": "2026-11-07T03:26:52.308Z",
+    "buildId": "Ug5ae9V9NAew27LbPDsOG",
+    "pages": [
+      {
+        "path": "/snow",
+        "status": 200,
+        "localLinks": 40,
+        "redirect": false
+      },
+      {
+        "path": "/snow/about",
+        "status": 200,
+        "localLinks": 10,
+        "redirect": false
+      },
+      {
+        "path": "/snow/privacy",
+        "status": 200,
+        "localLinks": 10,
+        "redirect": false
+      },
+      {
+        "path": "/snow/terms",
+        "status": 200,
+        "localLinks": 10,
+        "redirect": false
+      },
+      {
+        "path": "/snow/catalog",
+        "status": 200,
+        "localLinks": 16,
+        "redirect": false
+      },
+      {
+        "path": "/snow/foundation",
+        "status": 200,
+        "localLinks": 15,
+        "redirect": false
+      },
+      {
+        "path": "/snow/login",
+        "status": 200,
+        "localLinks": 10,
+        "redirect": false
+      },
+      {
+        "path": "/snow/login?mode=register",
+        "status": 200,
+        "localLinks": 10,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge?keyword=&categoryValue=",
+        "status": 200,
+        "localLinks": 31,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge?keyword=%E6%B5%8B%E8%AF%95&categoryValue=",
+        "status": 200,
+        "localLinks": 16,
+        "redirect": false
+      },
+      {
+        "path": "/snow/resorts",
+        "status": 200,
+        "localLinks": 22,
+        "redirect": false
+      },
+      {
+        "path": "/snow/resorts/1",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/resorts/2",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/resorts/3",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/resorts/4",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/resorts/5",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge",
+        "status": 200,
+        "localLinks": 31,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge/8",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge/7",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge/6",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge/5",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge/4",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge/3",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge/2",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/knowledge/1",
+        "status": 200,
+        "localLinks": 17,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics",
+        "status": 200,
+        "localLinks": 52,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/20",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/19",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/18",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/17",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/16",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/15",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/14",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/13",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/12",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/11",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/10",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/9",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/8",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/7",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/6",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/5",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/4",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/3",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/2",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/dynamics/1",
+        "status": 200,
+        "localLinks": 18,
+        "redirect": false
+      },
+      {
+        "path": "/snow/__route-audit-missing",
+        "status": 404,
+        "recovery": "/snow"
+      }
+    ],
+    "forms": [
+      {
+        "path": "/snow/knowledge?keyword=&categoryValue=",
+        "actions": ["/snow/knowledge"]
+      },
+      {
+        "path": "/snow/knowledge?keyword=%E6%B5%8B%E8%AF%95&categoryValue=",
+        "actions": ["/snow/knowledge"]
+      },
+      {
+        "path": "/snow/resorts",
+        "actions": ["/snow/resorts"]
+      },
+      {
+        "path": "/snow/knowledge",
+        "actions": ["/snow/knowledge"]
+      },
+      {
+        "path": "/snow/dynamics",
+        "actions": ["/snow/dynamics"]
+      }
+    ],
+    "legacyRootPaths": [
+      {
+        "path": "/knowledge?keyword=&categoryValue=",
+        "status": 404,
+        "location": null,
+        "generatedByFixedForms": false
+      },
+      {
+        "path": "/knowledge?keyword=%E6%B5%8B%E8%AF%95&categoryValue=",
+        "status": 404,
+        "location": null,
+        "generatedByFixedForms": false
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "knowledge": 8,
+      "dynamics": 20
+    }
+  },
+  "browser": {
+    "passed": true,
+    "finalBuildId": "Ug5ae9V9NAew27LbPDsOG",
+    "functionalChecksBuildId": "yjPPcbte0KSnbOR1IGN0g",
+    "routeChecks": [
+      {
+        "name": "knowledge empty filter",
+        "url": "https://lichcarlos.top/snow/knowledge?keyword=&categoryValue=",
+        "formAction": "/snow/knowledge"
+      },
+      {
+        "name": "knowledge Chinese keyword",
+        "url": "https://lichcarlos.top/snow/knowledge?keyword=%E6%B5%8B%E8%AF%95&categoryValue=",
+        "formAction": "/snow/knowledge"
+      },
+      {
+        "name": "knowledge clear filter",
+        "url": "https://lichcarlos.top/snow/knowledge"
+      },
+      {
+        "name": "resort filter with Enter",
+        "url": "https://lichcarlos.top/snow/resorts?keyword=%E4%B8%87%E9%BE%99&province=&city=&district=&minPrice=&maxPrice=&minRating=&latitude=&longitude=&openStatus=&sortBy=rating&sortOrder=desc",
+        "formAction": "/snow/resorts",
+        "result": 1
+      },
+      {
+        "name": "dynamic keyword filter",
+        "url": "https://lichcarlos.top/snow/dynamics?keyword=%E7%B2%89%E9%9B%AA",
+        "formAction": "/snow/dynamics"
+      }
+    ],
+    "scrollbarChecks": [
+      {
+        "height": 900,
+        "horizontalOverflow": false,
+        "scrollables": [
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "HTML",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "H1",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "A",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "SPAN",
+            "webkitDisplay": "none"
+          }
+        ],
+        "url": "https://lichcarlos.top/snow/resorts",
+        "width": 1440
+      },
+      {
+        "height": 844,
+        "horizontalOverflow": false,
+        "scrollables": [
+          {
+            "overflowY": "visible",
+            "scrollTop": 900,
+            "scrollbarWidth": "none",
+            "tag": "HTML",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "A",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "SPAN",
+            "webkitDisplay": "none"
+          }
+        ],
+        "url": "https://lichcarlos.top/snow/resorts",
+        "width": 390
+      },
+      {
+        "height": 844,
+        "horizontalOverflow": false,
+        "scrollables": [
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "HTML",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "H1",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "A",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "SPAN",
+            "webkitDisplay": "none"
+          }
+        ],
+        "url": "https://lichcarlos.top/snow/dynamics?keyword=%E7%B2%89%E9%9B%AA",
+        "width": 390
+      },
+      {
+        "height": 844,
+        "horizontalOverflow": false,
+        "scrollables": [
+          {
+            "overflowY": "visible",
+            "scrollTop": 844,
+            "scrollbarWidth": "none",
+            "tag": "HTML",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "A",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "SPAN",
+            "webkitDisplay": "none"
+          }
+        ],
+        "url": "https://lichcarlos.top/snow/knowledge",
+        "width": 390
+      },
+      {
+        "height": 568,
+        "horizontalOverflow": false,
+        "scrollables": [
+          {
+            "overflowY": "auto",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "DIV",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "H1",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "A",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "SPAN",
+            "webkitDisplay": "none"
+          }
+        ],
+        "url": "https://lichcarlos.top/snow/login?mode=register",
+        "width": 390
+      },
+      {
+        "height": 900,
+        "horizontalOverflow": false,
+        "scrollables": [
+          {
+            "overflowY": "visible",
+            "scrollTop": 630.4000244140625,
+            "scrollbarWidth": "none",
+            "tag": "HTML",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "H1",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "A",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "SPAN",
+            "webkitDisplay": "none"
+          }
+        ],
+        "url": "https://lichcarlos.top/snow/resorts",
+        "width": 1440
+      },
+      {
+        "height": 844,
+        "horizontalOverflow": false,
+        "scrollables": [
+          {
+            "overflowY": "visible",
+            "scrollTop": 1236,
+            "scrollbarWidth": "none",
+            "tag": "HTML",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "hidden",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "DIV",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "A",
+            "webkitDisplay": "none"
+          },
+          {
+            "overflowY": "visible",
+            "scrollTop": 0,
+            "scrollbarWidth": "none",
+            "tag": "SPAN",
+            "webkitDisplay": "none"
+          }
+        ],
+        "url": "https://lichcarlos.top/snow/resorts",
+        "width": 390
+      }
+    ],
+    "shortFormScroll": {
+      "height": 568,
+      "scrollers": [
+        {
+          "clientHeight": 361,
+          "scrollHeight": 546,
+          "scrollTop": 184.8000030517578,
+          "scrollbarWidth": "none",
+          "webkitDisplay": "none"
+        }
+      ],
+      "width": 390
+    },
+    "finalColors": {
+      "buildMatch": true,
+      "cards": [
+        {
+          "background": "rgb(255, 218, 61)",
+          "imageLoaded": true,
+          "textColors": [
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)"
+          ]
+        },
+        {
+          "background": "rgb(255, 218, 61)",
+          "imageLoaded": true,
+          "textColors": [
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)"
+          ]
+        },
+        {
+          "background": "rgb(255, 218, 61)",
+          "imageLoaded": true,
+          "textColors": [
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)"
+          ]
+        },
+        {
+          "background": "rgb(255, 218, 61)",
+          "imageLoaded": true,
+          "textColors": [
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)"
+          ]
+        },
+        {
+          "background": "rgb(255, 218, 61)",
+          "imageLoaded": true,
+          "textColors": [
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)",
+            "rgb(0, 0, 0)"
+          ]
+        }
+      ],
+      "firstCardTop": 51.03750228881836,
+      "height": 900,
+      "intro": "rgb(255, 255, 255)",
+      "title": "rgb(255, 218, 61)",
+      "width": 1440
+    },
+    "finalMobile": {
+      "firstCardTop": 100.3375015258789,
+      "height": 844,
+      "horizontalOverflow": false,
+      "scrollbarWidth": "none",
+      "webkitDisplay": "none",
+      "width": 390
+    }
+  },
+  "contrast": {
+    "yellowBlueLargeText": 4.16,
+    "yellowBlack": 15.35,
+    "whiteBlueSmallText": 5.69
+  },
+  "screenshots": [
+    "route-contrast-scrollbars-20261107/production-resorts-desktop.png",
+    "route-contrast-scrollbars-20261107/production-resorts-mobile.png"
+  ],
+  "rollback": "python3 /opt/linji/releases/20261107-route-contrast-scrollbars-final/rollback-website.py",
+  "rollbackDestination": "/opt/linji/releases/20261107-auth-footer-type/web-reviewed",
+  "cleanup": {
+    "candidateStopped": true,
+    "wslBuildStopped": true,
+    "tunnelStopped": true,
+    "local3108Preserved": true
+  },
+  "limits": [
+    "Responsive browser viewport, not a physical touch device",
+    "Firefox and Safari not exercised",
+    "No production data or account submissions performed"
+  ]
+}

@@ -1,0 +1,62 @@
+.page {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 1.5rem;
+  background: var(--action);
+}
+.formPanel {
+  width: min(100%, 27rem);
+  padding: 2.5rem;
+  border: 1px solid var(--surface);
+  border-radius: var(--app-panel-radius);
+  background: var(--surface);
+}
+.brandMark {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--app-energy-orange);
+  color: var(--app-energy-ink);
+}
+.formPanel h1,
+.state h1 {
+  margin: 0 0 2rem;
+  color: var(--app-title-color);
+  font-size: 1.5rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.alert {
+  margin-bottom: 1rem;
+}
+.state {
+  display: grid;
+  min-height: 100svh;
+  align-content: center;
+  justify-items: start;
+  gap: 1rem;
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  color: var(--text-main);
+}
+.state h1,
+.state p {
+  margin: 0;
+}
+.state p {
+  color: var(--text-subtle);
+  line-height: 1.7;
+}
+@media (max-width: 30rem) {
+  .page {
+    padding: 1rem;
+  }
+  .formPanel {
+    padding: 1.5rem;
+  }
+}

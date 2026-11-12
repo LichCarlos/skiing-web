@@ -1,0 +1,28 @@
+.page {
+  composes: page from "../../styles/console.module.css";
+  min-width: 0;
+}
+.form {
+  max-width: 960px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.filters {
+  composes: filters from "../../styles/console.module.css";
+  margin-bottom: 1rem;
+}
+.search {
+  width: min(280px, 100%);
+}
+.table {
+  overflow-x: auto;
+}
+.alert {
+  margin-block: 1rem;
+}

@@ -1,0 +1,206 @@
+{
+  "date": "2026-11-03",
+  "evidenceVerified": true,
+  "scope": "Managed user list/detail/active role catalog/unknown-write review response projection and final identity checks; hidden read/editor cleanup",
+  "contractVersion": "1.51.1",
+  "operations": 143,
+  "migrations": 24,
+  "http": {
+    "tests": 42,
+    "newAccountTests": 3,
+    "passed": true,
+    "output": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti",
+    "accountReads": {
+      "userId": 2,
+      "rawProjection": true,
+      "emptyPage": true,
+      "selfScope": true,
+      "foreignDenied": true,
+      "revocationRejected": true
+    },
+    "references": [
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/report.json",
+        "sha256": "c3fca2a0030a8368ab3cd9b77e9eefcf8355bc70b60b105c9502114dc7f64197"
+      },
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/client-result.json",
+        "sha256": "caea7413eab6ea7dc31340eb02f225293988edca53cbbaba8c760cd7065feeb6"
+      },
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/ready.json",
+        "sha256": "60179c90d5f47524e90d93ccaa8d7804188a8406dd7baa98e07ebb43a3bf4ca8"
+      },
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/migrate-deploy.log",
+        "sha256": "c3d2a2dbe09fa82c7ec74bca97fc958b8252770d5e53c957420e08c5f2e2bf63"
+      },
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/seed-first.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/seed-second.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/verify-before.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/fixture-verify.log",
+        "sha256": "58a9626af015b2b731eb21bd4e8bbdb7acc131a7cbc1977e6cc91daad8d856c9"
+      },
+      {
+        "path": "D:/linji-account-reads/20261103/final-http/linji-admin-http-xdFvti/verify-after.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      }
+    ],
+    "cleanup": {
+      "path": "D:/linji-account-reads/20261103/cleanup.json",
+      "sha256": "78a4d121182240e82f0a1f2b4e1ab8902880b718358e4bd6806d4f68d73f450c"
+    }
+  },
+  "regression": {
+    "newTests": 48,
+    "initialBoundaryTests": 28,
+    "initialFailed": 28,
+    "initialLog": {
+      "path": "D:/linji-account-reads/20261103/repro.log",
+      "sha256": "52f527678615440a8ed8a6b5cf56d33f3d97179fb4b91448dd21acce78187025"
+    },
+    "initialCombinedFixtureFailures": 6,
+    "initialCombinedLog": {
+      "path": "D:/linji-account-reads/20261103/targeted-first.log",
+      "sha256": "428028acb1ed2079ae6285cec1546e8bb14189979b377040311bfb1afc9cfc79"
+    },
+    "targetedTests": 186,
+    "fixtureRepair": "Old mocks now provide valid totals, final identity responses and no-store expectations; final full check passed"
+  },
+  "limitations": [
+    "Account read checks are not authorization leases or full scope/policy versions; role pages are not one snapshot",
+    "Visibility/effect/EventTarget and SSR tests do not prove real React browser/BFCache, Cookie/CORS or device behavior",
+    "No current full database, Kafka/provider/storage/container, signed native package or remote CI acceptance",
+    "Existing Windows Kafka topic directory AccessDenied remains unresolved; Docker and its WSL distribution were not started/restarted/used",
+    "D-49/D-50/D-09 remain unanswered and unimplemented; overall project goal incomplete",
+    "No commit/push/deploy/publish or retry of denied operations"
+  ],
+  "repository": "web",
+  "openapi": {
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 2484,
+    "newAccountTests": 48,
+    "accountTests": 186,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/user-response.ts",
+      "sha256": "d2c43b151c6fe64b8173ed486f71362cc763a06f654211a61ecfc33b7595d030"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/user-model.ts",
+      "sha256": "1803a1c609de7faa0db7a4347541d14b850e04da5b94ad79b06afd45eaa1ebd1"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/user-queries.ts",
+      "sha256": "e9d0c2eaf3878ddec05e7760faa18ed0715dd5f9bb7410d70cc77db6836e5ef7"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/user-console.tsx",
+      "sha256": "6b2a949ea6428501ab32e595b2ca349b64c802ac1916b05d33cf26ebcef22031"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/managed-user-api.ts",
+      "sha256": "4a3cfff5866e88293d676bd913d8ba8d38f4869fa6566fc8bc259cb9351aad37"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/managed-user-detail.tsx",
+      "sha256": "c5ea120dfd319df5b4e2563d0443f81ff2c799a87ff02c736f906cd6afc8fdd6"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/managed-user-detail-view.tsx",
+      "sha256": "5ce408cd97f210d026d02a15112396920ccecefb280b4659f7645dbd23dafb5a"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/account-read-boundaries.test.ts",
+      "sha256": "8ccf74e5c314b841bba5cfc3b8b5e0ccb943d1a3942e0317ed6c32e2e2db02ee"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/account-read-workflows.test.ts",
+      "sha256": "72d5b4c16716cfafc05808a8780101ed761a0171754cfa89e43eadf847327565"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/account-page-lifecycle.test.tsx",
+      "sha256": "f24031851981220d2491e29812279fdcf260cc22d173f439891c9328c2d8d38b"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/user-queries.test.ts",
+      "sha256": "eef7a53d9a53bed5d5c00f6ebe28ecba2fcfe59a422eb7a5ce292409e58da2fb"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/users/managed-user-detail.test.tsx",
+      "sha256": "860396d9f9b7d442598ce7c4f38374ec85714fc01c4727a4819f87fcd32f8f85"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "2a5058909f75f8bcc132d41fcb6e5fd65c767df108fa7e0a79740b368cc65fcd"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-account-reads/20261103/web-install.log",
+      "sha256": "d2f1a74f0b2e94a6f5658d1634b7fecb76b8fd197ce5e5d7c234bd550e0bf0e9"
+    },
+    {
+      "path": "D:/linji-account-reads/20261103/web-check.log",
+      "sha256": "c2f33f8b67fcfb7dc4d7955b5305403255dbf2bc32176f09744a09fdfaac23f1"
+    },
+    {
+      "path": "D:/linji-account-reads/20261103/web-build.log",
+      "sha256": "ef0636aedcc43d9bb5be2c19bac853045330fdd18db87274a6997b149d67ca79"
+    },
+    {
+      "path": "D:/linji-account-reads/20261103/targeted.log",
+      "sha256": "0d41db439dfc9af79f278a438d0ad7b10054cdd2910a389fb1a863d71462d645"
+    },
+    {
+      "path": "D:/linji-account-reads/20261103/admin-types.log",
+      "sha256": "3dd115a54d9decc15d9b6f1babec63f20d21966a914759ea6530c5b714007d15"
+    },
+    {
+      "path": "D:/linji-account-reads/20261103/web-http.log",
+      "sha256": "2b5d6785e34c78ccc26b534c5e8ea2797e61f88d342bcee5a994d34eceac04e9"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "j_sx1NgQzon4KG83C-FW8",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "d08dfa3ae8e63f6f8172baabb9cc2177f993246c91652a3c1f21f2ab403ed759"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "y6roUiixNJajB1GCxogTS",
+      "files": 1953,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "51828ecba9c7290a71e0540d273015cc2a2ecfac08c1b378c81b7858d68ee6f8"
+      }
+    }
+  ]
+}

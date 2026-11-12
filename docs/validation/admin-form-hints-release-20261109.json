@@ -1,0 +1,3133 @@
+{
+  "passed": true,
+  "app": "admin",
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-09T05:50:09.688180+00:00",
+    "release": "/opt/linji/releases/20261109-admin-form-hints",
+    "buildId": "2Lq_NrIMq9o_Fk4rfZlaK",
+    "changedServices": ["linji-admin.service"],
+    "adminPid": "1530515",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "2Lq_NrIMq9o_Fk4rfZlaK",
+    "filesVerified": 2492,
+    "linksVerified": 21,
+    "archiveSha256": "a6edf6b0f77c14a5d1e0b39b47862891f5c8a465323135ad02c2bd18a3576ea8",
+    "checks": [
+      {
+        "route": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts",
+        "status": 200
+      },
+      {
+        "staticResources": 42,
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/merchant/resorts",
+        "status": 200
+      }
+    ]
+  },
+  "source": {
+    "sourceSha256": "aa16981534f5642a280847bedc07658e345887c9f4bd564aeac124a2bdcefadc",
+    "keptProductionFile": "apps/admin/src/app/admin/dashboard.module.css"
+  },
+  "rawSourceSha256": "380f1b89d9925e354435aa8d8945a63cd2f15bfd7d8e617b64d6461943162195",
+  "checks": {
+    "linuxTests": 2714,
+    "linuxTestFiles": 136,
+    "lint": true,
+    "typescript": true,
+    "boundaries": true,
+    "productionBuild": true,
+    "format": true,
+    "designDetectorFindings": []
+  },
+  "runtimeChanges": [
+    "components/form-hint.tsx",
+    "components/form-hint.module.css",
+    "features/custom-fields/field-console.tsx",
+    "features/custom-fields/field-console.module.css",
+    "features/dictionaries/dictionary-console.tsx"
+  ],
+  "browser": {
+    "local": {
+      "passed": true,
+      "mode": "local",
+      "forms": [
+        {
+          "title": "新建字典类型",
+          "width": 1440,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字典类型",
+          "width": 768,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字典类型",
+          "width": 390,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字典类型",
+          "width": 320,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典类型",
+          "width": 1440,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典类型",
+          "width": 768,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典类型",
+          "width": 390,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典类型",
+          "width": 320,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "新增字典项",
+          "width": 1440,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            }
+          ]
+        },
+        {
+          "title": "新增字典项",
+          "width": 768,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            }
+          ]
+        },
+        {
+          "title": "新增字典项",
+          "width": 390,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            }
+          ]
+        },
+        {
+          "title": "新增字典项",
+          "width": 320,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典项",
+          "width": 1440,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典项",
+          "width": 768,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典项",
+          "width": 390,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典项",
+          "width": 320,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字段",
+          "width": 1440,
+          "items": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "fieldKey_extra",
+              "extraId": "fieldKey_extra"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dataType_extra",
+              "extraId": "dataType_extra"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "选项字典类型",
+              "hint": "单选、多选必填启用的字典类型键，如 resort_facility；其他类型留空。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "optionsDictType_extra",
+              "extraId": "optionsDictType_extra"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "defaultValueText_extra",
+              "extraId": "defaultValueText_extra"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "validationText_extra",
+              "extraId": "validationText_extra"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "required_extra",
+              "extraId": "required_extra"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "searchable_extra",
+              "extraId": "searchable_extra"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "filterable_extra",
+              "extraId": "filterable_extra"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortable_extra",
+              "extraId": "sortable_extra"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isPublic_extra",
+              "extraId": "isPublic_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字段",
+          "width": 768,
+          "items": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "fieldKey_extra",
+              "extraId": "fieldKey_extra"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dataType_extra",
+              "extraId": "dataType_extra"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "选项字典类型",
+              "hint": "单选、多选必填启用的字典类型键，如 resort_facility；其他类型留空。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "optionsDictType_extra",
+              "extraId": "optionsDictType_extra"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "defaultValueText_extra",
+              "extraId": "defaultValueText_extra"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "validationText_extra",
+              "extraId": "validationText_extra"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "required_extra",
+              "extraId": "required_extra"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "searchable_extra",
+              "extraId": "searchable_extra"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "filterable_extra",
+              "extraId": "filterable_extra"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortable_extra",
+              "extraId": "sortable_extra"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isPublic_extra",
+              "extraId": "isPublic_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字段",
+          "width": 390,
+          "items": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "fieldKey_extra",
+              "extraId": "fieldKey_extra"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dataType_extra",
+              "extraId": "dataType_extra"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "选项字典类型",
+              "hint": "单选、多选必填启用的字典类型键，如 resort_facility；其他类型留空。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "optionsDictType_extra",
+              "extraId": "optionsDictType_extra"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "defaultValueText_extra",
+              "extraId": "defaultValueText_extra"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "validationText_extra",
+              "extraId": "validationText_extra"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "required_extra",
+              "extraId": "required_extra"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "searchable_extra",
+              "extraId": "searchable_extra"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "filterable_extra",
+              "extraId": "filterable_extra"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortable_extra",
+              "extraId": "sortable_extra"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isPublic_extra",
+              "extraId": "isPublic_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字段",
+          "width": 320,
+          "items": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "fieldKey_extra",
+              "extraId": "fieldKey_extra"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dataType_extra",
+              "extraId": "dataType_extra"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "选项字典类型",
+              "hint": "单选、多选必填启用的字典类型键，如 resort_facility；其他类型留空。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "optionsDictType_extra",
+              "extraId": "optionsDictType_extra"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "defaultValueText_extra",
+              "extraId": "defaultValueText_extra"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "validationText_extra",
+              "extraId": "validationText_extra"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "required_extra",
+              "extraId": "required_extra"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "searchable_extra",
+              "extraId": "searchable_extra"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "filterable_extra",
+              "extraId": "filterable_extra"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortable_extra",
+              "extraId": "sortable_extra"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isPublic_extra",
+              "extraId": "isPublic_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建分组",
+          "width": 1440,
+          "items": [
+            {
+              "label": "分组键",
+              "hint": "当前实体下的稳定标识，如 basic_info；小写字母开头，可含数字、下划线和短横线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "分组名称",
+              "hint": "表单中显示的分组标题，如“基础信息”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建分组",
+          "width": 768,
+          "items": [
+            {
+              "label": "分组键",
+              "hint": "当前实体下的稳定标识，如 basic_info；小写字母开头，可含数字、下划线和短横线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "分组名称",
+              "hint": "表单中显示的分组标题，如“基础信息”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建分组",
+          "width": 390,
+          "items": [
+            {
+              "label": "分组键",
+              "hint": "当前实体下的稳定标识，如 basic_info；小写字母开头，可含数字、下划线和短横线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "分组名称",
+              "hint": "表单中显示的分组标题，如“基础信息”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建分组",
+          "width": 320,
+          "items": [
+            {
+              "label": "分组键",
+              "hint": "当前实体下的稳定标识，如 basic_info；小写字母开头，可含数字、下划线和短横线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "分组名称",
+              "hint": "表单中显示的分组标题，如“基础信息”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            }
+          ]
+        }
+      ],
+      "pageErrors": [],
+      "contentWrites": []
+    },
+    "live": {
+      "passed": true,
+      "mode": "live",
+      "forms": [
+        {
+          "title": "新建字典类型",
+          "width": 1440,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字典类型",
+          "width": 768,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字典类型",
+          "width": 390,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字典类型",
+          "width": 320,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典类型",
+          "width": 1440,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典类型",
+          "width": 768,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典类型",
+          "width": 390,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典类型",
+          "width": 320,
+          "items": [
+            {
+              "label": "类型键",
+              "hint": "供字段引用的唯一标识，如 resort_facility；小写字母开头，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictType_extra",
+              "extraId": "dictType_extra"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dictName_extra",
+              "extraId": "dictName_extra"
+            },
+            {
+              "label": "分组键",
+              "hint": "用于归类字典，如 resort；小写字母开头，可含数字及 . _ : -。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "publiclyReadable_extra",
+              "extraId": "publiclyReadable_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "新增字典项",
+          "width": 1440,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            }
+          ]
+        },
+        {
+          "title": "新增字典项",
+          "width": 768,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            }
+          ]
+        },
+        {
+          "title": "新增字典项",
+          "width": 390,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            }
+          ]
+        },
+        {
+          "title": "新增字典项",
+          "width": 320,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典项",
+          "width": 1440,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典项",
+          "width": 768,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典项",
+          "width": 390,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "编辑字典项",
+          "width": 320,
+          "items": [
+            {
+              "label": "名称",
+              "hint": "选项显示给用户的文字，如“停车场”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "值",
+              "hint": "实际保存和引用的值，如 parking；修改前请核对已有业务引用。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "value_extra",
+              "extraId": "value_extra"
+            },
+            {
+              "label": "父级",
+              "hint": "选择所属上级以建立层级；留空表示根节点，不能选择自己或自己的子级。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "parentId_extra",
+              "extraId": "parentId_extra"
+            },
+            {
+              "label": "颜色",
+              "hint": "可选的选项标识色，如 #2455F5；留空不指定颜色。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "color_extra",
+              "extraId": "color_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "控制同级选项的展示顺序，数值较小的优先。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "默认项",
+              "hint": "标记为默认候选项，具体是否预选由使用该字典的表单决定。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isDefault_extra",
+              "extraId": "isDefault_extra"
+            },
+            {
+              "label": "状态",
+              "hint": "停用后不再作为有效字典选项使用；历史业务数据保留。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "status_extra",
+              "extraId": "status_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字段",
+          "width": 1440,
+          "items": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "fieldKey_extra",
+              "extraId": "fieldKey_extra"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dataType_extra",
+              "extraId": "dataType_extra"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "选项字典类型",
+              "hint": "单选、多选必填启用的字典类型键，如 resort_facility；其他类型留空。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "optionsDictType_extra",
+              "extraId": "optionsDictType_extra"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "defaultValueText_extra",
+              "extraId": "defaultValueText_extra"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "validationText_extra",
+              "extraId": "validationText_extra"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "required_extra",
+              "extraId": "required_extra"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "searchable_extra",
+              "extraId": "searchable_extra"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "filterable_extra",
+              "extraId": "filterable_extra"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortable_extra",
+              "extraId": "sortable_extra"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isPublic_extra",
+              "extraId": "isPublic_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字段",
+          "width": 768,
+          "items": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "fieldKey_extra",
+              "extraId": "fieldKey_extra"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dataType_extra",
+              "extraId": "dataType_extra"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "选项字典类型",
+              "hint": "单选、多选必填启用的字典类型键，如 resort_facility；其他类型留空。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "optionsDictType_extra",
+              "extraId": "optionsDictType_extra"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "defaultValueText_extra",
+              "extraId": "defaultValueText_extra"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "validationText_extra",
+              "extraId": "validationText_extra"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "required_extra",
+              "extraId": "required_extra"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "searchable_extra",
+              "extraId": "searchable_extra"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "filterable_extra",
+              "extraId": "filterable_extra"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortable_extra",
+              "extraId": "sortable_extra"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isPublic_extra",
+              "extraId": "isPublic_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字段",
+          "width": 390,
+          "items": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "fieldKey_extra",
+              "extraId": "fieldKey_extra"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dataType_extra",
+              "extraId": "dataType_extra"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "选项字典类型",
+              "hint": "单选、多选必填启用的字典类型键，如 resort_facility；其他类型留空。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "optionsDictType_extra",
+              "extraId": "optionsDictType_extra"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "defaultValueText_extra",
+              "extraId": "defaultValueText_extra"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "validationText_extra",
+              "extraId": "validationText_extra"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "required_extra",
+              "extraId": "required_extra"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "searchable_extra",
+              "extraId": "searchable_extra"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "filterable_extra",
+              "extraId": "filterable_extra"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortable_extra",
+              "extraId": "sortable_extra"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isPublic_extra",
+              "extraId": "isPublic_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建字段",
+          "width": 320,
+          "items": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "fieldKey_extra",
+              "extraId": "fieldKey_extra"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "dataType_extra",
+              "extraId": "dataType_extra"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            },
+            {
+              "label": "选项字典类型",
+              "hint": "单选、多选必填启用的字典类型键，如 resort_facility；其他类型留空。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "optionsDictType_extra",
+              "extraId": "optionsDictType_extra"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "defaultValueText_extra",
+              "extraId": "defaultValueText_extra"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "validationText_extra",
+              "extraId": "validationText_extra"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "required_extra",
+              "extraId": "required_extra"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "searchable_extra",
+              "extraId": "searchable_extra"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "filterable_extra",
+              "extraId": "filterable_extra"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortable_extra",
+              "extraId": "sortable_extra"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "isPublic_extra",
+              "extraId": "isPublic_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建分组",
+          "width": 1440,
+          "items": [
+            {
+              "label": "分组键",
+              "hint": "当前实体下的稳定标识，如 basic_info；小写字母开头，可含数字、下划线和短横线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "分组名称",
+              "hint": "表单中显示的分组标题，如“基础信息”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建分组",
+          "width": 768,
+          "items": [
+            {
+              "label": "分组键",
+              "hint": "当前实体下的稳定标识，如 basic_info；小写字母开头，可含数字、下划线和短横线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "分组名称",
+              "hint": "表单中显示的分组标题，如“基础信息”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建分组",
+          "width": 390,
+          "items": [
+            {
+              "label": "分组键",
+              "hint": "当前实体下的稳定标识，如 basic_info；小写字母开头，可含数字、下划线和短横线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "分组名称",
+              "hint": "表单中显示的分组标题，如“基础信息”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            }
+          ]
+        },
+        {
+          "title": "新建分组",
+          "width": 320,
+          "items": [
+            {
+              "label": "分组键",
+              "hint": "当前实体下的稳定标识，如 basic_info；小写字母开头，可含数字、下划线和短横线，创建后不可修改。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "groupKey_extra",
+              "extraId": "groupKey_extra"
+            },
+            {
+              "label": "分组名称",
+              "hint": "表单中显示的分组标题，如“基础信息”，最多100字。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "label_extra",
+              "extraId": "label_extra"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "fontSize": "13px",
+              "color": "rgb(73, 94, 128)",
+              "fits": true,
+              "describedBy": "sortOrder_extra",
+              "extraId": "sortOrder_extra"
+            }
+          ]
+        }
+      ],
+      "pageErrors": [],
+      "contentWrites": [],
+      "buildId": "2Lq_NrIMq9o_Fk4rfZlaK"
+    }
+  },
+  "limitations": [
+    "No existing fields or field groups available for edit dialog browser validation; shared hint paths used for create and edit."
+  ],
+  "rollback": "python3 /opt/linji/releases/20261109-admin-form-hints/rollback-admin.py"
+}

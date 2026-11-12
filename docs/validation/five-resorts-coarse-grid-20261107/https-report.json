@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "at": "2026-11-07T02:12:39.840Z",
+  "checks": [
+    {
+      "name": "new login and referenced static resources",
+      "status": 200,
+      "resources": 17
+    },
+    {
+      "name": "existing public content preserved",
+      "passed": true
+    },
+    {
+      "name": "/snow",
+      "status": 200
+    },
+    {
+      "name": "/snow/login?mode=register",
+      "status": 200
+    },
+    {
+      "name": "/snow/resorts",
+      "status": 200
+    },
+    {
+      "name": "/snow/resorts/1",
+      "status": 200
+    },
+    {
+      "name": "/snow/knowledge",
+      "status": 200
+    },
+    {
+      "name": "/snow/knowledge/8",
+      "status": 200
+    },
+    {
+      "name": "/snow/dynamics",
+      "status": 200
+    },
+    {
+      "name": "/snow/dynamics/20",
+      "status": 200
+    },
+    {
+      "name": "/snow-admin/login",
+      "status": 200
+    },
+    {
+      "name": "API health",
+      "status": "ok"
+    }
+  ],
+  "publicCounts": {
+    "resorts": 5,
+    "articles": 8,
+    "stories": 20
+  },
+  "openapiVersion": "1.53.0"
+}

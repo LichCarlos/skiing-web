@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "buildId": "rfcBSTM4FWeTzZOJJrWnN",
+  "filesVerified": 2167,
+  "linksVerified": 21,
+  "archiveSha256": "b3ce4a998ea7534e156791ebdd3c22f6a6b3fda058fc6ae91292a6a252489cdd",
+  "checks": [
+    {
+      "route": "/snow",
+      "status": 200
+    },
+    {
+      "route": "/snow/login",
+      "status": 200
+    },
+    {
+      "route": "/snow/login?mode=register",
+      "status": 200
+    }
+  ]
+}

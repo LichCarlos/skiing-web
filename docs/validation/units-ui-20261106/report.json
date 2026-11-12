@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-06T05:59:32.666Z",
+  "scope": "Local Chromium UI with real public GET data; browser GET/CORS relay, synthetic guest auth responses only. No real login/write acceptance, no deployment.",
+  "results": [
+    {
+      "name": "desktop real public content and fixed rail",
+      "status": "passed"
+    },
+    {
+      "name": "modal keyboard, backdrop and focus return",
+      "status": "passed"
+    },
+    {
+      "name": "vertical scroll drives horizontal travel without wheel interception",
+      "status": "passed"
+    },
+    {
+      "name": "hidden card keyboard focus becomes visible",
+      "status": "passed"
+    },
+    {
+      "name": "reduced motion can switch live to native horizontal browsing",
+      "status": "passed"
+    },
+    {
+      "name": "directory route navigation and back retain usable header",
+      "status": "passed"
+    },
+    {
+      "name": "desktop narrow-height and 200 percent layout equivalents",
+      "status": "passed"
+    },
+    {
+      "name": "320px responsive content and navigation",
+      "status": "passed"
+    },
+    {
+      "name": "390px responsive content and navigation",
+      "status": "passed"
+    },
+    {
+      "name": "768px responsive content and navigation",
+      "status": "passed"
+    },
+    {
+      "name": "1920px responsive content and navigation",
+      "status": "passed"
+    },
+    {
+      "name": "no JavaScript retains SSR content, detail links and vertical list",
+      "status": "passed"
+    },
+    {
+      "name": "public catalog and detail routes remain readable",
+      "status": "passed"
+    },
+    {
+      "name": "no browser runtime exceptions",
+      "status": "passed"
+    }
+  ],
+  "errors": []
+}

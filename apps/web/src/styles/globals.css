@@ -1,5 +1,97 @@
 @import "@common/ui/styles";
 @import "./aliases.css";
+@import "./scrollbars.css";
 /* 公共包通常位于自动扫描范围外，必须显式注册来源。 */
 @source "../../../../packages/ui/src";
 @source "../";
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+/* Derive the entire canvas from the rendered route, including navigation and
+   sibling footer. CSS also follows client navigation before effects run. */
+html:has([data-home-opening]),
+body:has([data-home-opening]) {
+  --site-canvas: var(--site-yellow);
+}
+html:has([data-page-tone="resorts"], [data-auth-page]),
+body:has([data-page-tone="resorts"], [data-auth-page]) {
+  --site-canvas: var(--primary);
+  --site-canvas-ink: #fff;
+  --site-logo-ink: #fff;
+}
+html:has([data-page-tone="knowledge"]),
+body:has([data-page-tone="knowledge"]) {
+  --site-canvas: var(--site-green);
+}
+html:has([data-page-tone="dynamics"]),
+body:has([data-page-tone="dynamics"]) {
+  --site-canvas: var(--site-red);
+  --site-canvas-ink: #fff;
+  --site-logo-ink: #fff;
+}
+html,
+body {
+  background-color: var(--site-canvas);
+}
+@media (min-width: 1100px) {
+  body:has([data-site-navigation]) {
+    padding-inline-start: var(--site-rail-width);
+  }
+}
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+::selection {
+  background: var(--site-yellow);
+  color: var(--primary);
+}
+:where(a, button, input, select, summary, textarea):focus-visible {
+  outline: 3px solid var(--site-focus);
+  outline-offset: 4px;
+}
+:where(input, textarea) {
+  caret-color: var(--primary);
+}
+:where(input, textarea)::placeholder {
+  color: var(--muted-foreground);
+  opacity: 1;
+}
+:where(button, input, select, textarea) {
+  font: inherit;
+}
+:where(a) {
+  text-underline-offset: 0.25em;
+}
+:where(button, summary, select) {
+  cursor: pointer;
+}
+:where(button:disabled, input:disabled, select:disabled) {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+:where(h1, h2, h3) {
+  text-wrap: balance;
+}
+:where(p, dd, h1, h2, h3) {
+  overflow-wrap: anywhere;
+}
+:where(input, select, textarea) {
+  max-width: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

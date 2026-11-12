@@ -1,0 +1,387 @@
+{
+  "passed": true,
+  "deployed": true,
+  "website": "https://lichcarlos.top/snow/login",
+  "sourceSha256": "a8f2b340efc04038387a6eb3e62dd8a8ee899543dbe3d6efc8a6e8ca67955454",
+  "changes": {
+    "footerFontSize": 13,
+    "footerAlignment": "center",
+    "registerLabel": "立即注册",
+    "modeSwitchFontSize": 15,
+    "authPendingDomRemoved": true,
+    "touchTargetMinHeight": 44
+  },
+  "tests": {
+    "lint": true,
+    "website": 451,
+    "standaloneManifest": true,
+    "typescript": true,
+    "linuxProductionBuild": true,
+    "files": 29,
+    "boundaries": true
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "2Cva20o93RF21CkMA1V2M",
+    "filesVerified": 2167,
+    "linksVerified": 21,
+    "archiveSha256": "8a2139bd6d8bcb88dc671ea0288b84166de50715545e5418b6a588850f18699d",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-07T10:33:18.880026+08:00",
+    "release": "/opt/linji/releases/20261107-auth-footer-type",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1484019",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "2Cva20o93RF21CkMA1V2M"
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-07T02:33:28.185Z",
+    "checks": [
+      {
+        "name": "auth pending text DOM removed, updated register copy in deployed login",
+        "passed": true
+      },
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 17
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "browser": {
+    "passed": true,
+    "checks": [
+      {
+        "card": {
+          "bottom": 786,
+          "height": 680,
+          "width": 1080,
+          "x": 180,
+          "y": 106
+        },
+        "focus": "",
+        "footer": {
+          "fontSize": "13px",
+          "rect": {
+            "bottom": 680.6000366210938,
+            "height": 63,
+            "width": 412,
+            "x": 729.3624877929688,
+            "y": 617.6000366210938
+          },
+          "text": "忘记密码？请联系平台管理员重置。使用前请阅读 用户协议 和 隐私政策。",
+          "textAlign": "center"
+        },
+        "height": 900,
+        "horizontalOverflow": false,
+        "mode": "login",
+        "modeSwitch": {
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "rect": {
+            "bottom": 605.6000366210938,
+            "height": 44,
+            "width": 412,
+            "x": 729.3624877929688,
+            "y": 561.6000366210938
+          },
+          "text": "第一次来？立即注册"
+        },
+        "pendingDom": false,
+        "submitEnabled": true,
+        "verticalOverflow": false,
+        "width": 1440
+      },
+      {
+        "card": {
+          "bottom": 786,
+          "height": 680,
+          "width": 1080,
+          "x": 180,
+          "y": 106
+        },
+        "focus": "auth-title",
+        "footer": {
+          "fontSize": "13px",
+          "rect": {
+            "bottom": 682.3500137329102,
+            "height": 34.900001525878906,
+            "width": 412,
+            "x": 298.6458435058594,
+            "y": 647.4500122070312
+          },
+          "text": "使用前请阅读 用户协议 和 隐私政策。",
+          "textAlign": "center"
+        },
+        "height": 900,
+        "horizontalOverflow": false,
+        "mode": "register",
+        "modeSwitch": {
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "rect": {
+            "bottom": 635.4500122070312,
+            "height": 44,
+            "width": 412,
+            "x": 298.6458435058594,
+            "y": 591.4500122070312
+          },
+          "text": "老朋友去登录"
+        },
+        "pendingDom": false,
+        "submitEnabled": true,
+        "verticalOverflow": false,
+        "width": 1440
+      },
+      {
+        "card": {
+          "bottom": 756,
+          "height": 676,
+          "width": 350.3999938964844,
+          "x": 20,
+          "y": 80
+        },
+        "focus": "auth-title",
+        "footer": {
+          "fontSize": "13px",
+          "rect": {
+            "bottom": 688.7500381469727,
+            "height": 34.900001525878906,
+            "width": 292.375,
+            "x": 49.01250076293945,
+            "y": 653.8500366210938
+          },
+          "text": "使用前请阅读 用户协议 和 隐私政策。",
+          "textAlign": "center"
+        },
+        "height": 844,
+        "horizontalOverflow": false,
+        "mode": "register",
+        "modeSwitch": {
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "rect": {
+            "bottom": 641.8500366210938,
+            "height": 44,
+            "width": 292.375,
+            "x": 49.01250076293945,
+            "y": 597.8500366210938
+          },
+          "text": "老朋友去登录"
+        },
+        "pendingDom": false,
+        "submitEnabled": true,
+        "verticalOverflow": false,
+        "width": 390
+      },
+      {
+        "card": {
+          "bottom": 756,
+          "height": 676,
+          "width": 350.3999938964844,
+          "x": 20,
+          "y": 80
+        },
+        "focus": "auth-title",
+        "footer": {
+          "fontSize": "13px",
+          "rect": {
+            "bottom": 657.4500122070312,
+            "height": 63,
+            "width": 292.375,
+            "x": 49.01250076293945,
+            "y": 594.4500122070312
+          },
+          "text": "忘记密码？请联系平台管理员重置。使用前请阅读 用户协议 和 隐私政策。",
+          "textAlign": "center"
+        },
+        "height": 844,
+        "horizontalOverflow": false,
+        "mode": "login",
+        "modeSwitch": {
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "rect": {
+            "bottom": 582.4500122070312,
+            "height": 44,
+            "width": 292.375,
+            "x": 49.01250076293945,
+            "y": 538.4500122070312
+          },
+          "text": "第一次来？立即注册"
+        },
+        "pendingDom": false,
+        "submitEnabled": true,
+        "verticalOverflow": false,
+        "width": 390
+      },
+      {
+        "card": {
+          "bottom": 632,
+          "height": 552,
+          "width": 1080,
+          "x": 100,
+          "y": 80
+        },
+        "focus": "auth-title",
+        "footer": {
+          "fontSize": "13px",
+          "rect": {
+            "bottom": 588.8875122070312,
+            "height": 63,
+            "width": 412,
+            "x": 649.3624877929688,
+            "y": 525.8875122070312
+          },
+          "text": "忘记密码？请联系平台管理员重置。使用前请阅读 用户协议 和 隐私政策。",
+          "textAlign": "center"
+        },
+        "height": 720,
+        "horizontalOverflow": false,
+        "mode": "login",
+        "modeSwitch": {
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "rect": {
+            "bottom": 513.8875122070312,
+            "height": 44,
+            "width": 412,
+            "x": 649.3624877929688,
+            "y": 469.8875122070313
+          },
+          "text": "第一次来？立即注册"
+        },
+        "pendingDom": false,
+        "submitEnabled": true,
+        "verticalOverflow": false,
+        "width": 1280
+      },
+      {
+        "card": {
+          "bottom": 632,
+          "height": 552,
+          "width": 1080,
+          "x": 100,
+          "y": 80
+        },
+        "focus": "auth-title",
+        "footer": {
+          "fontSize": "13px",
+          "rect": {
+            "bottom": 590.6374893188477,
+            "height": 34.900001525878906,
+            "width": 412,
+            "x": 218.64585876464844,
+            "y": 555.7374877929688
+          },
+          "text": "使用前请阅读 用户协议 和 隐私政策。",
+          "textAlign": "center"
+        },
+        "height": 720,
+        "horizontalOverflow": false,
+        "mode": "register",
+        "modeSwitch": {
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "rect": {
+            "bottom": 543.7375183105469,
+            "height": 44,
+            "width": 412,
+            "x": 218.64585876464844,
+            "y": 499.7375183105469
+          },
+          "text": "老朋友去登录"
+        },
+        "pendingDom": false,
+        "submitEnabled": true,
+        "verticalOverflow": false,
+        "width": 1280
+      }
+    ]
+  },
+  "keyboard": {
+    "outline": "2.4px solid",
+    "legalLinkFocusVisible": true
+  },
+  "screenshots": [
+    "auth-footer-type-20261107/production-login-1440.png",
+    "auth-footer-type-20261107/production-register-1440.png",
+    "auth-footer-type-20261107/production-login-390.png",
+    "auth-footer-type-20261107/production-register-390.png",
+    "auth-footer-type-20261107/production-register-1280.png"
+  ],
+  "rollback": "python3 /opt/linji/releases/20261107-auth-footer-type/rollback-website.py",
+  "limits": [
+    "Browser viewport tests, not a physical phone",
+    "No production account creation or credential submission performed in this typography change"
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "runtimeSourceDiff": [
+    "apps/web/src/features/member/member.module.css",
+    "apps/web/src/features/member/note-editor.tsx",
+    "apps/web/src/features/member/resort-picker.tsx"
+  ],
+  "sourceSha256": "c4528cb90dcad62fe72994a6480fa070062891fb6afa13b7dd8202b81b212800",
+  "unitTests": {
+    "passed": 483,
+    "files": 34
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "boundaries": true,
+    "openapi": true,
+    "linuxBuild": true
+  },
+  "localBrowser": {
+    "passed": true,
+    "live": false,
+    "checks": [
+      {
+        "name": "empty editor shows guidance inside a single frame",
+        "passed": true
+      },
+      {
+        "name": "typing, heading and undo keep content and focus",
+        "passed": true
+      },
+      {
+        "name": "source and preview share the same outer frame",
+        "passed": true
+      },
+      {
+        "name": "resort fields use one shared border and native keyboard selection",
+        "passed": true
+      },
+      {
+        "name": "empty search and failed request remain recoverable",
+        "passed": true
+      },
+      {
+        "name": "390px writing, source and resort have no page overflow",
+        "passed": true
+      },
+      {
+        "name": "320px writing, source and resort have no page overflow",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "contentWrites": []
+  },
+  "productionBrowser": {
+    "passed": true,
+    "live": true,
+    "checks": [
+      {
+        "name": "empty editor shows guidance inside a single frame",
+        "passed": true
+      },
+      {
+        "name": "typing, heading and undo keep content and focus",
+        "passed": true
+      },
+      {
+        "name": "source and preview share the same outer frame",
+        "passed": true
+      },
+      {
+        "name": "resort fields use one shared border and native keyboard selection",
+        "passed": true
+      },
+      {
+        "name": "390px writing, source and resort have no page overflow",
+        "passed": true
+      },
+      {
+        "name": "320px writing, source and resort have no page overflow",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "contentWrites": [],
+    "buildId": "42cEiKzHW9fLrPbbggJlh"
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "42cEiKzHW9fLrPbbggJlh",
+    "filesVerified": 2203,
+    "linksVerified": 21,
+    "archiveSha256": "58ddee56050bfa08e0aed72c860a87a656db6ec90d11ebf3a6aa70b5c2e79b3c",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/me",
+        "status": 200
+      },
+      {
+        "staticResources": 24,
+        "status": 200
+      },
+      {
+        "route": "/snow/me/ai",
+        "status": 200
+      },
+      {
+        "route": "/snow/me/new",
+        "status": 200
+      },
+      {
+        "route": "/snow/me?tab=favorites",
+        "status": 200
+      },
+      {
+        "route": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge/1",
+        "status": 200
+      },
+      {
+        "route": "/snow/dynamics",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-09T03:46:16.245270+00:00",
+    "release": "/opt/linji/releases/20261109-member-writing",
+    "buildId": "42cEiKzHW9fLrPbbggJlh",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1527715",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "rollback": "python3 /opt/linji/releases/20261109-member-writing/rollback-website.py"
+}

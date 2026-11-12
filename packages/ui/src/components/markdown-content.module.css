@@ -1,0 +1,113 @@
+@layer components {
+  .plain {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .content {
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+  .content > :first-child {
+    margin-top: 0;
+  }
+  .content h1,
+  .content h2,
+  .content h3 {
+    line-height: 1.4;
+    margin: 1.8em 0 0.65em;
+    font-weight: 750;
+  }
+  .content h1 {
+    font-size: 1.8em;
+  }
+  .content h2 {
+    font-size: 1.5em;
+  }
+  .content h3 {
+    font-size: 1.2em;
+  }
+  .content p,
+  .content ul,
+  .content ol {
+    margin: 1em 0;
+  }
+  .content ul {
+    list-style: disc;
+    padding-left: 1.6em;
+  }
+  .content ol {
+    list-style: decimal;
+    padding-left: 1.6em;
+  }
+  .content blockquote {
+    margin: 1.4em 0;
+    padding: 0.5em 1.2em;
+    border-left: 4px solid var(--app-primary, #2455f5);
+    background: #f2f6ff;
+    color: #17264c;
+  }
+  .content a {
+    color: var(--app-primary, #2455f5);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin: 1em 0;
+  }
+  .content code {
+    font-family: ui-monospace, monospace;
+    background: #edf1f8;
+    color: #17264c;
+    border-radius: 4px;
+    padding: 0.12em 0.3em;
+  }
+  .content pre {
+    overflow-x: auto;
+    white-space: pre;
+    padding: 1em;
+    border: 1px solid currentColor;
+    border-radius: 12px;
+    background: #edf1f8;
+    color: #17264c;
+  }
+  .content pre code {
+    padding: 0;
+  }
+  .content hr {
+    border: 0;
+    border-top: 2px solid currentColor;
+    margin: 2em 0;
+  }
+  .tableScroll {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 1em 0;
+  }
+  .content table {
+    border-collapse: collapse;
+    min-width: 50%;
+  }
+  .content th,
+  .content td {
+    border: 1px solid currentColor;
+    padding: 0.5em 0.8em;
+    text-align: left;
+    min-width: 90px;
+  }
+  .content th {
+    background: #e8efff;
+    color: #17264c;
+  }
+  .missingImage {
+    display: block;
+    padding: 1em;
+    border: 1px dashed currentColor;
+    border-radius: 12px;
+    font-size: 0.9em;
+  }
+}

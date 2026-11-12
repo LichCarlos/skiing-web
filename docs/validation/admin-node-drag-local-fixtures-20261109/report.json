@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "mode": "local",
+  "fixtures": true,
+  "checks": [
+    {
+      "name": "dictionary-palette-native-drag-opens-context-form"
+    },
+    {
+      "name": "dictionary-item-drag-reads-target-and-opens-form"
+    },
+    {
+      "name": "dictionary-graph-create-field-drawer"
+    },
+    {
+      "name": "tree-palette-drop-to-parent-and-save"
+    },
+    {
+      "name": "tree-existing-drag-prefills-parent-cancel-and-confirm"
+    },
+    {
+      "name": "field-disabled-group-rejects-drop"
+    },
+    {
+      "name": "field-page-drag-group-save-and-node-refresh"
+    },
+    {
+      "name": "field-page-drag-to-group-save-and-node-refresh"
+    },
+    {
+      "name": "field-responsive-and-mobile-click-alternative",
+      "width": 1440
+    },
+    {
+      "name": "field-responsive-and-mobile-click-alternative",
+      "width": 1280
+    },
+    {
+      "name": "field-pagination-error-clears-and-retry-restores"
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "simulatedWrites": [
+    {
+      "method": "POST",
+      "path": "/admin/dictionaries/shared.options/items",
+      "parentId": 101
+    },
+    {
+      "method": "PATCH",
+      "path": "/admin/dictionaries/shared.options/items/102",
+      "parentId": 104
+    },
+    {
+      "method": "POST",
+      "path": "/admin/custom-field-groups",
+      "groupKey": "drag_group"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/custom-fields",
+      "groupKey": "basic"
+    }
+  ],
+  "buildId": "nnY1pK1tMinX5A-G0HQJO"
+}

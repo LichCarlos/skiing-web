@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "mode": "live",
+  "checks": [
+    {
+      "name": "resorts: create and return stay inside admin prefix",
+      "passed": true
+    },
+    {
+      "name": "articles: create and return stay inside admin prefix",
+      "passed": true
+    },
+    {
+      "name": "knowledge: create and return stay inside admin prefix",
+      "passed": true
+    },
+    {
+      "name": "error recovery points at the prefixed dashboard",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "navigations": [
+    "/snow-admin/login",
+    "/snow-admin/admin/content/resorts",
+    "/snow-admin/admin/content/resorts/new",
+    "/snow-admin/admin/content/resorts",
+    "/snow-admin/admin/content/articles",
+    "/snow-admin/admin/content/articles/new",
+    "/snow-admin/admin/content/articles",
+    "/snow-admin/admin/content/project-knowledge",
+    "/snow-admin/admin/content/project-knowledge/new",
+    "/snow-admin/admin/content/project-knowledge",
+    "/snow-admin/not-a-real-route",
+    "/snow-admin/admin"
+  ],
+  "contentWrites": [],
+  "buildId": "VOV-11ZVLsUJqF4sxyii0"
+}

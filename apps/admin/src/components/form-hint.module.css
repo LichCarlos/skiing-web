@@ -1,0 +1,31 @@
+.hint {
+  display: block;
+  color: var(--text-subtle);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.paragraphText {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.control,
+.controlFluid {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  min-width: 0;
+  max-width: 100%;
+  width: 18rem;
+}
+.controlFluid {
+  width: 100%;
+}
+.control :global(.ant-select),
+.control :global(.ant-input-number),
+.controlFluid :global(.ant-select),
+.controlFluid :global(.ant-input-number) {
+  min-width: 0;
+  width: 100%;
+}

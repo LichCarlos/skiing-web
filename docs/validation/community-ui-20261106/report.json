@@ -1,0 +1,56 @@
+{
+  "at": "2026-11-06T09:43:14.588Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Next homepage 1440px: no overflow, no inline login form",
+      "passed": true
+    },
+    {
+      "name": "Directory 1440px: keyboard trap, Escape and focus return",
+      "passed": true
+    },
+    {
+      "name": "Next homepage 390px: no overflow, no inline login form",
+      "passed": true
+    },
+    {
+      "name": "Directory 390px: keyboard trap, Escape and focus return",
+      "passed": true
+    },
+    {
+      "name": "Next homepage 320px: no overflow, no inline login form",
+      "passed": true
+    },
+    {
+      "name": "Directory 320px: keyboard trap, Escape and focus return",
+      "passed": true
+    },
+    {
+      "name": "Next homepage reduced motion has no pixel animation",
+      "passed": true
+    },
+    {
+      "name": "Gallery fixture: image load, mobile fit and horizontal navigation",
+      "passed": true
+    },
+    {
+      "name": "Gallery fixture: dialog, scroll lock, arrows and focus trap",
+      "passed": true
+    },
+    {
+      "name": "Gallery fixture: image failure offers fresh-page URL recovery",
+      "passed": true
+    },
+    {
+      "name": "Next SSR without JavaScript keeps heading and separate login link",
+      "passed": true
+    },
+    {
+      "name": "No page runtime errors in checked routes and isolated fixture",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Own temporary Next custom dev server with read-only empty API fixture; no production access. Gallery real component in isolated Vite fixture with next/image substitute and synthetic SVGs. No production content, authentication submission, Android/iOS or production build acceptance."
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-06",
+  "openapi": {
+    "version": "1.53.0",
+    "operations": 151,
+    "sha256": "a4542563de915963c6a4d05f6fba9582dbcadf908308774e080d406ef51ae309"
+  },
+  "productionChanged": false,
+  "deployed": false,
+  "apkBuilt": false,
+  "noCrossRepositorySourceImports": true,
+  "limitations": [
+    "No # autocomplete, persistent resort mentions or mention dependency graph",
+    "No collaborative/offline/server draft support",
+    "Physical Android and iOS validation pending",
+    "Expo Web community browser test blocked by execution policy; no workaround attempted"
+  ],
+  "checks": {
+    "lint": "passed",
+    "typecheck": "passed",
+    "boundaries": "9 workspaces passed",
+    "adminFullTests": {
+      "passed": 2706,
+      "files": 135
+    },
+    "webFullTests": {
+      "passed": 375,
+      "files": 24
+    },
+    "editorTestsFinal": {
+      "passed": 21,
+      "files": 1
+    },
+    "finalRelatedTestsBeforeTwoAdditionalCases": {
+      "passed": 336,
+      "files": 17
+    },
+    "build": "final serial Next production builds and standalone packaging passed for both applications",
+    "finalBuilds": {
+      "web": {
+        "passed": true,
+        "buildId": "7JIXmfgRM15UTd7TBFJOX",
+        "command": "pnpm build:web"
+      },
+      "admin": {
+        "passed": true,
+        "buildId": "E8HYQ5q4Hn2ntTXi0yoyJ",
+        "command": "NODE_OPTIONS=--max-old-space-size=1536 CIRCLE_NODE_TOTAL=3 pnpm build:admin --env-mode=loose --force",
+        "pageWorkers": 2
+      }
+    },
+    "chromeFixtureChecks": 7
+  },
+  "browserEvidence": "markdown-editor-20261106/report.json",
+  "failuresRetained": [
+    "Synthetic envelope initially lacked traceId",
+    "Upload locator initially matched cover and body",
+    "Browser exposed setEditable emitting changes during validation; fixed emitUpdate=false",
+    "Default parallel build and default 15-worker admin rebuild exhausted host memory; final serial build passed with 2 admin page workers",
+    "First CIRCLE_NODE_TOTAL retry was filtered by Turbo strict environment; explicit loose environment plus force passed without changing Next configuration or disabling checks"
+  ]
+}

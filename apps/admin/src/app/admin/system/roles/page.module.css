@@ -1,0 +1,52 @@
+.main {
+  composes: page from "../../../../styles/console.module.css";
+  display: grid;
+  gap: 1.25rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header h1 {
+  margin: 0.25rem 0 0;
+  font-size: 1.5rem;
+}
+
+.filters {
+  composes: filters from "../../../../styles/console.module.css";
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.roleIdentity {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.roleIdentity code,
+.muted {
+  color: var(--text-subtle);
+  font-size: 0.8rem;
+}
+
+.error {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-block: 1px solid var(--border-default);
+}
+
+@media (max-width: 640px) {
+  .header {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "date": "2026-11-03",
+  "evidenceVerified": true,
+  "contractVersion": "1.51.1",
+  "operations": 143,
+  "migrations": 24,
+  "scope": "Project knowledge full VO/page/filter/save/state-command/empty-deletion receipt projection; local/end identity verification; list/edit/create visibility lifecycle, form clearing and shared-ledger arbitration; actual logout-during-read and explicit login recovery plus existing versioned edit and publication workflow HTTP/persistence",
+  "http": {
+    "tests": 73,
+    "newTests": 2,
+    "output": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7",
+    "checks": {
+      "rawProjection": true,
+      "emptyPage": true,
+      "sessionRevocationRejected": true,
+      "sessionRestored": true
+    },
+    "persistence": {
+      "physicalProjectKnowledge": 3,
+      "managedSoftDeleted": 1,
+      "managedVersion": 7,
+      "managedFinalStatus": "published",
+      "firstPublishTimeRetained": true,
+      "knowledgePendingEvents": 7,
+      "knowledgeSuccessAudits": 7,
+      "originalPublicKnowledgeVersion": 1,
+      "totalOutbox": 43
+    },
+    "references": [
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/report.json",
+        "sha256": "32180486aa7ef7e551a97f7ec8f43dd4ac1ca6ceec411186cf69cd4379c55e20"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/client-result.json",
+        "sha256": "7bd6c620e050dfdf13fc67be130a3eeedfa6566d8d37a79cf1f812d08face068"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/ready.json",
+        "sha256": "18d6dd5caf0d4e69f5ac8880c81b20a8a5d5b39929720606500f43deb9d3b093"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/migrate-deploy.log",
+        "sha256": "3c599a8c5eac911a7599f46fd93ac5fb3bf75ed445ba5ab0a99328ef1e660f7d"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/seed-first.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/seed-second.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/verify-before.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/fixture-verify.log",
+        "sha256": "58a9626af015b2b731eb21bd4e8bbdb7acc131a7cbc1977e6cc91daad8d856c9"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/final/admin-runtime/linji-admin-http-1kB8f7/verify-after.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      }
+    ],
+    "cleanup": {
+      "path": "D:/linji-project-knowledge-reads/20261103/cleanup.json",
+      "sha256": "03eda55f88ceb94b057d840416881ed1300e3b06c7baa945d4b5cc6e99e873ef"
+    }
+  },
+  "regression": {
+    "newTests": 48,
+    "knowledgeCombinedTests": 145
+  },
+  "failures": {
+    "regression": "Initial38 boundary tests yielded35 failures/3 passes against old implementation. First repaired combined130 passed/5 existing fixture failures (pagination/end identity/command receipts); corrected fixtures and added8 simulated page lifecycle/2 shared-ledger and local-identity tests then145 passed. Initial dedicated typecheck rejected an undefined deletion fixture result; corrected test typing and final typecheck passed.",
+    "references": [
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/boundaries-before.log",
+        "sha256": "0c4ef530068bcff6fb0d0aeb6e5ec8bd7a7d54a8ee7b9ab919f60bf32e2e4153"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/targeted-first.log",
+        "sha256": "4750c7971b597b8ff6f4a70163fd116e4397e3883a5f892ba2e396d6fd339de0"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/targeted.log",
+        "sha256": "3660324ac0b1171947c16bf6b5525473553d12da910b40700d1060816b39b9bc"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/admin-types.log",
+        "sha256": "0334d3b05b72ba8316059231351a2e67c8671038bdc7d06fd8ee48f4b7ea4406"
+      },
+      {
+        "path": "D:/linji-project-knowledge-reads/20261103/admin-types-final.log",
+        "sha256": "3dd115a54d9decc15d9b6f1babec63f20d21966a914759ea6530c5b714007d15"
+      }
+    ]
+  },
+  "commandLedger": {
+    "path": "D:/linji-project-knowledge-reads/20261103/commands.json",
+    "sha256": "d6f33f46ce35ec02b6a2e51211f06faa3fdf235cd7bf3afe6b0da9cc91a5ed9f"
+  },
+  "limitations": [
+    "Node Cookie adapter and simulated Hooks/EventTarget do not prove actual browser/React/BFCache/device behavior",
+    "Read-end identity verification is not a cross-request atomic permission snapshot; existing project knowledge state commands have no client version precondition or idempotency key",
+    "Only edit DTO has a version precondition; no new client version/idempotency protocol for state commands; no real model/Embedding/RAG rebuild accepted",
+    "No current full database suite, real Kafka/Inbox/timers/providers/storage/container or remote CI acceptance",
+    "Existing Windows Kafka AccessDenied remains unresolved; Docker and its WSL distribution were not started/restarted/used",
+    "D-49/D-50/D-09 remain unanswered and unimplemented; project incomplete",
+    "No commit/push/deploy/publish or denied action retried"
+  ],
+  "repository": "web",
+  "openapi": {
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 2935,
+    "newTests": 48,
+    "knowledgeCombinedTests": 145,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-responses.ts",
+      "sha256": "426867919bc42c79a06e6bac7c2462d2e61949e324a4596de2010865889c3ad0"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-model.ts",
+      "sha256": "9b764d4841ef02ea3ab3be89bbe92ea832be9ab00d516511bcceb2f76f4ceeca"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-queries.ts",
+      "sha256": "b760babefdc5fafbda389f0abe8bf6486c49b8b4c6c3cfccccca2a6b4600bbf6"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-workflow.ts",
+      "sha256": "0ccba8ae9abfc582514852054b735f733fbdbcfe67919b7843ff57e8946bc415"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-session.tsx",
+      "sha256": "ecabd1b9aaf5af0cbb1925166195851e1e2a2d4d48e63254b9143d533ffc664e"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-console.tsx",
+      "sha256": "dd456d010b5baed023daa2a6d3a406f39e2895824281fb5d638161824fe5b805"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/project-knowledge-form.tsx",
+      "sha256": "99918af0e5eac2cdf2ee97c5b5b424277aeb5d8ead03f1e96d7c5eaf49d235ca"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-read-boundaries.test.ts",
+      "sha256": "b1abe75e818ecfeee64bc14136d14758ffc48a451559dc2f37f6e93c1811af08"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-page-lifecycle.test.tsx",
+      "sha256": "d4dbed45d979b5951da98c339877723e94d0e0840fa08457aa985dfa494dfeb7"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-workflow.test.ts",
+      "sha256": "b9bac9230fbe28f0169361bfbebc90792c66a09ef6f34dc9a2fe8f806baadb7a"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/project-knowledge/knowledge-queries.test.ts",
+      "sha256": "550d2ed30ccab18634dd9d55271ef6e4fcba5ed77535ec2656213ae3cbf19c8e"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "f0b324cc0864a3c97249aeabe30777f138cd0737ac5944b3c8c29d0a3e7d8944"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-project-knowledge-reads/20261103/web-install.log",
+      "sha256": "22421c26d4a7092bba08a494e8ee7e489535176257910dfda672e74b3b86f283"
+    },
+    {
+      "path": "D:/linji-project-knowledge-reads/20261103/web-check.log",
+      "sha256": "b4f78e7ed9a5f463305918aa8f06a43b85fae00d536e923939f81ecff37ab16e"
+    },
+    {
+      "path": "D:/linji-project-knowledge-reads/20261103/web-build.log",
+      "sha256": "5fa9b5a16b4e94b758ca5e12ac1596322daa494d3fb425b5bbc63a6aefa1688d"
+    },
+    {
+      "path": "D:/linji-project-knowledge-reads/20261103/admin-http.log",
+      "sha256": "74e35ce4f3f42b32fbf7ef760e2af6fc1c539319f32c491090b78fa7ab51904d"
+    },
+    {
+      "path": "D:/linji-project-knowledge-reads/20261103/doc-format.log",
+      "sha256": "4796c011abe6e71742f1d775ff528d864beb194f009897fc39ececb30a94f82f"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "6DUD1QQaVCKJ_jWEcarPZ",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "7b0dd759dd7f36fc48624311f82d7ce55b754e0d4d48b9470008510cf66cb0dc"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "i8-WnZC1wGFBRYcobGgxd",
+      "files": 1958,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "497f74a3e0aae8b6b48a9d95720ddcd33a75d8191257dc62d540d437f89d1ba4"
+      }
+    }
+  ]
+}

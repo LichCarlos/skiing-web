@@ -1,0 +1,37 @@
+.page {
+  composes: page from "../../styles/console.module.css";
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.filters {
+  composes: filters from "../../styles/console.module.css";
+  margin-bottom: 16px;
+}
+.search {
+  width: min(280px, 75vw);
+}
+.owner {
+  width: min(200px, 75vw);
+}
+.table {
+  overflow-x: auto;
+}
+.preview {
+  max-width: min(560px, 100%);
+  max-height: 420px;
+  object-fit: contain;
+}
+.thumbnail {
+  object-fit: cover;
+  border-radius: 8px;
+}
+.facts {
+  overflow-wrap: anywhere;
+  margin: 20px 0;
+}

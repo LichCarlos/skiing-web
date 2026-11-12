@@ -1,0 +1,55 @@
+{
+  "scope": "Synthetic browser API fixtures only; not server or native device acceptance",
+  "checks": [
+    {
+      "name": "Tiptap hydrated existing Markdown without raw syntax",
+      "passed": true
+    },
+    {
+      "name": "typed content, toolbar heading and undo/redo",
+      "passed": true
+    },
+    {
+      "name": "logical document and resort link insertion",
+      "passed": true
+    },
+    {
+      "name": "image upload inserts Asset ID and resolves controlled preview",
+      "passed": true
+    },
+    {
+      "name": "preview renders link and image; save uses versioned source, not signed URLs",
+      "passed": true
+    },
+    {
+      "name": "MD import, table preview and semantic export",
+      "passed": true
+    },
+    {
+      "name": "narrow viewport keeps editor controls reachable",
+      "passed": true
+    }
+  ],
+  "writes": [
+    {
+      "path": "/assets",
+      "method": "POST"
+    },
+    {
+      "path": "/admin/articles/7",
+      "method": "PATCH",
+      "body": {
+        "title": "测试滑雪笔记",
+        "summary": "仅浏览器内的合成资料",
+        "body": "## 安全滑雪\n\n**先热身**，再上雪道。\n\n## 合成雪场体验[万龙雪场](resort:7)\n\n![snow.png](asset:12)\n\n",
+        "contentFormat": "markdown_v1",
+        "expectedVersion": 1,
+        "categoryValue": "beginner",
+        "coverAssetId": null,
+        "customFields": {}
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

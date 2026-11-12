@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "url": "https://lichcarlos.top/snow",
+  "scope": "Website canvas and home scroll presentation",
+  "build": {
+    "buildId": "MESfyIY6vB2DGFuLePpqI",
+    "sourceSha256": "405c4eb1c735525e3325c90d1dcf2cb2c841f6d0482ad96c881c9a085d134da3",
+    "archiveSha256": "5cbf7cfe03f590397bfc4143941bea9b58fe73b9ef12c7f4de91f4598942160d",
+    "testFiles": 29,
+    "tests": 449,
+    "boundaries": "passed",
+    "eslint": "passed",
+    "typescript": "passed",
+    "linuxProductionBuild": "passed",
+    "manifestFiles": 2167,
+    "manifestLinks": 21
+  },
+  "deployment": {
+    "passed": true,
+    "activatedAt": "2026-11-07T09:34:19.552036+08:00",
+    "release": "/opt/linji/releases/20261107-scroll-repair",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1482246",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "MESfyIY6vB2DGFuLePpqI"
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "MESfyIY6vB2DGFuLePpqI",
+    "filesVerified": 2167,
+    "linksVerified": 21,
+    "archiveSha256": "5cbf7cfe03f590397bfc4143941bea9b58fe73b9ef12c7f4de91f4598942160d",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      }
+    ]
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-07T01:34:19.792Z",
+    "checks": [
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 17
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "live": {
+    "firstScene": {
+      "first": "1",
+      "scene": "forward",
+      "second": "0"
+    },
+    "secondScene": {
+      "first": "0",
+      "scene": "mountainward",
+      "second": "1"
+    },
+    "railBefore": {
+      "transform": "translate3d(0px, 0px, 0px)",
+      "y": 4454.39990234375
+    },
+    "railAfter": {
+      "transform": "translate3d(0px, 0px, 0px)",
+      "y": 4634.39990234375
+    },
+    "livePanels": {
+      "body": "rgb(255, 218, 61)",
+      "cards": [
+        {
+          "height": 620,
+          "overflow": false
+        },
+        {
+          "height": 620,
+          "overflow": false
+        },
+        {
+          "height": 620,
+          "overflow": false
+        },
+        {
+          "height": 620,
+          "overflow": false
+        },
+        {
+          "height": 620,
+          "overflow": false
+        },
+        {
+          "height": 620,
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "height": 860,
+          "held": true
+        },
+        {
+          "height": 860,
+          "held": true
+        },
+        {
+          "height": 860,
+          "held": true
+        }
+      ],
+      "viewport": [1440, 900]
+    }
+  },
+  "routes": {
+    "routeColors": [
+      {
+        "body": "rgb(36, 85, 245)",
+        "footer": "rgb(36, 85, 245)",
+        "footerLink": "rgb(255, 255, 255)",
+        "nav": "rgb(36, 85, 245)",
+        "overflow": false,
+        "path": "/snow/resorts"
+      },
+      {
+        "body": "rgb(0, 173, 71)",
+        "footer": "rgb(0, 173, 71)",
+        "footerLink": "rgb(0, 0, 0)",
+        "nav": "rgb(0, 173, 71)",
+        "overflow": false,
+        "path": "/snow/knowledge"
+      },
+      {
+        "body": "rgb(220, 47, 67)",
+        "footer": "rgb(220, 47, 67)",
+        "footerLink": "rgb(255, 255, 255)",
+        "nav": "rgb(220, 47, 67)",
+        "overflow": false,
+        "path": "/snow/dynamics"
+      }
+    ],
+    "detailCheck": {
+      "body": "rgb(255, 255, 255)",
+      "footer": "rgb(255, 255, 255)",
+      "nav": "rgb(255, 255, 255)",
+      "overflow": false,
+      "path": "/snow/knowledge/8"
+    }
+  },
+  "mobile": {
+    "body": "rgb(255, 218, 61)",
+    "cards": 6,
+    "enhanced": false,
+    "overflow": false,
+    "viewport": [390, 844]
+  },
+  "smallDesktopCandidate": {
+    "cards": [
+      {
+        "height": 619.2000122070312,
+        "overflow": false
+      },
+      {
+        "height": 619.2000122070312,
+        "overflow": false
+      },
+      {
+        "height": 619.2000122070312,
+        "overflow": false
+      },
+      {
+        "height": 619.2000122070312,
+        "overflow": false
+      },
+      {
+        "height": 619.2000122070312,
+        "overflow": false
+      },
+      {
+        "height": 619.2000122070312,
+        "overflow": false
+      }
+    ],
+    "overflow": false,
+    "panels": [
+      {
+        "height": 680,
+        "held": true
+      },
+      {
+        "height": 680,
+        "held": true
+      },
+      {
+        "height": 680,
+        "held": true
+      }
+    ],
+    "viewport": [1280, 720]
+  },
+  "screenshots": [
+    "scroll-canvas-repair-20261107/forward-live.png",
+    "scroll-canvas-repair-20261107/mountainward-live.png",
+    "scroll-canvas-repair-20261107/hero-live.png",
+    "scroll-canvas-repair-20261107/knowledge-live.png",
+    "scroll-canvas-repair-20261107/community-live.png",
+    "scroll-canvas-repair-20261107/resorts-footer-live.png",
+    "scroll-canvas-repair-20261107/knowledge-footer-live.png",
+    "scroll-canvas-repair-20261107/dynamics-footer-live.png",
+    "scroll-canvas-repair-20261107/mobile-live.png"
+  ],
+  "rollback": "python3 /opt/linji/releases/20261107-scroll-repair/rollback-website.py",
+  "rollbackExecuted": false,
+  "cleanup": {
+    "candidatePort13200": "closed",
+    "sshTunnel": "stopped",
+    "wslPreview": "stopped",
+    "existingLocal3108": "preserved",
+    "websiteService": "active",
+    "adminApiServices": "unchanged"
+  },
+  "limits": [
+    "Desktop panels share a viewport height; mobile/compact/reduced-motion retain normal readable flow.",
+    "No physical device, OS reduced-motion, no-JS browser or 200 percent system zoom validation.",
+    "No production registration or other business writes.",
+    "Mechanical scan advisories belong to existing shared reading styles.",
+    "Documentation consolidated after runtime source export."
+  ],
+  "evidenceDirectory": "D:/linji-local/20261107/scroll-repair"
+}

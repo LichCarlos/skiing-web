@@ -1,0 +1,1311 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "date": "2026-11-06",
+  "scope": "Website only: yellow grid opening and corrected auth left/right switch",
+  "homepageUrl": "https://lichcarlos.top/snow",
+  "loginUrl": "https://lichcarlos.top/snow/login",
+  "build": {
+    "buildId": "0R91fAOtCmRIO5iHpxNEB",
+    "sourceSha256": "da281b170f40eca8f403844fd850d2a5cd305cf85d5fba9c815d8a6fae5fc147",
+    "archiveSha256": "98603d63d8212682321137c6badb7723ed1befa7ebf344fd8c0653c70fd0b8e8",
+    "frozenInstall": true,
+    "workspaceBoundaries": 9,
+    "websiteTestFiles": 28,
+    "websiteTests": 430,
+    "eslint": "passed",
+    "nextProductionBuildAndTypescript": "passed",
+    "standaloneFiles": 2167,
+    "standaloneLinks": 21,
+    "rawLog": "D:/linji-local/20261106/auth-swap-release/build-linux.log"
+  },
+  "deployment": {
+    "passed": true,
+    "activatedAt": "2026-11-06T20:59:25.625415+08:00",
+    "release": "/opt/linji/releases/20261106-auth-swap",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1471288",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "0R91fAOtCmRIO5iHpxNEB"
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "0R91fAOtCmRIO5iHpxNEB",
+    "filesVerified": 2167,
+    "linksVerified": 21,
+    "archiveSha256": "98603d63d8212682321137c6badb7723ed1befa7ebf344fd8c0653c70fd0b8e8",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      }
+    ]
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-06T13:00:56.123Z",
+    "checks": [
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 17
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "authLocalIsolatedFixture": {
+    "passed": true,
+    "matrix": [
+      {
+        "login": {
+          "card": {
+            "h": 624,
+            "w": 1080,
+            "x": 143.1999969482422,
+            "y": 80
+          },
+          "confirmation": false,
+          "content": {
+            "client": 581,
+            "scroll": 581
+          },
+          "documentHeight": 768,
+          "documentWidth": 1366,
+          "mode": "login",
+          "panel": {
+            "h": 620.7999877929688,
+            "w": 646.0750122070312,
+            "x": 575.5250244140625,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 620.7999877929688,
+            "w": 430.7124938964844,
+            "x": 144.8000030517578,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 659.2000122070312,
+            "y": 368
+          },
+          "viewport": {
+            "h": 768,
+            "w": 1366
+          }
+        },
+        "register": {
+          "card": {
+            "h": 624,
+            "w": 1080,
+            "x": 143.1999969482422,
+            "y": 80
+          },
+          "confirmation": true,
+          "content": {
+            "client": 581,
+            "scroll": 581
+          },
+          "documentHeight": 768,
+          "documentWidth": 1366,
+          "mode": "register",
+          "panel": {
+            "h": 620.7999877929688,
+            "w": 646.0750122070312,
+            "x": 150.2671356201172,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 620.7999877929688,
+            "w": 430.7125549316406,
+            "x": 782.6806030273438,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 659.2000122070312,
+            "y": 368
+          },
+          "viewport": {
+            "h": 768,
+            "w": 1366
+          }
+        }
+      },
+      {
+        "login": {
+          "card": {
+            "h": 576,
+            "w": 1080,
+            "x": 100,
+            "y": 80
+          },
+          "confirmation": false,
+          "content": {
+            "client": 541,
+            "scroll": 541
+          },
+          "documentHeight": 720,
+          "documentWidth": 1280,
+          "mode": "login",
+          "panel": {
+            "h": 572.7999877929688,
+            "w": 646.0750122070312,
+            "x": 529.69482421875,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 572.7999877929688,
+            "w": 430.7124938964844,
+            "x": 105.54521942138672,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 616,
+            "y": 344
+          },
+          "viewport": {
+            "h": 720,
+            "w": 1280
+          }
+        },
+        "register": {
+          "card": {
+            "h": 576,
+            "w": 1080,
+            "x": 100,
+            "y": 80
+          },
+          "confirmation": true,
+          "content": {
+            "client": 541,
+            "scroll": 541
+          },
+          "documentHeight": 720,
+          "documentWidth": 1280,
+          "mode": "register",
+          "panel": {
+            "h": 572.7999877929688,
+            "w": 646.0750122070312,
+            "x": 105.0502471923828,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 572.7999877929688,
+            "w": 430.7124938964844,
+            "x": 742.5059814453125,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 616,
+            "y": 344
+          },
+          "viewport": {
+            "h": 720,
+            "w": 1280
+          }
+        }
+      },
+      {
+        "login": {
+          "card": {
+            "h": 506.3999938964844,
+            "w": 765.375,
+            "x": 42.51250076293945,
+            "y": 80
+          },
+          "confirmation": false,
+          "content": {
+            "client": 471,
+            "scroll": 471
+          },
+          "documentHeight": 650,
+          "documentWidth": 850,
+          "mode": "login",
+          "panel": {
+            "h": 503.2000122070313,
+            "w": 457.3000183105469,
+            "x": 347.8634948730469,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 503.2000122070313,
+            "w": 304.8625183105469,
+            "x": 45.79848098754883,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 401.2000122070313,
+            "y": 309.20001220703125
+          },
+          "viewport": {
+            "h": 650,
+            "w": 850
+          }
+        },
+        "register": {
+          "card": {
+            "h": 506.3999938964844,
+            "w": 765.375,
+            "x": 42.51250076293945,
+            "y": 80
+          },
+          "confirmation": true,
+          "content": {
+            "client": 471,
+            "scroll": 471
+          },
+          "documentHeight": 650,
+          "documentWidth": 850,
+          "mode": "register",
+          "panel": {
+            "h": 503.2000122070313,
+            "w": 457.3000183105469,
+            "x": 47.95270919799805,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 503.2000122070313,
+            "w": 304.8625183105469,
+            "x": 495.6585388183594,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 401.2000122070313,
+            "y": 309.20001220703125
+          },
+          "viewport": {
+            "h": 650,
+            "w": 850
+          }
+        }
+      },
+      {
+        "login": {
+          "card": {
+            "h": 680,
+            "w": 350.3999938964844,
+            "x": 20,
+            "y": 90
+          },
+          "confirmation": false,
+          "content": {
+            "client": 577,
+            "scroll": 577
+          },
+          "documentHeight": 844,
+          "documentWidth": 390,
+          "mode": "login",
+          "panel": {
+            "h": 676.7999877929688,
+            "w": 347.20001220703125,
+            "x": 20.185720443725582,
+            "y": 91.5999984741211
+          },
+          "photo": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "photoDisplay": "none",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 171.1999969482422,
+            "y": 111.5999984741211
+          },
+          "viewport": {
+            "h": 844,
+            "w": 390
+          }
+        },
+        "register": {
+          "card": {
+            "h": 680,
+            "w": 350.3999938964844,
+            "x": 20,
+            "y": 90
+          },
+          "confirmation": true,
+          "content": {
+            "client": 577,
+            "scroll": 577
+          },
+          "documentHeight": 844,
+          "documentWidth": 390,
+          "mode": "register",
+          "panel": {
+            "h": 676.7999877929688,
+            "w": 347.20001220703125,
+            "x": 21.600000381469727,
+            "y": 91.5999984741211
+          },
+          "photo": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "photoDisplay": "none",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 171.1999969482422,
+            "y": 111.5999984741211
+          },
+          "viewport": {
+            "h": 844,
+            "w": 390
+          }
+        }
+      }
+    ],
+    "mismatch": {
+      "error": "两次输入的密码不一致，请重新确认。",
+      "state": {
+        "card": {
+          "h": 624,
+          "w": 1080,
+          "x": 143.1999969482422,
+          "y": 80
+        },
+        "confirmation": true,
+        "content": {
+          "client": 581,
+          "scroll": 581
+        },
+        "documentHeight": 768,
+        "documentWidth": 1366,
+        "mode": "register",
+        "panel": {
+          "h": 620.7999877929688,
+          "w": 646.0750122070312,
+          "x": 144.808349609375,
+          "y": 81.5999984741211
+        },
+        "photo": {
+          "h": 620.7999877929688,
+          "w": 430.7124938964844,
+          "x": 790.8687744140625,
+          "y": 81.5999984741211
+        },
+        "photoDisplay": "block",
+        "submitDisabled": false,
+        "toggle": {
+          "bg": "rgb(255, 255, 255)",
+          "h": 48,
+          "svg": "0 0 1024 1024",
+          "w": 48,
+          "x": 659.2000122070312,
+          "y": 368
+        },
+        "viewport": {
+          "h": 768,
+          "w": 1366
+        }
+      }
+    },
+    "registration": {
+      "account": "<redacted>",
+      "mode": "login",
+      "notice": "账号已创建，请使用刚才设置的密码登录。",
+      "passwordEmpty": true,
+      "path": "/snow/login"
+    },
+    "fixtureRegisterRequests": 1,
+    "limits": "Isolated local fixture only; no production account creation; animation matrices may include in-flight transforms; fixed card/button assertions unaffected"
+  },
+  "authProduction": {
+    "passed": true,
+    "matrix": [
+      {
+        "login": {
+          "card": {
+            "h": 624,
+            "w": 1080,
+            "x": 143.1999969482422,
+            "y": 80
+          },
+          "confirmation": false,
+          "content": {
+            "client": 581,
+            "scroll": 581
+          },
+          "documentHeight": 768,
+          "documentWidth": 1366,
+          "mode": "login",
+          "panel": {
+            "h": 620.7999877929688,
+            "w": 646.0750122070312,
+            "x": 575.5250244140625,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 620.7999877929688,
+            "w": 430.7124938964844,
+            "x": 144.8000030517578,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 659.2000122070312,
+            "y": 368
+          },
+          "viewport": {
+            "h": 768,
+            "w": 1366
+          }
+        },
+        "register": {
+          "card": {
+            "h": 624,
+            "w": 1080,
+            "x": 143.1999969482422,
+            "y": 80
+          },
+          "confirmation": true,
+          "content": {
+            "client": 581,
+            "scroll": 581
+          },
+          "documentHeight": 768,
+          "documentWidth": 1366,
+          "mode": "register",
+          "panel": {
+            "h": 620.7999877929688,
+            "w": 646.0750122070312,
+            "x": 150.2643585205078,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 620.7999877929688,
+            "w": 430.7124938964844,
+            "x": 782.6848754882812,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 659.2000122070312,
+            "y": 368
+          },
+          "viewport": {
+            "h": 768,
+            "w": 1366
+          }
+        }
+      },
+      {
+        "login": {
+          "card": {
+            "h": 576,
+            "w": 1080,
+            "x": 100,
+            "y": 80
+          },
+          "confirmation": false,
+          "content": {
+            "client": 541,
+            "scroll": 541
+          },
+          "documentHeight": 720,
+          "documentWidth": 1280,
+          "mode": "login",
+          "panel": {
+            "h": 572.7999877929688,
+            "w": 646.0750732421875,
+            "x": 530.2837524414062,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 572.7999877929688,
+            "w": 430.7124938964844,
+            "x": 104.661865234375,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 616,
+            "y": 344
+          },
+          "viewport": {
+            "h": 720,
+            "w": 1280
+          }
+        },
+        "register": {
+          "card": {
+            "h": 576,
+            "w": 1080,
+            "x": 100,
+            "y": 80
+          },
+          "confirmation": true,
+          "content": {
+            "client": 541,
+            "scroll": 541
+          },
+          "documentHeight": 720,
+          "documentWidth": 1280,
+          "mode": "register",
+          "panel": {
+            "h": 572.7999877929688,
+            "w": 646.0750122070312,
+            "x": 106.4596176147461,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 572.7999877929688,
+            "w": 430.7124938964844,
+            "x": 740.3919067382812,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 616,
+            "y": 344
+          },
+          "viewport": {
+            "h": 720,
+            "w": 1280
+          }
+        }
+      },
+      {
+        "login": {
+          "card": {
+            "h": 506.3999938964844,
+            "w": 765.375,
+            "x": 42.51250076293945,
+            "y": 80
+          },
+          "confirmation": false,
+          "content": {
+            "client": 471,
+            "scroll": 471
+          },
+          "documentHeight": 650,
+          "documentWidth": 850,
+          "mode": "login",
+          "panel": {
+            "h": 503.2000122070313,
+            "w": 457.3000183105469,
+            "x": 347.3177185058594,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 503.2000122070313,
+            "w": 304.8625183105469,
+            "x": 46.617149353027344,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 401.2000122070313,
+            "y": 309.20001220703125
+          },
+          "viewport": {
+            "h": 650,
+            "w": 850
+          }
+        },
+        "register": {
+          "card": {
+            "h": 506.3999938964844,
+            "w": 765.375,
+            "x": 42.51250076293945,
+            "y": 80
+          },
+          "confirmation": true,
+          "content": {
+            "client": 471,
+            "scroll": 471
+          },
+          "documentHeight": 650,
+          "documentWidth": 850,
+          "mode": "register",
+          "panel": {
+            "h": 503.2000122070313,
+            "w": 457.3000183105469,
+            "x": 47.19367599487305,
+            "y": 81.5999984741211
+          },
+          "photo": {
+            "h": 503.2000122070313,
+            "w": 304.8625183105469,
+            "x": 496.7970886230469,
+            "y": 81.5999984741211
+          },
+          "photoDisplay": "block",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 401.2000122070313,
+            "y": 309.20001220703125
+          },
+          "viewport": {
+            "h": 650,
+            "w": 850
+          }
+        }
+      },
+      {
+        "login": {
+          "card": {
+            "h": 680,
+            "w": 350.3999938964844,
+            "x": 20,
+            "y": 90
+          },
+          "confirmation": false,
+          "content": {
+            "client": 577,
+            "scroll": 577
+          },
+          "documentHeight": 844,
+          "documentWidth": 390,
+          "mode": "login",
+          "panel": {
+            "h": 676.7999877929688,
+            "w": 347.20001220703125,
+            "x": 20.631589889526367,
+            "y": 91.5999984741211
+          },
+          "photo": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "photoDisplay": "none",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(36, 85, 245)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 171.1999969482422,
+            "y": 111.5999984741211
+          },
+          "viewport": {
+            "h": 844,
+            "w": 390
+          }
+        },
+        "register": {
+          "card": {
+            "h": 680,
+            "w": 350.3999938964844,
+            "x": 20,
+            "y": 90
+          },
+          "confirmation": true,
+          "content": {
+            "client": 577,
+            "scroll": 577
+          },
+          "documentHeight": 844,
+          "documentWidth": 390,
+          "mode": "register",
+          "panel": {
+            "h": 676.7999877929688,
+            "w": 347.20001220703125,
+            "x": 21.600000381469727,
+            "y": 91.5999984741211
+          },
+          "photo": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "photoDisplay": "none",
+          "submitDisabled": false,
+          "toggle": {
+            "bg": "rgb(255, 255, 255)",
+            "h": 48,
+            "svg": "0 0 1024 1024",
+            "w": 48,
+            "x": 171.1999969482422,
+            "y": 111.5999984741211
+          },
+          "viewport": {
+            "h": 844,
+            "w": 390
+          }
+        }
+      }
+    ],
+    "settledRegister": {
+      "card": {
+        "h": 624,
+        "w": 1080,
+        "x": 143.1999969482422,
+        "y": 80
+      },
+      "confirmation": true,
+      "content": {
+        "client": 581,
+        "scroll": 581
+      },
+      "documentHeight": 768,
+      "documentWidth": 1366,
+      "mode": "register",
+      "panel": {
+        "h": 620.7999877929688,
+        "w": 646.0750122070312,
+        "x": 144.808349609375,
+        "y": 81.5999984741211
+      },
+      "photo": {
+        "h": 620.7999877929688,
+        "w": 430.7124938964844,
+        "x": 790.8687744140625,
+        "y": 81.5999984741211
+      },
+      "photoDisplay": "block",
+      "submitDisabled": false,
+      "toggle": {
+        "bg": "rgb(255, 255, 255)",
+        "h": 48,
+        "svg": "0 0 1024 1024",
+        "w": 48,
+        "x": 659.2000122070312,
+        "y": 368
+      },
+      "viewport": {
+        "h": 768,
+        "w": 1366
+      }
+    },
+    "console": [],
+    "limits": "Read-only production layout verification; registration success/mismatch verified only against local fixture"
+  },
+  "homepageProduction": {
+    "desktop": {
+      "initial": {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 1425,
+        "enhanced": true,
+        "gridOpacity": "1",
+        "hero": {
+          "h": 860,
+          "w": 1228.800048828125,
+          "x": 176,
+          "y": 20
+        },
+        "heroContentHeight": 860,
+        "heroContentScroll": 860,
+        "heroOpacity": "0",
+        "letteringOpacity": "1",
+        "menuButtons": 0,
+        "poster": {
+          "h": 860,
+          "w": 1228.800048828125,
+          "x": 176,
+          "y": 20
+        },
+        "railBorder": "0px",
+        "scene": "lettering",
+        "scrollY": 0,
+        "viewport": {
+          "h": 900,
+          "w": 1440
+        }
+      },
+      "grid": {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 1425,
+        "enhanced": true,
+        "gridOpacity": "1",
+        "hero": {
+          "h": 860,
+          "w": 1228.800048828125,
+          "x": 176,
+          "y": 20
+        },
+        "heroContentHeight": 860,
+        "heroContentScroll": 860,
+        "heroOpacity": "0",
+        "letteringOpacity": "0",
+        "menuButtons": 0,
+        "poster": {
+          "h": 860,
+          "w": 1228.800048828125,
+          "x": 176,
+          "y": 20
+        },
+        "railBorder": "0px",
+        "scene": "grid",
+        "scrollY": 540,
+        "viewport": {
+          "h": 900,
+          "w": 1440
+        }
+      },
+      "hero": {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 1425,
+        "enhanced": true,
+        "gridOpacity": "0",
+        "hero": {
+          "h": 860,
+          "w": 1228.800048828125,
+          "x": 176,
+          "y": 20
+        },
+        "heroContentHeight": 860,
+        "heroContentScroll": 860,
+        "heroOpacity": "1",
+        "letteringOpacity": "0",
+        "menuButtons": 0,
+        "poster": {
+          "h": 860,
+          "w": 1228.800048828125,
+          "x": 176,
+          "y": 20
+        },
+        "railBorder": "0px",
+        "scene": "mountain",
+        "scrollY": 1080,
+        "viewport": {
+          "h": 900,
+          "w": 1440
+        }
+      }
+    },
+    "mobile": {
+      "initial": {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 375,
+        "enhanced": true,
+        "gridOpacity": "1",
+        "hero": {
+          "h": 636,
+          "w": 343.20001220703125,
+          "x": 16,
+          "y": 196
+        },
+        "heroContentHeight": 636,
+        "heroContentScroll": 636,
+        "heroOpacity": "0",
+        "letteringOpacity": "1",
+        "menuButtons": 0,
+        "poster": {
+          "h": 636,
+          "w": 343.20001220703125,
+          "x": 16,
+          "y": 196
+        },
+        "railBorder": "0px",
+        "scene": "lettering",
+        "scrollY": 0,
+        "viewport": {
+          "h": 844,
+          "w": 390
+        }
+      },
+      "grid": {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 375,
+        "enhanced": true,
+        "gridOpacity": "1",
+        "hero": {
+          "h": 636,
+          "w": 343.20001220703125,
+          "x": 16,
+          "y": 12
+        },
+        "heroContentHeight": 636,
+        "heroContentScroll": 636,
+        "heroOpacity": "0",
+        "letteringOpacity": "0",
+        "menuButtons": 0,
+        "poster": {
+          "h": 636,
+          "w": 343.20001220703125,
+          "x": 16,
+          "y": 12
+        },
+        "railBorder": "0px",
+        "scene": "grid",
+        "scrollY": 675.2000122070312,
+        "viewport": {
+          "h": 844,
+          "w": 390
+        }
+      },
+      "hero": {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 375,
+        "enhanced": true,
+        "gridOpacity": "0",
+        "hero": {
+          "h": 636,
+          "w": 343.20001220703125,
+          "x": 16,
+          "y": 12
+        },
+        "heroContentHeight": 636,
+        "heroContentScroll": 636,
+        "heroOpacity": "1",
+        "letteringOpacity": "0",
+        "menuButtons": 0,
+        "poster": {
+          "h": 636,
+          "w": 343.20001220703125,
+          "x": 16,
+          "y": 12
+        },
+        "railBorder": "0px",
+        "scene": "mountain",
+        "scrollY": 1308,
+        "viewport": {
+          "h": 844,
+          "w": 390
+        }
+      }
+    },
+    "sizes": [
+      {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 1009,
+        "enhanced": true,
+        "gridOpacity": "1",
+        "hero": {
+          "h": 600,
+          "w": 976.7999877929688,
+          "x": 16,
+          "y": 92.8000030517578
+        },
+        "heroContentHeight": 600,
+        "heroContentScroll": 600,
+        "heroOpacity": "0",
+        "letteringOpacity": "1",
+        "menuButtons": 0,
+        "poster": {
+          "h": 600,
+          "w": 976.7999877929688,
+          "x": 16,
+          "y": 92.8000030517578
+        },
+        "railBorder": "0px",
+        "scene": "lettering",
+        "scrollY": 0,
+        "viewport": {
+          "h": 768,
+          "w": 1024
+        }
+      },
+      {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 829,
+        "enhanced": false,
+        "gridOpacity": "1",
+        "hero": {
+          "h": 620,
+          "w": 796.7999877929688,
+          "x": 16,
+          "y": 622.4000244140625
+        },
+        "heroContentHeight": 620,
+        "heroContentScroll": 620,
+        "heroOpacity": "1",
+        "letteringOpacity": "1",
+        "menuButtons": 0,
+        "poster": {
+          "h": 480,
+          "w": 796.7999877929688,
+          "x": 16,
+          "y": 118.4000015258789
+        },
+        "railBorder": "0px",
+        "scene": null,
+        "scrollY": 0,
+        "viewport": {
+          "h": 390,
+          "w": 844
+        }
+      },
+      {
+        "bg": "rgb(255, 218, 61)",
+        "documentWidth": 305,
+        "enhanced": false,
+        "gridOpacity": "1",
+        "hero": {
+          "h": 571.6000366210938,
+          "w": 272.8000183105469,
+          "x": 16,
+          "y": 700
+        },
+        "heroContentHeight": 572,
+        "heroContentScroll": 572,
+        "heroOpacity": "1",
+        "letteringOpacity": "1",
+        "menuButtons": 0,
+        "poster": {
+          "h": 480,
+          "w": 272.8000183105469,
+          "x": 16,
+          "y": 196
+        },
+        "railBorder": "0px",
+        "scene": null,
+        "scrollY": 0,
+        "viewport": {
+          "h": 568,
+          "w": 320
+        }
+      }
+    ],
+    "keyboard": {
+      "focus": "main-content",
+      "overflow": false,
+      "y": 1284
+    },
+    "rail": {
+      "before": {
+        "enhanced": true,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "y": 2050.39990234375
+      },
+      "after": {
+        "transform": "matrix(1, 0, 0, 1, -395.6, 0)",
+        "y": 2612.800048828125
+      }
+    },
+    "sections": {
+      "footer": {
+        "bg": "rgb(255, 218, 61)",
+        "border": "0px"
+      },
+      "sections": [
+        {
+          "bg": "rgb(255, 218, 61)",
+          "border": "rgb(0, 0, 0)",
+          "id": "knowledge-title"
+        },
+        {
+          "bg": "rgb(255, 218, 61)",
+          "border": "rgb(0, 0, 0)",
+          "id": "dynamics-title"
+        }
+      ]
+    },
+    "routes": [
+      {
+        "bg": "rgb(255, 218, 61)",
+        "menu": false,
+        "path": "/snow/resorts",
+        "title": "找到适合你的雪道",
+        "viewport": 1440,
+        "width": 1425
+      },
+      {
+        "bg": "rgb(255, 218, 61)",
+        "menu": false,
+        "path": "/snow/resorts/1",
+        "title": "万龙滑雪场",
+        "viewport": 1440,
+        "width": 1425
+      },
+      {
+        "bg": "rgb(255, 218, 61)",
+        "menu": false,
+        "path": "/snow/knowledge",
+        "title": "从第一条雪道开始",
+        "viewport": 1440,
+        "width": 1425
+      },
+      {
+        "bg": "rgb(255, 218, 61)",
+        "menu": false,
+        "path": "/snow/knowledge/8",
+        "title": "看懂雪票参考价：自带板、含雪具、时段和使用日期不能混算",
+        "viewport": 1440,
+        "width": 1425
+      },
+      {
+        "bg": "rgb(255, 218, 61)",
+        "menu": false,
+        "path": "/snow/dynamics",
+        "title": "雪上的每一刻，都值得分享",
+        "viewport": 1440,
+        "width": 1425
+      },
+      {
+        "bg": "rgb(255, 218, 61)",
+        "menu": false,
+        "path": "/snow/dynamics/20",
+        "title": "雪友动态",
+        "viewport": 1440,
+        "width": 1425
+      },
+      {
+        "bg": "rgb(255, 218, 61)",
+        "menu": false,
+        "path": "/snow/about",
+        "title": "关于平台",
+        "viewport": 1440,
+        "width": 1440
+      }
+    ],
+    "errors": []
+  },
+  "evidenceBoundaries": [
+    "Homepage stage checks were captured on the initial yellow-home build; final build preserves that code and adjusts small-link contrast.",
+    "Registration mismatch and success were tested only against an isolated local fixture. No synthetic production account was created.",
+    "Four viewport pairs are browser emulation, not physical mobile testing.",
+    "Actual OS reduced motion, no-JS, physical mobile keyboard/touch and 200 percent system zoom were not exercised.",
+    "Legacy design-detector advisories remain; regex detector is not a visual acceptance test.",
+    "Runtime source was frozen before documentation and evidence consolidation."
+  ],
+  "screenshots": [
+    "home-grid-auth-swap-20261106/login-desktop.png",
+    "home-grid-auth-swap-20261106/register-desktop.png",
+    "home-grid-auth-swap-20261106/register-mobile.png",
+    "home-grid-auth-swap-20261106/home-opening-desktop.png",
+    "home-grid-auth-swap-20261106/home-grid-desktop.png",
+    "home-grid-auth-swap-20261106/home-mountain-desktop.png",
+    "home-grid-auth-swap-20261106/home-opening-mobile.png",
+    "home-grid-auth-swap-20261106/home-mountain-mobile.png",
+    "home-grid-auth-swap-20261106/about-desktop.png"
+  ],
+  "cleanup": {
+    "localNext3210": "stopped",
+    "isolatedFixture3211": "stopped",
+    "serverCandidate13200": "stopped; no listening socket; transient failure reset",
+    "ownWslDistribution": "linji-ui-build-20261106 terminated",
+    "otherProjects": "not stopped"
+  },
+  "rollbackWebsite": "python3 /opt/linji/releases/20261106-auth-swap/rollback-website.py",
+  "rollbackHomepageAfterAuth": "python3 /opt/linji/releases/20261106-yellow-home/rollback-website.py",
+  "rollbackExecuted": false
+}

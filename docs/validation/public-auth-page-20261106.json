@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-06",
+  "scope": "Local website implementation only",
+  "deployed": false,
+  "backendChanged": false,
+  "productionBusinessWrites": false,
+  "apkChanged": false,
+  "tests": {
+    "websiteUnitSSR": 410,
+    "files": 24,
+    "passed": true,
+    "typescript": true,
+    "eslint": true,
+    "workspaceBoundaries": 9,
+    "prettierExplicitFiles": true
+  },
+  "browser": {
+    "environment": "Next Webpack dev with local in-memory fixture API; not production E2E",
+    "basePath": "/snow",
+    "api": "http://127.0.0.1:3211/api/v1",
+    "passedChecks": [
+      "Desktop login left photo right form",
+      "Desktop register swaps photo and form",
+      "390px and 320px no horizontal overflow, photo hidden",
+      "Password reveal and clear after submission",
+      "Definitive login failure and manual session recheck",
+      "Registration success returns to login without auto sign-in",
+      "Manual login redirects to homepage",
+      "Cookie session and logout reflected in navigation",
+      "Homepage contains no forms or details login",
+      "Keyboard after mode title goes to account field",
+      "Wave canvas rendered and pause/resume control",
+      "BasePath on homepage/terms/privacy/navigation preserved"
+    ],
+    "screenshotsDirectory": "D:/linji-local/20261106/login-ui",
+    "limitations": [
+      "Mock API, not production auth acceptance",
+      "No OS reduced motion interaction test",
+      "No native device test",
+      "No new production build or deployment"
+    ],
+    "testServicesStoppedAfterVerification": true,
+    "initialScreenshotIssue": "Crossing transform transitions overlapped form/photo; final grid swap with finite photo reveal and text fade rechecked visually."
+  },
+  "sources": {
+    "waves": "https://github.com/DavidHDev/react-bits/blob/main/src/ts-default/Backgrounds/Waves/Waves.tsx",
+    "wavesLicense": "MIT + Commons Clause",
+    "photo": "https://commons.wikimedia.org/wiki/File:Powder_skiing_in_Chamonix_Mont_Blanc.JPG",
+    "photoAuthor": "Webwizzard",
+    "photoLicense": "CC BY-SA 4.0",
+    "photoSha256": "aae387d21c96402f22763b0c4ced4a93676d4cf8ebe129a19f748ccef4ef043e"
+  },
+  "designAudit": {
+    "blockingFindings": 0,
+    "advisories": "Palette/radius warnings reviewed; existing semantic variables reused, darker red error text retained for contrast; no sidecar regeneration"
+  },
+  "knownContextDrift": "Existing DESIGN.md sidecar stale; not regenerated as a side effect"
+}

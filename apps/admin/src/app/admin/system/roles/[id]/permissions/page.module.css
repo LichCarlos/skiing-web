@@ -1,0 +1,104 @@
+.main {
+  composes: page from "../../../../../../styles/console.module.css";
+  display: grid;
+  gap: 1.25rem;
+}
+
+.header,
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header h1 {
+  margin: 0.25rem 0 0;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  color: var(--text-subtle);
+}
+
+.subtitle code,
+.permissionTitle code {
+  margin-inline-start: 0.5rem;
+  color: var(--text-subtle);
+  font-size: 0.8rem;
+}
+
+.section {
+  display: grid;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-block-start: 1px solid var(--border-default);
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.sectionHeader p,
+.empty {
+  margin: 0.35rem 0 0;
+  color: var(--text-subtle);
+}
+
+.permissionTitle {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.rows {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.scopeRow,
+.fieldRow {
+  display: grid;
+  grid-template-columns:
+    minmax(10rem, 1fr) minmax(9rem, 0.8fr) minmax(12rem, 1fr)
+    auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fieldRow {
+  grid-template-columns: minmax(9rem, 0.8fr) minmax(10rem, 1fr) auto auto auto;
+}
+
+.scopeHint {
+  color: var(--text-subtle);
+  font-size: 0.85rem;
+}
+
+.loading,
+.error {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border-default);
+}
+
+@media (max-width: 780px) {
+  .header,
+  .sectionHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .scopeRow,
+  .fieldRow {
+    grid-template-columns: minmax(0, 1fr);
+    padding-block: 0.75rem;
+    border-block-end: 1px solid var(--border-default);
+  }
+}

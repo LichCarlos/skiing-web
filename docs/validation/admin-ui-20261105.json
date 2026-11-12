@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-05T16:20:45.6141416+08:00",
+  "scope": "Local admin presentation refinement; no server deployment",
+  "componentLibrary": "Existing Ant Design 6; no dependency changes",
+  "checks": {
+    "adminLint": true,
+    "adminTypecheck": true,
+    "adminProductionBuild": true,
+    "standalonePackage": true,
+    "workspaceBoundaries": true,
+    "adminTests": 2687,
+    "adminTestFiles": 134,
+    "representativeBrowserStates": 13,
+    "navigationViewportChecks": 40,
+    "viewports": [1440, 768, 390],
+    "browserPageErrors": 0,
+    "visualDetectorFindings": 0,
+    "prettier": true
+  },
+  "browserMethod": "Edited local production HTML and assets under isolated Playwright routing; real live HTTPS backend; no mocked business data; login/logout and read-only page visits; account dialog opened/cancelled only",
+  "uiEvidence": "D:/linji-local/20261105/admin-ui",
+  "buildId": "KhAMeIKtNSulDvA1m66L7",
+  "apiContractVersion": "1.52.0",
+  "behaviorChecks": [
+    "Filtered navigation retains existing route permissions",
+    "Nested route selects only longest authorized module",
+    "Mobile navigation opens and closes after selection",
+    "Tables scroll inside container; no page overflow at checked widths"
+  ],
+  "resolvedDuringValidation": [
+    "Development preview hydration did not settle through the isolated remote-origin route override; replaced with a production build preview",
+    "An unrestricted Vitest command accidentally included public-app tests under admin aliases; stopped it, retained tests-wrong-scope.log, and reran only apps/admin/src",
+    "Initial full navigation sweep found 21px overflow on mobile global-resort filters; corrected wrapping and table minimum width; final 40 checks passed"
+  ],
+  "notVerified": [
+    "Server deployment of these new styles",
+    "All business mutations or every permission combination",
+    "Physical mobile devices",
+    "Every loading/error state in every module"
+  ]
+}

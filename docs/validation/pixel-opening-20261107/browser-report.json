@@ -1,0 +1,247 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "first",
+      "covered": 0,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "forward",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 0
+    },
+    {
+      "name": "first-exit",
+      "covered": 8,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "forward",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 900
+    },
+    {
+      "name": "full-cover-before-switch",
+      "covered": 20,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "forward",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 1260
+    },
+    {
+      "name": "full-cover-after-switch",
+      "covered": 20,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        },
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "mountainward",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 1376.800048828125
+    },
+    {
+      "name": "second",
+      "covered": 0,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        },
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "mountainward",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 1908
+    },
+    {
+      "name": "second-exit",
+      "covered": 12,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        },
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "mountainward",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 2358.39990234375
+    },
+    {
+      "name": "second-hidden-under-full-cover",
+      "covered": 18,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        },
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "grid",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 2672.800048828125
+    },
+    {
+      "name": "mountain",
+      "covered": 0,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        },
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "mountain",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 3348
+    },
+    {
+      "name": "reverse-second",
+      "covered": 0,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        },
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ],
+      "grid": "12.8021px 12.8021px, 12.8021px 12.8021px",
+      "height": 900,
+      "overflow": false,
+      "panelHeight": 860,
+      "scene": "mountainward",
+      "url": "https://lichcarlos.top/snow",
+      "width": 1440,
+      "y": 1908
+    },
+    {
+      "name": "mobile-static",
+      "covered": 0,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        }
+      ],
+      "grid": "3.57487px 3.57487px, 3.57487px 3.57487px",
+      "height": 844,
+      "overflow": false,
+      "panelHeight": 1284,
+      "scene": "static",
+      "url": "https://lichcarlos.top/snow",
+      "width": 390,
+      "y": 1908
+    },
+    {
+      "name": "mobile-first",
+      "covered": 0,
+      "glyphs": [
+        {
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "opacity": "1",
+          "visibility": "hidden"
+        }
+      ],
+      "grid": "3.57487px 3.57487px, 3.57487px 3.57487px",
+      "height": 844,
+      "overflow": false,
+      "panelHeight": 1284,
+      "scene": "static",
+      "url": "https://lichcarlos.top/snow",
+      "width": 390,
+      "y": 0
+    }
+  ]
+}

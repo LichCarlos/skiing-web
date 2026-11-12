@@ -1,0 +1,25 @@
+import type { components } from "@common/api-contracts/openapi";
+export const user: components["schemas"]["CurrentUserVO"] = {
+  userId: 7,
+  account: "snow.user",
+  nickname: "雪友",
+  avatarUrl: null,
+  roles: [{ roleKey: "user", roleName: "用户" }],
+  permissionKeys: ["account:profile:read", "member:favorite:toggle"],
+  menuTree: [],
+  merchant: null,
+};
+export const auth = {
+  currentUser: user,
+  accessTokenExpiresAt: "2026-11-03T12:15:00Z",
+  sessionExpiresAt: "2026-12-03T12:00:00Z",
+};
+export function deferred<T>() {
+  let resolve!: (value: T) => void;
+  let reject!: (reason: unknown) => void;
+  const promise = new Promise<T>((yes, no) => {
+    resolve = yes;
+    reject = no;
+  });
+  return { promise, resolve, reject };
+}

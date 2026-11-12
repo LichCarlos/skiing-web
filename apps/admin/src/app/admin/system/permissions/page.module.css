@@ -1,0 +1,92 @@
+.main {
+  composes: page from "../../../../styles/console.module.css";
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.header h1 {
+  margin: 0;
+  color: var(--app-title-color);
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.copy {
+  max-width: 48rem;
+  margin: 0;
+  color: var(--text-subtle);
+  line-height: 1.7;
+}
+
+.panel {
+  overflow-x: auto;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.tree,
+.children {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.children {
+  border-inline-start: 1px solid var(--border-default);
+  margin-inline-start: 1.25rem;
+}
+
+.node + .node {
+  border-block-start: 1px solid var(--border-default);
+}
+
+.nodeRow {
+  display: flex;
+  min-width: 42rem;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3.25rem;
+  padding-block: 0.65rem;
+  padding-inline-end: 1rem;
+}
+
+.type {
+  min-width: 4.5rem;
+  color: var(--text-subtle);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.name {
+  min-width: 7rem;
+  color: var(--text-main);
+  font-weight: 650;
+}
+
+.nodeRow code,
+.route {
+  color: var(--text-subtle);
+  font-size: 0.8rem;
+}
+
+.message {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 48rem;
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius);
+  color: var(--text-subtle);
+}
+
+.message strong {
+  color: var(--text-main);
+}

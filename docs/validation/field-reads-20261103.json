@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-03",
+  "evidenceVerified": true,
+  "contractVersion": "1.51.1",
+  "operations": 143,
+  "migrations": 24,
+  "scope": "Custom field/group VO and command-receipt projection, identity/visibility and recovery protection; real dictionary-backed lifecycle, version conflict, group protection and read-time revocation",
+  "http": {
+    "tests": 51,
+    "newTests": 2,
+    "output": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA",
+    "checks": {
+      "fieldId": 3,
+      "lifecycle": true,
+      "staleRejected": true,
+      "groupProtected": true,
+      "revocationRejected": true
+    },
+    "references": [
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/report.json",
+        "sha256": "67f4cde8ac80e2f9dc264c14a1cfe25e9bc08b23818b283098a4f68c615bce21"
+      },
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/client-result.json",
+        "sha256": "08fd3a40a00240a7b983fb0e75b8b362078e04c3af2a0cb19aa35ace0a489d9f"
+      },
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/ready.json",
+        "sha256": "0e28eaf16da83103391d9154a036646de3c9ad1d6a6d6d4a86bacbc63cc8cd4c"
+      },
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/migrate-deploy.log",
+        "sha256": "d968ba64edf7877b6573268c09e326999aaa35f895a2ddf0c63557fb4c764554"
+      },
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/seed-first.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/seed-second.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/verify-before.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/fixture-verify.log",
+        "sha256": "58a9626af015b2b731eb21bd4e8bbdb7acc131a7cbc1977e6cc91daad8d856c9"
+      },
+      {
+        "path": "D:/linji-field-reads/20261103/admin-runtime/linji-admin-http-q33UrA/verify-after.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      }
+    ],
+    "cleanup": {
+      "path": "D:/linji-field-reads/20261103/cleanup.json",
+      "sha256": "0285136a320b57c25eab8a58fe5df88d794cfd05b474e67335c94683c560a2bd"
+    }
+  },
+  "regression": {
+    "newTests": 55,
+    "fieldTests": 179,
+    "initialPassed": 179,
+    "initialRun": {
+      "path": "D:/linji-field-reads/20261103/targeted-first.log",
+      "sha256": "4ec0411125e6707d1ed7fe236a7003794b86fe91179a2541a04e7cbce6a09af4"
+    }
+  },
+  "limitations": [
+    "51 HTTP tests use actual Nest/PostgreSQL and a Node Cookie adapter; lifecycle tests simulate Hooks/EventTarget and do not prove actual browser/React/BFCache/device behavior",
+    "Read-end identity verification is not a cross-request atomic data/permission snapshot; backend authorization remains authoritative",
+    "No current full database suite, real Kafka/Inbox/timers/providers/storage/container or remote CI acceptance",
+    "Existing Windows Kafka AccessDenied remains unresolved; Docker and its WSL distribution were not started/restarted/used",
+    "D-49/D-50/D-09 remain unanswered and unimplemented; project incomplete",
+    "No commit/push/deploy/publish or denied action retried"
+  ],
+  "repository": "web",
+  "openapi": {
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 2667,
+    "newTests": 55,
+    "fieldTests": 179,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/custom-fields/field-queries.ts",
+      "sha256": "86e811820d121cccbd550eabc3e688cbe40e98b54af98361866e50bb8961beb9"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/custom-fields/field-responses.ts",
+      "sha256": "3f12b1fa7d8f678471a55c7b619e9c7ad55a29689d35bb29e626a42589270f2b"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/custom-fields/field-model.ts",
+      "sha256": "b81c9f6a4f6166a27bf43d9351486a312a36103f62427baae2d4de70a08df1f2"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/custom-fields/field-console.tsx",
+      "sha256": "44350c746aa8fe89e812054c098a1bc4d86f9cbb02e356500fa07d49141a56be"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/custom-fields/field-responses.test.ts",
+      "sha256": "b8a835c555e25963dcef114db93c24341eb3e711df40848c8a948fff427fbcb2"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/custom-fields/field-page-lifecycle.test.tsx",
+      "sha256": "42433d5e1012d45f2be8dec0134dae7d150a4b6d9dce1a448da797b89ae6e9a5"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "f3a8fbddd2a88b8913469971d291adf6fe6df0ddf01ee2b7f6475bde6f6029ee"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-field-reads/20261103/web-install.log",
+      "sha256": "cc545b2e92bc2d00464fc629c7061bbd7f9bea5c298b1f09db25ee4708bbd613"
+    },
+    {
+      "path": "D:/linji-field-reads/20261103/web-check.log",
+      "sha256": "b609914740d413167ff2389df8f6a487851dd0b96288623744c0941d900e3929"
+    },
+    {
+      "path": "D:/linji-field-reads/20261103/web-build.log",
+      "sha256": "5177815c33c4f314ba805d1ccbe2ae98738ad876852c95576d53630f6a0384b7"
+    },
+    {
+      "path": "D:/linji-field-reads/20261103/admin-http.log",
+      "sha256": "c422feb358950003a8910d4e5c2f60361e73d4f16407cc4ecf3ece6baf6342b3"
+    },
+    {
+      "path": "D:/linji-field-reads/20261103/targeted-first.log",
+      "sha256": "4ec0411125e6707d1ed7fe236a7003794b86fe91179a2541a04e7cbce6a09af4"
+    },
+    {
+      "path": "D:/linji-field-reads/20261103/admin-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "HBGhWF66McvHeSh8cJVmK",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "edf46e9bed844c6213962dfcf65258f5168104a7934fd787213f50a4047f8276"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "2fqBDmQn7rOdhHRvb91rd",
+      "files": 1953,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "e82d3b758c6683f0548b580caafcde99ee1f15a3b108681e4bd003124c78664d"
+      }
+    }
+  ]
+}

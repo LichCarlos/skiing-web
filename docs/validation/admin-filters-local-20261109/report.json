@@ -1,0 +1,1238 @@
+{
+  "passed": true,
+  "mode": "local",
+  "layouts": [
+    {
+      "name": "消息任务",
+      "width": 1440,
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "form": {
+        "left": 264,
+        "right": 1408
+      },
+      "controls": [
+        {
+          "label": "状态",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 289,
+          "right": 550.5,
+          "width": 261.5,
+          "bottom": 319.96875
+        },
+        {
+          "label": "事件类型",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 566.5,
+          "right": 828,
+          "width": 261.5,
+          "bottom": 319.578125
+        },
+        {
+          "label": "聚合类型",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 844,
+          "right": 1105.5,
+          "width": 261.5,
+          "bottom": 319.578125
+        },
+        {
+          "label": "聚合 ID",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 1121.5,
+          "right": 1383,
+          "width": 261.5,
+          "bottom": 319.578125
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 358.359375,
+          "top": 366.359375,
+          "left": 289,
+          "right": 550.5,
+          "width": 261.5,
+          "bottom": 404.359375
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 358.359375,
+          "top": 366.359375,
+          "left": 566.5,
+          "right": 828,
+          "width": 261.5,
+          "bottom": 404.359375
+        }
+      ],
+      "actionTop": 424.359375,
+      "columns": "261.5px 261.5px 261.5px 261.5px"
+    },
+    {
+      "name": "消息任务",
+      "width": 1100,
+      "pageWidth": 1100,
+      "scrollWidth": 1100,
+      "form": {
+        "left": 264,
+        "right": 1068
+      },
+      "controls": [
+        {
+          "label": "状态",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 319.96875
+        },
+        {
+          "label": "事件类型",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 545.65625,
+          "right": 786.328125,
+          "width": 240.671875,
+          "bottom": 319.578125
+        },
+        {
+          "label": "聚合类型",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 802.328125,
+          "right": 1043,
+          "width": 240.671875,
+          "bottom": 319.578125
+        },
+        {
+          "label": "聚合 ID",
+          "labelBottom": 358.359375,
+          "top": 366.359375,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 404.359375
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 358.359375,
+          "top": 366.359375,
+          "left": 545.65625,
+          "right": 786.328125,
+          "width": 240.671875,
+          "bottom": 404.359375
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 358.359375,
+          "top": 366.359375,
+          "left": 802.328125,
+          "right": 1043,
+          "width": 240.671875,
+          "bottom": 404.359375
+        }
+      ],
+      "actionTop": 424.359375,
+      "columns": "240.656px 240.672px 240.672px"
+    },
+    {
+      "name": "消息任务",
+      "width": 768,
+      "pageWidth": 768,
+      "scrollWidth": 768,
+      "form": {
+        "left": 16,
+        "right": 752
+      },
+      "controls": [
+        {
+          "label": "状态",
+          "labelBottom": 249.578125,
+          "top": 257.578125,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 295.96875
+        },
+        {
+          "label": "事件类型",
+          "labelBottom": 249.578125,
+          "top": 257.578125,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 295.578125
+        },
+        {
+          "label": "聚合类型",
+          "labelBottom": 334.359375,
+          "top": 342.359375,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 380.359375
+        },
+        {
+          "label": "聚合 ID",
+          "labelBottom": 334.359375,
+          "top": 342.359375,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 380.359375
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 418.75,
+          "top": 426.75,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 464.75
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 418.75,
+          "top": 426.75,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 464.75
+        }
+      ],
+      "actionTop": 484.75,
+      "columns": "343px 343px"
+    },
+    {
+      "name": "消息任务",
+      "width": 390,
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "form": {
+        "left": 16,
+        "right": 374
+      },
+      "controls": [
+        {
+          "label": "状态",
+          "labelBottom": 249.578125,
+          "top": 257.578125,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 295.96875
+        },
+        {
+          "label": "事件类型",
+          "labelBottom": 334.359375,
+          "top": 342.359375,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 380.359375
+        },
+        {
+          "label": "聚合类型",
+          "labelBottom": 418.75,
+          "top": 426.75,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 464.75
+        },
+        {
+          "label": "聚合 ID",
+          "labelBottom": 503.140625,
+          "top": 511.140625,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 549.140625
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 587.53125,
+          "top": 595.53125,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 633.53125
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 671.921875,
+          "top": 679.921875,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 717.921875
+        }
+      ],
+      "actionTop": 737.921875,
+      "columns": "324px"
+    },
+    {
+      "name": "消息任务",
+      "width": 320,
+      "pageWidth": 320,
+      "scrollWidth": 320,
+      "form": {
+        "left": 16,
+        "right": 304
+      },
+      "controls": [
+        {
+          "label": "状态",
+          "labelBottom": 273.375,
+          "top": 281.375,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 319.765625
+        },
+        {
+          "label": "事件类型",
+          "labelBottom": 358.15625,
+          "top": 366.15625,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 404.15625
+        },
+        {
+          "label": "聚合类型",
+          "labelBottom": 442.546875,
+          "top": 450.546875,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 488.546875
+        },
+        {
+          "label": "聚合 ID",
+          "labelBottom": 526.9375,
+          "top": 534.9375,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 572.9375
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 611.328125,
+          "top": 619.328125,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 657.328125
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 695.71875,
+          "top": 703.71875,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 741.71875
+        }
+      ],
+      "actionTop": 761.71875,
+      "columns": "254px"
+    },
+    {
+      "name": "操作日志",
+      "width": 1440,
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "form": {
+        "left": 264,
+        "right": 1408
+      },
+      "controls": [
+        {
+          "label": "操作者 ID",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 289,
+          "right": 550.5,
+          "width": 261.5,
+          "bottom": 319.578125
+        },
+        {
+          "label": "动作",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 566.5,
+          "right": 828,
+          "width": 261.5,
+          "bottom": 319.578125
+        },
+        {
+          "label": "资源",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 844,
+          "right": 1105.5,
+          "width": 261.5,
+          "bottom": 319.578125
+        },
+        {
+          "label": "结果",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 1121.5,
+          "right": 1383,
+          "width": 261.5,
+          "bottom": 319.96875
+        },
+        {
+          "label": "traceId",
+          "labelBottom": 358.359375,
+          "top": 366.359375,
+          "left": 289,
+          "right": 550.5,
+          "width": 261.5,
+          "bottom": 404.359375
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 358.359375,
+          "top": 366.359375,
+          "left": 566.5,
+          "right": 828,
+          "width": 261.5,
+          "bottom": 404.359375
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 358.359375,
+          "top": 366.359375,
+          "left": 844,
+          "right": 1105.5,
+          "width": 261.5,
+          "bottom": 404.359375
+        }
+      ],
+      "actionTop": 424.359375,
+      "columns": "261.5px 261.5px 261.5px 261.5px"
+    },
+    {
+      "name": "操作日志",
+      "width": 1100,
+      "pageWidth": 1100,
+      "scrollWidth": 1100,
+      "form": {
+        "left": 264,
+        "right": 1068
+      },
+      "controls": [
+        {
+          "label": "操作者 ID",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 319.578125
+        },
+        {
+          "label": "动作",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 545.65625,
+          "right": 786.328125,
+          "width": 240.671875,
+          "bottom": 319.578125
+        },
+        {
+          "label": "资源",
+          "labelBottom": 273.578125,
+          "top": 281.578125,
+          "left": 802.328125,
+          "right": 1043,
+          "width": 240.671875,
+          "bottom": 319.578125
+        },
+        {
+          "label": "结果",
+          "labelBottom": 357.96875,
+          "top": 365.96875,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 404.359375
+        },
+        {
+          "label": "traceId",
+          "labelBottom": 357.96875,
+          "top": 365.96875,
+          "left": 545.65625,
+          "right": 786.328125,
+          "width": 240.671875,
+          "bottom": 403.96875
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 357.96875,
+          "top": 365.96875,
+          "left": 802.328125,
+          "right": 1043,
+          "width": 240.671875,
+          "bottom": 403.96875
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 442.75,
+          "top": 450.75,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 488.75
+        }
+      ],
+      "actionTop": 508.75,
+      "columns": "240.656px 240.672px 240.672px"
+    },
+    {
+      "name": "操作日志",
+      "width": 768,
+      "pageWidth": 768,
+      "scrollWidth": 768,
+      "form": {
+        "left": 16,
+        "right": 752
+      },
+      "controls": [
+        {
+          "label": "操作者 ID",
+          "labelBottom": 249.578125,
+          "top": 257.578125,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 295.578125
+        },
+        {
+          "label": "动作",
+          "labelBottom": 249.578125,
+          "top": 257.578125,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 295.578125
+        },
+        {
+          "label": "资源",
+          "labelBottom": 333.96875,
+          "top": 341.96875,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 379.96875
+        },
+        {
+          "label": "结果",
+          "labelBottom": 333.96875,
+          "top": 341.96875,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 380.359375
+        },
+        {
+          "label": "traceId",
+          "labelBottom": 418.75,
+          "top": 426.75,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 464.75
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 418.75,
+          "top": 426.75,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 464.75
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 503.140625,
+          "top": 511.140625,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 549.140625
+        }
+      ],
+      "actionTop": 569.140625,
+      "columns": "343px 343px"
+    },
+    {
+      "name": "操作日志",
+      "width": 390,
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "form": {
+        "left": 16,
+        "right": 374
+      },
+      "controls": [
+        {
+          "label": "操作者 ID",
+          "labelBottom": 249.578125,
+          "top": 257.578125,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 295.578125
+        },
+        {
+          "label": "动作",
+          "labelBottom": 333.96875,
+          "top": 341.96875,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 379.96875
+        },
+        {
+          "label": "资源",
+          "labelBottom": 418.359375,
+          "top": 426.359375,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 464.359375
+        },
+        {
+          "label": "结果",
+          "labelBottom": 502.75,
+          "top": 510.75,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 549.140625
+        },
+        {
+          "label": "traceId",
+          "labelBottom": 587.53125,
+          "top": 595.53125,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 633.53125
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 671.921875,
+          "top": 679.921875,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 717.921875
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 756.3125,
+          "top": 764.3125,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 802.3125
+        }
+      ],
+      "actionTop": 822.3125,
+      "columns": "324px"
+    },
+    {
+      "name": "操作日志",
+      "width": 320,
+      "pageWidth": 320,
+      "scrollWidth": 320,
+      "form": {
+        "left": 16,
+        "right": 304
+      },
+      "controls": [
+        {
+          "label": "操作者 ID",
+          "labelBottom": 273.375,
+          "top": 281.375,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 319.375
+        },
+        {
+          "label": "动作",
+          "labelBottom": 357.765625,
+          "top": 365.765625,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 403.765625
+        },
+        {
+          "label": "资源",
+          "labelBottom": 442.15625,
+          "top": 450.15625,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 488.15625
+        },
+        {
+          "label": "结果",
+          "labelBottom": 526.546875,
+          "top": 534.546875,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 572.9375
+        },
+        {
+          "label": "traceId",
+          "labelBottom": 611.328125,
+          "top": 619.328125,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 657.328125
+        },
+        {
+          "label": "开始时间",
+          "labelBottom": 695.71875,
+          "top": 703.71875,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 741.71875
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 780.109375,
+          "top": 788.109375,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 826.109375
+        }
+      ],
+      "actionTop": 846.109375,
+      "columns": "254px"
+    },
+    {
+      "name": "AI 会话审计",
+      "width": 1440,
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "form": {
+        "left": 264,
+        "right": 1408
+      },
+      "controls": [
+        {
+          "label": "用户 ID",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 289,
+          "right": 550.5,
+          "width": 261.5,
+          "bottom": 315.578125
+        },
+        {
+          "label": "状态",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 566.5,
+          "right": 828,
+          "width": 261.5,
+          "bottom": 315.96875
+        },
+        {
+          "label": "起始时间",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 844,
+          "right": 1105.5,
+          "width": 261.5,
+          "bottom": 315.578125
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 1121.5,
+          "right": 1383,
+          "width": 261.5,
+          "bottom": 315.578125
+        }
+      ],
+      "actionTop": 335.96875,
+      "columns": "261.5px 261.5px 261.5px 261.5px"
+    },
+    {
+      "name": "AI 会话审计",
+      "width": 1100,
+      "pageWidth": 1100,
+      "scrollWidth": 1100,
+      "form": {
+        "left": 264,
+        "right": 1068
+      },
+      "controls": [
+        {
+          "label": "用户 ID",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 315.578125
+        },
+        {
+          "label": "状态",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 545.65625,
+          "right": 786.328125,
+          "width": 240.671875,
+          "bottom": 315.96875
+        },
+        {
+          "label": "起始时间",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 802.328125,
+          "right": 1043,
+          "width": 240.671875,
+          "bottom": 315.578125
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 354.359375,
+          "top": 362.359375,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 400.359375
+        }
+      ],
+      "actionTop": 420.359375,
+      "columns": "240.656px 240.672px 240.672px"
+    },
+    {
+      "name": "AI 会话审计",
+      "width": 768,
+      "pageWidth": 768,
+      "scrollWidth": 768,
+      "form": {
+        "left": 16,
+        "right": 752
+      },
+      "controls": [
+        {
+          "label": "用户 ID",
+          "labelBottom": 245.578125,
+          "top": 253.578125,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 291.578125
+        },
+        {
+          "label": "状态",
+          "labelBottom": 245.578125,
+          "top": 253.578125,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 291.96875
+        },
+        {
+          "label": "起始时间",
+          "labelBottom": 330.359375,
+          "top": 338.359375,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 376.359375
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 330.359375,
+          "top": 338.359375,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 376.359375
+        }
+      ],
+      "actionTop": 396.359375,
+      "columns": "343px 343px"
+    },
+    {
+      "name": "AI 会话审计",
+      "width": 390,
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "form": {
+        "left": 16,
+        "right": 374
+      },
+      "controls": [
+        {
+          "label": "用户 ID",
+          "labelBottom": 269.375,
+          "top": 277.375,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 315.375
+        },
+        {
+          "label": "状态",
+          "labelBottom": 353.765625,
+          "top": 361.765625,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 400.15625
+        },
+        {
+          "label": "起始时间",
+          "labelBottom": 438.546875,
+          "top": 446.546875,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 484.546875
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 522.9375,
+          "top": 530.9375,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 568.9375
+        }
+      ],
+      "actionTop": 588.9375,
+      "columns": "324px"
+    },
+    {
+      "name": "AI 会话审计",
+      "width": 320,
+      "pageWidth": 320,
+      "scrollWidth": 320,
+      "form": {
+        "left": 16,
+        "right": 304
+      },
+      "controls": [
+        {
+          "label": "用户 ID",
+          "labelBottom": 293.171875,
+          "top": 301.171875,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 339.171875
+        },
+        {
+          "label": "状态",
+          "labelBottom": 377.5625,
+          "top": 385.5625,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 423.953125
+        },
+        {
+          "label": "起始时间",
+          "labelBottom": 462.34375,
+          "top": 470.34375,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 508.34375
+        },
+        {
+          "label": "结束时间",
+          "labelBottom": 546.734375,
+          "top": 554.734375,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 592.734375
+        }
+      ],
+      "actionTop": 612.734375,
+      "columns": "254px"
+    },
+    {
+      "name": "RAG 来源运维",
+      "width": 1440,
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "form": {
+        "left": 264,
+        "right": 1408
+      },
+      "controls": [
+        {
+          "label": "关键词",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 289,
+          "right": 550.5,
+          "width": 261.5,
+          "bottom": 315.578125
+        },
+        {
+          "label": "类型",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 566.5,
+          "right": 828,
+          "width": 261.5,
+          "bottom": 315.96875
+        },
+        {
+          "label": "索引状态",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 844,
+          "right": 1105.5,
+          "width": 261.5,
+          "bottom": 315.96875
+        },
+        {
+          "label": "人工停用",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 1121.5,
+          "right": 1383,
+          "width": 261.5,
+          "bottom": 315.96875
+        }
+      ],
+      "actionTop": 335.96875,
+      "columns": "261.5px 261.5px 261.5px 261.5px"
+    },
+    {
+      "name": "RAG 来源运维",
+      "width": 1100,
+      "pageWidth": 1100,
+      "scrollWidth": 1100,
+      "form": {
+        "left": 264,
+        "right": 1068
+      },
+      "controls": [
+        {
+          "label": "关键词",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 315.578125
+        },
+        {
+          "label": "类型",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 545.65625,
+          "right": 786.328125,
+          "width": 240.671875,
+          "bottom": 315.96875
+        },
+        {
+          "label": "索引状态",
+          "labelBottom": 269.578125,
+          "top": 277.578125,
+          "left": 802.328125,
+          "right": 1043,
+          "width": 240.671875,
+          "bottom": 315.96875
+        },
+        {
+          "label": "人工停用",
+          "labelBottom": 354.359375,
+          "top": 362.359375,
+          "left": 289,
+          "right": 529.65625,
+          "width": 240.65625,
+          "bottom": 400.75
+        }
+      ],
+      "actionTop": 420.75,
+      "columns": "240.656px 240.672px 240.672px"
+    },
+    {
+      "name": "RAG 来源运维",
+      "width": 768,
+      "pageWidth": 768,
+      "scrollWidth": 768,
+      "form": {
+        "left": 16,
+        "right": 752
+      },
+      "controls": [
+        {
+          "label": "关键词",
+          "labelBottom": 245.578125,
+          "top": 253.578125,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 291.578125
+        },
+        {
+          "label": "类型",
+          "labelBottom": 245.578125,
+          "top": 253.578125,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 291.96875
+        },
+        {
+          "label": "索引状态",
+          "labelBottom": 330.359375,
+          "top": 338.359375,
+          "left": 33,
+          "right": 376,
+          "width": 343,
+          "bottom": 376.75
+        },
+        {
+          "label": "人工停用",
+          "labelBottom": 330.359375,
+          "top": 338.359375,
+          "left": 392,
+          "right": 735,
+          "width": 343,
+          "bottom": 376.75
+        }
+      ],
+      "actionTop": 396.75,
+      "columns": "343px 343px"
+    },
+    {
+      "name": "RAG 来源运维",
+      "width": 390,
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "form": {
+        "left": 16,
+        "right": 374
+      },
+      "controls": [
+        {
+          "label": "关键词",
+          "labelBottom": 269.375,
+          "top": 277.375,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 315.375
+        },
+        {
+          "label": "类型",
+          "labelBottom": 353.765625,
+          "top": 361.765625,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 400.15625
+        },
+        {
+          "label": "索引状态",
+          "labelBottom": 438.546875,
+          "top": 446.546875,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 484.9375
+        },
+        {
+          "label": "人工停用",
+          "labelBottom": 523.328125,
+          "top": 531.328125,
+          "left": 33,
+          "right": 357,
+          "width": 324,
+          "bottom": 569.71875
+        }
+      ],
+      "actionTop": 589.71875,
+      "columns": "324px"
+    },
+    {
+      "name": "RAG 来源运维",
+      "width": 320,
+      "pageWidth": 320,
+      "scrollWidth": 320,
+      "form": {
+        "left": 16,
+        "right": 304
+      },
+      "controls": [
+        {
+          "label": "关键词",
+          "labelBottom": 269.375,
+          "top": 277.375,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 315.375
+        },
+        {
+          "label": "类型",
+          "labelBottom": 353.765625,
+          "top": 361.765625,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 400.15625
+        },
+        {
+          "label": "索引状态",
+          "labelBottom": 438.546875,
+          "top": 446.546875,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 484.9375
+        },
+        {
+          "label": "人工停用",
+          "labelBottom": 523.328125,
+          "top": 531.328125,
+          "left": 33,
+          "right": 287,
+          "width": 254,
+          "bottom": 569.71875
+        }
+      ],
+      "actionTop": 589.71875,
+      "columns": "254px"
+    }
+  ],
+  "interactions": [
+    "exact event type and local time including seconds submitted correctly",
+    "reset clears filters and reloads first page",
+    "invalid time range keeps visible validation"
+  ],
+  "pageErrors": [],
+  "contentWrites": []
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "evidenceFiles": [
+    {
+      "path": "E:/desktop/lishiqi/backend/docs/validation/field-recovery-http-20261103.json",
+      "sha256": "84578e458666fefabdc5f4e213e1458fb8c692443ffdf72bcaa37ec5102df791"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/docs/validation/field-recovery-http-20261103.json",
+      "sha256": "086f9349f7e1f3e1c43b13be27e8a49b19f17e65c10f9b9da92fc077152af02e"
+    }
+  ],
+  "logReferences": 38,
+  "uniqueLogs": 29,
+  "sourceReferences": 16,
+  "uniqueSources": 8,
+  "passed": true
+}

@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-03",
+  "snapshot": "D:/linji-source-export/20261103/run-01/web",
+  "files": 555,
+  "sourceSha256": "7e7ac65117f808902c625dcf280522b720b7f64c7ef82ef15debd315d2bdd102",
+  "manifestSha256": "7b21bdfb3d8805265f163199a14465cf347f0a905fc53011e1eb3076122a8cee",
+  "openapi": {
+    "version": "1.50.2",
+    "sha256": "710ef0cad15dcfb363f77a9fd1463413ca0290946dda9d1c9a7fbea8e77088e0"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "node": "v22.16.0",
+  "store": "D:/linji-source-export/20261103/run-01/stores/web",
+  "freshStore": true,
+  "originalDependenciesCopied": false,
+  "nodePathAbsent": true,
+  "moduleProof": {
+    "node": "v22.16.0",
+    "nodePathAbsent": true,
+    "modules": [
+      {
+        "scope": "web",
+        "name": "next",
+        "path": "D:\\linji-source-export\\20261103\\run-01\\web\\node_modules\\.pnpm\\next@16.3.5_@babel+core@7.2_d986d31337683660706b8881c7218ba2\\node_modules\\next\\package.json",
+        "version": "16.3.5"
+      },
+      {
+        "scope": "admin",
+        "name": "next",
+        "path": "D:\\linji-source-export\\20261103\\run-01\\web\\node_modules\\.pnpm\\next@16.3.5_@babel+core@7.2_d986d31337683660706b8881c7218ba2\\node_modules\\next\\package.json",
+        "version": "16.3.5"
+      },
+      {
+        "scope": "root",
+        "name": "typescript",
+        "path": "D:\\linji-source-export\\20261103\\run-01\\web\\node_modules\\.pnpm\\typescript@5.9.3\\node_modules\\typescript\\package.json",
+        "version": "5.9.3"
+      },
+      {
+        "scope": "root",
+        "name": "vitest",
+        "path": "D:\\linji-source-export\\20261103\\run-01\\web\\node_modules\\.pnpm\\vitest@4.1.2_@types+node@22.20.3_jiti@2.7.0\\node_modules\\vitest\\package.json",
+        "version": "4.1.2"
+      }
+    ]
+  },
+  "sourceProof": {
+    "files": 555,
+    "sourceSha256": "7e7ac65117f808902c625dcf280522b720b7f64c7ef82ef15debd315d2bdd102",
+    "sourceUnchanged": true,
+    "gitAbsent": true,
+    "envAbsent": true
+  },
+  "results": {
+    "install": 0,
+    "check": 0,
+    "businessTests": 1909,
+    "releaseTests": 20,
+    "sourceExportTests": 8,
+    "build": 0,
+    "cachedBuilds": 0,
+    "releaseVerify": 0
+  },
+  "release": [
+    {
+      "app": "web",
+      "buildId": "QNVT1uUOiuMGCcrkNusR-",
+      "nextVersion": "16.3.5",
+      "files": 1360,
+      "links": 26,
+      "openapi": {
+        "version": "1.50.2",
+        "sha256": "710ef0cad15dcfb363f77a9fd1463413ca0290946dda9d1c9a7fbea8e77088e0"
+      },
+      "output": "D:\\linji-source-export\\20261103\\run-01\\web\\apps\\web\\.next\\release"
+    },
+    {
+      "app": "admin",
+      "buildId": "NSXKAV3Xh-qA5VxSLeoK5",
+      "nextVersion": "16.3.5",
+      "files": 1952,
+      "links": 26,
+      "openapi": {
+        "version": "1.50.2",
+        "sha256": "710ef0cad15dcfb363f77a9fd1463413ca0290946dda9d1c9a7fbea8e77088e0"
+      },
+      "output": "D:\\linji-source-export\\20261103\\run-01\\web\\apps\\admin\\.next\\release"
+    }
+  ],
+  "notValidated": [
+    "Next HTTP startup",
+    "browser",
+    "RSC runtime",
+    "backend integration",
+    "deployment"
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-source-export/20261103/run-01/web/source-export-cold-install.log",
+      "sha256": "9f7238cb13b98f422905e9829e7594ddcd2d09c40ecc80ea2e7ec04d146bfee9"
+    },
+    {
+      "path": "D:/linji-source-export/20261103/run-01/web/source-export-module-proof.log",
+      "sha256": "b48b24bb529d50dabc9776d470c242afbf10f7bc7b1fe30a2caea7f67f3d28a6"
+    },
+    {
+      "path": "D:/linji-source-export/20261103/run-01/web/source-export-check.log",
+      "sha256": "421951d3e6afddc253acba47fe1d74c7bc4dc74e58f80208b926bdcf92eceb0c"
+    },
+    {
+      "path": "D:/linji-source-export/20261103/run-01/web/source-export-build.log",
+      "sha256": "27290c3a847a8e94aa70af538f236289ffa92cb7e48b72bb1d939272b627049c"
+    },
+    {
+      "path": "D:/linji-source-export/20261103/run-01/web/source-export-release.log",
+      "sha256": "5bbc6aeb62d6c37092f2401a51109afdd3f9992b67b5dc8b236b86bae3ed2496"
+    }
+  ]
+}

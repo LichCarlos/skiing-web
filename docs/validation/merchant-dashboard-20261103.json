@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-03",
+  "evidenceVerified": true,
+  "scope": "Merchant business overview runtime projection and identity/lifecycle isolation, with current compiled Nest/PostgreSQL HTTP regression",
+  "http": {
+    "tests": 35,
+    "newMerchantOverviewTests": 4,
+    "passed": true,
+    "output": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU",
+    "overview": {
+      "resortIds": [1],
+      "amount": "123.45",
+      "recordResortIds": [1],
+      "foreignDenied": true,
+      "independentPanels": true,
+      "revocationRejected": true
+    },
+    "references": [
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/report.json",
+        "sha256": "b429b90b136c0e3a5ef98911ff13a1f680fcbfbbfca9d1c4b0dabfbb68399ff4"
+      },
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/client-result.json",
+        "sha256": "95a0923c5fdc1f34c187211f74ce0681e172874daf53c656847fc1a665dc7261"
+      },
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/ready.json",
+        "sha256": "1282d647b757137a91363dcb6d4c394429dfa94940e58cfcebb9f7b74b5f6375"
+      },
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/fixture-verify.log",
+        "sha256": "58a9626af015b2b731eb21bd4e8bbdb7acc131a7cbc1977e6cc91daad8d856c9"
+      },
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/verify-after.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/migrate-deploy.log",
+        "sha256": "f93967ef82972894106cb354ccae4dbf8d7654b838bf67fc0c14eaf2c91e7c03"
+      },
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/seed-first.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/seed-second.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-merchant-dashboard/20261103/final-http/linji-admin-http-jjHSzU/verify-before.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      }
+    ],
+    "firstAttempt": {
+      "output": "D:/linji-merchant-dashboard/20261103/http/linji-admin-http-iHbgSs",
+      "completed": false,
+      "reason": "Client credential was not transferred; explicitly stopped before HTTP client execution. No pass claimed.",
+      "report": {
+        "path": "D:/linji-merchant-dashboard/20261103/http/linji-admin-http-iHbgSs/report.json",
+        "sha256": "5818ad65735d7503d7f3ccca3d5a5d23f955126486eb08ef12bba97c9d952725"
+      },
+      "log": {
+        "path": "D:/linji-merchant-dashboard/20261103/native-http.log",
+        "sha256": "355f1d76015b30ebaf7fe94d893626e99a23134add70b3445d12db410584cb47"
+      }
+    },
+    "cleanup": {
+      "path": "D:/linji-merchant-dashboard/20261103/cleanup.json",
+      "sha256": "198e1e1c3723148ecc47198af0bb3bbd51d19d4a9fbc2ec5a59bff6d3c6ec91d"
+    }
+  },
+  "contractVersion": "1.51.1",
+  "operations": 143,
+  "migrations": 24,
+  "limitations": [
+    "Three business reads are independent database snapshots, not an atomic aggregate",
+    "Identity comparisons do not grant an authorization lease or encode all scope/field policy changes",
+    "SSR/controller/Node Cookie transport tests do not prove actual browser visibility/BFCache, Cookie flags/CORS or devices",
+    "No new full database suite, native Kafka, provider, storage, container, signed native package or remote CI acceptance",
+    "Current Windows Kafka AccessDenied failure remains unaccepted; Docker and its WSL distribution were not started/restarted/used",
+    "D-49/D-50/D-09 remain unanswered; overall project goal incomplete",
+    "No commit/push/deploy/publish; no previously denied operations retried"
+  ],
+  "failedChecks": [
+    {
+      "log": {
+        "path": "D:/linji-merchant-dashboard/20261103/targeted-first.log",
+        "sha256": "30d31aa7d8e8e911a19ccf07c79bfff4c7e5ee6b1354403ee39f970e29237ad0"
+      },
+      "reason": "One SSR test incorrectly matched a header explanation as a select control; assertion corrected, 156-test rerun passed."
+    }
+  ],
+  "repository": "web",
+  "openapi": {
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 2392,
+    "newMerchantOverviewTests": 59,
+    "merchantAndGlobalDashboardTests": 156,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/merchant-dashboard/dashboard-model.ts",
+      "sha256": "bc74f6ad9bbb5bad8bc4afa3dc3610082e65267f3898b796ace51781006c43f5"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/merchant-dashboard/dashboard-response.ts",
+      "sha256": "6e81f0ac49df4daffa7ada53cbad2e9200ae25a9723a90bf0ce1ec27fef962a8"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/merchant-dashboard/dashboard-queries.ts",
+      "sha256": "fa6e9edecc39b8dfa386d4b2d7c500d4fcf0b01ff127ada95d30604b24bf0b99"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/merchant-dashboard/dashboard-run.ts",
+      "sha256": "1e225488e40b6dabf30dbadc610746b1c4d1906f742e7fbef41d65fb8c3322c2"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/merchant-dashboard/merchant-dashboard.tsx",
+      "sha256": "a928788c452c57a82846301eda2e4659c405de0df6117e1dca7b6fcb25e60c50"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/merchant-dashboard/dashboard-boundaries.test.ts",
+      "sha256": "33d160447fe34ffb6238971f96cfcb56adad2f8b908dea3a3919ee7732c3f416"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/merchant-dashboard/merchant-dashboard.test.tsx",
+      "sha256": "09682318c821a239a66dd1f084cbf0e42bfe32223a766cc7f17ce3d584cb7a23"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "efe4a4863c3db08b013f8a3e40518a3db816c1b765bb4f23df6610440c34cd16"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-merchant-dashboard/20261103/web-install.log",
+      "sha256": "bf532c2c87299c7cff77e95385484dcb7a647830dd65e1908b4f6ecf971b210b"
+    },
+    {
+      "path": "D:/linji-merchant-dashboard/20261103/web-check.log",
+      "sha256": "8aa6da2505ba7a6ce344e88eff34b189889ee0c691f2a16b95d10f7f399e12dd"
+    },
+    {
+      "path": "D:/linji-merchant-dashboard/20261103/web-build.log",
+      "sha256": "3b8ad9e5eaef85ed1342e1b1f55d76c357dfa2c38e587503a891f8a981ea81b6"
+    },
+    {
+      "path": "D:/linji-merchant-dashboard/20261103/targeted-initial.log",
+      "sha256": "78d33e4972e7691a182ea667910fba31fd600d59557960e081bf947accc72914"
+    },
+    {
+      "path": "D:/linji-merchant-dashboard/20261103/targeted.log",
+      "sha256": "8b36891189912cacec6d4fa81e95e93f65f2932c9e753e5d93272412a8ecb0fe"
+    },
+    {
+      "path": "D:/linji-merchant-dashboard/20261103/web-http.log",
+      "sha256": "35bd3d1470a1018c6f64c7255271df84ccbee41bede4cca579dca02139bfc007"
+    },
+    {
+      "path": "D:/linji-merchant-dashboard/20261103/web-types.log",
+      "sha256": "0e5206d370dc1613f96ed4c68e4a31cfd4d176f8f96c571be6867ef8df3fefbb"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "b8j3282p5eV57qoUXkwD2",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "063e018e8b4160c051225e4445aa80060c84d814e34df2220920c128fe45f2e0"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "mDrOsBZ1eRX9rO1IugmyF",
+      "files": 1953,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "20db340ccd79b00b4ef99d93cfa9840c9b558ede0e7b5ad9d92902630f7aee91"
+      }
+    }
+  ]
+}

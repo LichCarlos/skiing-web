@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-03",
+  "passed": true,
+  "openapi": {
+    "version": "1.51.0",
+    "operations": 143,
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "4fa8529fe48872254651a095f20ce04cd7c94fe349d00e4149824bcdebfa03f8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "vitest": 2007,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "cachedBuilds": 0,
+    "standaloneVerify": "passed during both builds"
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/platform/auth/session-controller.ts",
+      "sha256": "2de5ca93d22fde68ff03d6d6ea201b1ad898f24fe4ed707c13f03911aa6c1b66"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/platform/auth/session-controller.test.ts",
+      "sha256": "460a2883528dde772ca3780b94f5cd0a90953a896b29ce9961408c1f533cad7a"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/web/src/platform/auth/public-session-run.ts",
+      "sha256": "6380add09777b31e35434aef9e2b047222013ef097dec216da930c932f53e117"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/web/src/platform/auth/public-session-run.test.ts",
+      "sha256": "fe7ace76de11be0a15e498df4568f4a4d72a595374e22114bbd64b4016092c2b"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/packages/api-contracts/src/openapi.ts",
+      "sha256": "7f750fb687eb2bfe6f4c19cf0cf4f497be46f642ff60feaebb8fadb513d34d78"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/contracts/openapi.lock.json",
+      "sha256": "23acc8f719e2d3ed507ad5e90505218de5e1761c54bc9f49993c589d5b98909e"
+    }
+  ],
+  "logs": [
+    {
+      "path": "E:/desktop/lishiqi/web/login-limit-build.log",
+      "sha256": "e2d3089fd4cf446a3466b7d88bfad285891ce6ab14d30a0a806e28bc984dce7b"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/login-limit-check.log",
+      "sha256": "01e2a9be2407af6406d8b35ccddd6cb53dfa0475f7195a35b2287926a7149f13"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/login-limit-doc-format.log",
+      "sha256": "159da0204fbc1b84b52a81511be873ec44d1810fc24393242f717d8d568a4f0b"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/login-limit-format.log",
+      "sha256": "5a5a35170291e7042bcffb64ab11ba814a62e4b1b7b42595c071be13f0221132"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/login-limit-install.log",
+      "sha256": "7c8b3a81bcbf8b55eeb71dcba6df405515057e63da10f9659359a3765e4f9483"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/login-limit-openapi.log",
+      "sha256": "b09cc88a6c54e022b3ea4102bd8cf2d872ca4b69f4862ef5f5c34555368aec49"
+    }
+  ],
+  "limitations": [
+    "Builds and unit/SSR models; no Next production startup, browser clicks, deployment or remote CI"
+  ]
+}

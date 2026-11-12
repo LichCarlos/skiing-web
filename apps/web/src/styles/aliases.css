@@ -1,6 +1,32 @@
 /* 只属于当前应用的语义命名。不同端可以独立改变其映射。 */
 :root {
-  --app-page-bg: var(--surface);
+  --app-page-bg: var(--background);
+  --app-text: var(--foreground);
+  --site-accent: #dc2f43;
+  --site-focus: #2455f5;
+  --site-input-border: #647997;
+  --site-surface: #f4e9e1;
+  --site-pressed: #d9e8ff;
+  --site-primary-hover: #183dc2;
+  --site-link-ink: #183dc2;
+  --site-image-base: #dceaf4;
+  --site-yellow: #ffda3d;
+  --site-yellow-hover: #f2c524;
+  --site-orange: #ff7a24;
+  --site-purple: #a66bff;
+  --site-rail-width: 156px;
+  --site-red: #dc2f43;
+  --site-green: #00ad47;
+  --site-red-soft: #ffe1e4;
+  --site-ink: #000000;
+  --site-on-blue: #ffffff;
+  --site-radius: 12px;
+  --site-gutter: clamp(20px, 6.25vw, 100px);
+  --site-section-space: clamp(48px, 6vw, 88px);
+  --site-content-max: 1440px;
+  --site-canvas: var(--site-surface);
+  --site-canvas-ink: #000;
+  --site-panel-height: calc(100svh - 40px);
   --app-title-color: var(--text-main);
   --app-content-width: 64rem;
   --app-section-gap: 1.25rem;

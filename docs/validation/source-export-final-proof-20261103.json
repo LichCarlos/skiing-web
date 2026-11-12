@@ -1,0 +1,29 @@
+[
+  {
+    "repo": "backend",
+    "files": 675,
+    "codeAndConfigFiles": 591,
+    "changed": [],
+    "sourceExtras": [],
+    "verifiedLogs": 9,
+    "sourceSha256": "a7d88d3258b20ead09587766d9fc78165983aaeaa4d9bf1e880e45c0f8737f56"
+  },
+  {
+    "repo": "web",
+    "files": 555,
+    "codeAndConfigFiles": 492,
+    "changed": [],
+    "sourceExtras": [],
+    "verifiedLogs": 5,
+    "sourceSha256": "7e7ac65117f808902c625dcf280522b720b7f64c7ef82ef15debd315d2bdd102"
+  },
+  {
+    "repo": "app",
+    "files": 264,
+    "codeAndConfigFiles": 230,
+    "changed": [],
+    "sourceExtras": [],
+    "verifiedLogs": 5,
+    "sourceSha256": "beaa262b5eeae8dd486c3d26cbb1cf5b8e52712c20362aa00abee53cd73c0b9c"
+  }
+]

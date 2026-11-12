@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "mode": "live",
+  "fixtures": false,
+  "checks": [
+    {
+      "name": "dictionary-palette-native-drag-opens-context-form"
+    },
+    {
+      "name": "dictionary-item-drag-reads-target-and-opens-form"
+    },
+    {
+      "name": "dictionary-graph-create-field-drawer"
+    },
+    {
+      "name": "field-responsive-and-mobile-click-alternative",
+      "width": 1440
+    },
+    {
+      "name": "field-responsive-and-mobile-click-alternative",
+      "width": 1280
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "simulatedWrites": [],
+  "buildId": "nnY1pK1tMinX5A-G0HQJO"
+}

@@ -1,0 +1,430 @@
+{
+  "date": "2026-11-03",
+  "passed": true,
+  "scope": "Confirmed D-47 / ADM-19 metadata and audited-content lifecycle; no new runtime API, permission or migration",
+  "http": {
+    "suite": "admin-authorization",
+    "output": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ",
+    "checks": [
+      {
+        "name": "postgres-version",
+        "passed": true
+      },
+      {
+        "name": "initialize",
+        "passed": true
+      },
+      {
+        "name": "start-postgres",
+        "passed": true
+      },
+      {
+        "name": "create-database",
+        "passed": true
+      },
+      {
+        "name": "migrate-deploy",
+        "passed": true
+      },
+      {
+        "name": "seed-first",
+        "passed": true
+      },
+      {
+        "name": "seed-second",
+        "passed": true
+      },
+      {
+        "name": "verify-before",
+        "passed": true
+      },
+      {
+        "name": "fixture-prepare",
+        "passed": true
+      },
+      {
+        "name": "compiled-api-ready",
+        "passed": true
+      },
+      {
+        "name": "fixture-verify",
+        "passed": true
+      },
+      {
+        "name": "verify-after",
+        "passed": true
+      },
+      {
+        "name": "stop-postgres",
+        "passed": true
+      }
+    ],
+    "completed": true,
+    "stopped": true,
+    "serverStopped": true,
+    "postgresVersion": "postgres (PostgreSQL) 17.11",
+    "databasePort": 64596,
+    "database": "linji_admin_authorization_validation",
+    "apiPort": 54191,
+    "clientTests": 15,
+    "noListeners": [64596, 54191, 54608, 53131],
+    "allPidAndInitPasswordFilesAbsent": true,
+    "failedFirstRun": {
+      "suite": "admin-authorization",
+      "output": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV",
+      "checks": [
+        {
+          "name": "postgres-version",
+          "passed": true
+        },
+        {
+          "name": "initialize",
+          "passed": true
+        },
+        {
+          "name": "start-postgres",
+          "passed": true
+        },
+        {
+          "name": "create-database",
+          "passed": true
+        },
+        {
+          "name": "migrate-deploy",
+          "passed": true
+        },
+        {
+          "name": "seed-first",
+          "passed": true
+        },
+        {
+          "name": "seed-second",
+          "passed": true
+        },
+        {
+          "name": "verify-before",
+          "passed": true
+        },
+        {
+          "name": "fixture-prepare",
+          "passed": true
+        },
+        {
+          "name": "compiled-api-ready",
+          "passed": true
+        },
+        {
+          "name": "stop-postgres",
+          "passed": true
+        }
+      ],
+      "completed": false,
+      "stopped": true,
+      "serverStopped": true,
+      "postgresVersion": "postgres (PostgreSQL) 17.11",
+      "databasePort": 54608,
+      "database": "linji_admin_authorization_validation",
+      "apiPort": 53131,
+      "error": "Unconfirmed client validation\n\n'failed' !== 'passed'\n"
+    },
+    "firstFailure": "14 passed / one old refresh fixture assertion failed; two cookie jars shared one CSRF cache. Test now requires optional exact CSRF rejection followed by one successful refresh; production client/authentication unchanged."
+  },
+  "pendingContract": "D-52 citations annotation correction remains unconfirmed. OpenAPI 1.51.0 is unchanged; parsed display model retains approved stored JSON semantics.",
+  "limitations": [
+    "No current Next/browser/Expo Web runtime validation",
+    "Historical eight AI browser tests do not prove this changed source",
+    "No native device, signing, provider, container or remote CI validation",
+    "Docker not started/restarted; no parent dependency cleanup",
+    "D-49/D-50/D-09 remain pending; overall goal incomplete",
+    "Full 839-test database suite was not rerun; dedicated real HTTP and persistent assertions ran here"
+  ],
+  "openapi": {
+    "version": "1.51.0",
+    "operations": 143,
+    "path": "E:\\desktop\\lishiqi\\web\\contracts\\openapi.json",
+    "sha256": "4fa8529fe48872254651a095f20ce04cd7c94fe349d00e4149824bcdebfa03f8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 2139,
+    "aiOperationsTests": 85,
+    "newAiOperationsTests": 77,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "initialDiagnostics": "Stored citations generated-type mismatch uses a display model pending D-52; generic request mock and callback fixture typing corrected before final check"
+  },
+  "sources": [
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\api.test.ts",
+      "sha256": "114ed158020a5af1fd938194c348938066caf3440694c0967b767900917cd56c"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\api.ts",
+      "sha256": "37896a774fa91d91b4d4fa2f7e67fd7953fc4b5c52446f605f73484a78f11688"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-console.tsx",
+      "sha256": "3f1ad108e231102e6f31f0a92c3ae4ca9f5a31048c11c2327e12c9c4d40fab78"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-content-session.test.ts",
+      "sha256": "6731bb5d5910260ca8f9aedc05ef56371c5180cb63f30a2e1c0bd5b31c0ad191"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-content-session.ts",
+      "sha256": "03974eaa8d1609cd7f9e5c5dc0a0d040c57edd9762ffdd90a79f68410bd56d03"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-fixtures.test-helper.ts",
+      "sha256": "3b05c4ec7bc6d6222dd7da29b3e296bb925f2e5e400c075167aac8b04a366789"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-model.test.tsx",
+      "sha256": "045036dd690cba07d8914f59caf7152fd5b1e13a433eeba7e3a8c28cb57c49ef"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-model.ts",
+      "sha256": "5b2285c95c2cf9aacbaf527f94105561bcb0bef15c02613585ae100ab5ffa6f1"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-pages.test.tsx",
+      "sha256": "99e77eca0fc52435729eaa7b44aed59e1d34275d0abe8319d540f408ae642f2c"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-queries.test.ts",
+      "sha256": "247e777f71aacaa2517a8329f6e3816e6904190991e2df1f503f0c84c8158660"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\audit-queries.ts",
+      "sha256": "8a7ba360f03b1354d45e1ad82dc38f6773035ac4111b16070bc0f520f5e59320"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\rag-console.tsx",
+      "sha256": "bdacf0d1e261661b4c11fc1fdeba4e4e562785455e38e8fbda7d46a36871f019"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\routes.ts",
+      "sha256": "78401fa5b01805a060da91fa3c3fed201ec33692a98161dd25f7057516a576b9"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\features\\ai-operations\\session.tsx",
+      "sha256": "9df16dc1a78cb8b5e8f5231971ba41cf3d9fa0c143f663021cb9e1041f35e876"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\test\\authorization.http-spec.ts",
+      "sha256": "1261925a5f8803704fa8f92c5293be2d418deaba92ac0b9765b1d2f9786a1fea"
+    },
+    {
+      "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\src\\platform\\auth\\session-model.ts",
+      "sha256": "acdbf227403b1528161c41f904a37efdcc60013647efd0320b3113ee08a21243"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\early-types.log",
+      "sha256": "f7f331bc0be7ab22527fb585896547e246e8d704c46d56102cf69882ea627350"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\audit-unit-first.log",
+      "sha256": "354969563ba27e97ff559a5c6a77242d7e64e7e05bd623cb1b058427bb823e09"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\audit-unit-final.log",
+      "sha256": "e2795306758236fc7d8be5db6d83ec37d86752a60412511641ac6155bab09e9d"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\audit-types.log",
+      "sha256": "4fa2cd9e5396fe56326cc8cbdfbfd766941b7ff2f46a8aeaaedab0952a28bb64"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\audit-types-final.log",
+      "sha256": "d81255a89aa2abbc97ea0602b73d5588c240c4654677794e8b20764ccc4bd499"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\audit-types-final2.log",
+      "sha256": "3dd115a54d9decc15d9b6f1babec63f20d21966a914759ea6530c5b714007d15"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\web-install.log",
+      "sha256": "11b862f11c0d15ec2fe525cf45720545d54586877b214650a592576fe2db9970"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\web-check.log",
+      "sha256": "2924625184717a282f9d6aaa69a7e8033ad5a4b4c4aa032fe4635e0dde326ae9"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\web-build.log",
+      "sha256": "710d2f8c67843bb66032258a32fe145df71d32472c641c01c98ab8a91275b5b8"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\web-admin-http.log",
+      "sha256": "1c96201014c494c26a8473f3ebbf48a4720ee49c971b3b52ff2d1ad8f97b57b0"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\web-admin-http-final.log",
+      "sha256": "bcbd29d8923509e268921369aafc0f990e991b501ef548c84054d5fc0f72deb7"
+    }
+  ],
+  "httpEvidence": [
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\backend.log",
+      "sha256": "ad045c41e7c8875f3edc809a05f07fa1a517a52c9b826750af135b413ee16d3c"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\client-result.json",
+      "sha256": "5fcecc5648cb002f914b66698540c400fc0be4ca76e0bbfc6731d46628765018"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\create-database.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\fixture-prepare.log",
+      "sha256": "7bf60279f856d9b2caad909c6527a08a11f52bef20e99baab8bdc3d5f00f9e56"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\fixture-verify.log",
+      "sha256": "954d995c6b48f1adaff4097cce4e48ed296de01eabeccfa5ac9cbe011c32db3d"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\fixture.json",
+      "sha256": "75931029b9ec35beaabae3aaf7dd72be030772ffd66c1f446d7291fe513f6801"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\initialize.log",
+      "sha256": "82e241304568bf38018b42d9075dcb8029406c10cc04d61293ef042731c6d63d"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\migrate-deploy.log",
+      "sha256": "8e9e80fd0a8279c4255cd9220ad4d6f2b653d2ccf0d328570a7b3251b700b946"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\postgres-version.log",
+      "sha256": "236e29990561bee501e02f4e5d1f8cb1220a59091800020301a0f2e35e6fb3d5"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\postgres.log",
+      "sha256": "f04edd4ff8a0447eaa5e142d21261bc0a57b66b886fa1d0095007c48f2e76c8e"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\ready.json",
+      "sha256": "eaefff3f800aafb55cf19a9c14763edfcfee6c442c07d7947185472c363ccf05"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\report.json",
+      "sha256": "4925b8b6880534b0207d285beb46a57bf27cedb22fd979c48bcccb25858f3b38"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\seed-first.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\seed-second.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\stop-postgres.log",
+      "sha256": "3589d2bd01f8295cc7c9ec3f5e07625fcd347ccb6f33f2d80edafe5f5217c1fb"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\stop.request",
+      "sha256": "284d1e8c4918248233df17642bbb940c001e1fa856c18aab86ba6dbe7813eb13"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\verify-after.log",
+      "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-kExJVJ\\verify-before.log",
+      "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\backend.log",
+      "sha256": "f0de838a27e11fc7d9e7e75a48e5071a00edce942d89a712ca4a2dc897c92b7f"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\client-result.json",
+      "sha256": "9752b87528c4c4098d486509fbed0cb3dc6d1c7521dd659d7b4b298ea651dfe3"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\create-database.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\fixture-prepare.log",
+      "sha256": "7bf60279f856d9b2caad909c6527a08a11f52bef20e99baab8bdc3d5f00f9e56"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\fixture.json",
+      "sha256": "b71df69ede75963e241324bd8819e50bc97583f74f08201bd0d3128cddff63e4"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\initialize.log",
+      "sha256": "4c82705c83bc7ca242e63bc911ae201eec69d7410f97ca422ac07898e90a3a23"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\migrate-deploy.log",
+      "sha256": "f7419bff5a13d7124417e698344e14b40daefe47499c7fe2313eba2e4673fc36"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\postgres-version.log",
+      "sha256": "236e29990561bee501e02f4e5d1f8cb1220a59091800020301a0f2e35e6fb3d5"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\postgres.log",
+      "sha256": "a15dad82d59c36d70593c9789f05900c453d19c764d0ea40752cfa44f9e890b2"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\ready.json",
+      "sha256": "69216953d1375e0bf254437eb5a3d5443ec735504e7bdbebe8111f769bd9452b"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\report.json",
+      "sha256": "bdaa6545e27ba17bcc449cebac75eaea59f568bb326cfe4d6a90f73f065949f2"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\seed-first.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\seed-second.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\stop-postgres.log",
+      "sha256": "3589d2bd01f8295cc7c9ec3f5e07625fcd347ccb6f33f2d80edafe5f5217c1fb"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\stop.request",
+      "sha256": "5d28a90f4498a81461efbaf6f628a19d9778390bb5c81a393dd936181cc3d826"
+    },
+    {
+      "path": "D:\\linji-audit-lifecycle\\20261103\\runs\\linji-admin-http-W1Z0OV\\verify-before.log",
+      "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "zHDZyomaeSFdrz_8OQ1MS",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:\\desktop\\lishiqi\\web\\apps\\web\\.next\\release\\release-manifest.json",
+        "sha256": "d9b275afdef229d4e15b7a31e04b5e85c9588a55378d597ea36712f2e1c9e980"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "v8GV1rOqIt72eKk4lxYng",
+      "files": 1952,
+      "links": 26,
+      "manifest": {
+        "path": "E:\\desktop\\lishiqi\\web\\apps\\admin\\.next\\release\\release-manifest.json",
+        "sha256": "acd3a63a6d66c5328bbecb49827ea20346d808d89fd753302b1816b0930f36fe"
+      }
+    }
+  ]
+}

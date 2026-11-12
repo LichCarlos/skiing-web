@@ -1,0 +1,489 @@
+{
+  "passed": true,
+  "scope": "admin only",
+  "tests": {
+    "files": 137,
+    "passed": 2723
+  },
+  "buildId": "bSuFe0KxxnwTg3ssRSHN1",
+  "checks": [
+    "eslint",
+    "TypeScript",
+    "import boundaries",
+    "Prettier",
+    "Linux production build",
+    "standalone integrity"
+  ],
+  "sourcePreparation": {
+    "sourceSha256": "63e8172f106745f04cc89c1be632b3c49a6ecd91dbd9274a4c2c54f4ca5afd16",
+    "keptProductionFile": "apps/admin/src/app/admin/dashboard.module.css"
+  },
+  "preflight": {
+    "at": "2026-11-09T06:15:39.575973+00:00",
+    "services": [
+      "aegis.service",
+      "aliyun.service",
+      "atd.service",
+      "charge-api.service",
+      "chronyd.service",
+      "crond.service",
+      "dbus.service",
+      "frps.service",
+      "getty@tty1.service",
+      "gssproxy.service",
+      "linji-admin.service",
+      "linji-api.service",
+      "linji-clamav.service",
+      "linji-kafka.service",
+      "linji-minio.service",
+      "linji-web.service",
+      "NetworkManager.service",
+      "nginx.service",
+      "polkit.service",
+      "postgresql.service",
+      "redis.service",
+      "rngd.service",
+      "rpcbind.service",
+      "rsyslog.service",
+      "serial-getty@ttyS0.service",
+      "sshd.service",
+      "systemd-journald.service",
+      "systemd-logind.service",
+      "systemd-udevd.service",
+      "tuned.service",
+      "user@0.service"
+    ],
+    "backup": "/opt/linji/private/backups/20261109-admin-category-select",
+    "unitSha256": "f3ba03b25504e4f8763cfb4d12fa429b6104baf9cc238e8a168bba7e8a30fcf1",
+    "protectedFiles": {
+      "/etc/systemd/system/linji-api.service": "0390d772f8cfbda8fb5c529cae8d75297df12bb0571f3d84304d0a656e68bc1b",
+      "/etc/systemd/system/linji-web.service": "d4c7d9e80ee6439bf201980b3c663695cd2dfc4bacadb4cdcd3cf537d1858cfc",
+      "/etc/nginx/nginx.conf": "e5959c500bec02ed90f9846e914a737e25877473fad5a6421cad4ddb8b5aeb2a",
+      "/opt/linji/linji-http.conf": "70a55ebec00f51e1c432f7a5a536d107da68aad9ee2532aae3fe5e3c00e7e8ca",
+      "/opt/linji/linji-locations.conf": "eb3631f5b08e907474fccfc980836746bfec54fba9c360aff9f3af0e45beafe9"
+    }
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "bSuFe0KxxnwTg3ssRSHN1",
+    "filesVerified": 2493,
+    "linksVerified": 21,
+    "archiveSha256": "96458487b18515d466823e7126fc4510eaa2234b9f03e55736c914fa194190eb",
+    "checks": [
+      {
+        "route": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts",
+        "status": 200
+      },
+      {
+        "staticResources": 42,
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/merchant/resorts",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-09T06:29:49.694309+00:00",
+    "release": "/opt/linji/releases/20261109-admin-category-select",
+    "buildId": "bSuFe0KxxnwTg3ssRSHN1",
+    "changedServices": ["linji-admin.service"],
+    "adminPid": "1531501",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "browser": {
+    "local": {
+      "passed": true,
+      "mode": "local",
+      "fixtures": false,
+      "checks": [
+        {
+          "name": "category-picker",
+          "width": 1440,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 768,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 390,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 320,
+          "hints": 1
+        },
+        {
+          "name": "category-item",
+          "width": 1440,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 768,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 390,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 320,
+          "hints": 6
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 1440,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 768,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 390,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 320,
+          "hints": 5
+        },
+        {
+          "name": "field-dictionary",
+          "width": 1440,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 768,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 390,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 320,
+          "hints": 13
+        }
+      ],
+      "pageErrors": [],
+      "contentWrites": [],
+      "buildId": "bSuFe0KxxnwTg3ssRSHN1"
+    },
+    "local-fixtures": {
+      "passed": true,
+      "mode": "local",
+      "fixtures": true,
+      "checks": [
+        {
+          "name": "category-picker",
+          "width": 1440,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 768,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 390,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 320,
+          "hints": 1
+        },
+        {
+          "name": "category-item",
+          "width": 1440,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 768,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 390,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 320,
+          "hints": 6
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 1440,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 768,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 390,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 320,
+          "hints": 5
+        },
+        {
+          "name": "field-dictionary",
+          "width": 1440,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 768,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 390,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 320,
+          "hints": 13
+        }
+      ],
+      "pageErrors": [],
+      "contentWrites": [],
+      "buildId": "bSuFe0KxxnwTg3ssRSHN1"
+    },
+    "live": {
+      "passed": true,
+      "mode": "live",
+      "fixtures": false,
+      "checks": [
+        {
+          "name": "category-picker",
+          "width": 1440,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 768,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 390,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 320,
+          "hints": 1
+        },
+        {
+          "name": "category-item",
+          "width": 1440,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 768,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 390,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 320,
+          "hints": 6
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 1440,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 768,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 390,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 320,
+          "hints": 5
+        },
+        {
+          "name": "field-dictionary",
+          "width": 1440,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 768,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 390,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 320,
+          "hints": 13
+        }
+      ],
+      "pageErrors": [],
+      "contentWrites": [],
+      "buildId": "bSuFe0KxxnwTg3ssRSHN1"
+    },
+    "live-normal": {
+      "passed": true,
+      "mode": "live-normal",
+      "fixtures": false,
+      "checks": [
+        {
+          "name": "category-picker",
+          "width": 1440,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 768,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 390,
+          "hints": 1
+        },
+        {
+          "name": "category-picker",
+          "width": 320,
+          "hints": 1
+        },
+        {
+          "name": "category-item",
+          "width": 1440,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 768,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 390,
+          "hints": 6
+        },
+        {
+          "name": "category-item",
+          "width": 320,
+          "hints": 6
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 1440,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 768,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 390,
+          "hints": 5
+        },
+        {
+          "name": "new-option-dictionary",
+          "width": 320,
+          "hints": 5
+        },
+        {
+          "name": "field-dictionary",
+          "width": 1440,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 768,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 390,
+          "hints": 13
+        },
+        {
+          "name": "field-dictionary",
+          "width": 320,
+          "hints": 13
+        }
+      ],
+      "pageErrors": [],
+      "contentWrites": [],
+      "buildId": "bSuFe0KxxnwTg3ssRSHN1"
+    }
+  },
+  "browserChecks": 64
+}

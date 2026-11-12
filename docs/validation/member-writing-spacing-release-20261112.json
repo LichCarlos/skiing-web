@@ -1,0 +1,223 @@
+{
+  "passed": true,
+  "source": {
+    "baseSourceSha256": "c4528cb90dcad62fe72994a6480fa070062891fb6afa13b7dd8202b81b212800",
+    "sourceSha256": "e1d4f7574d7709fd8d56ee9c31f80f06945a91a988c63fa55087bc6027d75828",
+    "runtimeDiff": ["apps/web/src/features/member/member.module.css"]
+  },
+  "checks": {
+    "tests": 483,
+    "testFiles": 34,
+    "typecheck": true,
+    "lint": true,
+    "boundaries": true,
+    "linuxBuild": true
+  },
+  "local": {
+    "passed": true,
+    "live": false,
+    "checks": [
+      {
+        "name": "empty editor shows guidance inside a single frame",
+        "passed": true
+      },
+      {
+        "name": "typing, heading and undo keep content and focus",
+        "passed": true
+      },
+      {
+        "name": "source and preview share the same outer frame",
+        "passed": true
+      },
+      {
+        "name": "desktop writing uses the full frame with symmetric 24px insets",
+        "passed": true
+      },
+      {
+        "name": "long paragraphs, source and preview align without overflow",
+        "passed": true
+      },
+      {
+        "name": "resort fields use one shared border and native keyboard selection",
+        "passed": true
+      },
+      {
+        "name": "empty search and failed request remain recoverable",
+        "passed": true
+      },
+      {
+        "name": "390px writing, source and resort have no page overflow",
+        "passed": true
+      },
+      {
+        "name": "320px writing, source and resort have no page overflow",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "contentWrites": [],
+    "geometry": [
+      {
+        "viewport": 1280,
+        "frame": 1021.625,
+        "body": 969.625,
+        "left": 26,
+        "right": 26,
+        "maxWidth": "none"
+      },
+      {
+        "viewport": 1440,
+        "frame": 1164.8125,
+        "body": 1112.8125,
+        "left": 26,
+        "right": 26,
+        "maxWidth": "none"
+      },
+      {
+        "viewport": 1920,
+        "frame": 1152,
+        "body": 1100,
+        "left": 26,
+        "right": 26,
+        "maxWidth": "none"
+      }
+    ]
+  },
+  "live": {
+    "passed": true,
+    "live": true,
+    "checks": [
+      {
+        "name": "empty editor shows guidance inside a single frame",
+        "passed": true
+      },
+      {
+        "name": "typing, heading and undo keep content and focus",
+        "passed": true
+      },
+      {
+        "name": "source and preview share the same outer frame",
+        "passed": true
+      },
+      {
+        "name": "desktop writing uses the full frame with symmetric 24px insets",
+        "passed": true
+      },
+      {
+        "name": "long paragraphs, source and preview align without overflow",
+        "passed": true
+      },
+      {
+        "name": "resort fields use one shared border and native keyboard selection",
+        "passed": true
+      },
+      {
+        "name": "390px writing, source and resort have no page overflow",
+        "passed": true
+      },
+      {
+        "name": "320px writing, source and resort have no page overflow",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "contentWrites": [],
+    "buildId": "D4xoWA-lpQyB_MAjv5b2F",
+    "geometry": [
+      {
+        "viewport": 1280,
+        "frame": 1021.625,
+        "body": 969.625,
+        "left": 26,
+        "right": 26,
+        "maxWidth": "none"
+      },
+      {
+        "viewport": 1440,
+        "frame": 1164.8125,
+        "body": 1112.8125,
+        "left": 26,
+        "right": 26,
+        "maxWidth": "none"
+      },
+      {
+        "viewport": 1920,
+        "frame": 1152,
+        "body": 1100,
+        "left": 26,
+        "right": 26,
+        "maxWidth": "none"
+      }
+    ]
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "D4xoWA-lpQyB_MAjv5b2F",
+    "filesVerified": 2203,
+    "linksVerified": 21,
+    "archiveSha256": "ef8fd0405996dbe1044d8ecf4c21e53b5d1358d067cd193a1a1c449ed5588987",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/me",
+        "status": 200
+      },
+      {
+        "staticResources": 24,
+        "status": 200
+      },
+      {
+        "route": "/snow/me/ai",
+        "status": 200
+      },
+      {
+        "route": "/snow/me/new",
+        "status": 200
+      },
+      {
+        "route": "/snow/me?tab=favorites",
+        "status": 200
+      },
+      {
+        "route": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge/1",
+        "status": 200
+      },
+      {
+        "route": "/snow/dynamics",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-12T09:23:15.360594+00:00",
+    "release": "/opt/linji/releases/20261112-member-writing-spacing",
+    "buildId": "D4xoWA-lpQyB_MAjv5b2F",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1593701",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "cleanup": {
+    "localPreview3312Stopped": true,
+    "candidateStopped": true,
+    "loginSessionLoggedOut": true
+  },
+  "rollback": "python3 /opt/linji/releases/20261112-member-writing-spacing/rollback-website.py"
+}

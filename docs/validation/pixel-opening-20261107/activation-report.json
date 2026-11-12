@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "activatedAt": "2026-11-07T01:56:18.056121+00:00",
+  "release": "/opt/linji/releases/20261107-pixel-refinement",
+  "changedServices": ["linji-web.service"],
+  "websitePid": "1482875",
+  "databaseChanged": false,
+  "nginxChanged": false,
+  "adminBackendRestarted": false,
+  "buildId": "rfcBSTM4FWeTzZOJJrWnN"
+}

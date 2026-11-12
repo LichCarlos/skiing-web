@@ -1,0 +1,944 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-11-12T07:40:08.468433+00:00",
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-12T07:38:22.959894+00:00",
+    "release": "/opt/linji/releases/20261112-admin-desktop-config",
+    "buildId": "nnY1pK1tMinX5A-G0HQJO",
+    "changedServices": ["linji-admin.service"],
+    "adminPid": "1591974",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "nnY1pK1tMinX5A-G0HQJO",
+    "filesVerified": 2500,
+    "linksVerified": 21,
+    "archiveSha256": "c046982407d00f64c68c31dc23dc66ed861726e4e3b8f51be6caff9793a25aa8",
+    "checks": [
+      {
+        "route": "/snow-admin/admin/system/dictionaries",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/system/fields",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/system/fields/ski_resort",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts",
+        "status": 200
+      },
+      {
+        "staticResources": 42,
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/merchant/resorts",
+        "status": 200
+      }
+    ]
+  },
+  "preflight": {
+    "at": "2026-11-12T07:34:22.345091+00:00",
+    "services": [
+      "aegis.service",
+      "aliyun.service",
+      "atd.service",
+      "charge-api.service",
+      "chronyd.service",
+      "crond.service",
+      "dbus.service",
+      "frps.service",
+      "getty@tty1.service",
+      "gssproxy.service",
+      "linji-admin.service",
+      "linji-api.service",
+      "linji-clamav.service",
+      "linji-kafka.service",
+      "linji-minio.service",
+      "linji-web.service",
+      "NetworkManager.service",
+      "nginx.service",
+      "polkit.service",
+      "postgresql.service",
+      "redis.service",
+      "rngd.service",
+      "rpcbind.service",
+      "rsyslog.service",
+      "serial-getty@ttyS0.service",
+      "sshd.service",
+      "systemd-journald.service",
+      "systemd-logind.service",
+      "systemd-udevd.service",
+      "tuned.service",
+      "user@0.service"
+    ],
+    "backup": "/opt/linji/private/backups/20261112-admin-desktop-config",
+    "unitSha256": "95ed742efe65610b4a57bc117375693ed5d43d46f3e9e7fae73438dcfefdb9c3",
+    "protectedFiles": {
+      "/etc/systemd/system/linji-api.service": "0390d772f8cfbda8fb5c529cae8d75297df12bb0571f3d84304d0a656e68bc1b",
+      "/etc/systemd/system/linji-web.service": "d4c7d9e80ee6439bf201980b3c663695cd2dfc4bacadb4cdcd3cf537d1858cfc",
+      "/etc/nginx/nginx.conf": "e5959c500bec02ed90f9846e914a737e25877473fad5a6421cad4ddb8b5aeb2a",
+      "/opt/linji/linji-http.conf": "70a55ebec00f51e1c432f7a5a536d107da68aad9ee2532aae3fe5e3c00e7e8ca",
+      "/opt/linji/linji-locations.conf": "eb3631f5b08e907474fccfc980836746bfec54fba9c360aff9f3af0e45beafe9"
+    }
+  },
+  "source": {
+    "sourceSha256": "912bfd935d686f7fc5c676ede642398d4d9e99667efb60a96f9e7605ed248103",
+    "keptProductionFile": "apps/admin/src/app/admin/dashboard.module.css"
+  },
+  "tests": {
+    "files": 140,
+    "passed": 2751,
+    "environment": "Linux production build"
+  },
+  "browserCheckCount": 41,
+  "browser": {
+    "navigationLocal": {
+      "passed": true,
+      "mode": "local",
+      "checks": [
+        {
+          "name": "desktop-collapsible-menu"
+        },
+        {
+          "name": "resort-form",
+          "count": 19
+        },
+        {
+          "name": "desktop-layout",
+          "width": 1280
+        },
+        {
+          "name": "desktop-layout",
+          "width": 1600
+        },
+        {
+          "name": "article-form",
+          "count": 5
+        },
+        {
+          "name": "knowledge-form",
+          "count": 4
+        },
+        {
+          "name": "account-form",
+          "count": 4
+        },
+        {
+          "name": "role-form",
+          "count": 4
+        },
+        {
+          "name": "dictionary-form",
+          "count": 5
+        },
+        {
+          "name": "field-form",
+          "count": 12
+        },
+        {
+          "name": "authorized-current-route-highlight"
+        },
+        {
+          "name": "unbound-admin-hides-and-blocks-merchant-pages"
+        },
+        {
+          "name": "editor-sees-only-authorized-module-and-denies-direct-route"
+        },
+        {
+          "name": "bound-merchant-has-distinct-navigation"
+        }
+      ],
+      "forms": [
+        {
+          "name": "resort-form",
+          "fields": [
+            {
+              "label": "关联商家 ID",
+              "hint": "选填有效商家ID（正整数），用于关联经营商家；请先在账号管理核对商家资料。",
+              "size": "13px"
+            },
+            {
+              "label": "管理员评分",
+              "hint": "选填，管理员评分为0至5分，最多1位小数。",
+              "size": "13px"
+            },
+            {
+              "label": "评分人数",
+              "hint": "选填，评分人数为不小于0的整数，请按真实统计填写。",
+              "size": "13px"
+            },
+            {
+              "label": "雪场名称",
+              "hint": "必填，填写雪场对外展示的名称，最多100字。",
+              "size": "13px"
+            },
+            {
+              "label": "起步票价（元）",
+              "hint": "必填，单位为元，填写不小于0的整数。",
+              "size": "13px"
+            },
+            {
+              "label": "营业状态",
+              "hint": "必选，按雪场实际营业情况选择；尚未确认时选择“未更新”。",
+              "size": "13px"
+            },
+            {
+              "label": "当前雪况",
+              "hint": "必填，简述当前雪况，最多50字；请及时核对雪场公告。",
+              "size": "13px"
+            },
+            {
+              "label": "省份",
+              "hint": "选填，填写所在省份或直辖市，最多50字。",
+              "size": "13px"
+            },
+            {
+              "label": "城市",
+              "hint": "选填，填写所在城市，最多50字。",
+              "size": "13px"
+            },
+            {
+              "label": "区县",
+              "hint": "选填，填写所在区县，最多50字。",
+              "size": "13px"
+            },
+            {
+              "label": "详细地址",
+              "hint": "选填，填写可用于到访的详细地址，最多300字。",
+              "size": "13px"
+            },
+            {
+              "label": "经度",
+              "hint": "选填，范围为−180至180；与纬度配套填写，用于地图定位。",
+              "size": "13px"
+            },
+            {
+              "label": "纬度",
+              "hint": "选填，范围为−90至90；与经度配套填写，用于地图定位。",
+              "size": "13px"
+            },
+            {
+              "label": "开放时间",
+              "hint": "选填，填写营业日期及时段，最多200字。",
+              "size": "13px"
+            },
+            {
+              "label": "适配标签",
+              "hint": "选填，可多选已启用的雪场适配标签；选项来自数据字典。",
+              "size": "13px"
+            },
+            {
+              "label": "雪道信息",
+              "hint": "选填，介绍雪道数量、难度及开放情况，最多10000字。",
+              "size": "13px"
+            },
+            {
+              "label": "设施信息",
+              "hint": "选填，介绍租赁、餐饮、停车等设施，最多10000字。",
+              "size": "13px"
+            },
+            {
+              "label": "官网",
+              "hint": "选填，填写完整的 http(s) 官网地址，最多500字。",
+              "size": "13px"
+            },
+            {
+              "label": "雪场介绍",
+              "hint": "必填，填写雪场介绍，最多1000字。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "article-form",
+          "fields": [
+            {
+              "label": "标题",
+              "hint": "必填，文章展示标题，最多200字。",
+              "size": "13px"
+            },
+            {
+              "label": "摘要",
+              "hint": "必填，简要说明文章内容，最多1000字。",
+              "size": "13px"
+            },
+            {
+              "label": "文章分类",
+              "hint": "必选，选择已启用的文章分类；选项由数据字典维护。",
+              "size": "13px"
+            },
+            {
+              "label": "文章封面",
+              "hint": "选填，上传或选择封面图片；扫描通过后才可关联，上传要求见图片控件。",
+              "size": "13px"
+            },
+            {
+              "label": "正文",
+              "hint": "必填，最多100000字。可使用富文本工具编辑；保存草稿后再按需要发布。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "knowledge-form",
+          "fields": [
+            {
+              "label": "标题",
+              "hint": "必填，平台知识标题，最多200字。",
+              "size": "13px"
+            },
+            {
+              "label": "分类",
+              "hint": "必填，填写知识归类名称，例如“平台说明”，最多80字。",
+              "size": "13px"
+            },
+            {
+              "label": "来源链接",
+              "hint": "选填来源链接，最多2048字，便于核对资料出处。",
+              "size": "13px"
+            },
+            {
+              "label": "正文（纯文本或Markdown）",
+              "hint": "必填，支持纯文本或Markdown，最多100000字；发布及索引按现有流程执行。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "account-form",
+          "fields": [
+            {
+              "label": "账号",
+              "hint": "必填，填写唯一登录账号，最多50字；保存时转为小写并去除首尾空格。",
+              "size": "13px"
+            },
+            {
+              "label": "昵称",
+              "hint": "必填，填写展示昵称，最多50字，不能只含空格。",
+              "size": "13px"
+            },
+            {
+              "label": "初始密码",
+              "hint": "必填，8–72个UTF-8字节，不去除空格；用户创建后可自行修改。",
+              "size": "13px"
+            },
+            {
+              "label": "角色（不选使用默认注册角色）",
+              "hint": "选择已有角色，可多选；新建时留空使用默认注册角色，分配角色时以本次完整选择为准。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "role-form",
+          "fields": [
+            {
+              "label": "角色键",
+              "hint": "必填，小写字母开头，可含小写字母、数字、点、下划线和短横线，最多50字；创建后不可修改。",
+              "size": "13px"
+            },
+            {
+              "label": "角色名称",
+              "hint": "必填，用于管理端展示的角色名称，最多50字。",
+              "size": "13px"
+            },
+            {
+              "label": "角色说明",
+              "hint": "选填，说明角色的职责和适用对象，最多300字。",
+              "size": "13px"
+            },
+            {
+              "label": "默认数据范围",
+              "hint": "选择本人、所属商家或全部，作为未单独配置资源时的默认范围；具体操作仍受业务权限约束。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "dictionary-form",
+          "fields": [
+            {
+              "label": "适用业务",
+              "hint": "为扩展字段建立可复用的选项字典；创建后在字段管理中绑定。系统自动生成唯一类型键。",
+              "size": "13px"
+            },
+            {
+              "label": "类型键",
+              "hint": "由所属字段或适用业务自动生成，供系统引用，创建后不可修改。",
+              "size": "13px"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "size": "13px"
+            },
+            {
+              "label": "分组键",
+              "hint": "按所属字段或适用业务自动归类；编辑时可从业务分组中选择。",
+              "size": "13px"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "field-form",
+          "fields": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "size": "13px"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "size": "13px"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "size": "13px"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "size": "13px"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "size": "13px"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "size": "13px"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "size": "13px"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "size": "13px"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "size": "13px"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "size": "13px"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "size": "13px"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "size": "13px"
+            }
+          ]
+        }
+      ],
+      "pageErrors": [],
+      "blockedWrites": [],
+      "buildId": "nnY1pK1tMinX5A-G0HQJO"
+    },
+    "navigationLive": {
+      "passed": true,
+      "mode": "live",
+      "checks": [
+        {
+          "name": "desktop-collapsible-menu"
+        },
+        {
+          "name": "resort-form",
+          "count": 19
+        },
+        {
+          "name": "desktop-layout",
+          "width": 1280
+        },
+        {
+          "name": "desktop-layout",
+          "width": 1600
+        },
+        {
+          "name": "article-form",
+          "count": 5
+        },
+        {
+          "name": "knowledge-form",
+          "count": 4
+        },
+        {
+          "name": "account-form",
+          "count": 4
+        },
+        {
+          "name": "role-form",
+          "count": 4
+        },
+        {
+          "name": "dictionary-form",
+          "count": 5
+        },
+        {
+          "name": "field-form",
+          "count": 12
+        },
+        {
+          "name": "authorized-current-route-highlight"
+        }
+      ],
+      "forms": [
+        {
+          "name": "resort-form",
+          "fields": [
+            {
+              "label": "关联商家 ID",
+              "hint": "选填有效商家ID（正整数），用于关联经营商家；请先在账号管理核对商家资料。",
+              "size": "13px"
+            },
+            {
+              "label": "管理员评分",
+              "hint": "选填，管理员评分为0至5分，最多1位小数。",
+              "size": "13px"
+            },
+            {
+              "label": "评分人数",
+              "hint": "选填，评分人数为不小于0的整数，请按真实统计填写。",
+              "size": "13px"
+            },
+            {
+              "label": "雪场名称",
+              "hint": "必填，填写雪场对外展示的名称，最多100字。",
+              "size": "13px"
+            },
+            {
+              "label": "起步票价（元）",
+              "hint": "必填，单位为元，填写不小于0的整数。",
+              "size": "13px"
+            },
+            {
+              "label": "营业状态",
+              "hint": "必选，按雪场实际营业情况选择；尚未确认时选择“未更新”。",
+              "size": "13px"
+            },
+            {
+              "label": "当前雪况",
+              "hint": "必填，简述当前雪况，最多50字；请及时核对雪场公告。",
+              "size": "13px"
+            },
+            {
+              "label": "省份",
+              "hint": "选填，填写所在省份或直辖市，最多50字。",
+              "size": "13px"
+            },
+            {
+              "label": "城市",
+              "hint": "选填，填写所在城市，最多50字。",
+              "size": "13px"
+            },
+            {
+              "label": "区县",
+              "hint": "选填，填写所在区县，最多50字。",
+              "size": "13px"
+            },
+            {
+              "label": "详细地址",
+              "hint": "选填，填写可用于到访的详细地址，最多300字。",
+              "size": "13px"
+            },
+            {
+              "label": "经度",
+              "hint": "选填，范围为−180至180；与纬度配套填写，用于地图定位。",
+              "size": "13px"
+            },
+            {
+              "label": "纬度",
+              "hint": "选填，范围为−90至90；与经度配套填写，用于地图定位。",
+              "size": "13px"
+            },
+            {
+              "label": "开放时间",
+              "hint": "选填，填写营业日期及时段，最多200字。",
+              "size": "13px"
+            },
+            {
+              "label": "适配标签",
+              "hint": "选填，可多选已启用的雪场适配标签；选项来自数据字典。",
+              "size": "13px"
+            },
+            {
+              "label": "雪道信息",
+              "hint": "选填，介绍雪道数量、难度及开放情况，最多10000字。",
+              "size": "13px"
+            },
+            {
+              "label": "设施信息",
+              "hint": "选填，介绍租赁、餐饮、停车等设施，最多10000字。",
+              "size": "13px"
+            },
+            {
+              "label": "官网",
+              "hint": "选填，填写完整的 http(s) 官网地址，最多500字。",
+              "size": "13px"
+            },
+            {
+              "label": "雪场介绍",
+              "hint": "必填，填写雪场介绍，最多1000字。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "article-form",
+          "fields": [
+            {
+              "label": "标题",
+              "hint": "必填，文章展示标题，最多200字。",
+              "size": "13px"
+            },
+            {
+              "label": "摘要",
+              "hint": "必填，简要说明文章内容，最多1000字。",
+              "size": "13px"
+            },
+            {
+              "label": "文章分类",
+              "hint": "必选，选择已启用的文章分类；选项由数据字典维护。",
+              "size": "13px"
+            },
+            {
+              "label": "文章封面",
+              "hint": "选填，上传或选择封面图片；扫描通过后才可关联，上传要求见图片控件。",
+              "size": "13px"
+            },
+            {
+              "label": "正文",
+              "hint": "必填，最多100000字。可使用富文本工具编辑；保存草稿后再按需要发布。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "knowledge-form",
+          "fields": [
+            {
+              "label": "标题",
+              "hint": "必填，平台知识标题，最多200字。",
+              "size": "13px"
+            },
+            {
+              "label": "分类",
+              "hint": "必填，填写知识归类名称，例如“平台说明”，最多80字。",
+              "size": "13px"
+            },
+            {
+              "label": "来源链接",
+              "hint": "选填来源链接，最多2048字，便于核对资料出处。",
+              "size": "13px"
+            },
+            {
+              "label": "正文（纯文本或Markdown）",
+              "hint": "必填，支持纯文本或Markdown，最多100000字；发布及索引按现有流程执行。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "account-form",
+          "fields": [
+            {
+              "label": "账号",
+              "hint": "必填，填写唯一登录账号，最多50字；保存时转为小写并去除首尾空格。",
+              "size": "13px"
+            },
+            {
+              "label": "昵称",
+              "hint": "必填，填写展示昵称，最多50字，不能只含空格。",
+              "size": "13px"
+            },
+            {
+              "label": "初始密码",
+              "hint": "必填，8–72个UTF-8字节，不去除空格；用户创建后可自行修改。",
+              "size": "13px"
+            },
+            {
+              "label": "角色（不选使用默认注册角色）",
+              "hint": "选择已有角色，可多选；新建时留空使用默认注册角色，分配角色时以本次完整选择为准。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "role-form",
+          "fields": [
+            {
+              "label": "角色键",
+              "hint": "必填，小写字母开头，可含小写字母、数字、点、下划线和短横线，最多50字；创建后不可修改。",
+              "size": "13px"
+            },
+            {
+              "label": "角色名称",
+              "hint": "必填，用于管理端展示的角色名称，最多50字。",
+              "size": "13px"
+            },
+            {
+              "label": "角色说明",
+              "hint": "选填，说明角色的职责和适用对象，最多300字。",
+              "size": "13px"
+            },
+            {
+              "label": "默认数据范围",
+              "hint": "选择本人、所属商家或全部，作为未单独配置资源时的默认范围；具体操作仍受业务权限约束。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "dictionary-form",
+          "fields": [
+            {
+              "label": "适用业务",
+              "hint": "为扩展字段建立可复用的选项字典；创建后在字段管理中绑定。系统自动生成唯一类型键。",
+              "size": "13px"
+            },
+            {
+              "label": "类型键",
+              "hint": "由所属字段或适用业务自动生成，供系统引用，创建后不可修改。",
+              "size": "13px"
+            },
+            {
+              "label": "类型名称",
+              "hint": "后台显示的字典名称，如“雪场设施”，最多100字。",
+              "size": "13px"
+            },
+            {
+              "label": "分组键",
+              "hint": "按所属字段或适用业务自动归类；编辑时可从业务分组中选择。",
+              "size": "13px"
+            },
+            {
+              "label": "允许公开 RAG 检索",
+              "hint": "开启后，启用的字典项可用于 AI 公开检索；需要等待索引完成。",
+              "size": "13px"
+            }
+          ]
+        },
+        {
+          "name": "field-form",
+          "fields": [
+            {
+              "label": "字段键",
+              "hint": "数据保存时使用的唯一标识，如 facilities；小写字母开头，可含数字和下划线，创建后不可修改。",
+              "size": "13px"
+            },
+            {
+              "label": "显示名称",
+              "hint": "业务表单展示的字段名称，如“配套设施”，最多100字。",
+              "size": "13px"
+            },
+            {
+              "label": "数据类型",
+              "hint": "决定填写控件和校验方式；单选、多选需绑定选项字典，创建后不可修改。",
+              "size": "13px"
+            },
+            {
+              "label": "分组",
+              "hint": "选择当前业务实体下已启用的分组，决定字段在表单中的归属。",
+              "size": "13px"
+            },
+            {
+              "label": "排序",
+              "hint": "填写非负整数；数值较小的优先展示。",
+              "size": "13px"
+            },
+            {
+              "label": "默认值（JSON）",
+              "hint": "文本用双引号，如 \"双板\"；数字用100，多选用[\"parking\"]。留空清除默认值。",
+              "size": "13px"
+            },
+            {
+              "label": "校验规则（JSON）",
+              "hint": "填写 JSON 对象：文本可用 minLength、maxLength、pattern；数字可用 min、max。留空清除规则。",
+              "size": "13px"
+            },
+            {
+              "label": "必填",
+              "hint": "启用后，保存业务内容时必须提供该字段的有效值。",
+              "size": "13px"
+            },
+            {
+              "label": "可搜索",
+              "hint": "允许查询功能使用该字段搜索；不会自动给所有页面增加搜索框。",
+              "size": "13px"
+            },
+            {
+              "label": "可筛选",
+              "hint": "允许查询功能按该字段过滤，需相应业务页面接入。",
+              "size": "13px"
+            },
+            {
+              "label": "可排序",
+              "hint": "允许查询功能按该字段排序，需相应业务页面接入。",
+              "size": "13px"
+            },
+            {
+              "label": "公开字段",
+              "hint": "允许公开读取；仅系统管理员可开启，业务内容仍需满足自身的公开条件。",
+              "size": "13px"
+            }
+          ]
+        }
+      ],
+      "pageErrors": [],
+      "blockedWrites": [],
+      "buildId": "nnY1pK1tMinX5A-G0HQJO"
+    },
+    "dragFixtures": {
+      "passed": true,
+      "mode": "local",
+      "fixtures": true,
+      "checks": [
+        {
+          "name": "dictionary-palette-native-drag-opens-context-form"
+        },
+        {
+          "name": "dictionary-item-drag-reads-target-and-opens-form"
+        },
+        {
+          "name": "dictionary-graph-create-field-drawer"
+        },
+        {
+          "name": "tree-palette-drop-to-parent-and-save"
+        },
+        {
+          "name": "tree-existing-drag-prefills-parent-cancel-and-confirm"
+        },
+        {
+          "name": "field-disabled-group-rejects-drop"
+        },
+        {
+          "name": "field-page-drag-group-save-and-node-refresh"
+        },
+        {
+          "name": "field-page-drag-to-group-save-and-node-refresh"
+        },
+        {
+          "name": "field-responsive-and-mobile-click-alternative",
+          "width": 1440
+        },
+        {
+          "name": "field-responsive-and-mobile-click-alternative",
+          "width": 1280
+        },
+        {
+          "name": "field-pagination-error-clears-and-retry-restores"
+        }
+      ],
+      "pageErrors": [],
+      "blockedWrites": [],
+      "simulatedWrites": [
+        {
+          "method": "POST",
+          "path": "/admin/dictionaries/shared.options/items",
+          "parentId": 101
+        },
+        {
+          "method": "PATCH",
+          "path": "/admin/dictionaries/shared.options/items/102",
+          "parentId": 104
+        },
+        {
+          "method": "POST",
+          "path": "/admin/custom-field-groups",
+          "groupKey": "drag_group"
+        },
+        {
+          "method": "POST",
+          "path": "/admin/custom-fields",
+          "groupKey": "basic"
+        }
+      ],
+      "buildId": "nnY1pK1tMinX5A-G0HQJO"
+    },
+    "dragLive": {
+      "passed": true,
+      "mode": "live",
+      "fixtures": false,
+      "checks": [
+        {
+          "name": "dictionary-palette-native-drag-opens-context-form"
+        },
+        {
+          "name": "dictionary-item-drag-reads-target-and-opens-form"
+        },
+        {
+          "name": "dictionary-graph-create-field-drawer"
+        },
+        {
+          "name": "field-responsive-and-mobile-click-alternative",
+          "width": 1440
+        },
+        {
+          "name": "field-responsive-and-mobile-click-alternative",
+          "width": 1280
+        }
+      ],
+      "pageErrors": [],
+      "blockedWrites": [],
+      "simulatedWrites": [],
+      "buildId": "nnY1pK1tMinX5A-G0HQJO"
+    }
+  },
+  "rollback": "python3 /opt/linji/releases/20261112-admin-desktop-config/rollback-admin.py"
+}

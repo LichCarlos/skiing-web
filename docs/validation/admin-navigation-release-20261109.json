@@ -1,0 +1,195 @@
+{
+  "passed": true,
+  "sourceSha256": "6afcc2f253b755ef47f8cc2f49cf86ac460e1a92ab53f632f9b4cd5e66c51169",
+  "unitTests": {
+    "passed": 2714,
+    "files": 136
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "boundaries": true,
+    "openapi": true,
+    "format": true,
+    "linuxBuild": true
+  },
+  "localBrowser": {
+    "passed": true,
+    "mode": "local",
+    "checks": [
+      {
+        "name": "resorts: create and return stay inside admin prefix",
+        "passed": true
+      },
+      {
+        "name": "articles: create and return stay inside admin prefix",
+        "passed": true
+      },
+      {
+        "name": "knowledge: create and return stay inside admin prefix",
+        "passed": true
+      },
+      {
+        "name": "error recovery points at the prefixed dashboard",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "navigations": [
+      "/snow-admin/login",
+      "/snow-admin/admin/content/resorts",
+      "/snow-admin/admin/content/resorts/new",
+      "/snow-admin/admin/content/resorts",
+      "/snow-admin/admin/content/articles",
+      "/snow-admin/admin/content/articles/new",
+      "/snow-admin/admin/content/articles",
+      "/snow-admin/admin/content/project-knowledge",
+      "/snow-admin/admin/content/project-knowledge/new",
+      "/snow-admin/admin/content/project-knowledge",
+      "/snow-admin/not-a-real-route",
+      "/snow-admin/admin"
+    ],
+    "contentWrites": []
+  },
+  "productionBrowser": {
+    "passed": true,
+    "mode": "live",
+    "checks": [
+      {
+        "name": "resorts: create and return stay inside admin prefix",
+        "passed": true
+      },
+      {
+        "name": "articles: create and return stay inside admin prefix",
+        "passed": true
+      },
+      {
+        "name": "knowledge: create and return stay inside admin prefix",
+        "passed": true
+      },
+      {
+        "name": "error recovery points at the prefixed dashboard",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "navigations": [
+      "/snow-admin/login",
+      "/snow-admin/admin/content/resorts",
+      "/snow-admin/admin/content/resorts/new",
+      "/snow-admin/admin/content/resorts",
+      "/snow-admin/admin/content/articles",
+      "/snow-admin/admin/content/articles/new",
+      "/snow-admin/admin/content/articles",
+      "/snow-admin/admin/content/project-knowledge",
+      "/snow-admin/admin/content/project-knowledge/new",
+      "/snow-admin/admin/content/project-knowledge",
+      "/snow-admin/not-a-real-route",
+      "/snow-admin/admin"
+    ],
+    "contentWrites": [],
+    "buildId": "VOV-11ZVLsUJqF4sxyii0"
+  },
+  "before": {
+    "passed": true,
+    "mode": "before",
+    "checks": [
+      {
+        "observedHref": "/admin/content/resorts/new",
+        "status": 404,
+        "location": null
+      },
+      {
+        "name": "resorts: create and return stay inside admin prefix",
+        "passed": true
+      },
+      {
+        "observedHref": "/admin/content/articles/new",
+        "status": 404,
+        "location": null
+      },
+      {
+        "name": "articles: create and return stay inside admin prefix",
+        "passed": true
+      },
+      {
+        "observedHref": "/admin/content/project-knowledge/new",
+        "status": 404,
+        "location": null
+      },
+      {
+        "name": "knowledge: create and return stay inside admin prefix",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "navigations": [
+      "/snow-admin/login",
+      "/snow-admin/admin/content/resorts",
+      "/snow-admin/admin/content/articles",
+      "/snow-admin/admin/content/project-knowledge"
+    ],
+    "contentWrites": []
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "VOV-11ZVLsUJqF4sxyii0",
+    "filesVerified": 2505,
+    "linksVerified": 21,
+    "archiveSha256": "f139b394e350b303ce8e93ec20bbefba32a0e9236b6de53713eb47d98b62d771",
+    "checks": [
+      {
+        "route": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts",
+        "status": 200
+      },
+      {
+        "staticResources": 42,
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/merchant/resorts",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-09T04:28:19.078642+00:00",
+    "release": "/opt/linji/releases/20261109-admin-navigation",
+    "buildId": "VOV-11ZVLsUJqF4sxyii0",
+    "changedServices": ["linji-admin.service"],
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true,
+    "adminPid": "1528600"
+  },
+  "rollback": "python3 /opt/linji/releases/20261109-admin-navigation/rollback-admin.py"
+}

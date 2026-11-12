@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "date": "2026-11-06",
+  "scope": "Website only; no admin/backend/App release, migration, content writes, account creation, permission changes, Nginx changes or other-service restarts.",
+  "sourceSha256": "121f36b40aadde361b83b9ce816b9f2a5732c51265574ca1dd594c8020a3cc40",
+  "build": {
+    "next": "16.3.5",
+    "archiveSha256": "b625d4b1816cbacdde7c113a3445f808bb1aff77884e965deb8b582fb427937d",
+    "arch": "x64",
+    "boundaries": "9 workspaces passed",
+    "testFiles": 28,
+    "node": "22",
+    "tests": 430,
+    "platform": "linux",
+    "lint": "passed",
+    "typecheck": "Next production build passed",
+    "buildId": "-Z1i--M2RiZTp8JLEYWyu",
+    "productionBuild": "passed",
+    "standaloneVerification": "passed",
+    "archiveBytes": 15523396
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "-Z1i--M2RiZTp8JLEYWyu",
+    "filesVerified": 2169,
+    "linksVerified": 21,
+    "archiveSha256": "b625d4b1816cbacdde7c113a3445f808bb1aff77884e965deb8b582fb427937d",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      }
+    ]
+  },
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-06T17:55:05.388086+08:00",
+    "release": "/opt/linji/releases/20261106-public-auth",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1467607",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "-Z1i--M2RiZTp8JLEYWyu"
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-06T09:59:36.71Z",
+    "checks": [
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 17
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "browser": {
+    "passed": true,
+    "at": "2026-11-06T09:58:59.256Z",
+    "scope": "Production HTTPS, existing admin login/logout session only. No registration/content writes.",
+    "checks": [
+      "desktop login: photo left and form right; loaded local 1440px photograph",
+      "desktop registration: form left and photo right; nickname input shown",
+      "390px and 320px: photo hidden, no horizontal overflow",
+      "Waves canvas present and pause/play pressed state toggles",
+      "real existing account login redirects to /snow",
+      "reload restores Cookie session",
+      "logout exposes dedicated login link",
+      "homepage has zero forms and no top inline login",
+      "390px homepage no overflow",
+      "mobile directory opens and Escape closes with focus returned",
+      "no warning/error console logs observed"
+    ],
+    "notPerformed": [
+      "production registration",
+      "native Android/iOS",
+      "OS reduced-motion setting",
+      "new content writes"
+    ]
+  },
+  "rollback": {
+    "backup": "/opt/linji/private/backups/20261106-public-auth/linji-web.service",
+    "target": "/opt/linji/releases/20261106-markdown/web",
+    "command": "python3 /opt/linji/releases/20261106-public-auth/rollback-website.py",
+    "executed": false
+  },
+  "events": [
+    "Initial Vitest command omitted apps/web/src filter, causing unrelated admin tests to use website alias; failed log retained. Correctly filtered 430 website tests passed before build/deployment. No product-code change required.",
+    "One browser pause selector expectation used the wrong resume label; corrected to visible control text. Pause/play aria-pressed state subsequently verified.",
+    "Candidate stopped via SIGTERM; existing start.mjs returns 143, systemd recorded failed despite intentional stop. Confirmed MainPID=0 and port13200 closed; cleared only this temporary unit failed state."
+  ],
+  "limits": [
+    "No production registration submission; local fixture registration tests remain separately documented.",
+    "No native Android/iOS verification or APK build this round.",
+    "No OS reduced-motion or low-end GPU verification.",
+    "No real photo gallery interaction validation this release; local component tests and earlier fixture browser report are not production gallery acceptance."
+  ],
+  "rawEvidence": "D:/linji-local/20261106/public-auth-release"
+}

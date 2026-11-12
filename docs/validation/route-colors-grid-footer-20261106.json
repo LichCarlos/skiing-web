@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "urls": ["https://lichcarlos.top/snow", "https://lichcarlos.top/snow/login"],
+  "scope": "All public website routes; admin/backend/app not changed",
+  "design": {
+    "home": "yellow #FFDA3D",
+    "resorts": "blue #2455F5",
+    "knowledge": "green #00AD47",
+    "dynamics": "red #DC2F43",
+    "details": "white",
+    "brandFooter": "green/black SVG grid with color cells, black name and small SnowMark",
+    "auth": "bottom text switches; 40/60 desktop swap retained"
+  },
+  "scrolling": {
+    "openingEntryExitPixels": 100,
+    "railEntryExitPixels": 100,
+    "fittingPanelNativeDwellPixels": 200,
+    "tallPanelPaddingEachSide": 100,
+    "wheelIntercept": false,
+    "touchCompactReducedMotion": "normal flow/native horizontal"
+  },
+  "build": {
+    "sourceSha256": "a027f8f4a6b5708ff3fe734a226d76510396c9dcdac196b4525b59b9edb3826d",
+    "archiveSha256": "50b39406c8a933a9092941367793812247acfd034ab210288560ffd99ff9f9f2",
+    "buildId": "DrBN1AWudr-LEfDVYIwKS",
+    "testFiles": 28,
+    "tests": 446,
+    "boundaries": "passed",
+    "eslint": "passed",
+    "typescriptAndProductionBuild": "passed",
+    "filesVerified": 2167,
+    "linksVerified": 21
+  },
+  "deployment": {
+    "passed": true,
+    "activatedAt": "2026-11-06T21:42:32.384858+08:00",
+    "release": "/opt/linji/releases/20261106-route-color-grid",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1472366",
+    "databaseChanged": false,
+    "nginxChanged": false,
+    "adminBackendRestarted": false,
+    "buildId": "DrBN1AWudr-LEfDVYIwKS"
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "DrBN1AWudr-LEfDVYIwKS",
+    "filesVerified": 2167,
+    "linksVerified": 21,
+    "archiveSha256": "50b39406c8a933a9092941367793812247acfd034ab210288560ffd99ff9f9f2",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/login?mode=register",
+        "status": 200
+      }
+    ]
+  },
+  "https": {
+    "passed": true,
+    "at": "2026-11-06T13:42:32.211Z",
+    "checks": [
+      {
+        "name": "new login and referenced static resources",
+        "status": 200,
+        "resources": 17
+      },
+      {
+        "name": "existing public content preserved",
+        "passed": true
+      },
+      {
+        "name": "/snow",
+        "status": 200
+      },
+      {
+        "name": "/snow/login?mode=register",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "name": "/snow/resorts/1",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "name": "/snow/knowledge/8",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics",
+        "status": 200
+      },
+      {
+        "name": "/snow/dynamics/20",
+        "status": 200
+      },
+      {
+        "name": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "name": "API health",
+        "status": "ok"
+      }
+    ],
+    "publicCounts": {
+      "resorts": 5,
+      "articles": 8,
+      "stories": 20
+    },
+    "openapiVersion": "1.53.0"
+  },
+  "browserMatrix": {
+    "passed": true,
+    "scope": "Real HTTPS; no login or registration submission",
+    "auth": {
+      "desktop": {
+        "login": {
+          "card": {
+            "h": 680,
+            "w": 1080,
+            "x": 180,
+            "y": 106
+          },
+          "confirmation": false,
+          "documentHeight": 900,
+          "footer": {
+            "h": 76,
+            "w": 1440,
+            "x": 0,
+            "y": 824
+          },
+          "form": {
+            "h": 676.7999877929688,
+            "w": 646.0750122070312,
+            "x": 612.3250122070312,
+            "y": 107.5999984741211
+          },
+          "mode": "login",
+          "oldSwitch": false,
+          "overflow": false,
+          "photo": {
+            "h": 676.7999877929688,
+            "w": 430.7124938964844,
+            "x": 181.6000061035156,
+            "y": 107.5999984741211
+          },
+          "vh": 900
+        },
+        "register": {
+          "card": {
+            "h": 680,
+            "w": 1080,
+            "x": 180,
+            "y": 106
+          },
+          "confirmation": true,
+          "documentHeight": 900,
+          "footer": {
+            "h": 76,
+            "w": 1440,
+            "x": 0,
+            "y": 824
+          },
+          "form": {
+            "h": 676.7999877929688,
+            "w": 646.0750732421875,
+            "x": 181.6083526611328,
+            "y": 107.5999984741211
+          },
+          "mode": "register",
+          "oldSwitch": false,
+          "overflow": false,
+          "photo": {
+            "h": 676.7999877929688,
+            "w": 430.7124938964844,
+            "x": 827.6687622070312,
+            "y": 107.5999984741211
+          },
+          "vh": 900
+        }
+      },
+      "mobile": {
+        "card": {
+          "h": 676,
+          "w": 350.3999938964844,
+          "x": 20,
+          "y": 80
+        },
+        "confirmation": true,
+        "documentHeight": 844,
+        "footer": {
+          "h": 76,
+          "w": 390.3999938964844,
+          "x": 0,
+          "y": 768
+        },
+        "form": {
+          "h": 672.7999877929688,
+          "w": 347.20001220703125,
+          "x": 21.600000381469727,
+          "y": 81.5999984741211
+        },
+        "mode": "register",
+        "oldSwitch": false,
+        "overflow": false,
+        "photo": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "vh": 844
+      }
+    },
+    "routes": [
+      {
+        "body": "rgb(255, 255, 255)",
+        "canvas": "rgb(255, 218, 61)",
+        "footer": {
+          "bg": "rgb(0, 173, 71)",
+          "pattern": "linear-gradient(90deg, rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px), linear-gradient(rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px)"
+        },
+        "nav": "rgb(255, 218, 61)",
+        "navLinks": [
+          {
+            "bg": "rgb(36, 85, 245)",
+            "label": "探索雪场"
+          },
+          {
+            "bg": "rgb(0, 173, 71)",
+            "label": "滑雪知识"
+          },
+          {
+            "bg": "rgb(220, 47, 67)",
+            "label": "雪友动态"
+          }
+        ],
+        "overflow": false,
+        "url": "/snow"
+      },
+      {
+        "body": "rgb(255, 255, 255)",
+        "canvas": "rgb(0, 173, 71)",
+        "footer": {
+          "bg": "rgb(0, 173, 71)",
+          "pattern": "linear-gradient(90deg, rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px), linear-gradient(rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px)"
+        },
+        "nav": "rgb(255, 255, 255)",
+        "navLinks": [
+          {
+            "bg": "rgb(36, 85, 245)",
+            "label": "探索雪场"
+          },
+          {
+            "bg": "rgb(0, 173, 71)",
+            "label": "滑雪知识"
+          },
+          {
+            "bg": "rgb(220, 47, 67)",
+            "label": "雪友动态"
+          }
+        ],
+        "overflow": false,
+        "url": "/snow/knowledge"
+      },
+      {
+        "body": "rgb(255, 255, 255)",
+        "canvas": "rgb(255, 255, 255)",
+        "footer": {
+          "bg": "rgb(0, 173, 71)",
+          "pattern": "linear-gradient(90deg, rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px), linear-gradient(rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px)"
+        },
+        "nav": "rgb(255, 255, 255)",
+        "navLinks": [
+          {
+            "bg": "rgb(36, 85, 245)",
+            "label": "探索雪场"
+          },
+          {
+            "bg": "rgb(0, 173, 71)",
+            "label": "滑雪知识"
+          },
+          {
+            "bg": "rgb(220, 47, 67)",
+            "label": "雪友动态"
+          }
+        ],
+        "overflow": false,
+        "url": "/snow/knowledge/8"
+      },
+      {
+        "body": "rgb(255, 255, 255)",
+        "canvas": "rgb(36, 85, 245)",
+        "footer": {
+          "bg": "rgb(0, 173, 71)",
+          "pattern": "linear-gradient(90deg, rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px), linear-gradient(rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px)"
+        },
+        "nav": "rgb(255, 255, 255)",
+        "navLinks": [
+          {
+            "bg": "rgb(36, 85, 245)",
+            "label": "探索雪场"
+          },
+          {
+            "bg": "rgb(0, 173, 71)",
+            "label": "滑雪知识"
+          },
+          {
+            "bg": "rgb(220, 47, 67)",
+            "label": "雪友动态"
+          }
+        ],
+        "overflow": false,
+        "url": "/snow/resorts"
+      },
+      {
+        "body": "rgb(255, 255, 255)",
+        "canvas": "rgb(220, 47, 67)",
+        "footer": {
+          "bg": "rgb(0, 173, 71)",
+          "pattern": "linear-gradient(90deg, rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px), linear-gradient(rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px)"
+        },
+        "nav": "rgb(255, 255, 255)",
+        "navLinks": [
+          {
+            "bg": "rgb(36, 85, 245)",
+            "label": "探索雪场"
+          },
+          {
+            "bg": "rgb(0, 173, 71)",
+            "label": "滑雪知识"
+          },
+          {
+            "bg": "rgb(220, 47, 67)",
+            "label": "雪友动态"
+          }
+        ],
+        "overflow": false,
+        "url": "/snow/dynamics"
+      },
+      {
+        "body": "rgb(255, 255, 255)",
+        "canvas": "rgba(0, 0, 0, 0)",
+        "footer": {
+          "bg": "rgb(0, 173, 71)",
+          "pattern": "linear-gradient(90deg, rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px), linear-gradient(rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px)"
+        },
+        "nav": null,
+        "navLinks": [],
+        "overflow": false,
+        "url": "/snow/about"
+      }
+    ],
+    "mobileCommunity": {
+      "body": "rgb(255, 255, 255)",
+      "canvas": "rgb(220, 47, 67)",
+      "footer": {
+        "bg": "rgb(0, 173, 71)",
+        "pattern": "linear-gradient(90deg, rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px), linear-gradient(rgb(0, 0, 0) 1px, rgba(0, 0, 0, 0) 0px)"
+      },
+      "nav": "rgb(255, 255, 255)",
+      "navLinks": [
+        {
+          "bg": "rgb(36, 85, 245)",
+          "label": "探索雪场"
+        },
+        {
+          "bg": "rgb(0, 173, 71)",
+          "label": "滑雪知识"
+        },
+        {
+          "bg": "rgb(220, 47, 67)",
+          "label": "雪友动态"
+        }
+      ],
+      "overflow": false,
+      "url": "/snow/dynamics"
+    },
+    "hero": {
+      "bg": "rgb(36, 85, 245)",
+      "border": "rgb(0, 0, 0)",
+      "rect": {
+        "bottom": 880,
+        "height": 860,
+        "left": 176,
+        "right": 1404.800048828125,
+        "top": 20,
+        "width": 1228.800048828125,
+        "x": 176,
+        "y": 20
+      },
+      "reveal": "1",
+      "scene": "mountain",
+      "scrollY": 1332,
+      "slogan": "rgb(255, 218, 61)"
+    },
+    "limits": [
+      "Viewport emulation, not physical phone",
+      "No synthetic production registration",
+      "Reduced motion/no-JS behavior reviewed in source, not OS setting exercised"
+    ]
+  },
+  "finalGrid": {
+    "passed": true,
+    "url": "https://lichcarlos.top/snow/about",
+    "svgGridVerified": true,
+    "finalScreenshot": "brand-footer.png",
+    "previousFullBrowserMatrix": "../route-color-release/browser-report.json",
+    "scope": "Final rebuild changes only grid rendering, rest full matrix belongs to prior build"
+  },
+  "stages": [
+    "21:33:30 first route-color release",
+    "21:42:32 final SVG grid refinement"
+  ],
+  "screenshots": [
+    "route-colors-grid-footer-20261106/home-opening.png",
+    "route-colors-grid-footer-20261106/home-hero.png",
+    "route-colors-grid-footer-20261106/knowledge-directory.png",
+    "route-colors-grid-footer-20261106/article-white.png",
+    "route-colors-grid-footer-20261106/community-mobile.png",
+    "route-colors-grid-footer-20261106/register-desktop.png",
+    "route-colors-grid-footer-20261106/register-mobile.png",
+    "route-colors-grid-footer-20261106/login-desktop.png",
+    "route-colors-grid-footer-20261106/brand-footer.png"
+  ],
+  "cleanup": {
+    "candidate": "stopped and reset;13200 closed",
+    "sshTunnel": "stopped",
+    "ownPreview3210": "stopped",
+    "ownFixture3211": "stopped",
+    "wsl": "only own linji-ui-build-20261106 terminated",
+    "existing3108": "preserved PID19380"
+  },
+  "rollback": [
+    "python3 /opt/linji/releases/20261106-route-color-grid/rollback-website.py",
+    "Then, to also undo entire route-color release: python3 /opt/linji/releases/20261106-route-color/rollback-website.py"
+  ],
+  "rollbackExecuted": false,
+  "limits": [
+    "Full browser matrix captured against first route-color build; final build changes only SVG grid rendering and includes repeated 446 tests/build/HTTPS checks plus final grid screenshot.",
+    "No physical Android/iOS or OS reduced-motion/no-JS/200 percent system zoom validation.",
+    "Candidate SSH localhost CORS prevented auth; real HTTPS anonymous state normal; no auth policy changes.",
+    "No synthetic production registration, login credential submission or business writes.",
+    "Windows cross-drive Next preview failed; own preview stopped, production candidate used instead.",
+    "Fitting sections use native sticky dwell; arbitrary large native scroll may still skip; no wheel trapping.",
+    "Runtime source snapshot precedes documentation-only consolidation."
+  ]
+}

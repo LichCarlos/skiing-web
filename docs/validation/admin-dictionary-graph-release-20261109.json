@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-09T09:15:22.996528+00:00",
+    "release": "/opt/linji/releases/20261109-admin-dictionary-graph",
+    "buildId": "IsBikSr8YW90Lj6AX45Nj",
+    "changedServices": ["linji-admin.service"],
+    "adminPid": "1534420",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "IsBikSr8YW90Lj6AX45Nj",
+    "filesVerified": 2501,
+    "linksVerified": 21,
+    "archiveSha256": "7210773c213ce697c6ca2bdf2fe2c5ece8bb9adef160c4f551bdf4e85314a4f6",
+    "checks": [
+      {
+        "route": "/snow-admin/admin/system/dictionaries",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/system/fields",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/system/fields/ski_resort",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts",
+        "status": 200
+      },
+      {
+        "staticResources": 43,
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/merchant/resorts",
+        "status": 200
+      }
+    ]
+  },
+  "preflight": {
+    "at": "2026-11-09T08:33:32.763480+00:00",
+    "services": [
+      "aegis.service",
+      "aliyun.service",
+      "atd.service",
+      "charge-api.service",
+      "chronyd.service",
+      "crond.service",
+      "dbus.service",
+      "frps.service",
+      "getty@tty1.service",
+      "gssproxy.service",
+      "linji-admin.service",
+      "linji-api.service",
+      "linji-clamav.service",
+      "linji-kafka.service",
+      "linji-minio.service",
+      "linji-web.service",
+      "NetworkManager.service",
+      "nginx.service",
+      "polkit.service",
+      "postgresql.service",
+      "redis.service",
+      "rngd.service",
+      "rpcbind.service",
+      "rsyslog.service",
+      "serial-getty@ttyS0.service",
+      "sshd.service",
+      "systemd-journald.service",
+      "systemd-logind.service",
+      "systemd-udevd.service",
+      "tuned.service",
+      "user@0.service"
+    ],
+    "backup": "/opt/linji/private/backups/20261109-admin-dictionary-graph",
+    "unitSha256": "fbd8e0569b983e7348a080aec53aed4722d4acefd7940f4d44d6269f5c831ada",
+    "protectedFiles": {
+      "/etc/systemd/system/linji-api.service": "0390d772f8cfbda8fb5c529cae8d75297df12bb0571f3d84304d0a656e68bc1b",
+      "/etc/systemd/system/linji-web.service": "d4c7d9e80ee6439bf201980b3c663695cd2dfc4bacadb4cdcd3cf537d1858cfc",
+      "/etc/nginx/nginx.conf": "e5959c500bec02ed90f9846e914a737e25877473fad5a6421cad4ddb8b5aeb2a",
+      "/opt/linji/linji-http.conf": "70a55ebec00f51e1c432f7a5a536d107da68aad9ee2532aae3fe5e3c00e7e8ca",
+      "/opt/linji/linji-locations.conf": "eb3631f5b08e907474fccfc980836746bfec54fba9c360aff9f3af0e45beafe9"
+    }
+  },
+  "source": {
+    "sourceSha256": "fec445a156c5c0141537e228d0728f5e5d457e9e08ca921a8b675158a161349e",
+    "keptProductionFile": "apps/admin/src/app/admin/dashboard.module.css"
+  },
+  "tests": {
+    "passed": 2735,
+    "failed": 0,
+    "success": true
+  },
+  "validation": {
+    "linuxProductionBuild": true,
+    "eslint": true,
+    "typecheck": true,
+    "workspaceBoundaries": true,
+    "browserChecks": 30,
+    "browserReports": [
+      {
+        "mode": "local",
+        "fixtures": true,
+        "checks": 16,
+        "pageErrors": 0,
+        "blockedWrites": 0,
+        "simulatedWrites": [
+          {
+            "method": "PATCH",
+            "path": "/admin/custom-fields/21",
+            "dictionary": "knowledge.article_category"
+          },
+          {
+            "method": "POST",
+            "path": "/admin/dictionaries/shared.options/items",
+            "parentId": 101
+          }
+        ]
+      },
+      {
+        "mode": "local",
+        "fixtures": false,
+        "checks": 7,
+        "pageErrors": 0,
+        "blockedWrites": 0,
+        "simulatedWrites": []
+      },
+      {
+        "mode": "live",
+        "fixtures": false,
+        "checks": 7,
+        "pageErrors": 0,
+        "blockedWrites": 0,
+        "simulatedWrites": []
+      }
+    ],
+    "productionBusinessWrites": 0
+  },
+  "rollback": "python3 /opt/linji/releases/20261109-admin-dictionary-graph/rollback-admin.py"
+}

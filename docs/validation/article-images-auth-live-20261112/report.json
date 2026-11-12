@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "live": true,
+  "checks": [
+    {
+      "name": "empty editor shows guidance inside a single frame",
+      "passed": true
+    },
+    {
+      "name": "typing, heading and undo keep content and focus",
+      "passed": true
+    },
+    {
+      "name": "source and preview share the same outer frame",
+      "passed": true
+    },
+    {
+      "name": "resort fields use one shared border and native keyboard selection",
+      "passed": true
+    },
+    {
+      "name": "390px writing, source and resort have no page overflow",
+      "passed": true
+    },
+    {
+      "name": "320px writing, source and resort have no page overflow",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "contentWrites": [],
+  "buildId": "6Qvi9GGOrhFZPwTQ5mpKo"
+}

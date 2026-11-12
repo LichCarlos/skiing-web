@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "activatedAt": "2026-11-07T02:12:39.649990+00:00",
+  "release": "/opt/linji/releases/20261107-five-resorts-coarse-grid",
+  "changedServices": ["linji-web.service"],
+  "websitePid": "1483412",
+  "databaseChanged": false,
+  "nginxChanged": false,
+  "adminBackendRestarted": false,
+  "buildId": "R0cNafOJKHjxLdw3_SvXW"
+}

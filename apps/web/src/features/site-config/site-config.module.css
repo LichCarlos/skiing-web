@@ -1,0 +1,85 @@
+.footer {
+  color: #000;
+}
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer {
+  background: var(--site-canvas);
+  color: var(--site-ink);
+  padding: 0;
+  border-top: 0;
+  margin: 0;
+}
+.footer a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer nav a {
+  color: var(--site-canvas-ink);
+}
+.footer > a {
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer button,
+.page button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--site-input-border);
+  border-radius: 8px;
+  background: var(--site-surface);
+}
+.page {
+  max-width: 880px;
+  min-height: 65vh;
+  margin: 0 auto;
+  padding: 48px 24px;
+  color: var(--app-text, var(--foreground));
+}
+.page h1 {
+  margin: 24px 0;
+  font-size: 32px;
+}
+.policyTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.policyIcon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  background: var(--primary);
+  border: 2px solid #000;
+  border-radius: 16px;
+  color: #fff;
+}
+.policyIcon svg {
+  width: 36px;
+  height: 36px;
+}
+.page > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--site-link-ink);
+  font-weight: 700;
+}
+.body {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.9;
+  margin: 24px 0;
+  max-width: 70ch;
+}

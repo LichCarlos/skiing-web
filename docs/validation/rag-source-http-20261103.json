@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-03",
+  "passed": true,
+  "scope": "RAG source management production reader/command/recovery controllers through compiled Nest HTTP and isolated PostgreSQL/pgvector; no new business protocol",
+  "migrations": 24,
+  "liveHttp": {
+    "tests": 21,
+    "newRagTests": 6,
+    "database": "linji_admin_authorization_validation",
+    "runtime": "PostgreSQL 17.11 / pgvector 0.8.1",
+    "report": {
+      "path": "D:/linji-rag-http/20261103/verified/linji-admin-http-MFQwEY/report.json",
+      "sha256": "b479a8c2b34d4163c5ec602b32ee9015720ffafa3e1cebacf1a47a2d8259f3c3"
+    },
+    "clientResult": {
+      "path": "D:/linji-rag-http/20261103/verified/linji-admin-http-MFQwEY/client-result.json",
+      "sha256": "3901dc2aa4dde9af4d823a6f5425abd5b160d8f33901beef16c4286143c499e8"
+    },
+    "fixtureVerification": {
+      "path": "D:/linji-rag-http/20261103/verified/linji-admin-http-MFQwEY/fixture-verify.log",
+      "sha256": "58a9626af015b2b731eb21bd4e8bbdb7acc131a7cbc1977e6cc91daad8d856c9"
+    },
+    "ports": [60826, 63995],
+    "cleanup": {
+      "path": "D:/linji-rag-http/20261103/cleanup.json",
+      "sha256": "7a4989340cdfda9b8f756315fd16e8fe218201c4794e586a6e177c0ff405b0ff"
+    },
+    "verifiedVersions": [2, 4, 5, 7],
+    "controlAudits": 6,
+    "ragOutboxEvents": 4,
+    "finalControlVersion": 7,
+    "finalIndexGeneration": 6
+  },
+  "diagnostics": [
+    "Initial TypeScript preflight rejected Array.findLast for this repository lib; replaced with reverse().find() on a copy",
+    "First live run: all six RAG tests passed, but four existing tests used a stale account snapshot after grant changes; fixed only the fixture identity restoration, reran in fresh databases",
+    "Second live run: 21 passed plus persistence verification. Final new database rerun adds raw response whitelist assertions; 21 passed plus persistence verification again. Runs are not accumulated.",
+    "Initial Web build wrapper included an extra -- separator and forwarded build flags into the packaging script; source compilation succeeded but packaging rejected extra arguments. Preserved log and reran forced builds with the correct wrapper arguments."
+  ],
+  "limitations": [
+    "Overall goal remains incomplete; D-49/D-50/D-09 not answered or implemented in this stage",
+    "Injected response loss occurs after actual server success at the client boundary; not a real browser/network-disconnect experiment",
+    "Node Cookie jar is not browser cookie/CORS/React/BFCache validation",
+    "Recovery metadata is tab memory only, not historical execution attribution or cross-reload idempotency",
+    "Kafka dispatch/consumer disabled in this suite; pending Outbox is not delivered/indexed completion",
+    "No real embedding/chat provider, browser, device, container or remote-CI validation in this stage",
+    "No Docker restart/start, parent dependency deletion, commit/push/deploy/publish"
+  ],
+  "businessRuntimeChanged": false,
+  "repository": "web",
+  "openapi": {
+    "version": "1.51.1",
+    "operations": 143,
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 2222,
+    "aiOperationsTests": 168,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2,
+    "liveAdminHttpTests": 21
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "40f6b8ae737ae1a6f38ac819a8b595296e434759a6c89196390eeb9eede27533"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-queries.ts",
+      "sha256": "6177a9890086cfa1742c8a7ba448fedcb54926e579a798f8a19dcd7ccde3010d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-workflow.ts",
+      "sha256": "fc3cb5de85f804955cd9cb110eb0d3f04979c4efd34b3bc85974ad174ad80d7d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/ai-operations/rag-model.ts",
+      "sha256": "72bb0bbda624f79156cda3017701d578f0c419905af4e50923ea7989ecfd468f"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-rag-http/20261103/web-install.log",
+      "sha256": "f04b6163d82c11b002ac8d03ba4342a022d51d951124127a2a44eaa587747d69"
+    },
+    {
+      "path": "D:/linji-rag-http/20261103/web-check.log",
+      "sha256": "2b3933caaea0d8aa9ff8b993f8e2a7d7613d9b5fc91a763cc63e2239cc14f44e"
+    },
+    {
+      "path": "D:/linji-rag-http/20261103/web-build-first-args-failed.log",
+      "sha256": "91e2393896778b58f79e4497ebd7a0872d579b93ad2470e4f3693f0e708ce011"
+    },
+    {
+      "path": "D:/linji-rag-http/20261103/web-build.log",
+      "sha256": "e818468948e942c9fbdd1a8bae39de0f927e20da9550a0aa6dddff11ff03f6bf"
+    },
+    {
+      "path": "D:/linji-rag-http/20261103/web-admin-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/linji-rag-http/20261103/web-admin-http.log",
+      "sha256": "326211fab3f8edc5a6f9b3c2156a77a68761f062571509f60b16cc7171c04635"
+    },
+    {
+      "path": "D:/linji-rag-http/20261103/web-admin-http-final.log",
+      "sha256": "22b295581b121273b5ec8ff00fe121e0645fd7034b47eee9537c6cf7ea9108d6"
+    },
+    {
+      "path": "D:/linji-rag-http/20261103/web-admin-http-verified.log",
+      "sha256": "9321ce59dfb106abd764bb5d7c4bdc5e0ba97a5889a4e645fced72b812cc5a33"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "SONbtDZ2biYEa-1htM1EF",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "791649916a6952e16f515b572ddceded4a436bf7d29243eeda361559279cca98"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "vKwslEomN3ZpOdUraSoup",
+      "files": 1953,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "ec0f437b63ea708ee493473455995eba98bf820711e7854eac7e98542ecab872"
+      }
+    }
+  ]
+}

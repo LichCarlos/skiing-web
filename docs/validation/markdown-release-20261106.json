@@ -1,0 +1,241 @@
+{
+  "release": "20261106-markdown",
+  "productionDeployed": true,
+  "activation": {
+    "activatedAt": "2026-11-06T08:16:18.737835+00:00",
+    "openapi": "1.53.0",
+    "services": ["linji-api", "linji-web", "linji-admin"],
+    "localHealth": true,
+    "migration": 26,
+    "seedExecuted": false,
+    "schemaRollbackPerformed": false,
+    "backup": "/opt/linji/private/backups/20261106-markdown"
+  },
+  "serverReleaseDirectory": "/opt/linji/releases/20261106-markdown",
+  "openapi": {
+    "version": "1.53.0",
+    "operations": 151,
+    "sha256": "a4542563de915963c6a4d05f6fba9582dbcadf908308774e080d406ef51ae309"
+  },
+  "urls": {
+    "website": "https://lichcarlos.top/snow",
+    "admin": "https://lichcarlos.top/snow-admin/login",
+    "api": "https://lichcarlos.top/snow-api/api/v1"
+  },
+  "backup": {
+    "createdAt": "2026-11-06T07:46:58.763928+00:00",
+    "before": {
+      "migrations": 25,
+      "articles": 8,
+      "dynamics": 20,
+      "assets": 34,
+      "users": 17,
+      "resorts": 5
+    },
+    "backup": "/opt/linji/private/backups/20261106-markdown",
+    "dumpBytes": 469200,
+    "dumpSha256": "27d6848dee6065cd07d98271f60edb89e72e1909c5b9f93b37f9deaeea941a17",
+    "dumpListVerified": true,
+    "storageBackupBytes": 1554423
+  },
+  "migration": "20261106000100_article_markdown_assets",
+  "serverVerification": {
+    "at": "2026-11-06T08:21:13.197497+00:00",
+    "productionCounts": {
+      "migrations": 26,
+      "articles": 8,
+      "dynamics": 20,
+      "assets": 34,
+      "users": 17,
+      "resorts": 5,
+      "articleMarkdown": 0,
+      "dynamicMarkdown": 0,
+      "bodyBindings": 0
+    },
+    "originalCountsPreserved": true,
+    "clonedDatabaseDropped": true,
+    "candidateEnvRemoved": true,
+    "serviceChanges": {
+      "linji-web.service": {
+        "before": {
+          "MainPID": "1456266",
+          "Id": "linji-web.service",
+          "ActiveState": "active"
+        },
+        "after": {
+          "MainPID": "1464546",
+          "Id": "linji-web.service",
+          "ActiveState": "active"
+        }
+      },
+      "linji-api.service": {
+        "before": {
+          "MainPID": "1431609",
+          "Id": "linji-api.service",
+          "ActiveState": "active"
+        },
+        "after": {
+          "MainPID": "1464475",
+          "Id": "linji-api.service",
+          "ActiveState": "active"
+        }
+      },
+      "linji-admin.service": {
+        "before": {
+          "MainPID": "1456280",
+          "Id": "linji-admin.service",
+          "ActiveState": "active"
+        },
+        "after": {
+          "MainPID": "1464533",
+          "Id": "linji-admin.service",
+          "ActiveState": "active"
+        }
+      }
+    },
+    "otherServiceChanges": {}
+  },
+  "rawEvidenceDirectory": "D:/linji-local/20261106/markdown-release",
+  "limitations": [
+    "No physical Android installation or interaction test",
+    "No iOS build or native test",
+    "No separate Expo Web deployment or community browser acceptance",
+    "No new Markdown production content saved during acceptance",
+    "Clone Kafka and Outbox delivery disabled; no new Markdown-to-vector end-to-end claim"
+  ],
+  "rollback": {
+    "frontendOnlyScript": "/opt/linji/releases/20261106-markdown/rollback-frontends.sh",
+    "executed": false,
+    "schemaRollbackPerformed": false,
+    "rule": "Retain new schema/API readers after Markdown writes; database restore requires separate maintenance and data-loss assessment"
+  },
+  "retainedFailureLogs": [
+    "Initial build memory exhaustion; user-approved unrelated Expo dev server stop",
+    "APK isolated dependency path Ninja regeneration; fixed only in build copy with hoisted linker",
+    "Initial browser selectors missed Ant Design spaced labels; corrected without business code changes"
+  ],
+  "repository": "web",
+  "frozenSource": {
+    "files": 806,
+    "sha256": "f3f54e6737b78555fc0edfa0242c250fabf82cd88dce77236fc23ca90bf97269",
+    "includesUncommittedWorkingTree": true
+  },
+  "frontends": {
+    "web": {
+      "buildId": "JR2zt9MJJm1gCPBR9c5Ya",
+      "filesVerified": 2161,
+      "candidateStatus": 200,
+      "platform": "linux",
+      "archiveSha256": "ddd6d49032c0bac1ffb2143821e7638ad9576c8e013383e28623ba6ded11525e"
+    },
+    "admin": {
+      "buildId": "J-ME0ciUWXDwqM7r8jsOx",
+      "filesVerified": 2505,
+      "candidateStatus": 200,
+      "platform": "linux",
+      "archiveSha256": "1a7a9e04363a3e057551800da751be724f3f8457f718f7a7ee2028371823f82f"
+    }
+  },
+  "browser": {
+    "passed": true,
+    "scope": "Real production HTTPS/browser, no mocks, no submitted article or community data. Auth sessions only.",
+    "checks": [
+      {
+        "name": "existing public content preserved",
+        "passed": true,
+        "resorts": 5,
+        "articles": 8,
+        "stories": 20
+      },
+      {
+        "name": "old article plain_text compatibility",
+        "passed": true
+      },
+      {
+        "name": "latest homepage desktop",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "resort list",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "resort detail",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "knowledge list",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "old knowledge detail",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "community list",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "old community detail",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "latest homepage mobile",
+        "passed": true,
+        "width": 390,
+        "scrollWidth": 390
+      },
+      {
+        "name": "admin login",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "admin real login",
+        "passed": true
+      },
+      {
+        "name": "admin Cookie session restored",
+        "passed": true
+      },
+      {
+        "name": "knowledge editor route",
+        "passed": true,
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "name": "deployed Tiptap source-preview, GFM table and deployment-aware internal links",
+        "passed": true
+      },
+      {
+        "name": "deployed editor mobile reflow",
+        "passed": true,
+        "width": 390,
+        "scrollWidth": 390
+      },
+      {
+        "name": "admin logout",
+        "passed": true
+      }
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "at": "2026-11-06T08:22:46.512Z"
+  }
+}

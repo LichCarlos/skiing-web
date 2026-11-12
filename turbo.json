@@ -1,6 +1,11 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [".env"],
+  "globalDependencies": [
+    ".env",
+    "scripts/package-standalone.ts",
+    "contracts/openapi.json",
+    "contracts/openapi.lock.json"
+  ],
   "globalEnv": ["NEXT_PUBLIC_*"],
   "tasks": {
     "dev": {
@@ -12,6 +17,12 @@
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "start": {
+      "passThroughEnv": [
+        "PORT",
+        "HOSTNAME",
+        "KEEP_ALIVE_TIMEOUT",
+        "NODE_OPTIONS"
+      ],
       "cache": false,
       "persistent": true
     },

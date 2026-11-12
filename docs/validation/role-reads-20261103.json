@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-03",
+  "evidenceVerified": true,
+  "contractVersion": "1.51.1",
+  "operations": 143,
+  "migrations": 24,
+  "scope": "Role read/list/edit and authorization bundle projection, identity/visibility cancellation, interrupted writes and configurable selected scope/revocation via real HTTP",
+  "http": {
+    "tests": 45,
+    "newTests": 3,
+    "output": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz",
+    "checks": {
+      "rawProjection": true,
+      "emptyPage": true,
+      "selectedScope": true,
+      "foreignDenied": true,
+      "revocationRejected": true
+    },
+    "references": [
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/report.json",
+        "sha256": "80cf57b8e9539dcd4096753feb1088f49ac580c342ec9bcaec18b4913469abed"
+      },
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/client-result.json",
+        "sha256": "d75752cf478f1d6a0a14977d570f5323f1505614771d52186b6bbfab36faea33"
+      },
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/ready.json",
+        "sha256": "f0df89f6d3540f328d0fc5f2c5646aab385ea1827dde0fbf6c50c4dc49014483"
+      },
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/migrate-deploy.log",
+        "sha256": "2ac781ceef236648db5f4980a346b40d19c502f43ea807be95f7e5d096a7d3ea"
+      },
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/seed-first.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/seed-second.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/verify-before.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/fixture-verify.log",
+        "sha256": "58a9626af015b2b731eb21bd4e8bbdb7acc131a7cbc1977e6cc91daad8d856c9"
+      },
+      {
+        "path": "D:/linji-role-reads/20261103/admin-runtime/linji-admin-http-tNtrbz/verify-after.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      }
+    ],
+    "cleanup": {
+      "path": "D:/linji-role-reads/20261103/cleanup.json",
+      "sha256": "bf9233cab23916b6261c50ef49fc7637e9162a6a0bfc5609cfa0ef8600bcaec2"
+    }
+  },
+  "regression": {
+    "newTests": 65,
+    "roleTests": 171,
+    "initialRoleTests": 168,
+    "initialTypeFailure": {
+      "path": "D:/linji-role-reads/20261103/admin-types.log",
+      "sha256": "18feb3134b77c711ffe188effa3c9113c5adcef48f0b37f94cf0d8b947c56c7f"
+    },
+    "resolvedTypes": {
+      "path": "D:/linji-role-reads/20261103/admin-types-fixed.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "initialBuildArgumentFailure": {
+      "path": "D:/linji-role-reads/20261103/web-build.log",
+      "sha256": "745e84bf67c71c90a0744a87f5f34c7e738cca837ba09fbba34851e245a96bfa"
+    }
+  },
+  "limitations": [
+    "45 real HTTP tests use actual Nest/PostgreSQL but a Node Cookie adapter; page lifecycle tests simulate Hooks/EventTarget, not actual React/browser/device acceptance",
+    "Read-end identity verification is not an atomic data/permission snapshot; backend remains authoritative for scope and authorization",
+    "No current full database suite, real Kafka/Inbox/timers/providers/storage/container or remote CI acceptance",
+    "Existing Windows Kafka AccessDenied remains unresolved; Docker and its WSL distribution were not started/restarted/used",
+    "D-49/D-50/D-09 remain unanswered and unimplemented; project incomplete",
+    "No commits/push/deploy/publish or denied actions retried"
+  ],
+  "repository": "web",
+  "openapi": {
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 2567,
+    "newTests": 65,
+    "roleTests": 171,
+    "releaseNode": 20,
+    "sourceExportNode": 8,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-response.ts",
+      "sha256": "9e79a3d9a3bb350ed795dcdee958ac527961de4b66c4ca05b77a398e38f9f8f0"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-queries.ts",
+      "sha256": "967274440d76dfdcb4a59fdc9dd87e4542d82bed77870b5ef6df2bb2e8782d3c"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-console.tsx",
+      "sha256": "86bbb46935a38e68ff84fcfb1d8a7910d839b2abaefe963c5648aa9bfe8c7db1"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-authorization-console.tsx",
+      "sha256": "16c588da64410d067bdb7aa0258219c756cd93fe556ffc09e7b09041b9e0150d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-session.tsx",
+      "sha256": "352a7c02eb4038b9f63a23d93d2ae22ced73e295a4e52184021846ac80a9784b"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-workflow.ts",
+      "sha256": "651548e6328e784c447012f9b29eb9a0bc8a6557454509dbebac7a71e01744f4"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-read.test.ts",
+      "sha256": "ea3266230d035f2b5d2a03d672e9a64083758323a7c36e9963e59fff74de0866"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-page-lifecycle.test.tsx",
+      "sha256": "2eeb151b2c6cac1c2c8ee6f0ce56413ebcab84bde69fc28e1631023b5bddc71a"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/roles/role-workflow.test.ts",
+      "sha256": "bac5d1bfd18ac4989c4a7c2d2a7ee257a31390ed92d88e3f413f1720d443c74e"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "ff9f400cf83ab0b30fae9ddf77c7fa4fcbdaeac816d34f493a493a6bb7443606"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-role-reads/20261103/web-install.log",
+      "sha256": "e35dfe156f3e413bee79c4ff4ccbfe8ba05adacbbdb035c2f461a66e2c3a1ab2"
+    },
+    {
+      "path": "D:/linji-role-reads/20261103/web-check.log",
+      "sha256": "bec60f5d791541cf82e0953f35ad2fe8ed87dc249e9f7d8ab43fbaab3c2ef427"
+    },
+    {
+      "path": "D:/linji-role-reads/20261103/web-build-final.log",
+      "sha256": "c45c9f693a922e49a3ee373d4787eed507919d42effe73f52583f25497d35003"
+    },
+    {
+      "path": "D:/linji-role-reads/20261103/admin-http.log",
+      "sha256": "91c81d45643aba1bb7fe75046c32a726f0709e7d02508ba0104b55a58eef5620"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "_Eb6wixqICBWVeFOTqWxc",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "d72d51a423a94deb01c95fe2d2f56385b692ffb94223ea1288c62def15403d6b"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "fYF9CkVEviIn5rvhzGrCF",
+      "files": 1953,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "288e6343150f406d281cfb2de9d60afde8075219318ce25f1cd099fbb62c56c7"
+      }
+    }
+  ]
+}

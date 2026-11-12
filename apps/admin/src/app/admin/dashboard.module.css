@@ -1,0 +1,255 @@
+.main {
+  composes: page from "../../styles/console.module.css";
+  display: grid;
+  gap: 2rem;
+  max-width: 100rem;
+  margin-inline: auto;
+}
+.header {
+  display: grid;
+  gap: 0.5rem;
+}
+.header h1,
+.header p {
+  margin: 0;
+}
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+.header p {
+  color: var(--text-subtle);
+}
+.sectionTitle {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.summarySection {
+  min-width: 0;
+}
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 16px;
+  margin: 1rem 0;
+}
+.summaryCard {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border-default);
+  border-radius: var(--app-panel-radius);
+  background: var(--surface);
+}
+.summaryCard[aria-label="雪场"] {
+  background: var(--surface);
+}
+.summaryCard[aria-label="知识文章"] {
+  background: var(--surface);
+}
+.summaryCard[aria-label="社区动态"] {
+  background: var(--surface);
+}
+.summaryCard h3::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-inline-end: 8px;
+  border-radius: 3px;
+  background: var(--action);
+}
+.summaryCard[aria-label="雪场"] h3::before {
+  background: var(--app-energy-yellow);
+  outline: 1px solid var(--app-energy-ink);
+}
+.summaryCard[aria-label="知识文章"] h3::before {
+  background: var(--app-energy-red);
+}
+.summaryCard[aria-label="社区动态"] h3::before {
+  background: var(--app-energy-orange);
+}
+.summaryCard h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.summaryCard p {
+  margin: 0;
+  color: var(--text-subtle);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+.summaryCard dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin: 1rem 0 0;
+}
+.summaryCard dl > [data-primary="true"] {
+  flex-basis: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-default);
+}
+.summaryCard dl > [data-primary="true"] dd {
+  color: var(--action);
+  font-size: 2.25rem;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+.summaryCard dt {
+  font-size: 0.75rem;
+  color: var(--text-subtle);
+}
+.summaryCard dd {
+  margin: 0.25rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.summaryCard .amount {
+  margin-top: 1rem;
+  color: var(--text-main);
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.revenueCard {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1rem;
+  background: var(--action);
+  color: var(--app-on-brand);
+  border-color: var(--action);
+}
+.revenueCard p,
+.revenueCard .amount {
+  color: var(--app-on-brand);
+}
+.revenueCard h3::before {
+  background: var(--app-energy-yellow);
+}
+.revenueCard h3,
+.revenueCard p {
+  grid-column: 1;
+}
+.revenueCard .amount {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin: 0;
+  color: var(--app-on-brand);
+  font-size: 1.75rem;
+}
+.moduleGroups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+}
+.moduleGroup {
+  min-width: 0;
+}
+.moduleGroup h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding-block: 0.75rem;
+  border-bottom: 1px solid var(--border-default);
+  color: var(--text-subtle);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.moduleList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.moduleList li {
+  border-bottom: 1px solid var(--border-default);
+}
+.moduleList a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0.75rem;
+  color: var(--text-main);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 160ms ease-out;
+}
+.moduleList a > span {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 0;
+}
+.moduleList strong {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.moduleList a span span,
+.empty {
+  color: var(--text-subtle);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+.moduleList a > svg {
+  flex-shrink: 0;
+  color: var(--text-subtle);
+}
+.moduleList a:hover {
+  background: var(--app-accent-soft);
+}
+.moduleList a:hover strong,
+.moduleList a:hover > svg {
+  color: var(--action);
+}
+.moduleList a:focus-visible {
+  outline: var(--app-focus-outline);
+  outline-offset: -2px;
+  background: var(--app-accent-soft);
+}
+@media (prefers-reduced-motion: reduce) {
+  .moduleList a {
+    transition: none;
+  }
+}
+.loading {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-default);
+  border-radius: var(--app-panel-radius);
+  background: var(--surface);
+  color: var(--text-subtle);
+}
+.error {
+  composes: error from "../../styles/console.module.css";
+  margin-bottom: 1rem;
+}
+@media (max-width: 48rem) {
+  .main {
+    gap: 1.5rem;
+  }
+  .moduleGroups {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .revenueCard {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.5rem;
+  }
+  .revenueCard .amount {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

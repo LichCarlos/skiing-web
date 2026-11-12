@@ -4,3 +4,8 @@ node_modules
 pnpm-lock.yaml
 next-env.d.ts
 *.tsbuildinfo
+contracts/openapi.json
+packages/api-contracts/src/openapi.ts
+test-results/
+playwright-report/
+.vite-cache/

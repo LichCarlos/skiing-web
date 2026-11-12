@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-03",
+  "openapi": {
+    "version": "1.50.2",
+    "operations": 143,
+    "sha256": "710ef0cad15dcfb363f77a9fd1463413ca0290946dda9d1c9a7fbea8e77088e0"
+  },
+  "execution": {
+    "suite": "admin-authorization",
+    "output": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1",
+    "checks": [
+      {
+        "name": "postgres-version",
+        "passed": true
+      },
+      {
+        "name": "initialize",
+        "passed": true
+      },
+      {
+        "name": "start-postgres",
+        "passed": true
+      },
+      {
+        "name": "create-database",
+        "passed": true
+      },
+      {
+        "name": "migrate-deploy",
+        "passed": true
+      },
+      {
+        "name": "seed-first",
+        "passed": true
+      },
+      {
+        "name": "seed-second",
+        "passed": true
+      },
+      {
+        "name": "verify-before",
+        "passed": true
+      },
+      {
+        "name": "fixture-prepare",
+        "passed": true
+      },
+      {
+        "name": "compiled-api-ready",
+        "passed": true
+      },
+      {
+        "name": "fixture-verify",
+        "passed": true
+      },
+      {
+        "name": "verify-after",
+        "passed": true
+      },
+      {
+        "name": "stop-postgres",
+        "passed": true
+      }
+    ],
+    "completed": true,
+    "stopped": true,
+    "serverStopped": true,
+    "postgresVersion": "postgres (PostgreSQL) 17.11",
+    "databasePort": 62494,
+    "database": "linji_admin_authorization_validation",
+    "apiPort": 64737
+  },
+  "client": {
+    "tests": 11,
+    "addedTests": 1,
+    "completed": true,
+    "rejectedTraceCount": 8
+  },
+  "sourceHashes": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dictionaries/dictionary-console.tsx",
+      "sha256": "0a60f85bb13dbe3d5984910eb824f62e9d5a3bdfa8057ecb37e2a28ecf3c5419"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dictionaries/dictionary-model.ts",
+      "sha256": "a507eddadaeb1337ffcda1e10745d280d2381c56559335b4780aebc2376114d8"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dictionaries/dictionary-recovery.ts",
+      "sha256": "660ec78cd00dcf21ba52dffa348354aaac874bdb1712f6d419d93ac35e35f913"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dictionaries/dictionary-queries.ts",
+      "sha256": "2a20cf4cf2cd830a716c30c4e1cf2ab2c89b3ea3e4f5328f9922f210a3ec09b1"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dictionaries/dictionary-recovery.test.ts",
+      "sha256": "e3652b438e8ed46ad97f4034bcfd0fd24be3f98bf2970711420cb32c45019a83"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dictionaries/dictionary-queries.test.ts",
+      "sha256": "20e47b915638243e7bc2a6e72067616c06b34d3f8c431ac2b14b0e76caaa478e"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/dictionaries/dictionary-page.test.tsx",
+      "sha256": "4d87381501d0d5168a7b03dfee011067ba7d7d396931725c149934622ce594e3"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/custom-fields/field-console.tsx",
+      "sha256": "8f05044276730aab2d65a93f2db0d5f94423d2d1367ab872d0197d4d43d447cc"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/custom-fields/field-page.test.tsx",
+      "sha256": "7bd966f3831220a593a03cb649b3470201b105a488933ad7f445eda6ae82ade1"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "755a02f39185ab0f083462b44f26e62ea27deb2cabf68440591c2642e766d896"
+    },
+    {
+      "path": "E:/desktop/lishiqi/backend/scripts/admin-authorization-http-fixture.ts",
+      "sha256": "d61728c8701881bab47cc3cd60617da3ef2b70ce2ecb55b9eeb3a782c5b4885f"
+    }
+  ],
+  "notValidated": [
+    "Per-tab memory; no reload/close/cross-tab/device recovery or new backend idempotency/version protocol",
+    "SSR plus simulated client snapshot do not prove real hydration or navigation",
+    "No browser, Next production or Expo server startup, native device, container or provider acceptance",
+    "Full DB830 and public HTTP8 not rerun",
+    "Previous cold Web snapshot predates this source",
+    "D-09 D-49 D-50 D-51 remain unresolved"
+  ],
+  "repository": "web",
+  "businessCodeChanged": true,
+  "fieldAndDictionaryTests": {
+    "initialFailedRecovery": 7,
+    "initialFailedSsr": 2,
+    "firstDictionaryPassed": 114,
+    "finalDictionaryPassed": 115,
+    "finalFieldPassed": 124,
+    "finalAffectedTests": 239,
+    "addedDictionaryTests": 47,
+    "addedFieldTests": 1
+  },
+  "fullVerification": {
+    "install": 0,
+    "firstFullCheck": 0,
+    "firstFullCheckBusinessTests": 2005,
+    "releaseTests": 20,
+    "sourceExportTests": 8,
+    "firstBuild": 0,
+    "firstReleaseVerify": 0,
+    "finalAffectedTests": 239,
+    "finalLint": 0,
+    "finalTypecheck": 0,
+    "finalBuild": 0,
+    "finalCachedBuilds": 0,
+    "finalReleaseVerify": 0,
+    "releases": [
+      {
+        "app": "web",
+        "buildId": "ErydbqKvEgkEcPciIgh9W",
+        "files": 1360,
+        "manifestSha256": "0af2ef28746b1633a32cbf0b3490cc3dc29f0c2d9d837f8f3b7e5ad62cd7a9fd"
+      },
+      {
+        "app": "admin",
+        "buildId": "rFRHXJleBbk37Xe8InPJz",
+        "files": 1952,
+        "manifestSha256": "422695cb697f5bfb77386e677c079c4e69bd5870b4b42c5c9d70dba834bfee77"
+      }
+    ]
+  },
+  "logs": [
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-red.log",
+      "sha256": "e99a285c69cdaeabb2dc2290b94fd4cbd462891e7dd1161da9372593c336a28d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-focused.log",
+      "sha256": "b07a0b1dbec6c94d0b81a735d416c72c84d8178a974b8f86707f8fd99d3ec77c"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-ssr-red.log",
+      "sha256": "1880426404a0e1f823754b8d8bf16ae79659ed54216dca2dd7127775d124279e"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-install.log",
+      "sha256": "eca4da7499cc45647298b9842f684ce60cef7338ef4a9966dba3de5a121fdd5d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-check.log",
+      "sha256": "fafd61ae3dfbc795e7dd9f99f36ea0c889a81a48415ec25028427d3005e2e829"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-build.log",
+      "sha256": "3202d0229d8c63cbac1f9e2fd7dc21c88ca64e10bce3a3df4678c6cb9b06a1c0"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-release-web.log",
+      "sha256": "3f76f1c39e24e73a62b36b60ac668ce4c91efe0134d59a9339d138665fc4821f"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-release-admin.log",
+      "sha256": "0fd2921d2a9a5051b18069f23669387cfdfac2ae7050f6a76b42e1a9e003034f"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-delta.log",
+      "sha256": "8bb8e7bdaefcbc2df61ddc275a2d55ebd1cfde85b268a98782c96c5c3c62141e"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-delta-lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-delta-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-final-build.log",
+      "sha256": "ff9286d12d47417543bcfed648277c8824636ce42083bc2b457658b04b316105"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-final-release-web.log",
+      "sha256": "255c710bcae6b81cdadaa82456e8761ca87cdd8e8d0b27e7f91d24530854af65"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-final-release-admin.log",
+      "sha256": "75379b7c553672392399eb44c3fac474a1c3a308b8484ac0211874b227212023"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/dictionary-recovery-live-client.log",
+      "sha256": "8108ec20d99307b0195849f027d60f85dc4bdb938b5349673d336fe9af21bbc6"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/report.json",
+      "sha256": "e07e2e9aba5d6119bb53f27ee758c26095ce39e95693ce83c88bc3b6273ed32e"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/client-result.json",
+      "sha256": "96d761eeba29228db77cb1af32fa0521ee91087540b4728a8cd1a00b778baf30"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/fixture-verify.log",
+      "sha256": "954d995c6b48f1adaff4097cce4e48ed296de01eabeccfa5ac9cbe011c32db3d"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/verify-before.log",
+      "sha256": "70b1f3f4302b7a1c6561a466d6a442450db00fe6543676e8224dffe22d669726"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/verify-after.log",
+      "sha256": "70b1f3f4302b7a1c6561a466d6a442450db00fe6543676e8224dffe22d669726"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/migrate-deploy.log",
+      "sha256": "a80a7cf6472c6ef8e191cc1dcdbed19aa683daad1a39b3501dd4080483a7ef80"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/seed-first.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/seed-second.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:/linji-dictionary-recovery/20261103/runs/linji-admin-http-SSlHo1/stop-postgres.log",
+      "sha256": "3589d2bd01f8295cc7c9ec3f5e07625fcd347ccb6f33f2d80edafe5f5217c1fb"
+    }
+  ]
+}

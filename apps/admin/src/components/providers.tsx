@@ -1,24 +1,38 @@
 "use client";
 import { App, ConfigProvider } from "antd";
-import { appTheme } from "@/config/theme";
+import { useSyncExternalStore } from "react";
+import zhCN from "antd/locale/zh_CN";
+import { adminComponentTheme } from "@/config/theme";
+import { SessionProvider } from "@/platform/auth/session-provider";
+
+const reducedMotionQuery = "(prefers-reduced-motion: reduce)";
+function subscribeMotion(callback: () => void) {
+  const media = window.matchMedia(reducedMotionQuery);
+  media.addEventListener("change", callback);
+  return () => media.removeEventListener("change", callback);
+}
+function motionSnapshot() {
+  return window.matchMedia(reducedMotionQuery).matches;
+}
+const serverMotionSnapshot = () => false;
+const reducedMotionTheme = {
+  ...adminComponentTheme,
+  token: { ...adminComponentTheme.token, motion: false },
+};
 export function Providers({ children }: { children: React.ReactNode }) {
+  const reducedMotion = useSyncExternalStore(
+    subscribeMotion,
+    motionSnapshot,
+    serverMotionSnapshot,
+  );
   return (
     <ConfigProvider
-      theme={{
-        token: {
-          colorPrimary: appTheme.primary,
-          colorTextLightSolid: appTheme.primaryForeground,
-          colorText: appTheme.foreground,
-          colorBgContainer: appTheme.background,
-          colorBorder: appTheme.border,
-          colorTextSecondary: appTheme.mutedForeground,
-          colorBgLayout: appTheme.muted,
-          borderRadius: appTheme.radius,
-          fontFamily: appTheme.fontFamily,
-        },
-      }}
+      locale={zhCN}
+      theme={reducedMotion ? reducedMotionTheme : adminComponentTheme}
     >
-      <App>{children}</App>
+      <SessionProvider>
+        <App>{children}</App>
+      </SessionProvider>
     </ConfigProvider>
   );
 }

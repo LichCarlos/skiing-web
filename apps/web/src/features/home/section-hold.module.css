@@ -1,0 +1,28 @@
+.stage,
+.panel {
+  display: flow-root;
+  min-width: 0;
+}
+.stage {
+  padding-block: 20px;
+}
+.panel > section {
+  margin-block: 0;
+}
+
+/* No JS, touch, compact windows and reduced motion keep ordinary document flow.
+   The media gate also removes the hold immediately while resize RAF is pending. */
+@media (min-width: 1100px) and (min-height: 651px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .stage[data-tall] {
+    padding-block: 100px;
+  }
+
+  .stage[data-enhanced] {
+    height: var(--section-hold-height);
+  }
+
+  .stage[data-enhanced] > .panel {
+    position: sticky;
+    top: 20px;
+  }
+}

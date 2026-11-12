@@ -1,0 +1,13 @@
+/* Hide scrollbar chrome while preserving native wheel, touch, keyboard,
+   focus and programmatic scrolling in every public-page scroll container. */
+*,
+*::before,
+*::after {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}

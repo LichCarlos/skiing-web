@@ -1,0 +1,170 @@
+{
+  "date": "2026-11-03",
+  "evidenceVerified": true,
+  "contractVersion": "1.51.1",
+  "operations": 143,
+  "migrations": 24,
+  "scope": "ClamAV adapter total deadline across TCP connect/upload/response; monotonic event checks prevent acceptance after expiration even if timer callback has not run. Existing CLAMAV_TIMEOUT_MS, no API/schema/dependency change",
+  "regression": {
+    "newUnitTests": 9,
+    "scannerTests": 19,
+    "targetedTests": 89,
+    "newDatabaseHttpTests": 3,
+    "targetedLog": {
+      "path": "D:/linji-scanner-deadline/20261103/targeted.log",
+      "sha256": "1e37dd3f1dc478e926502593e8eeb796c29219ab6b27f456af7a91e132f06808"
+    },
+    "realTcpProtocolFixture": true,
+    "actualClamAvExecuted": false,
+    "actualMinioExecuted": false
+  },
+  "failedAttempts": [
+    {
+      "reason": "Regression reproduced slow clean/infected/incomplete replies plus concurrent scan extending the idle timeout; 4 failed and 15 passed before implementation",
+      "reference": {
+        "path": "D:/linji-scanner-deadline/20261103/scanner-before.log",
+        "sha256": "254b96bfea082422237699ccbde4f190187cac2e1fb0c916523e5da329cf3dc1"
+      }
+    }
+  ],
+  "database": {
+    "tests": 842,
+    "postgresVersion": "postgres (PostgreSQL) 17.11",
+    "pgvectorVersion": "0.8.1",
+    "migrations": 24,
+    "completed": true,
+    "stopped": true,
+    "portClosed": true,
+    "report": {
+      "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/report.json",
+      "sha256": "377f80577add17503e7e6bbccba29ee418331fcbb617613da303d0d3add2d5af"
+    },
+    "cleanup": {
+      "path": "D:/linji-scanner-deadline/20261103/database-cleanup.json",
+      "sha256": "529ba8a88c6c184c4907560438c2feb1e6d6fe17c978ca06dc201106ec21a5ac"
+    },
+    "logs": [
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/postgres-version.log",
+        "sha256": "236e29990561bee501e02f4e5d1f8cb1220a59091800020301a0f2e35e6fb3d5"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/initialize.log",
+        "sha256": "ab85e3e70e2bcfbcfb59da5a8715688956ceb4256e88ec60dbee420a92b69e91"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/start.log",
+        "sha256": "83468a58b9366155730bfcd24e4f618de9349e20a511b54255cb11627a0138eb"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/create-database.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/migrate-deploy.log",
+        "sha256": "63c5631558e0ca24fc83f56782737a8f7266a79de108171510f79594da04579e"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/seed-first.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/seed-second.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/verify-before.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/database-suite.log",
+        "sha256": "dfed05b61ef1e637307cd6d9fb4aba280783d5ce532e955c4a84a546c45724ad"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/verify-after.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-scanner-deadline/20261103/database-runtime/linji-native-dXvx7R/stop.log",
+        "sha256": "3a6747065de8c2dbc66a6baa73d5ab09c2c03eb8851704f973ac4b886e6805f2"
+      }
+    ],
+    "scope": "Fresh Windows PostgreSQL cluster, all migrations, double seed, verify before/after, full database suite; scanner TCP fixture and in-memory storage for new HTTP cases"
+  },
+  "commandLedger": {
+    "path": "D:/linji-scanner-deadline/20261103/commands.json",
+    "sha256": "92e44d831ddff2be4b26f86c657fc2393e8b062e558d8759278ceeeb8eaecbfc"
+  },
+  "environment": {
+    "dockerStartedOrRestarted": false,
+    "dockerWSLUsed": false,
+    "realKafkaExecuted": false
+  },
+  "limitations": [
+    "TCP protocol fixtures exercise real sockets and production scanner but are not actual ClamAV signature/daemon validation; HTTP uses memory storage rather than S3/MinIO",
+    "Node timers cannot enforce hard realtime when the event loop is blocked; connect/data checks reject late responses once callbacks resume",
+    "No current real Kafka, browser/device, provider/Embedding, S3/MinIO/ClamAV daemon, container, signed native package or remote CI acceptance",
+    "Windows native Kafka topic-directory AccessDenied remains unresolved; new 35-second heartbeat integration case remains unexecuted",
+    "D-49/D-50/D-09 unanswered and unimplemented; overall project incomplete; no commit/push/deploy/publish or denied action retried"
+  ],
+  "repository": "web",
+  "openapi": {
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 3045,
+    "toolTests": 28,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2,
+    "businessCodeChanged": false
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/package.json",
+      "sha256": "7b09afd9af9e838858cff2ad65af6a3fed6ad31ac88cdd3ddf9099711a1c5ae6"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/pnpm-lock.yaml",
+      "sha256": "3f753c8efdc4edbebed8dadeedebc638113d71147fdda39ab946479ce4ebacf3"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-scanner-deadline/20261103/web-install.log",
+      "sha256": "3aa72c77779f1e557bb6f44bde86adbd4ac8da042e57c74ebfb072e5f7c4494f"
+    },
+    {
+      "path": "D:/linji-scanner-deadline/20261103/web-check.log",
+      "sha256": "7ad50d00ee83ea59a09c30d17571ada28d28436b577040c5aaf7056b31b6dc84"
+    },
+    {
+      "path": "D:/linji-scanner-deadline/20261103/web-build.log",
+      "sha256": "365c9f465600f14f16cf6a765314a811b5ad6a28a622e0458c6238ef9e375e1b"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "zvyOrwoTm1RCPBKdUo-X9",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "935f1dac5052c3b61ce9638a24c56a3c201020cc7a3fd36c1402d91d83c554da"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "M3rUaYwzFUjzlHBWtwdQv",
+      "files": 1958,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "75056e15efd40df27839f4b06f14224db2280cc7dadc2a0c4e4587c250ca3592"
+      }
+    }
+  ]
+}

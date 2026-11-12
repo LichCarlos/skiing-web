@@ -1,0 +1,81 @@
+.main {
+  composes: page from "../../styles/console.module.css";
+  display: grid;
+  gap: 1.25rem;
+}
+
+.header,
+.items > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header h1,
+.items h2 {
+  margin: 0.25rem 0 0;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.items h2 {
+  font-size: 1.125rem;
+}
+
+.filters {
+  composes: filters from "../../styles/console.module.css";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.items {
+  display: grid;
+  gap: 0.75rem;
+  border-top: 1px solid var(--border-default);
+  padding-top: 1.25rem;
+}
+
+.items code,
+.color {
+  color: var(--text-subtle);
+  font-size: 0.8rem;
+}
+
+.items > header > div:first-child {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.color {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.color i {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--border-default);
+  border-radius: 3px;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-block: 1px solid var(--border-default);
+}
+
+@media (max-width: 640px) {
+  .header,
+  .items > header {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "passed": true,
+  "app": "admin",
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-09T04:47:22.370580+00:00",
+    "release": "/opt/linji/releases/20261109-admin-buttons",
+    "buildId": "5HGEZwO8HV6_KKwvS4_bE",
+    "changedServices": ["linji-admin.service"],
+    "adminPid": "1529147",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "5HGEZwO8HV6_KKwvS4_bE",
+    "filesVerified": 2505,
+    "linksVerified": 21,
+    "archiveSha256": "f9cdcd396e33e489d2f3455fb6086ea8d828c78f9a87123260f33e0699a099b8",
+    "checks": [
+      {
+        "route": "/snow-admin/login",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts",
+        "status": 200
+      },
+      {
+        "staticResources": 42,
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/resorts/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/articles/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/content/project-knowledge/new",
+        "status": 200
+      },
+      {
+        "route": "/snow-admin/admin/merchant/resorts",
+        "status": 200
+      }
+    ]
+  },
+  "source": {
+    "sourceSha256": "72b876c23321f4ea603824a8c49a994180a75d5c217a6da3c40f957dc3a29254",
+    "keptProductionFile": "apps/admin/src/app/admin/dashboard.module.css"
+  },
+  "rawSourceSha256": "f7e67833eec6053b31737b74b5d2d01da1f8e543a9408d230d0955d3437df5e6",
+  "checks": {
+    "linuxTests": 2714,
+    "linuxTestFiles": 136,
+    "lint": true,
+    "typescript": true,
+    "boundaries": true,
+    "productionBuild": true,
+    "styleFormat": true,
+    "designDetectorFindings": []
+  },
+  "runtimeChanges": ["apps/admin/src/styles/globals.css"],
+  "browser": {
+    "local": {
+      "passed": true,
+      "mode": "local",
+      "samples": [
+        {
+          "name": "登录",
+          "state": "default",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "BUTTON",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建文章",
+          "state": "default",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建文章",
+          "state": "hover",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(24, 61, 194)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 8.449535249328058
+        },
+        {
+          "name": "新建文章",
+          "state": "focus",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建文章",
+          "state": "active",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(18, 47, 152)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 11.136297945372984
+        },
+        {
+          "name": "新建文章",
+          "state": "mobile",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建项目知识",
+          "state": "default",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建项目知识",
+          "state": "hover",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(24, 61, 194)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 8.449535249328058
+        },
+        {
+          "name": "新建项目知识",
+          "state": "focus",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建项目知识",
+          "state": "active",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(18, 47, 152)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 11.136297945372984
+        },
+        {
+          "name": "新建项目知识",
+          "state": "mobile",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "default",
+          "color": "rgb(23, 38, 76)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 14.809199191123781
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "hover",
+          "color": "rgb(24, 61, 194)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 8.449535249328058
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "focus",
+          "color": "rgb(23, 38, 76)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 14.809199191123781
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "active",
+          "color": "rgb(18, 47, 152)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 11.136297945372984
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "mobile",
+          "color": "rgb(23, 38, 76)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 14.809199191123781
+        }
+      ],
+      "pageErrors": [],
+      "contentWrites": []
+    },
+    "live": {
+      "passed": true,
+      "mode": "live",
+      "samples": [
+        {
+          "name": "登录",
+          "state": "default",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "BUTTON",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建文章",
+          "state": "default",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建文章",
+          "state": "hover",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(24, 61, 194)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 8.449535249328058
+        },
+        {
+          "name": "新建文章",
+          "state": "focus",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建文章",
+          "state": "active",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(18, 47, 152)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 11.136297945372984
+        },
+        {
+          "name": "新建文章",
+          "state": "mobile",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建项目知识",
+          "state": "default",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建项目知识",
+          "state": "hover",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(24, 61, 194)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 8.449535249328058
+        },
+        {
+          "name": "新建项目知识",
+          "state": "focus",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建项目知识",
+          "state": "active",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(18, 47, 152)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 11.136297945372984
+        },
+        {
+          "name": "新建项目知识",
+          "state": "mobile",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(36, 85, 245)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 5.686544844598443
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "default",
+          "color": "rgb(23, 38, 76)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 14.809199191123781
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "hover",
+          "color": "rgb(24, 61, 194)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "none",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 8.449535249328058
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "focus",
+          "color": "rgb(23, 38, 76)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 14.809199191123781
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "active",
+          "color": "rgb(18, 47, 152)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 11.136297945372984
+        },
+        {
+          "name": "新建全局雪场",
+          "state": "mobile",
+          "color": "rgb(23, 38, 76)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "solid",
+          "disabled": false,
+          "tag": "A",
+          "contrast": 14.809199191123781
+        }
+      ],
+      "pageErrors": [],
+      "contentWrites": [],
+      "buildId": "5HGEZwO8HV6_KKwvS4_bE"
+    }
+  },
+  "rollback": "python3 /opt/linji/releases/20261109-admin-buttons/rollback-admin.py"
+}

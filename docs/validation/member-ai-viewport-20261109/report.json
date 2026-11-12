@@ -1,0 +1,79 @@
+{
+  "results": [
+    {
+      "name": "personal center has the warm canvas and AI entry",
+      "status": "passed"
+    },
+    {
+      "name": "create, send, citations and consecutive questions",
+      "status": "passed"
+    },
+    {
+      "name": "reload restores the conversation history",
+      "status": "passed"
+    },
+    {
+      "name": "truncated SSE can retry without duplicating the request",
+      "status": "passed"
+    },
+    {
+      "name": "Unicode length blocks oversize questions",
+      "status": "passed"
+    },
+    {
+      "name": "delete confirms and returns to the list",
+      "status": "passed"
+    },
+    {
+      "name": "logout hides private messages and provides a login return path",
+      "status": "passed"
+    },
+    {
+      "name": "1440×900: viewport, scroll, history and composer",
+      "status": "passed"
+    },
+    {
+      "name": "1366×768: viewport, scroll, history and composer",
+      "status": "passed"
+    },
+    {
+      "name": "390×844: viewport, scroll, history and composer",
+      "status": "passed"
+    },
+    {
+      "name": "768×600: viewport, scroll, history and composer",
+      "status": "passed"
+    },
+    {
+      "name": "844×390: viewport, scroll, history and composer",
+      "status": "passed"
+    },
+    {
+      "name": "320×568: viewport, scroll, history and composer",
+      "status": "passed"
+    },
+    {
+      "name": "390px layout, history, composer and warm background",
+      "status": "passed"
+    },
+    {
+      "name": "768px layout, history, composer and warm background",
+      "status": "passed"
+    },
+    {
+      "name": "missing AI permission shows the access explanation",
+      "status": "passed"
+    },
+    {
+      "name": "article canvas is warm; homepage and directory colors remain",
+      "status": "passed"
+    },
+    {
+      "name": "opening: legible 活 and 乐 on the unchanged 60-column grid",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "authAndAi": "local browser fixtures; no production AI writes",
+  "createdAt": "2026-11-09T03:16:03.811Z"
+}

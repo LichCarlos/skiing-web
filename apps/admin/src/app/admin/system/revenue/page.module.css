@@ -1,0 +1,69 @@
+.main {
+  composes: page from "../../../../styles/console.module.css";
+  display: grid;
+  gap: 1.25rem;
+  max-width: 900px;
+}
+.header h1 {
+  margin: 0.25rem 0 0;
+  font-size: 1.5rem;
+}
+.section {
+  display: grid;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border-default);
+}
+.section h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+.field label {
+  color: var(--text-subtle);
+  font-size: 0.85rem;
+}
+.wide {
+  grid-column: 1 / -1;
+}
+.hint {
+  margin: 0;
+  color: var(--text-subtle);
+  font-size: 0.85rem;
+}
+.results {
+  display: grid;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow: auto;
+  padding-left: 1.25rem;
+}
+.importSummary {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+}
+.importSummary > p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.error {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--app-danger);
+}
+@media (max-width: 650px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .wide {
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "date": "2026-11-03",
+  "evidenceVerified": true,
+  "contractVersion": "1.51.1",
+  "operations": 143,
+  "migrations": 24,
+  "scope": "System configuration full VO/page/filter/save receipt projection; local/end identity checks; list/editor visibility cancellation and clearing; explicit reload and recovery generation; shared-ledger send arbitration; real version conflict, committed-response loss recovery, anonymous fixed public projection and logout during read",
+  "http": {
+    "tests": 77,
+    "newTests": 2,
+    "output": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ",
+    "checks": {
+      "defaults": true,
+      "versionConflict": true,
+      "unknownRecovered": true,
+      "publicProjection": true,
+      "roleDenied": true,
+      "sessionRevocationRejected": true,
+      "sessionRestored": true
+    },
+    "persistence": {
+      "physicalConfigs": 2,
+      "nameVersion": 2,
+      "policyVersion": 1,
+      "status": "active",
+      "successAudits": 3,
+      "auditContainsOnlyVersionMetadata": true,
+      "totalOutbox": 53
+    },
+    "references": [
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/report.json",
+        "sha256": "a9e840b848b926fcb5b18fd5b4abaf5df4d92152484b840cde3078008a75d857"
+      },
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/client-result.json",
+        "sha256": "bab13e12861ba3fb2e1b3e71a6db5567fd68c2d9d97b910351873544fccd9a97"
+      },
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/ready.json",
+        "sha256": "5e3f2b0f713de1b9d4b446eeae10a94d031ed02f00f0c447f4c65aa8e109c4b0"
+      },
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/migrate-deploy.log",
+        "sha256": "c33e7f5dfaba0dce86ed1846a6ce40aa912dc107a57721dff5e638f0113edbb6"
+      },
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/seed-first.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/seed-second.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/verify-before.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/fixture-verify.log",
+        "sha256": "58a9626af015b2b731eb21bd4e8bbdb7acc131a7cbc1977e6cc91daad8d856c9"
+      },
+      {
+        "path": "D:/linji-admin-config/20261103/final/admin-runtime/linji-admin-http-vJBSqZ/verify-after.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      }
+    ],
+    "cleanup": {
+      "path": "D:/linji-admin-config/20261103/cleanup.json",
+      "sha256": "89ef41fdef1e9e18f0ce006495343f1e5fb143beda489e3788effe6b248429a2"
+    }
+  },
+  "regression": {
+    "newTests": 37,
+    "adminConfigTests": 115,
+    "publicConfigTests": 38,
+    "configCombinedTests": 153
+  },
+  "targetedReferences": [
+    {
+      "path": "D:/linji-admin-config/20261103/targeted-first.log",
+      "sha256": "683ea2ce56a740d02b5d7584da7247d0f8028d921ed430ef289d5575b5bdb736"
+    },
+    {
+      "path": "D:/linji-admin-config/20261103/admin-types.log",
+      "sha256": "3dd115a54d9decc15d9b6f1babec63f20d21966a914759ea6530c5b714007d15"
+    }
+  ],
+  "commandLedger": {
+    "path": "D:/linji-admin-config/20261103/commands.json",
+    "sha256": "987bba17e7cbeb0a93f2365b487251462422a02054ec5c0e28de4b4ea6048ec8"
+  },
+  "limitations": [
+    "Simulated Hooks/EventTarget and Node Cookie do not prove actual browser/React/BFCache/device behavior",
+    "Read-end identity verification is not a cross-request atomic permission snapshot; config writes retain existing expectedVersion and no new idempotency protocol",
+    "Committed-response loss was injected after actual HTTP success, not host power loss or a production network fault",
+    "Anonymous public config HTTP does not prove actual Next/Expo rendering",
+    "No current full database suite, real Kafka/providers/storage/container or remote CI acceptance",
+    "Windows Kafka AccessDenied remains unresolved; Docker and its WSL distribution were not started/restarted/used",
+    "D-49/D-50/D-09 remain unanswered and unimplemented; overall project incomplete",
+    "No commit/push/deploy/publish or denied action retried"
+  ],
+  "repository": "web",
+  "openapi": {
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 3005,
+    "newTests": 37,
+    "adminConfigTests": 115,
+    "publicConfigTests": 38,
+    "toolTests": 28,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-responses.ts",
+      "sha256": "600fcc252b600d9a52d4909c59b23072724369890287efa5df12a0b6ae679596"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-api.ts",
+      "sha256": "030a488bfd272d71f1bfd8048d218dfcc1222fc01a00c4bfe43a0b8994059408"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-model.ts",
+      "sha256": "d2fc7e3093f0d9aefd29055e0618d60d076e8f2d74047c5f4a1fbacc9f42ba60"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-queries.ts",
+      "sha256": "8f0707fbc39a72aba7ed5df11002b379d462f586d9eac9c435751fc38ab7a648"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-workflow.ts",
+      "sha256": "9aca99e38ea1530ea23f92b03f935f656674b648becbe09899b6a9e8843c679d"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-session.tsx",
+      "sha256": "29e32bed256770095b8b6766c93581d0078c130f73b2da2f935e8ae32a774555"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-list.tsx",
+      "sha256": "da8052b860791001db4fe118d6912e0480a3c6d6d68fd63b14ee70f253878f85"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-editor.tsx",
+      "sha256": "f1b789389f12841388c37634e12f5ede32e638343a73cb80b0acc1acc471e9cc"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-read-boundaries.test.ts",
+      "sha256": "762d39c8d3d0898f5c67b7a4dbdbbdb9a32a1b16cd65da21383b588df65c0d15"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-page-lifecycle.test.tsx",
+      "sha256": "8122968cbb7a0afc10020722c475f2badd3083d9a1434722adb954d8c5b70525"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/src/features/system-config/config-queries.test.ts",
+      "sha256": "1ff8fbdfd9bf5c8510974b985eaa8d155fd71058913a195fa062ca76a87232de"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/apps/admin/test/authorization.http-spec.ts",
+      "sha256": "f6957bd0e8c5b00d995b7acde32c445a4fa7a01fef75fd519a514bb9cf99119f"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-admin-config/20261103/web-install.log",
+      "sha256": "2264428097ffb23eac6f76be2227ce048191e537255b8bbc579fbdf70e8a431d"
+    },
+    {
+      "path": "D:/linji-admin-config/20261103/web-check.log",
+      "sha256": "96f223a3a476ddde78e4de30eb2737082a231cb52d34eb625d999d697862b85b"
+    },
+    {
+      "path": "D:/linji-admin-config/20261103/web-build.log",
+      "sha256": "205144ddb1d026349f5fe32235bce6f37aec44d733f20f18e528ff14c7f53b10"
+    },
+    {
+      "path": "D:/linji-admin-config/20261103/admin-http.log",
+      "sha256": "a9811c11c2405097be6431eceab5b078346c1fea7b876201d5b72d69575a3d36"
+    },
+    {
+      "path": "D:/linji-admin-config/20261103/doc-format.log",
+      "sha256": "f17d47fc8782d3c8c8a969fce966d3d8d5599238bd470d23f4fb731d255d143a"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "pJXR_PIMczXVIK2RiuD5g",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "b5c141152d4dd13484bbc014d418f0656526f7da9bae94cc1d0dd87a9da68a4d"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "iCkzC6scTLcLc1HD8heuh",
+      "files": 1958,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "169671c2b083ac64f12e535c44b5b236f237dc1c79035689cb32abb25c8936a1"
+      }
+    }
+  ]
+}

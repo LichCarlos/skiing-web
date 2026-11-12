@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-11-02T23:18:20.5590150Z",
+  "evidenceScope": "Generated static missing-page HTML and its linked stylesheets; no HTTP or browser execution",
+  "builds": [
+    {
+      "app": "web",
+      "buildId": "RKscLaxbCdMfOjKJQ2qAA",
+      "htmlPath": "apps/web/.next/server/app/_not-found.html",
+      "htmlSha256": "73ac641f5ca2853ff0a7a81acb52004a93791a0403a45cc6652ec5010bb7e9c4",
+      "checks": {
+        "missingPage": true,
+        "safeReturn": true,
+        "noindex": true,
+        "linkedFallbackStyle": true
+      },
+      "stylesheets": [
+        {
+          "path": "apps/web/.next/static/chunks/0w7wrofhb28b1.css",
+          "sha256": "e771a40c6eb8ce6e3abb9d600d3c68973af89ee797d317376e1c4142bb17b80b",
+          "containsFallbackStyle": false
+        },
+        {
+          "path": "apps/web/.next/static/chunks/2c0el93n-k65l.css",
+          "sha256": "6969fd3c81d7298c0ec81d7f5a824fc0dda514dee9f44b60fb26bb1eafc61961",
+          "containsFallbackStyle": false
+        },
+        {
+          "path": "apps/web/.next/static/chunks/3dxnnvsitl7to.css",
+          "sha256": "2b86e3788e6595a8579055c7fdc6edafaa17e4434e9b4ab7880ec5b8cd602bf5",
+          "containsFallbackStyle": true
+        }
+      ]
+    },
+    {
+      "app": "admin",
+      "buildId": "CbhUDLVWrFtJQyBLg-LO2",
+      "htmlPath": "apps/admin/.next/server/app/_not-found.html",
+      "htmlSha256": "81147b0bbf9356d03f71bbc25aa5fe79a8c0b545e8bbf68545cd92bfe2a38e33",
+      "checks": {
+        "missingPage": true,
+        "safeReturn": true,
+        "noindex": true,
+        "linkedFallbackStyle": true
+      },
+      "stylesheets": [
+        {
+          "path": "apps/admin/.next/static/chunks/2uyq4a7gtz0e8.css",
+          "sha256": "5bc0a2719c774f4d2e2c64bbef7326853bea21b1b480c7547c03d48df32d48c3",
+          "containsFallbackStyle": false
+        },
+        {
+          "path": "apps/admin/.next/static/chunks/0t926ttrv5zor.css",
+          "sha256": "a59089325ef74bf29fe9aad5e6315b3a2ca1db113fa0bac3f7d75a62bcd10e87",
+          "containsFallbackStyle": true
+        }
+      ]
+    }
+  ]
+}

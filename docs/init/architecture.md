@@ -29,6 +29,8 @@ pnpm 管理 workspace 与唯一锁文件；Turbo 管理任务依赖和缓存。�
 
 公共库源码由 Next 的 transpilePackages 编译；它们不是可脱离源码直接发布的 npm 构建产物。新增独立发布的库时，需补齐打包与版本策略。
 
+应用发布使用[standalone运行包](../engineering/standalone-release.md)，构建上下文仍为本仓根目录，产物分别位于apps/web/.next/release与apps/admin/.next/release。跟踪根限本仓，打包补齐各端静态资源并校验内部依赖，运行包不依赖源码目录。公开API地址在构建时固化，不能通过启动变量改写浏览器包。
+
 ## 技术选型说明
 
 管理端使用 Ant Design 6，通过 Next 样式 Registry 接入 SSR。初期页面由共享 shadcn/ui 基础组件与本端 Ant Design 6 组件支撑；其他组件库及业务封装按对应应用的实际需求选择，并按 [依赖维护](dependency-maintenance.md) 验证兼容性。

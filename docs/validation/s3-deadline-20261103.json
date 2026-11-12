@@ -1,0 +1,196 @@
+{
+  "date": "2026-11-04",
+  "stageStartedOn": "2026-11-03",
+  "validatedAt": "2026-11-03T16:09:24.696Z",
+  "evidenceVerified": true,
+  "contractVersion": "1.51.1",
+  "operations": 143,
+  "migrations": 24,
+  "scope": "Runtime S3 PUT/DELETE total deadline using S3_REQUEST_TIMEOUT_MS (default 30000ms); SDK maxAttempts=1 because installed retry cooldown is not abortable; existing upload compensation and owner/admin logical deletion responses retained. No API/schema/dependency change",
+  "regression": {
+    "newUnitTests": 14,
+    "storageTests": 14,
+    "targetedTests": 103,
+    "newDatabaseHttpTests": 3,
+    "targetedLog": {
+      "path": "D:/linji-s3-deadline/20261103/targeted-final-pass.log",
+      "sha256": "6d67163001c8c801cf7c76dbb1793a3e327e43b5a9f3185873e02f37283975bf"
+    },
+    "initialTargetedCheckpoint": {
+      "path": "D:/linji-s3-deadline/20261103/targeted.log",
+      "sha256": "297a6f9eae4148e61856c7fbc0bba520153b244e7be1b51c51355687af9cad68"
+    },
+    "realHttpSdkProtocolFixture": true,
+    "actualClamAvExecuted": false,
+    "actualMinioExecuted": false
+  },
+  "failedAttempts": [
+    {
+      "reason": "Initial regression: unbounded stalled/trickling PUT/DELETE, concurrent work, and invalid config: 10 failed / 2 passed",
+      "reference": {
+        "path": "D:/linji-s3-deadline/20261103/storage-before.log",
+        "sha256": "1643c5b387b62d8f58e8e2e8ee1604a4cdefb9a9a47d2b1ff672956eb223411b"
+      }
+    },
+    {
+      "reason": "After first AbortSignal fix, two new Retry-After regressions still failed: SDK waits about 2 seconds before observing the 180ms abort; default retries subsequently disabled",
+      "reference": {
+        "path": "D:/linji-s3-deadline/20261103/backoff-before.log",
+        "sha256": "5fa022513fac4f7d984b495a9ed72d5ebdca0862fff53280ca087fa870b6b4c7"
+      }
+    },
+    {
+      "reason": "Single-attempt HTTP body abort is exposed by SDK as ECONNRESET/deserialization error rather than name AbortError. Two overly specific name assertions failed; now check abort message, attempts=1 and physical connection closure within the same bounded test",
+      "reference": {
+        "path": "D:/linji-s3-deadline/20261103/targeted-final.log",
+        "sha256": "11105ed18f3634e3282801f1a1abd667e3eafee8168122273f496f6bbba098ce"
+      }
+    }
+  ],
+  "database": {
+    "tests": 845,
+    "postgresVersion": "postgres (PostgreSQL) 17.11",
+    "pgvectorVersion": "0.8.1",
+    "migrations": 24,
+    "completed": true,
+    "stopped": true,
+    "portClosed": true,
+    "report": {
+      "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/report.json",
+      "sha256": "ccaf1c071c79f85f33eddcc2e08f7a5781c0a5694470cf249732afbbff08b7d7"
+    },
+    "cleanup": {
+      "path": "D:/linji-s3-deadline/20261103/database-cleanup.json",
+      "sha256": "44954e6a7755b537146fc0f77956fd1ffdfc4dad732d707d11ce97c1c55427bc"
+    },
+    "logs": [
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/postgres-version.log",
+        "sha256": "236e29990561bee501e02f4e5d1f8cb1220a59091800020301a0f2e35e6fb3d5"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/initialize.log",
+        "sha256": "6505b2caa64573f642a177f3e24f2f76526cd75ed7d06e93309ff913e3ab2da3"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/start.log",
+        "sha256": "83468a58b9366155730bfcd24e4f618de9349e20a511b54255cb11627a0138eb"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/create-database.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/migrate-deploy.log",
+        "sha256": "2078dbb5b28e05486ffa0333266a58eae27e585f52561e7073099c724b722533"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/seed-first.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/seed-second.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/verify-before.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/database-suite.log",
+        "sha256": "7f786ebda1082993f301854f5107e4fe9043e18ce44ded5d03804c64d35d0d49"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/verify-after.log",
+        "sha256": "321d2e8de69191320715eab9db347c24c91f988a47c24d389572e733331c57e0"
+      },
+      {
+        "path": "D:/linji-s3-deadline/20261103/database-runtime/linji-native-NKF1tI/stop.log",
+        "sha256": "3a6747065de8c2dbc66a6baa73d5ab09c2c03eb8851704f973ac4b886e6805f2"
+      }
+    ],
+    "scope": "Fresh Windows PostgreSQL cluster, all migrations, double seed, verify before/after, full database suite; new HTTP cases use actual S3 SDK against loopback protocol fixture and substituted clean scanner"
+  },
+  "commandLedger": {
+    "path": "D:/linji-s3-deadline/20261103/commands.json",
+    "sha256": "561abc40e28c5c3f8070cfddaa3e3f882d780de8a390688f244ebd1afb5ccb09"
+  },
+  "backendFinalCommandLedger": {
+    "path": "D:/linji-s3-deadline/20261103/backend-final-commands.json",
+    "sha256": "88816068d2e1b5f5e24243fe3e9d0031c94252bc14715550c02ba8bb37115e7b"
+  },
+  "environment": {
+    "dockerStartedOrRestarted": false,
+    "dockerWSLUsed": false,
+    "realKafkaExecuted": false
+  },
+  "limitations": [
+    "S3 protocol fixtures exercise actual HTTP sockets, SigV4 SDK requests and production adapter; they do not prove actual MinIO/S3 service behavior or real antivirus validation",
+    "One deadline per PUT/DELETE, not for the complete upload/database/cleanup workflow; compensation receives its own deadline. Node timers cannot preempt a blocked event loop",
+    "Aborting a connection cannot prove remote mutation did not commit. Cleanup can fail; logical deletion does not prove physical deletion. Existing owner=503/admin=204 behavior retained",
+    "Runtime writes now fail on the first provider error; no SDK replay/backoff. This setting does not change the separate storage:init CLI",
+    "No current real Kafka, browser/device, provider/Embedding, S3/MinIO/ClamAV daemon, container, signed native package or remote CI acceptance",
+    "Windows native Kafka topic-directory AccessDenied remains unresolved; 35-second heartbeat integration case remains unexecuted",
+    "D-49/D-50/D-09 unanswered and unimplemented; overall project incomplete; no commit/push/deploy/publish or denied action retried"
+  ],
+  "repository": "web",
+  "openapi": {
+    "path": "E:/desktop/lishiqi/web/contracts/openapi.json",
+    "sha256": "e5570e24af7bf5670cda3914591924f3c0d4321248c01ce0e7d2a95bd34745a8"
+  },
+  "results": {
+    "frozenInstall": 0,
+    "check": 0,
+    "businessTests": 3045,
+    "toolTests": 28,
+    "forcedNextBuilds": 2,
+    "standaloneVerify": 2,
+    "businessCodeChanged": false
+  },
+  "sources": [
+    {
+      "path": "E:/desktop/lishiqi/web/package.json",
+      "sha256": "7b09afd9af9e838858cff2ad65af6a3fed6ad31ac88cdd3ddf9099711a1c5ae6"
+    },
+    {
+      "path": "E:/desktop/lishiqi/web/pnpm-lock.yaml",
+      "sha256": "3f753c8efdc4edbebed8dadeedebc638113d71147fdda39ab946479ce4ebacf3"
+    }
+  ],
+  "logs": [
+    {
+      "path": "D:/linji-s3-deadline/20261103/web-install.log",
+      "sha256": "a704c8c2e476c3ac1b5b112d8a2038413c5622235d3ec71823661d16dd9d433d"
+    },
+    {
+      "path": "D:/linji-s3-deadline/20261103/web-check.log",
+      "sha256": "9ec50ac9f961018c861a3c8fa7f7974478cb7bf3311c028e21b6e9c9e3e31310"
+    },
+    {
+      "path": "D:/linji-s3-deadline/20261103/web-build.log",
+      "sha256": "750620a922acebffa02dc633204789fac7fb3cf1e5ded1f9d899c1f885870e9a"
+    }
+  ],
+  "releases": [
+    {
+      "app": "web",
+      "buildId": "R7c3YXteEOwH3qTu2_tOv",
+      "files": 1360,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/web/.next/release/release-manifest.json",
+        "sha256": "8e76382c32cd42084fd07360224a9cf0657290b7c0b3e2191af95c2fb68f38da"
+      }
+    },
+    {
+      "app": "admin",
+      "buildId": "63BGhLoRR4ezEXj_ZU5rK",
+      "files": 1958,
+      "links": 26,
+      "manifest": {
+        "path": "E:/desktop/lishiqi/web/apps/admin/.next/release/release-manifest.json",
+        "sha256": "240f1900e0d152f6de8d8a0cb791deab79dc4f072e59df5335950305bd885207"
+      }
+    }
+  ]
+}

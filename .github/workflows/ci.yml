@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+          run_install: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+      - run: pnpm test:boundaries
+      - run: pnpm openapi:generate
+      - run: git ls-files --error-unmatch contracts/openapi.json contracts/openapi.lock.json packages/api-contracts/src/openapi.ts
+      - run: git diff --exit-code -- contracts/openapi.json contracts/openapi.lock.json packages/api-contracts/src/openapi.ts
+      - run: pnpm build
+      - name: Package and verify relocated standalone artifacts without starting servers
+        run: |
+          pnpm package:web "$RUNNER_TEMP/linji-web"
+          pnpm package:admin "$RUNNER_TEMP/linji-admin"
+          pnpm release:verify web "$RUNNER_TEMP/linji-web"
+          pnpm release:verify admin "$RUNNER_TEMP/linji-admin"
+          node --check "$RUNNER_TEMP/linji-web/start.mjs"
+          node --check "$RUNNER_TEMP/linji-web/apps/web/server.js"
+          node --check "$RUNNER_TEMP/linji-admin/start.mjs"
+          node --check "$RUNNER_TEMP/linji-admin/apps/admin/server.js"
+          tar -C "$RUNNER_TEMP/linji-web" -czf "$RUNNER_TEMP/linji-web.tar.gz" .
+          tar -C "$RUNNER_TEMP/linji-admin" -czf "$RUNNER_TEMP/linji-admin.tar.gz" .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linji-web-standalone-linux
+          path: ${{ runner.temp }}/linji-web.tar.gz
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linji-admin-standalone-linux
+          path: ${{ runner.temp }}/linji-admin.tar.gz
+          if-no-files-found: error
+          retention-days: 7
+      - name: Export and verify pristine independent source (no services started)
+        run: |
+          node --experimental-strip-types scripts/export-source.ts "$RUNNER_TEMP/linji-web-source" > "$RUNNER_TEMP/linji-web-source-metadata.json"
+          SOURCE_DIGEST=$(node -p "JSON.parse(require('node:fs').readFileSync(process.env.RUNNER_TEMP + '/linji-web-source-metadata.json', 'utf8')).sourceSha256")
+          pnpm source:verify "$RUNNER_TEMP/linji-web-source" "$SOURCE_DIGEST"
+          tar -C "$RUNNER_TEMP/linji-web-source" -czf "$RUNNER_TEMP/linji-web-source.tar.gz" .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linji-web-source
+          path: |
+            ${{ runner.temp }}/linji-web-source.tar.gz
+            ${{ runner.temp }}/linji-web-source-metadata.json
+          if-no-files-found: error
+          retention-days: 7

@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "live": true,
+  "checks": [
+    {
+      "name": "empty editor shows guidance inside a single frame",
+      "passed": true
+    },
+    {
+      "name": "typing, heading and undo keep content and focus",
+      "passed": true
+    },
+    {
+      "name": "source and preview share the same outer frame",
+      "passed": true
+    },
+    {
+      "name": "desktop writing uses the full frame with symmetric 24px insets",
+      "passed": true
+    },
+    {
+      "name": "long paragraphs, source and preview align without overflow",
+      "passed": true
+    },
+    {
+      "name": "resort fields use one shared border and native keyboard selection",
+      "passed": true
+    },
+    {
+      "name": "390px writing, source and resort have no page overflow",
+      "passed": true
+    },
+    {
+      "name": "320px writing, source and resort have no page overflow",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "contentWrites": [],
+  "buildId": "D4xoWA-lpQyB_MAjv5b2F",
+  "geometry": [
+    {
+      "viewport": 1280,
+      "frame": 1021.625,
+      "body": 969.625,
+      "left": 26,
+      "right": 26,
+      "maxWidth": "none"
+    },
+    {
+      "viewport": 1440,
+      "frame": 1164.8125,
+      "body": 1112.8125,
+      "left": 26,
+      "right": 26,
+      "maxWidth": "none"
+    },
+    {
+      "viewport": 1920,
+      "frame": 1152,
+      "body": 1100,
+      "left": 26,
+      "right": 26,
+      "maxWidth": "none"
+    }
+  ]
+}

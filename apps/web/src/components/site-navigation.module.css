@@ -1,0 +1,206 @@
+.rail {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 24px;
+  background: var(--site-canvas);
+  color: var(--site-canvas-ink);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  color: var(--site-canvas-ink);
+  font-size: 20px;
+  font-weight: 850;
+  text-decoration: none;
+}
+.brand span {
+  overflow-wrap: anywhere;
+}
+.mark {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  color: var(--primary);
+}
+.rail .mark {
+  color: var(--site-logo-ink, var(--primary));
+}
+.links {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 2px solid #000;
+  border-radius: 16px;
+  color: #000;
+  font-weight: 750;
+  text-decoration: none;
+}
+.navItem[data-tone="resorts"] {
+  background: var(--primary);
+  color: #fff;
+}
+.navItem[data-tone="knowledge"] {
+  background: var(--site-green);
+}
+.navItem[data-tone="dynamics"] {
+  background: var(--site-red);
+  color: #fff;
+}
+.navItem[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.navItem:hover {
+  box-shadow: inset 0 0 0 2px #000;
+}
+.arrow {
+  font-size: 20px;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.about {
+  color: #000;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--site-surface);
+  border: 2px solid #000;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none;
+}
+.about:hover {
+  background: var(--site-surface);
+}
+.aboutIcon {
+  display: grid;
+  place-items: center;
+}
+.skip {
+  position: fixed;
+  z-index: 100;
+  top: 8px;
+  left: 16px;
+  transform: translateY(-180%);
+  padding: 12px;
+  background: var(--site-yellow);
+  color: #000;
+  border: 2px solid #000;
+}
+.skip:focus {
+  transform: none;
+}
+.rail :is(a, button):focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 4px;
+}
+@media (min-width: 1100px) {
+  .rail {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: var(--site-rail-width);
+    max-height: 100dvh;
+    overflow-y: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 28px;
+    padding: 28px 12px 16px;
+  }
+  .brand {
+    flex-direction: column;
+    gap: 14px;
+    font-size: 19px;
+    text-align: center;
+  }
+  .mark {
+    width: 48px;
+    height: 48px;
+  }
+  .links {
+    display: grid;
+    align-content: start;
+    flex: 0;
+    gap: 10px;
+  }
+  .navItem {
+    min-height: 100px;
+    padding: 16px 12px;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .arrow {
+    align-self: end;
+  }
+  .bottom {
+    margin-top: auto;
+    display: grid;
+    gap: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .rail {
+    padding: 12px 16px;
+    gap: 12px;
+  }
+  .brand {
+    font-size: 18px;
+    flex: 1;
+  }
+  .mark {
+    width: 30px;
+    height: 30px;
+  }
+  .bottom {
+    display: contents;
+  }
+  .about {
+    font-size: 12px;
+    min-height: 44px;
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  .aboutIcon svg {
+    width: 18px;
+  }
+  .links {
+    order: 3;
+    width: 100%;
+    flex: none;
+  }
+  .navItem {
+    flex: 1;
+    justify-content: center;
+    font-size: 14px;
+    padding: 8px;
+    gap: 6px;
+    border-radius: 12px;
+  }
+  .arrow {
+    display: none;
+  }
+}

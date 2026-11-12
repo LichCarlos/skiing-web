@@ -1,0 +1,652 @@
+{
+  "passed": true,
+  "live": true,
+  "mockedApi": true,
+  "checks": [
+    {
+      "name": "no count ceiling guidance is shown",
+      "passed": true
+    },
+    {
+      "name": "upload remains available at 10 images",
+      "passed": true
+    },
+    {
+      "name": "upload remains available at 31 images",
+      "passed": true
+    },
+    {
+      "name": "upload remains available at 101 images",
+      "passed": true
+    },
+    {
+      "name": "upload remains available at 150 images",
+      "passed": true
+    },
+    {
+      "name": "all 150 references survive source, preview and writing",
+      "passed": true
+    },
+    {
+      "name": "submission sends every image ID in order",
+      "passed": true
+    },
+    {
+      "name": "reopening the note retains 150 editable images",
+      "passed": true
+    },
+    {
+      "name": "small viewports retain the count without page overflow",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "mockedWrites": [
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/assets"
+    },
+    {
+      "method": "POST",
+      "path": "/dynamics",
+      "imageCount": 150
+    }
+  ],
+  "realContentWrites": []
+}

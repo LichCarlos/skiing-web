@@ -1,0 +1,295 @@
+{
+  "passed": true,
+  "scope": "Website reference skin-tone surfaces and user AI conversation page",
+  "activatedBeijing": "2026-11-07 22:04:33 +08:00",
+  "activation": {
+    "passed": true,
+    "activatedAt": "2026-11-07T14:04:33.183642+00:00",
+    "release": "/opt/linji/releases/20261107-member-ai-warm",
+    "buildId": "TCRE2KuZ0pTURUGOX9mQm",
+    "changedServices": ["linji-web.service"],
+    "websitePid": "1496308",
+    "otherServicesUnchanged": true,
+    "databaseMigration": false,
+    "protectedFilesUnchanged": true
+  },
+  "candidate": {
+    "passed": true,
+    "buildId": "TCRE2KuZ0pTURUGOX9mQm",
+    "filesVerified": 2202,
+    "linksVerified": 21,
+    "archiveSha256": "68b7fba2183e0d4149aae89589c9c2be686d8a8f23a2eea12497d9be71e5bd33",
+    "checks": [
+      {
+        "route": "/snow",
+        "status": 200
+      },
+      {
+        "route": "/snow/login",
+        "status": 200
+      },
+      {
+        "route": "/snow/me",
+        "status": 200
+      },
+      {
+        "staticResources": 23,
+        "status": 200
+      },
+      {
+        "route": "/snow/me/ai",
+        "status": 200
+      },
+      {
+        "route": "/snow/me/new",
+        "status": 200
+      },
+      {
+        "route": "/snow/me?tab=favorites",
+        "status": 200
+      },
+      {
+        "route": "/snow/resorts",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge",
+        "status": 200
+      },
+      {
+        "route": "/snow/knowledge/1",
+        "status": 200
+      },
+      {
+        "route": "/snow/dynamics",
+        "status": 200
+      }
+    ]
+  },
+  "preflight": {
+    "at": "2026-11-07T14:01:27.973148+00:00",
+    "services": [
+      "aegis.service",
+      "aliyun.service",
+      "atd.service",
+      "charge-api.service",
+      "chronyd.service",
+      "crond.service",
+      "dbus.service",
+      "frps.service",
+      "getty@tty1.service",
+      "gssproxy.service",
+      "linji-admin.service",
+      "linji-api.service",
+      "linji-clamav.service",
+      "linji-kafka.service",
+      "linji-minio.service",
+      "linji-web.service",
+      "NetworkManager.service",
+      "nginx.service",
+      "polkit.service",
+      "postgresql.service",
+      "redis.service",
+      "rngd.service",
+      "rpcbind.service",
+      "rsyslog.service",
+      "serial-getty@ttyS0.service",
+      "sshd.service",
+      "systemd-journald.service",
+      "systemd-logind.service",
+      "systemd-udevd.service",
+      "tuned.service",
+      "user@0.service"
+    ],
+    "backup": "/opt/linji/private/backups/20261107-member-ai-warm",
+    "unitSha256": "fc5779a2369fa757283081420ac8bffdff819fadb9bf453a494a23923ce717ef",
+    "protectedFiles": {
+      "/etc/systemd/system/linji-api.service": "0390d772f8cfbda8fb5c529cae8d75297df12bb0571f3d84304d0a656e68bc1b",
+      "/etc/systemd/system/linji-admin.service": "b25d0c3eb3459f8ffb0c097f6e940997e6c044d67bf3a1210f667293d29bc8f5",
+      "/etc/nginx/nginx.conf": "e5959c500bec02ed90f9846e914a737e25877473fad5a6421cad4ddb8b5aeb2a",
+      "/opt/linji/linji-http.conf": "70a55ebec00f51e1c432f7a5a536d107da68aad9ee2532aae3fe5e3c00e7e8ca",
+      "/opt/linji/linji-locations.conf": "eb3631f5b08e907474fccfc980836746bfec54fba9c360aff9f3af0e45beafe9"
+    }
+  },
+  "linuxBuild": {
+    "buildId": "TCRE2KuZ0pTURUGOX9mQm",
+    "platform": "linux",
+    "architecture": "x64",
+    "nodeMajor": 22,
+    "nextVersion": "16.3.5",
+    "files": 2202,
+    "links": 21,
+    "openapi": {
+      "version": "1.54.0",
+      "sha256": "09f9a1724f89899c50761950d861c924fa251a82c577a8766e078e38e9a70c16"
+    },
+    "websiteTests": {
+      "files": 34,
+      "passed": 483
+    }
+  },
+  "sourceSha256": "dbe94008ab857c845b3d6aef592476103b3361d2110a199914d5373ae61451ee",
+  "sourceArchiveSha256": "6009c923f9f5586b46745e5f712525bb65dd7ac84a6500d95f7c71f92a613542",
+  "runtimeArchiveSha256": "68b7fba2183e0d4149aae89589c9c2be686d8a8f23a2eea12497d9be71e5bd33",
+  "realHttpsBrowser": {
+    "passed": true,
+    "at": "2026-11-07T14:06:16.240Z",
+    "buildId": "TCRE2KuZ0pTURUGOX9mQm",
+    "checks": [
+      {
+        "name": "AI page static resources",
+        "count": 23,
+        "passed": true
+      },
+      {
+        "name": "new build and official pages serve HTTPS 200",
+        "passed": true
+      },
+      {
+        "name": "API healthy; anonymous private conversations rejected",
+        "passed": true
+      },
+      {
+        "name": "article and personal-center canvas use reference color",
+        "passed": true
+      },
+      {
+        "name": "real login returns to personal center with AI entry",
+        "passed": true
+      },
+      {
+        "name": "real conversation creation through website",
+        "passed": true
+      },
+      {
+        "name": "real model streams first answer with saved completion",
+        "passed": true
+      },
+      {
+        "name": "real continuous follow-up and history restoration",
+        "passed": true
+      },
+      {
+        "name": "delete only the acceptance conversation through website",
+        "passed": true
+      },
+      {
+        "name": "real logout clears private UI",
+        "passed": true
+      },
+      {
+        "name": "homepage and directory colors remain",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "realAiTurns": [
+      {
+        "question": "第一次滑雪前，应该检查哪些基本装备？请简要回答。",
+        "messageId": "6",
+        "characters": 382,
+        "citations": [
+          {
+            "sourceType": "article",
+            "sourceId": "2",
+            "title": "第一次滑雪，把目标从“上山顶”改成“安全结束第一课”"
+          },
+          {
+            "sourceType": "article",
+            "sourceId": "3",
+            "title": "头盔不是无敌护盾：出发前的装备核对清单"
+          },
+          {
+            "sourceType": "article",
+            "sourceId": "7",
+            "title": "带朋友或孩子去滑雪：先约定边界，再安排打卡"
+          },
+          {
+            "sourceType": "article",
+            "sourceId": "4",
+            "title": "第一次坐缆车：从排队到下站，先听工作人员的"
+          },
+          {
+            "sourceType": "article",
+            "sourceId": "6",
+            "title": "雪道意外后先求助：同伴应知道的信息与边界"
+          }
+        ],
+        "deltaEvents": 229,
+        "completed": true
+      },
+      {
+        "question": "根据刚才的建议，头盔应该怎样检查是否合适？请简要回答。",
+        "messageId": "8",
+        "characters": 349,
+        "citations": [
+          {
+            "sourceType": "article",
+            "sourceId": "3",
+            "title": "头盔不是无敌护盾：出发前的装备核对清单"
+          },
+          {
+            "sourceType": "article",
+            "sourceId": "2",
+            "title": "第一次滑雪，把目标从“上山顶”改成“安全结束第一课”"
+          },
+          {
+            "sourceType": "article",
+            "sourceId": "7",
+            "title": "带朋友或孩子去滑雪：先约定边界，再安排打卡"
+          },
+          {
+            "sourceType": "article",
+            "sourceId": "4",
+            "title": "第一次坐缆车：从排队到下站，先听工作人员的"
+          },
+          {
+            "sourceType": "article",
+            "sourceId": "5",
+            "title": "选雪道看能力，不只看颜色：路线判断的五个问题"
+          }
+        ],
+        "deltaEvents": 203,
+        "completed": true
+      }
+    ],
+    "createdConversationId": "d71ed7ee-7c05-416a-81db-09f8f190dfb7",
+    "testConversationDeleted": true
+  },
+  "firstAttempt": {
+    "result": "browser instrumentation failure after a real answer",
+    "conversationDeleted": true,
+    "browserPageErrors": []
+  },
+  "finalHealth": {
+    "web": {
+      "active": true,
+      "pid": 1496308,
+      "restarts": 0
+    },
+    "api": {
+      "active": true,
+      "pid": 1488566,
+      "restarts": 0
+    },
+    "admin": {
+      "active": true,
+      "pid": 1464533,
+      "restarts": 0
+    }
+  },
+  "cleanup": {
+    "candidateServiceStopped": true,
+    "candidateFailureMarkerCleared": true,
+    "acceptanceConversationsDeletedUsingExistingSoftDelete": true
+  },
+  "rollback": {
+    "path": "/opt/linji/releases/20261107-member-ai-warm/rollback-website.py",
+    "previousRuntime": "/opt/linji/releases/20261107-member-center/web-final",
+    "performed": false
+  },
+  "databaseMigration": false,
+  "seedExecuted": false,
+  "sourceCommittedOrPushed": false,
+  "limitation": "Real user flow exercised with the existing administrator account; physical phone and live network-interruption retry not performed."
+}

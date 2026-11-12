@@ -1,0 +1,129 @@
+/* Shared presentation for admin consoles; business and permissions stay in features. */
+.page {
+  min-width: 0;
+  width: 100%;
+  padding: var(--app-page-padding);
+  align-content: start;
+}
+
+.page h1 {
+  margin: 0;
+  color: var(--app-title-color);
+  font-size: 1.5rem;
+  font-weight: 650;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.page h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.page > header {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.page > header > p {
+  max-width: 70ch;
+  color: var(--text-subtle);
+  line-height: 1.7;
+}
+
+.page > :global(.ant-form) {
+  padding: 1.5rem;
+  border: 1px solid var(--border-default);
+  border-radius: var(--app-panel-radius);
+  background: var(--surface);
+}
+
+.filters {
+  min-width: 0;
+  max-width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border-default);
+  border-radius: var(--app-panel-radius);
+  background: var(--surface);
+  flex-wrap: wrap;
+}
+
+.filters > * {
+  max-width: 100%;
+}
+.filters > :global(.ant-input) {
+  width: min(100%, 20rem);
+}
+
+.queryPage {
+  composes: page;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.25rem;
+}
+
+.page > header > p {
+  margin: 0.5rem 0 0;
+}
+
+.page > .queryForm {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+}
+
+.queryForm > :global(.ant-form-item) {
+  min-width: 0;
+  margin: 0;
+}
+
+.queryForm :global(.ant-input),
+.queryForm :global(.ant-input-number),
+.queryForm :global(.ant-select) {
+  width: 100%;
+  min-width: 0;
+}
+
+.queryForm input[type="datetime-local"] {
+  min-height: 38px;
+  font-variant-numeric: tabular-nums;
+}
+
+.queryForm > .queryActions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  padding-top: 0.25rem;
+}
+
+.error {
+  border: 1px solid var(--app-danger);
+  border-radius: var(--radius);
+  background: var(--app-danger-bg);
+  padding: 1rem;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 48rem) {
+  .page > :global(.ant-form) {
+    padding: 1rem;
+  }
+
+  .filters {
+    align-items: stretch;
+  }
+
+  .filters > :global(.ant-input-search),
+  .filters > :global(.ant-input),
+  .filters > :global(.ant-input-number),
+  .filters > :global(.ant-select),
+  .filters > label {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+  }
+}

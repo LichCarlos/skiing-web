@@ -1,0 +1,117 @@
+.main {
+  composes: page from "../../styles/console.module.css";
+  max-width: 78rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+.main h1 {
+  margin: 0.25rem 0;
+  font-size: 1.5rem;
+  color: var(--app-title-color);
+}
+.main header p,
+.hint {
+  color: var(--text-subtle);
+}
+.filters {
+  composes: filters from "../../styles/console.module.css";
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.75rem;
+}
+.filters label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+}
+.filters input,
+.filters select,
+.filters button {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--border-default);
+  border-radius: 0.35rem;
+  background: var(--surface);
+  color: var(--text-main);
+  font: inherit;
+}
+.filters button {
+  cursor: pointer;
+  font-weight: 600;
+}
+.sections {
+  display: grid;
+  gap: 1.5rem;
+}
+.section {
+  min-width: 0;
+  border: 1px solid var(--border-default);
+  border-radius: 0.6rem;
+  padding: 1.25rem;
+  background: var(--surface);
+}
+.section h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+.resorts {
+  padding: 0;
+  list-style: none;
+  margin-block: 1rem;
+}
+.resorts li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-block-end: 1px solid var(--border-default);
+}
+.resorts p {
+  margin: 0.25rem 0;
+  color: var(--text-subtle);
+  font-size: 0.8rem;
+}
+.resorts time {
+  font-size: 0.8rem;
+  color: var(--text-subtle);
+}
+.tableScroll {
+  overflow-x: auto;
+  margin-block: 1rem;
+}
+.tableScroll table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: start;
+}
+.tableScroll th,
+.tableScroll td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-default);
+  white-space: nowrap;
+}
+.tableScroll th:last-child,
+.tableScroll td:last-child {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .resorts li {
+    grid-template-columns: 1fr auto;
+  }
+  .resorts time {
+    grid-column: 1 / -1;
+  }
+}

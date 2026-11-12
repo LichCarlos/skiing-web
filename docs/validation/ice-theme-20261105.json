@@ -1,0 +1,471 @@
+{
+  "date": "2026-11-05",
+  "theme": "ice blue and white",
+  "palette": {
+    "background": "#F3F9FD",
+    "surface": "#FFFFFF",
+    "tint": "#E7F3FC",
+    "primary": "#176B9A",
+    "text": "#193449",
+    "muted": "#4D687B",
+    "border": "#CFE1EF"
+  },
+  "contrast": [
+    {
+      "name": "button",
+      "foreground": "#ffffff",
+      "background": "#176b9a",
+      "ratio": 5.82,
+      "passed": true
+    },
+    {
+      "name": "hover button",
+      "foreground": "#ffffff",
+      "background": "#0f557d",
+      "ratio": 8.03,
+      "passed": true
+    },
+    {
+      "name": "active button",
+      "foreground": "#ffffff",
+      "background": "#124766",
+      "ratio": 9.91,
+      "passed": true
+    },
+    {
+      "name": "app pressed button, composited at 94% opacity",
+      "foreground": "#feffff",
+      "background": "#2474a0",
+      "ratio": 5.14,
+      "passed": true
+    },
+    {
+      "name": "app dark pressed button, composited at 94% opacity",
+      "foreground": "#102c42",
+      "background": "#85c4e9",
+      "ratio": 7.58,
+      "passed": true
+    },
+    {
+      "name": "body",
+      "foreground": "#193449",
+      "background": "#ffffff",
+      "ratio": 12.89,
+      "passed": true
+    },
+    {
+      "name": "body on ice",
+      "foreground": "#193449",
+      "background": "#f3f9fd",
+      "ratio": 12.14,
+      "passed": true
+    },
+    {
+      "name": "secondary and placeholder",
+      "foreground": "#4d687b",
+      "background": "#ffffff",
+      "ratio": 5.86,
+      "passed": true
+    },
+    {
+      "name": "secondary on tint",
+      "foreground": "#4d687b",
+      "background": "#e7f3fc",
+      "ratio": 5.2,
+      "passed": true
+    },
+    {
+      "name": "link on selected",
+      "foreground": "#176b9a",
+      "background": "#e7f3fc",
+      "ratio": 5.16,
+      "passed": true
+    },
+    {
+      "name": "dark body",
+      "foreground": "#eef7fd",
+      "background": "#192f40",
+      "ratio": 12.72,
+      "passed": true
+    },
+    {
+      "name": "dark secondary",
+      "foreground": "#adc7da",
+      "background": "#203e54",
+      "ratio": 6.37,
+      "passed": true
+    },
+    {
+      "name": "dark button",
+      "foreground": "#102d43",
+      "background": "#8ccff5",
+      "ratio": 8.36,
+      "passed": true
+    },
+    {
+      "name": "dark link",
+      "foreground": "#8ccff5",
+      "background": "#203e54",
+      "ratio": 6.58,
+      "passed": true
+    }
+  ],
+  "evidenceRoot": "D:\\linji-local\\20261105\\ice-theme",
+  "deployed": false,
+  "apkRebuilt": false,
+  "nativeDeviceVerified": false,
+  "limitations": [
+    "Live public content is empty; browser checks primarily cover empty states and forms.",
+    "Local frontend resources against live HTTPS API; no business writes.",
+    "Bundle export and Expo Web do not replace native device verification."
+  ],
+  "checks": {
+    "lintWeb": true,
+    "lintAdmin": true,
+    "buildWeb": true,
+    "buildAdmin": true,
+    "boundariesWorkspaces": 9,
+    "websiteTests": 365,
+    "adminTests": 2687
+  },
+  "websiteBrowser": {
+    "checks": [
+      {
+        "name": "web-home-1440",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "heading": "凛迹雪客",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-resorts-1440",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "heading": "找到适合你的雪道",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-knowledge-1440",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "heading": "从第一条雪道开始",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-community-1440",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "heading": "雪上的每一刻，都值得分享",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-catalog-1440",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "heading": "按公开字段查询",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-about-1440",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "heading": "关于平台",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-not-found-1440",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "heading": "未找到此页面",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-home-390",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "heading": "凛迹雪客",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-resorts-390",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "heading": "找到适合你的雪道",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-knowledge-390",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "heading": "从第一条雪道开始",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-community-390",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "heading": "雪上的每一刻，都值得分享",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-catalog-390",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "heading": "按公开字段查询",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-about-390",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "heading": "关于平台",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-not-found-390",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "heading": "未找到此页面",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-home-320",
+        "passed": true,
+        "viewport": 320,
+        "page": 320,
+        "heading": "凛迹雪客",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-resorts-320",
+        "passed": true,
+        "viewport": 320,
+        "page": 320,
+        "heading": "找到适合你的雪道",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-knowledge-320",
+        "passed": true,
+        "viewport": 320,
+        "page": 320,
+        "heading": "从第一条雪道开始",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-community-320",
+        "passed": true,
+        "viewport": 320,
+        "page": 320,
+        "heading": "雪上的每一刻，都值得分享",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-catalog-320",
+        "passed": true,
+        "viewport": 320,
+        "page": 320,
+        "heading": "按公开字段查询",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-about-320",
+        "passed": true,
+        "viewport": 320,
+        "page": 320,
+        "heading": "关于平台",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-not-found-320",
+        "passed": true,
+        "viewport": 320,
+        "page": 320,
+        "heading": "未找到此页面",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "web-login-mobile",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "heading": "凛迹雪客",
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      }
+    ],
+    "errors": [],
+    "scope": "Local production builds, live read-only backend. Expo Web is not native device verification."
+  },
+  "adminBrowser": {
+    "completed": true,
+    "scope": "Local edited admin UI rendered against live HTTPS backend through an isolated Playwright frontend route override. No server deployment, business writes, or mocked business data.",
+    "checks": [
+      {
+        "name": "login-desktop",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "dashboard-desktop",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "users-desktop",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "account-dialog",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "roles-desktop",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "dictionaries-desktop",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "fields-desktop",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "resort-form-desktop",
+        "passed": true,
+        "viewport": 1440,
+        "page": 1440,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "users-tablet",
+        "passed": true,
+        "viewport": 768,
+        "page": 768,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "users-mobile",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "navigation-mobile",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "roles-mobile",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      },
+      {
+        "name": "login-mobile",
+        "passed": true,
+        "viewport": 390,
+        "page": 390,
+        "primary": "#176b9a",
+        "background": "rgb(243, 249, 253)"
+      }
+    ],
+    "pageErrors": [],
+    "failedRequests": [],
+    "checkedAt": "2026-11-05T09:52:18.821Z"
+  },
+  "stateRefinement": {
+    "adminHover": "#0F557D",
+    "adminActive": "#124766",
+    "appPressedOpacity": 0.94,
+    "rebuiltAndLinted": true
+  },
+  "buttonStates": [
+    {
+      "state": "default",
+      "background": "rgb(23, 107, 154)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "state": "hover",
+      "background": "rgb(15, 85, 125)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "state": "pressed",
+      "background": "rgb(18, 71, 102)",
+      "color": "rgb(255, 255, 255)"
+    }
+  ]
+}

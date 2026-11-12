@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-11-02T23:39:28.8270513Z",
+  "run": "D:/linji-public-live/20261103/runs/linji-public-http-nrXLFC",
+  "earlierSuccessfulRun": "D:/linji-public-live/20261103/runs/linji-public-http-esssiU",
+  "scope": "Web production HTTP readers against compiled Nest and isolated PostgreSQL; no Next server/browser, object download or external model",
+  "openapiVersion": "1.50.2",
+  "openapiOperations": 143,
+  "httpTests": 8,
+  "migrations": 23,
+  "completed": true,
+  "postgresStopped": true,
+  "backendStopped": true,
+  "listenersClosed": true,
+  "pidFileAbsent": true,
+  "passwordFileAbsent": true,
+  "artifacts": [
+    {
+      "label": "backend-report",
+      "path": "D:/linji-public-live/20261103/runs/linji-public-http-nrXLFC/report.json",
+      "sha256": "9a87fafd20c645314550ea91cb6e337f2d45a6df84b5e39086dd84eb8275800e"
+    },
+    {
+      "label": "migrations",
+      "path": "D:/linji-public-live/20261103/runs/linji-public-http-nrXLFC/migrate-deploy.log",
+      "sha256": "bdb2cc50fa1b188e726d158112e39afe04f94b3e088378d8c3e07dca73eaf490"
+    },
+    {
+      "label": "before",
+      "path": "D:/linji-public-live/20261103/runs/linji-public-http-nrXLFC/verify-before.log",
+      "sha256": "70b1f3f4302b7a1c6561a466d6a442450db00fe6543676e8224dffe22d669726"
+    },
+    {
+      "label": "fixture",
+      "path": "D:/linji-public-live/20261103/runs/linji-public-http-nrXLFC/fixture-verify.log",
+      "sha256": "4b443366f21ef357563e6672e4ed1ee491e7d0a250045465c496cb7615e545b8"
+    },
+    {
+      "label": "after",
+      "path": "D:/linji-public-live/20261103/runs/linji-public-http-nrXLFC/verify-after.log",
+      "sha256": "70b1f3f4302b7a1c6561a466d6a442450db00fe6543676e8224dffe22d669726"
+    },
+    {
+      "label": "stop",
+      "path": "D:/linji-public-live/20261103/runs/linji-public-http-nrXLFC/stop-postgres.log",
+      "sha256": "3589d2bd01f8295cc7c9ec3f5e07625fcd347ccb6f33f2d80edafe5f5217c1fb"
+    },
+    {
+      "label": "web-http",
+      "path": "web/public-live-final-real-http.log",
+      "sha256": "704d5c9585ff09b781127947b2c598a6f646b20737758452e03d851752df2664"
+    }
+  ]
+}

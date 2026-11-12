@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "mode": "local",
+  "fixtures": false,
+  "checks": [
+    {
+      "name": "category-picker",
+      "width": 1440,
+      "hints": 1
+    },
+    {
+      "name": "category-picker",
+      "width": 768,
+      "hints": 1
+    },
+    {
+      "name": "category-picker",
+      "width": 390,
+      "hints": 1
+    },
+    {
+      "name": "category-picker",
+      "width": 320,
+      "hints": 1
+    },
+    {
+      "name": "category-item",
+      "width": 1440,
+      "hints": 6
+    },
+    {
+      "name": "category-item",
+      "width": 768,
+      "hints": 6
+    },
+    {
+      "name": "category-item",
+      "width": 390,
+      "hints": 6
+    },
+    {
+      "name": "category-item",
+      "width": 320,
+      "hints": 6
+    },
+    {
+      "name": "new-option-dictionary",
+      "width": 1440,
+      "hints": 5
+    },
+    {
+      "name": "new-option-dictionary",
+      "width": 768,
+      "hints": 5
+    },
+    {
+      "name": "new-option-dictionary",
+      "width": 390,
+      "hints": 5
+    },
+    {
+      "name": "new-option-dictionary",
+      "width": 320,
+      "hints": 5
+    },
+    {
+      "name": "field-dictionary",
+      "width": 1440,
+      "hints": 13
+    },
+    {
+      "name": "field-dictionary",
+      "width": 768,
+      "hints": 13
+    },
+    {
+      "name": "field-dictionary",
+      "width": 390,
+      "hints": 13
+    },
+    {
+      "name": "field-dictionary",
+      "width": 320,
+      "hints": 13
+    }
+  ],
+  "pageErrors": [],
+  "contentWrites": [],
+  "buildId": "bSuFe0KxxnwTg3ssRSHN1"
+}

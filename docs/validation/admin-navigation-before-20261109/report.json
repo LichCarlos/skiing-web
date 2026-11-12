@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "mode": "before",
+  "checks": [
+    {
+      "observedHref": "/admin/content/resorts/new",
+      "status": 404,
+      "location": null
+    },
+    {
+      "name": "resorts: create and return stay inside admin prefix",
+      "passed": true
+    },
+    {
+      "observedHref": "/admin/content/articles/new",
+      "status": 404,
+      "location": null
+    },
+    {
+      "name": "articles: create and return stay inside admin prefix",
+      "passed": true
+    },
+    {
+      "observedHref": "/admin/content/project-knowledge/new",
+      "status": 404,
+      "location": null
+    },
+    {
+      "name": "knowledge: create and return stay inside admin prefix",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "navigations": [
+    "/snow-admin/login",
+    "/snow-admin/admin/content/resorts",
+    "/snow-admin/admin/content/articles",
+    "/snow-admin/admin/content/project-knowledge"
+  ],
+  "contentWrites": []
+}
